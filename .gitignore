@@ -1,0 +1,49 @@
+# Python environments and bytecode
+/.venv/
+/venv/
+__pycache__/
+*.py[cod]
+
+# Python tool caches and coverage reports
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Local configuration and credentials
+/local_settings.json
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Runtime output and personal map library
+/outputs/
+/output/
+/map_studio/library/
+
+# Submission preparation and recordings
+# /.report/
+
+# Browser automation output
+/.playwright-cli/
+/playwright-report/
+/test-results/
+
+# Temporary files and editor backups
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+~$*
+
+# Operating system metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# /.temp/

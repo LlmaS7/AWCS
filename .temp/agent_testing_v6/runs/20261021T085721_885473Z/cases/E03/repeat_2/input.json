@@ -1,0 +1,15 @@
+{
+  "case_id": "E03",
+  "map": "M03",
+  "text": "东侧货架的货送二号配送点。",
+  "kind": "chat",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true
+}

@@ -1,0 +1,1 @@
+{"case_id": "PROBE-rectangle", "status": "PASS", "completed": null, "total": null, "tick": null, "elapsed": 1.434609399999772, "error": null, "terminal": null}

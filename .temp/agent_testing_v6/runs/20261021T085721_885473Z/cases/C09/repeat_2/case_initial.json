@@ -1,0 +1,215 @@
+{
+  "generation": 0,
+  "tick": 0,
+  "tasks": [
+    {
+      "id": 1,
+      "pickup": [
+        12,
+        6
+      ],
+      "delivery": [
+        28,
+        55
+      ],
+      "priority": 2,
+      "created_at": 0,
+      "status": "cancelled",
+      "robot_id": null,
+      "picked_at": null,
+      "completed_at": null,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    }
+  ],
+  "task_views": [
+    {
+      "task_id": "T001",
+      "pickup_id": "P01",
+      "pickup_name": "取货点01",
+      "pickup_label": "四号货架",
+      "shelf_names": [
+        "四号货架"
+      ],
+      "delivery_id": "D2",
+      "delivery_name": "2号配送点",
+      "priority": 2,
+      "business_phase": "cancelled",
+      "phase_label": "已取消",
+      "assigned_robot": null,
+      "assignment_mode": "auto",
+      "requested_robot": null,
+      "assignment_label": "自动分配",
+      "copied_from": null
+    }
+  ],
+  "robots": [
+    {
+      "id": 1,
+      "position": [
+        24,
+        58
+      ],
+      "previous": [
+        24,
+        58
+      ],
+      "parking": [
+        24,
+        58
+      ],
+      "phase": "idle",
+      "task_id": null,
+      "next_task_id": null,
+      "service_left": 0,
+      "loaded": false,
+      "path": [
+        [
+          24,
+          58
+        ]
+      ],
+      "distance": 0,
+      "waits": 0,
+      "completed": 0
+    },
+    {
+      "id": 2,
+      "position": [
+        25,
+        58
+      ],
+      "previous": [
+        25,
+        58
+      ],
+      "parking": [
+        25,
+        58
+      ],
+      "phase": "idle",
+      "task_id": null,
+      "next_task_id": null,
+      "service_left": 0,
+      "loaded": false,
+      "path": [
+        [
+          25,
+          58
+        ]
+      ],
+      "distance": 0,
+      "waits": 0,
+      "completed": 0
+    },
+    {
+      "id": 3,
+      "position": [
+        26,
+        58
+      ],
+      "previous": [
+        26,
+        58
+      ],
+      "parking": [
+        26,
+        58
+      ],
+      "phase": "idle",
+      "task_id": null,
+      "next_task_id": null,
+      "service_left": 0,
+      "loaded": false,
+      "path": [
+        [
+          26,
+          58
+        ]
+      ],
+      "distance": 0,
+      "waits": 0,
+      "completed": 0
+    },
+    {
+      "id": 4,
+      "position": [
+        27,
+        58
+      ],
+      "previous": [
+        27,
+        58
+      ],
+      "parking": [
+        27,
+        58
+      ],
+      "phase": "idle",
+      "task_id": null,
+      "next_task_id": null,
+      "service_left": 0,
+      "loaded": false,
+      "path": [
+        [
+          27,
+          58
+        ]
+      ],
+      "distance": 0,
+      "waits": 0,
+      "completed": 0
+    }
+  ],
+  "dirty": false,
+  "auto": false,
+  "planning": false,
+  "metrics": {
+    "planning_seconds": 0.04307579999840527,
+    "last_plan_ms": 1.1175999989063712,
+    "plans": 3,
+    "cbs_nodes": 1,
+    "preemptions": 0,
+    "collisions": 0,
+    "recovery_attempts": 0,
+    "reservation_plans": 0,
+    "planner": "CBS",
+    "reservation_orders": 0,
+    "candidate_count": 1,
+    "planning_scope": "两阶段硬优先级 / 软偏好 / 静态ETA匹配＋协调可行路线",
+    "planning_status": "success"
+  },
+  "assignment": {
+    "pairs": {},
+    "eta_sum": 0,
+    "priority_prefix": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "scope": "两阶段硬优先级 / 软偏好 / 静态ETA匹配＋协调可行路线",
+    "cost_model": "静态ETA匹配；静态/预约估计",
+    "path_cost": [
+      0,
+      0,
+      0
+    ],
+    "candidate_count": 1
+  }
+}

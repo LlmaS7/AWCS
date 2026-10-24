@@ -1,0 +1,15 @@
+{
+  "case_id": "C03",
+  "map": "M02",
+  "text": "解除这单的指定，恢复自动分配，不要取消任务。",
+  "kind": "chat",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true
+}

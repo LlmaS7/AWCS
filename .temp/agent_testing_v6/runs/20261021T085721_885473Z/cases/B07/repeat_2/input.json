@@ -1,0 +1,15 @@
+{
+  "case_id": "B07",
+  "map": "M02",
+  "text": "取消这个尚未装货的任务。",
+  "kind": "chat",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true
+}

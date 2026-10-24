@@ -1,0 +1,18 @@
+{
+  "case_id": "EXPERIMENT64-rooms-20262018-rolling128-cold",
+  "source_case": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rooms-20262018",
+  "strategy": "fixed_rolling128",
+  "wall_seconds": 240,
+  "ticks": 12000,
+  "from_start": true,
+  "respect_progress_watchdog": true,
+  "profile": {
+    "mode": "rolling",
+    "coupling": "off",
+    "seconds": 10,
+    "window": 128,
+    "execute": 16,
+    "candidates": 4,
+    "external": false
+  }
+}

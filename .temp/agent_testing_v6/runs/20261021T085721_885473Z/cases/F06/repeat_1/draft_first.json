@@ -1,0 +1,269 @@
+{
+  "filename": "F06.docx",
+  "size": 643,
+  "sha256": "61d38debb4d0795242134c8e046a0364c57bd3951dbf08577fe31a4f127502f4",
+  "format": "docx",
+  "encoding": null,
+  "warnings": [],
+  "generation": 0,
+  "map_hash": "51e9a28a6ac58f48c8e0020012a5a4d9959e4f9e379232813bbddce337b6daa4",
+  "document_id": "85989dacef8b46888d5e032da989c8fc",
+  "draft_id": "85989dacef8b46888d5e032da989c8fc",
+  "revision": 1,
+  "state": "ready",
+  "instruction": "",
+  "model": "deepseek-flash",
+  "candidates": [
+    {
+      "candidate_id": "c1",
+      "source_ids": [
+        "b1"
+      ],
+      "pickup_id": "P01",
+      "delivery_id": "D2",
+      "priority": 2,
+      "count": null,
+      "quantity_kind": "goods",
+      "quantity_text": "20箱",
+      "issues": [
+        "文件中明确“搬运次数未定”，未提供搬运次数，count 留空待人工补充",
+        "箱数为货物件数/箱数，不能据此推断搬运次数"
+      ],
+      "constraints": [],
+      "notes": [
+        "四号货架（登记为取货点01）20箱货送往2号配送点"
+      ],
+      "overrides": [],
+      "reviewed": false,
+      "ignore_constraints": false,
+      "human_edited": false,
+      "deleted": false,
+      "problems": [
+        "请补充搬运次数；货物数量不等于搬运次数",
+        "请核对并确认识别疑点"
+      ],
+      "ready": false,
+      "created_count": 0,
+      "reserved_count": 0,
+      "remaining": 0,
+      "similar": []
+    }
+  ],
+  "excluded": [],
+  "locations": {
+    "pickup": [
+      {
+        "id": "P01",
+        "name": "取货点01",
+        "aliases": []
+      },
+      {
+        "id": "P02",
+        "name": "取货点02",
+        "aliases": []
+      },
+      {
+        "id": "P03",
+        "name": "取货点03",
+        "aliases": []
+      },
+      {
+        "id": "P04",
+        "name": "取货点04",
+        "aliases": []
+      },
+      {
+        "id": "P05",
+        "name": "取货点05",
+        "aliases": []
+      },
+      {
+        "id": "P06",
+        "name": "取货点06",
+        "aliases": []
+      },
+      {
+        "id": "P07",
+        "name": "取货点07",
+        "aliases": []
+      },
+      {
+        "id": "P08",
+        "name": "取货点08",
+        "aliases": []
+      },
+      {
+        "id": "P09",
+        "name": "取货点09",
+        "aliases": []
+      },
+      {
+        "id": "P10",
+        "name": "取货点10",
+        "aliases": []
+      },
+      {
+        "id": "P11",
+        "name": "取货点11",
+        "aliases": []
+      },
+      {
+        "id": "P12",
+        "name": "取货点12",
+        "aliases": []
+      },
+      {
+        "id": "P13",
+        "name": "取货点13",
+        "aliases": []
+      },
+      {
+        "id": "P14",
+        "name": "取货点14",
+        "aliases": []
+      },
+      {
+        "id": "P15",
+        "name": "取货点15",
+        "aliases": []
+      },
+      {
+        "id": "P16",
+        "name": "取货点16",
+        "aliases": []
+      },
+      {
+        "id": "P17",
+        "name": "取货点17",
+        "aliases": []
+      },
+      {
+        "id": "P18",
+        "name": "取货点18",
+        "aliases": []
+      },
+      {
+        "id": "P19",
+        "name": "取货点19",
+        "aliases": []
+      },
+      {
+        "id": "P20",
+        "name": "取货点20",
+        "aliases": []
+      },
+      {
+        "id": "P21",
+        "name": "取货点21",
+        "aliases": []
+      },
+      {
+        "id": "P22",
+        "name": "取货点22",
+        "aliases": []
+      },
+      {
+        "id": "P23",
+        "name": "取货点23",
+        "aliases": []
+      },
+      {
+        "id": "P24",
+        "name": "取货点24",
+        "aliases": []
+      },
+      {
+        "id": "P25",
+        "name": "取货点25",
+        "aliases": []
+      },
+      {
+        "id": "P26",
+        "name": "取货点26",
+        "aliases": []
+      },
+      {
+        "id": "P27",
+        "name": "取货点27",
+        "aliases": []
+      },
+      {
+        "id": "P28",
+        "name": "取货点28",
+        "aliases": []
+      },
+      {
+        "id": "P29",
+        "name": "取货点29",
+        "aliases": []
+      }
+    ],
+    "delivery": [
+      {
+        "id": "D1",
+        "name": "1号配送点",
+        "aliases": [
+          "西侧收货区"
+        ]
+      },
+      {
+        "id": "D2",
+        "name": "2号配送点",
+        "aliases": [
+          "复核台"
+        ]
+      },
+      {
+        "id": "D3",
+        "name": "3号配送点",
+        "aliases": []
+      },
+      {
+        "id": "D4",
+        "name": "4号配送点",
+        "aliases": []
+      },
+      {
+        "id": "D5",
+        "name": "5号配送点",
+        "aliases": []
+      },
+      {
+        "id": "D6",
+        "name": "6号配送点",
+        "aliases": []
+      }
+    ],
+    "shelf": [
+      {
+        "id": "S1",
+        "name": "四号货架",
+        "aliases": [
+          "4号货架",
+          "四号架",
+          "蓝色货架"
+        ],
+        "pickup_id": "P01"
+      },
+      {
+        "id": "S2",
+        "name": "登记货架2",
+        "aliases": [
+          "货架别名2"
+        ],
+        "pickup_id": "P02"
+      },
+      {
+        "id": "S3",
+        "name": "登记货架3",
+        "aliases": [
+          "货架别名3"
+        ],
+        "pickup_id": "P03"
+      }
+    ]
+  },
+  "error": "",
+  "duplicates": [],
+  "operations": []
+}

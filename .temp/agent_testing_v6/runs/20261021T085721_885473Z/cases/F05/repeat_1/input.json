@@ -1,0 +1,36 @@
+{
+  "case_id": "F05",
+  "map": "M01",
+  "text": "",
+  "kind": "document",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true,
+  "document": {
+    "filename": "F05.txt",
+    "lines": [
+      "需求甲：四号货架送二号配送点，搬运3次。"
+    ],
+    "text": "需求甲：四号货架送二号配送点，搬运3次。",
+    "truth": [
+      {
+        "marker": "需求甲",
+        "text": "需求甲：四号货架送二号配送点，搬运3次。",
+        "pickup_id": "P03",
+        "delivery_id": "D2",
+        "priority": 2,
+        "count": 3,
+        "quantity_kind": "trips",
+        "constraints": []
+      }
+    ],
+    "excluded": [],
+    "confirmation": "extract_only"
+  }
+}

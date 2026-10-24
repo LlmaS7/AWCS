@@ -1,0 +1,11 @@
+{
+  "case_id": "H13",
+  "status": "PASS",
+  "scope": "synthetic harness regression; detailed coverage in source",
+  "details": {
+    "positive": true,
+    "negative_detected": true,
+    "production_SSE": true
+  },
+  "seconds": 5.070348599999306
+}

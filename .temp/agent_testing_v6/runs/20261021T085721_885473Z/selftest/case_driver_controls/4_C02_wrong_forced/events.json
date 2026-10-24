@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "kind": "start",
+    "request_id": "4e82781cb1904ec8895aaad52fa40b53",
+    "job": "message",
+    "generation": 0,
+    "text": "这单尽量让R3做，忙不过来用其他机器人。",
+    "task_id": "T001"
+  },
+  {
+    "id": 2,
+    "kind": "progress",
+    "request_id": "4e82781cb1904ec8895aaad52fa40b53",
+    "tool": "get_status"
+  },
+  {
+    "id": 3,
+    "kind": "progress",
+    "request_id": "4e82781cb1904ec8895aaad52fa40b53",
+    "tool": "assign_task"
+  },
+  {
+    "id": 4,
+    "kind": "result",
+    "request_id": "4e82781cb1904ec8895aaad52fa40b53",
+    "generation": 0,
+    "tool": "assign_task",
+    "result": {
+      "status": "finished",
+      "actions": [
+        {
+          "operation": "assignment",
+          "outcome": "applied",
+          "task_id": "T001",
+          "pickup_id": "P03",
+          "pickup_name": "取货点03",
+          "pickup_label": "四号货架",
+          "shelf_names": [
+            "四号货架"
+          ],
+          "delivery_id": "D2",
+          "delivery_name": "2号配送点",
+          "priority": 2,
+          "business_phase": "to_pickup",
+          "phase_label": "已分配，处于取货阶段",
+          "assigned_robot": "R3",
+          "assignment_mode": "forced",
+          "requested_robot": "R3",
+          "assignment_label": "人工指定",
+          "copied_from": null,
+          "planning": "available"
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "kind": "notice",
+    "request_id": "4e82781cb1904ec8895aaad52fa40b53",
+    "message": "已停止后续回复；已生效操作保留"
+  },
+  {
+    "id": 6,
+    "kind": "done",
+    "request_id": "4e82781cb1904ec8895aaad52fa40b53"
+  }
+]

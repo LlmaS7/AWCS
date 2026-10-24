@@ -1,0 +1,50 @@
+[
+  {
+    "case_id": "X01",
+    "map": "M01",
+    "robots": 4,
+    "max_steps": 2000,
+    "seconds": 180,
+    "planning_seconds": 3
+  },
+  {
+    "case_id": "X02",
+    "map": "M02",
+    "robots": 4,
+    "max_steps": 2000,
+    "seconds": 180,
+    "planning_seconds": 3
+  },
+  {
+    "case_id": "X03",
+    "map": "M01",
+    "robots": 4,
+    "max_steps": 2000,
+    "seconds": 180,
+    "planning_seconds": 3
+  },
+  {
+    "case_id": "X04",
+    "map": "M02",
+    "robots": 4,
+    "max_steps": 2000,
+    "seconds": 180,
+    "planning_seconds": 3
+  },
+  {
+    "case_id": "X05",
+    "map": "M03",
+    "robots": 4,
+    "max_steps": 2000,
+    "seconds": 180,
+    "planning_seconds": 3
+  },
+  {
+    "case_id": "X06",
+    "map": "M03",
+    "robots": 16,
+    "max_steps": 2000,
+    "seconds": 180,
+    "planning_seconds": 3
+  }
+]

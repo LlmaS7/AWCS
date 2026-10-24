@@ -1,0 +1,8 @@
+{
+  "case_id": "EXPERIMENT64-rectangle-20262018-baseline8-resume",
+  "source_case": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rectangle-20262018",
+  "strategy": "baseline8",
+  "wall_seconds": 600,
+  "ticks": 30000,
+  "from_start": false
+}

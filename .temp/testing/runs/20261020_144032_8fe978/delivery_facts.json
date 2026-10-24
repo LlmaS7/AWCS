@@ -1,0 +1,24 @@
+{
+  "run": ".temp\\testing\\runs\\20261020_144032_8fe978",
+  "counts": {
+    "PASS": 2023,
+    "INCONCLUSIVE": 6
+  },
+  "raw_counts": {
+    "PASS": 2023,
+    "INCONCLUSIVE": 6,
+    "FAIL": 17
+  },
+  "resolved_harness_errors": 17,
+  "source_unchanged": true,
+  "source_fingerprint": "202cd2afd9a687b7e81cdb5aaa6be7af65ab3a25316a9290f77c8cd5ddb7bfab",
+  "primary_passed": true,
+  "unique_case_ids": true,
+  "completed_tasks": 1340,
+  "plan_checks": 1791,
+  "execution_ticks": 19573,
+  "position_samples": 7869935,
+  "trace_audits": 56,
+  "service_transitions": 3865,
+  "verdict": "主流程通过，扩展项存在未完成结果"
+}

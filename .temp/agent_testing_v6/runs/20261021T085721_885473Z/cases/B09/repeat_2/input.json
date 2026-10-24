@@ -1,0 +1,15 @@
+{
+  "case_id": "B09",
+  "map": "M01",
+  "text": "看一下完成数和平均周转时间。",
+  "kind": "chat",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true
+}

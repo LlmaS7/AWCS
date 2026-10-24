@@ -1,0 +1,254 @@
+{
+  "format": "sditadc-map",
+  "version": 1,
+  "name": "MovingAI 仓库",
+  "grid": {
+    "width": 161,
+    "height": 63,
+    "rows": [
+      "#################################################################################################################################################################",
+      "#...............................................................................................................................................................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#...............................................................................................................................................................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#...............................................................................................................................................................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#...............................................................................................................................................................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#...............................................................................................................................................................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#...............................................................................................................................................................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#...............................................................................................................................................................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#...............................................................................................................................................................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#...............................................................................................................................................................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#...............................................................................................................................................................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#...............................................................................................................................................................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#...............................................................................................................................................................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#...............................................................................................................................................................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#...............................................................................................................................................................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#...............................................................................................................................................................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#...............................................................................................................................................................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#...............................................................................................................................................................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#...............................................................................................................................................................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#...............................................................................................................................................................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#...............................................................................................................................................................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#.........................RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.RRRRRRRRRR.........................#",
+      "#...............................................................................................................................................................#",
+      "#################################################################################################################################################################"
+    ]
+  },
+  "points": {
+    "starts": [
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        7,
+        2
+      ]
+    ],
+    "parking": [
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        158,
+        2
+      ],
+      [
+        2,
+        60
+      ],
+      [
+        158,
+        60
+      ]
+    ],
+    "pickups": [
+      [
+        30,
+        4
+      ],
+      [
+        52,
+        4
+      ],
+      [
+        74,
+        4
+      ],
+      [
+        96,
+        4
+      ],
+      [
+        118,
+        4
+      ],
+      [
+        30,
+        19
+      ],
+      [
+        52,
+        19
+      ],
+      [
+        74,
+        19
+      ],
+      [
+        96,
+        19
+      ],
+      [
+        118,
+        19
+      ],
+      [
+        30,
+        34
+      ],
+      [
+        52,
+        34
+      ],
+      [
+        74,
+        34
+      ],
+      [
+        96,
+        34
+      ],
+      [
+        118,
+        34
+      ],
+      [
+        30,
+        49
+      ],
+      [
+        52,
+        49
+      ],
+      [
+        74,
+        49
+      ],
+      [
+        96,
+        49
+      ],
+      [
+        118,
+        49
+      ]
+    ],
+    "deliveries": [
+      [
+        10,
+        61
+      ],
+      [
+        55,
+        61
+      ],
+      [
+        105,
+        61
+      ],
+      [
+        150,
+        61
+      ]
+    ]
+  },
+  "random_obstacles": {
+    "count": 0
+  },
+  "source": {
+    "file": "warehouse-10-20-10-2-1.map",
+    "movement": "four-direction in SDITADC",
+    "url": "https://www.movingai.com/benchmarks/mapf/index.html",
+    "license": "Open Data Commons Attribution License 1.0",
+    "note": "MAPD 作业点由 SDITADC 另行配置，不来自官方 .scen 场景"
+  },
+  "robots": {
+    "default_count": 3,
+    "max_count": 6
+  }
+}

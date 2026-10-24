@@ -1,0 +1,22 @@
+{
+  "case_id": "WORKER-PROCESS",
+  "stage": "P5-process",
+  "status": "FAIL",
+  "assignment_correct": null,
+  "path_safe": true,
+  "tasks_completed": false,
+  "plan_checks": 0,
+  "path_points_checked": 0,
+  "actual_steps_checked": 0,
+  "planning_times": [],
+  "inputs": {
+    "case_id": "WORKER-PROCESS",
+    "stage": "P5-process",
+    "kind": "worker",
+    "map_file": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\datasets\\maps\\rectangle_20261018.json",
+    "timeout": 30
+  },
+  "error": "UnicodeDecodeError: 'gbk' codec can't decode byte 0xb0 in position 86: illegal multibyte sequence",
+  "traceback": "Traceback (most recent call last):\n  File \"E:\\_PROJECTS\\AWCS\\.temp\\testing\\run_case.py\", line 34, in execute\n    sim=Simulation(7,initial_tasks=0,map_id='worker-test',map_definition=json.loads(Path(spec['map_file']).read_text()),robot_count=2)\n                                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"E:\\Python\\Lib\\pathlib\\__init__.py\", line 788, in read_text\n    return f.read()\n           ~~~~~~^^\nUnicodeDecodeError: 'gbk' codec can't decode byte 0xb0 in position 86: illegal multibyte sequence\n",
+  "elapsed": 0.018964900000355556
+}

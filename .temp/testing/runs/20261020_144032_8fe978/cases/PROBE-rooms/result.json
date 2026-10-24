@@ -1,0 +1,65 @@
+{
+  "case_id": "PROBE-rooms",
+  "stage": "P4-probe",
+  "status": "PASS",
+  "assignment_correct": null,
+  "path_safe": null,
+  "tasks_completed": false,
+  "plan_checks": 0,
+  "path_points_checked": 0,
+  "actual_steps_checked": 0,
+  "planning_times": [],
+  "inputs": {
+    "case_id": "PROBE-rooms",
+    "stage": "P4-probe",
+    "kind": "probe",
+    "map_file": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\datasets\\maps\\rooms_20261018.json",
+    "robots": 16,
+    "seed": 20262018,
+    "timeout": 90
+  },
+  "details": {
+    "analysis": {
+      "valid": true,
+      "width": 96,
+      "height": 64,
+      "default_robots": 16,
+      "max_robots": 32,
+      "floor_cells": 3569,
+      "void_cells": 2575,
+      "free_cells": 2984,
+      "shelves": 29,
+      "pickups": 29,
+      "deliveries": 6,
+      "parking": 40,
+      "obstacles": 20,
+      "pending_obstacles": 0,
+      "sha256": "0a9f8b76248d9e4b1561bec4319873b1eed156371b33b3dc0d4137d594775c73",
+      "topology": {
+        "map_hash": "94f381b3e0662794cefebdf8897d058bf5aae449dbcdd14453c13e7da3652b47",
+        "free_cells": 2984,
+        "cutpoints": 1,
+        "bridges": 1,
+        "corridors": 3,
+        "dead_ends": 1,
+        "longest_corridor": 7,
+        "note": "拓扑风险诊断，不是多机可解证明"
+      },
+      "warning": "静态检查通过不代表任意任务流或机器人数量都能成功规划。"
+    },
+    "probe": {
+      "status": "passed",
+      "robots": 16,
+      "seed": 20262018,
+      "tasks": 16,
+      "completed": 16,
+      "tick": 199,
+      "collisions": 0,
+      "elapsed": 0.438,
+      "plan_seconds": 3,
+      "failure": null,
+      "note": "仅此地图快照、数量、种子和有限随机任务批；不是无死锁证明。"
+    }
+  },
+  "elapsed": 0.4657487999998011
+}

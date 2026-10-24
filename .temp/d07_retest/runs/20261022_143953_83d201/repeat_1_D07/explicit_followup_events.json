@@ -1,0 +1,398 @@
+[
+  {
+    "id": 163,
+    "kind": "start",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "job": "message",
+    "generation": 0,
+    "text": "取消 T001。",
+    "task_id": null
+  },
+  {
+    "id": 164,
+    "kind": "progress",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "tool": "cancel_tasks"
+  },
+  {
+    "id": 165,
+    "kind": "result",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "generation": 0,
+    "tool": "cancel_tasks",
+    "result": {
+      "status": "finished",
+      "actions": [
+        {
+          "operation": "cancel",
+          "outcome": "applied",
+          "task_id": "T001",
+          "pickup_id": "P03",
+          "pickup_name": "取货点03",
+          "pickup_label": "3号货架",
+          "shelf_names": [
+            "3号货架"
+          ],
+          "delivery_id": "D2",
+          "delivery_name": "2号配送点",
+          "priority": 2,
+          "business_phase": "cancelled",
+          "phase_label": "已取消",
+          "assigned_robot": null,
+          "assignment_mode": "auto",
+          "requested_robot": null,
+          "assignment_label": "自动分配",
+          "copied_from": null,
+          "planning": "available"
+        }
+      ]
+    }
+  },
+  {
+    "id": 166,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "T"
+  },
+  {
+    "id": 167,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "001"
+  },
+  {
+    "id": 168,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": " "
+  },
+  {
+    "id": 169,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "已"
+  },
+  {
+    "id": 170,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "取消"
+  },
+  {
+    "id": 171,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "成功"
+  },
+  {
+    "id": 172,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "。\n\n"
+  },
+  {
+    "id": 173,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "-"
+  },
+  {
+    "id": 174,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": " "
+  },
+  {
+    "id": 175,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "取"
+  },
+  {
+    "id": 176,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "货"
+  },
+  {
+    "id": 177,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "："
+  },
+  {
+    "id": 178,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "3"
+  },
+  {
+    "id": 179,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "号"
+  },
+  {
+    "id": 180,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "货"
+  },
+  {
+    "id": 181,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "架"
+  },
+  {
+    "id": 182,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "（"
+  },
+  {
+    "id": 183,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "取"
+  },
+  {
+    "id": 184,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "货"
+  },
+  {
+    "id": 185,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "点"
+  },
+  {
+    "id": 186,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "03"
+  },
+  {
+    "id": 187,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "）\n"
+  },
+  {
+    "id": 188,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "-"
+  },
+  {
+    "id": 189,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": " "
+  },
+  {
+    "id": 190,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "配送"
+  },
+  {
+    "id": 191,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "："
+  },
+  {
+    "id": 192,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "2"
+  },
+  {
+    "id": 193,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "号"
+  },
+  {
+    "id": 194,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "配送"
+  },
+  {
+    "id": 195,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "点"
+  },
+  {
+    "id": 196,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "\n"
+  },
+  {
+    "id": 197,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "-"
+  },
+  {
+    "id": 198,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": " "
+  },
+  {
+    "id": 199,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "原"
+  },
+  {
+    "id": 200,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "等级"
+  },
+  {
+    "id": 201,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "："
+  },
+  {
+    "id": 202,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "2"
+  },
+  {
+    "id": 203,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "级"
+  },
+  {
+    "id": 204,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "\n"
+  },
+  {
+    "id": 205,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "-"
+  },
+  {
+    "id": 206,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": " "
+  },
+  {
+    "id": 207,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "当前"
+  },
+  {
+    "id": 208,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "状态"
+  },
+  {
+    "id": 209,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "："
+  },
+  {
+    "id": 210,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "已"
+  },
+  {
+    "id": 211,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "取消"
+  },
+  {
+    "id": 212,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "，"
+  },
+  {
+    "id": 213,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "未"
+  },
+  {
+    "id": 214,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "分配"
+  },
+  {
+    "id": 215,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "机器人"
+  },
+  {
+    "id": 216,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "\n\n"
+  },
+  {
+    "id": 217,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "如需"
+  },
+  {
+    "id": 218,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "重新"
+  },
+  {
+    "id": 219,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "下单"
+  },
+  {
+    "id": 220,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "请"
+  },
+  {
+    "id": 221,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "告诉我"
+  },
+  {
+    "id": 222,
+    "kind": "text",
+    "request_id": "c0eb134cda89400eb08ad85b02008422",
+    "text": "。"
+  },
+  {
+    "id": 223,
+    "kind": "done",
+    "request_id": "c0eb134cda89400eb08ad85b02008422"
+  }
+]

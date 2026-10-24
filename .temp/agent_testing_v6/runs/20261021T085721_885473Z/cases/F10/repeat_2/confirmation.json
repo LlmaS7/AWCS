@@ -1,0 +1,124 @@
+{
+  "actor": "test_harness_confirmation",
+  "payload": {
+    "draft_id": "355bf21fc1eb4791a8a1f43fca069eb5",
+    "expected_revision": 1,
+    "confirmation_id": "2ecc99da108940a1b822ef24b6684011",
+    "selections": [
+      {
+        "candidate_id": "c1",
+        "count": 1
+      },
+      {
+        "candidate_id": "c2",
+        "count": 1
+      }
+    ]
+  },
+  "operation": {
+    "submission_id": "2ecc99da108940a1b822ef24b6684011",
+    "draft_id": "355bf21fc1eb4791a8a1f43fca069eb5",
+    "generation": 0,
+    "status": "finished",
+    "request_id": "2ecc99da108940a1b822ef24b6684011",
+    "items": [
+      {
+        "candidate_id": "c1",
+        "occurrence_index": 1,
+        "pickup_id": "P05",
+        "delivery_id": "D2",
+        "priority": 2,
+        "source": {
+          "kind": "file_import",
+          "filename": "F10.docx",
+          "sha256": "685b3d0e1576e5fa5230c38080860daf55d51f56ae52eadeec2446a4e751b176",
+          "import_batch_id": "355bf21fc1eb4791a8a1f43fca069eb5",
+          "candidate_id": "c1",
+          "occurrence_index": 1,
+          "locators": [
+            {
+              "type": "docx_table",
+              "table": 1,
+              "row": 1,
+              "column": 1
+            }
+          ],
+          "human_edited": false
+        }
+      },
+      {
+        "candidate_id": "c2",
+        "occurrence_index": 1,
+        "pickup_id": "P01",
+        "delivery_id": "D1",
+        "priority": 2,
+        "source": {
+          "kind": "file_import",
+          "filename": "F10.docx",
+          "sha256": "685b3d0e1576e5fa5230c38080860daf55d51f56ae52eadeec2446a4e751b176",
+          "import_batch_id": "355bf21fc1eb4791a8a1f43fca069eb5",
+          "candidate_id": "c2",
+          "occurrence_index": 1,
+          "locators": [
+            {
+              "type": "docx_table",
+              "table": 1,
+              "row": 2,
+              "column": 1
+            }
+          ],
+          "human_edited": false
+        }
+      }
+    ],
+    "result": {
+      "status": "finished",
+      "actions": [
+        {
+          "operation": "add",
+          "outcome": "applied",
+          "task_id": "T001",
+          "pickup_id": "P05",
+          "pickup_name": "取货点05",
+          "pickup_label": "四号货架",
+          "shelf_names": [
+            "四号货架"
+          ],
+          "delivery_id": "D2",
+          "delivery_name": "2号配送点",
+          "priority": 2,
+          "business_phase": "to_pickup",
+          "phase_label": "已分配，处于取货阶段",
+          "assigned_robot": "R4",
+          "assignment_mode": "auto",
+          "requested_robot": null,
+          "assignment_label": "自动分配",
+          "copied_from": null,
+          "planning": "available"
+        },
+        {
+          "operation": "add",
+          "outcome": "applied",
+          "task_id": "T002",
+          "pickup_id": "P01",
+          "pickup_name": "取货点01",
+          "pickup_label": "登记货架2",
+          "shelf_names": [
+            "登记货架2"
+          ],
+          "delivery_id": "D1",
+          "delivery_name": "1号配送点",
+          "priority": 2,
+          "business_phase": "to_pickup",
+          "phase_label": "已分配，处于取货阶段",
+          "assigned_robot": "R1",
+          "assignment_mode": "auto",
+          "requested_robot": null,
+          "assignment_label": "自动分配",
+          "copied_from": null,
+          "planning": "available"
+        }
+      ]
+    }
+  }
+}

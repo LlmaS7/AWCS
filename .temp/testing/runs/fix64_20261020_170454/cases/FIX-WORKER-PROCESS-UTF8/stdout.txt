@@ -1,0 +1,1 @@
+{"case_id": "FIX-WORKER-PROCESS-UTF8", "status": "PASS", "completed": null, "total": null, "tick": null, "elapsed": 0.24373100000047998, "error": null, "terminal": null}

@@ -1,0 +1,15 @@
+{
+  "case_id": "A07",
+  "map": "M01",
+  "text": "四号货架送二号配送点，同样的取送安排创建3次。",
+  "kind": "chat",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true
+}

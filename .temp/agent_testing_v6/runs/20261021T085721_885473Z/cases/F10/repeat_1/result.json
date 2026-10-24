@@ -1,0 +1,27 @@
+{
+  "case_id": "F10",
+  "repeat": 1,
+  "layer": "smoke",
+  "execution_status": "COMPLETED",
+  "raw_status": "PASS",
+  "effective_status": "PASS",
+  "review_status": "COMPLETED",
+  "human_signoff": null,
+  "evidence": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\F10\\repeat_1",
+  "fixture_valid": true,
+  "protocol_verdict": "PASS",
+  "business_verdict": "PASS",
+  "required_process_verdict": "PASS",
+  "response_verdict": "PASS",
+  "network_error": false,
+  "details": {
+    "business_errors": [],
+    "pending": [],
+    "confirmation_count": 2
+  },
+  "protocol_errors": [],
+  "execution_origin": "inherited_first_attempt",
+  "origin_result": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\F10\\repeat_1\\result.json",
+  "origin_result_sha256": "33f62d323573e0ca7bd0c340660245b1378585dc2b6fe712a9485a33b3647fc2",
+  "origin_test_version": "awcs-agent-suite-20261021-v5"
+}

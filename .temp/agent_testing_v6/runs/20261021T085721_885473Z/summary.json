@@ -1,0 +1,63 @@
+{
+  "H": {
+    "PASS": 20
+  },
+  "O": {
+    "PASS": 40
+  },
+  "matrix_raw": {
+    "INCONCLUSIVE": 136,
+    "FAIL": 6,
+    "PASS": 15,
+    "NOT_RUN": 23
+  },
+  "matrix_effective": {
+    "PASS": 53,
+    "INCONCLUSIVE": 97,
+    "FAIL": 7,
+    "NOT_RUN": 23
+  },
+  "challenge": {
+    "NOT_RUN": 24
+  },
+  "e2e": {
+    "NOT_RUN": 6
+  },
+  "stable_scenarios": 0,
+  "api_reservations": 425,
+  "api_send_attempted": 425,
+  "api_stream_complete": 424,
+  "usage_known": 424,
+  "acceptance": "EVIDENCE_INCOMPLETE",
+  "executed_matrix": 157,
+  "executed_challenge": 0,
+  "executed_e2e": 0,
+  "review_pending": 98,
+  "stop_reason": "UNEXPECTED_SIDE_EFFECT",
+  "source_integrity": true,
+  "lineage": {
+    "parent_run": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z",
+    "parent_test_version": "awcs-agent-suite-20261021-v5",
+    "inherited_cases": 41,
+    "inherited_api_reservations": 129,
+    "excluded_invalid_case": "D09",
+    "new_execution_count_expected": 169,
+    "audit": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\review\\20261021_r1\\summary_reviewed.json",
+    "new_case_input_changed": [
+      "D09"
+    ],
+    "budget_clock": "fresh 4h for explicitly new version; all historical reservations retained",
+    "unchanged_scope_hashes": {
+      "checks.py:offline": "d458754e857242bf712b4fe897d29349f6a14381b97bc187c9e177ebb5a8787b",
+      "matrix.py:document_run": "37ac61ece080749956ac3fc310d2f86c43af0db32461f3b0ffc4eff298956fac",
+      "matrix.py:inspect_protocol": "c6d0ee665862c30b07a10d5dfbbb75d112e1c1f302ff36c974bedc0085fdb71f",
+      "matrix.py:expected_new": "c5cb4ebb6180d2b1c952e4813cbd6dc336f9dfef3eac70c175fdc4f8ccfa2948",
+      "oracle.py:multiset": "9d8a7a0e9f8aed1b6e39b2db967d5d4eefa288862ec35e8c25d891136054e90e",
+      "oracle.py:process_errors": "81efbb0e9b493ee5518a1dd5162cb8fec59f266288608bbcc7bd01df02832c88",
+      "oracle.py:query_satisfied": "825329cc62bcc63f500b27f16d051cf122c864d0b605839be3cc93af3b9c8a6f",
+      "oracle.py:classify": "546a515766dd6a03f484a5fb08ec8d6fa476e1d6a8243931d73e6541d70be28e"
+    }
+  },
+  "carried_first_attempts": 41,
+  "executed_here": 116
+}

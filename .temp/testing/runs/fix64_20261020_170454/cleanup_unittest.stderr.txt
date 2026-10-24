@@ -1,0 +1,30 @@
+test_async_result_uses_owner_side_recovery (test_plan_recovery.ControllerRecoveryTests.test_async_result_uses_owner_side_recovery) ... ok
+test_controller_actor_and_real_worker_complete_workload (test_plan_recovery.ControllerRecoveryTests.test_controller_actor_and_real_worker_complete_workload) ... ok
+test_new_pending_task_goes_to_worker (test_plan_recovery.ControllerRecoveryTests.test_new_pending_task_goes_to_worker) ... ok
+test_retained_event_does_not_submit_another_worker_job (test_plan_recovery.ControllerRecoveryTests.test_retained_event_does_not_submit_another_worker_job) ... ok
+test_stale_failure_cannot_grant_a_recovery_lease (test_plan_recovery.ControllerRecoveryTests.test_stale_failure_cannot_grant_a_recovery_lease) ... ok
+test_worker_error_still_pauses_with_valid_routes (test_plan_recovery.ControllerRecoveryTests.test_worker_error_still_pauses_with_valid_routes) ... ok
+test_atomic_service_cannot_be_truncated (test_plan_recovery.RecoveryTests.test_atomic_service_cannot_be_truncated) ... ok
+test_cancellation_cannot_reuse_old_job (test_plan_recovery.RecoveryTests.test_cancellation_cannot_reuse_old_job) ... ok
+test_cancelled_search_cannot_grant_recovery (test_plan_recovery.RecoveryTests.test_cancelled_search_cannot_grant_recovery) ... ok
+test_changed_map_invalidates_retained_route (test_plan_recovery.RecoveryTests.test_changed_map_invalidates_retained_route) ... ok
+test_collision_and_swap_are_rejected (test_plan_recovery.RecoveryTests.test_collision_and_swap_are_rejected) ... ok
+test_controller_mode_switch_clears_retained_deadline (test_plan_recovery.RecoveryTests.test_controller_mode_switch_clears_retained_deadline) ... ok
+test_direct_legacy_success_clears_retained_deadline (test_plan_recovery.RecoveryTests.test_direct_legacy_success_clears_retained_deadline) ... ok
+test_emergency_upgrade_requests_new_dispatch (test_plan_recovery.RecoveryTests.test_emergency_upgrade_requests_new_dispatch) ... ok
+test_failure_reuses_only_committed_state (test_plan_recovery.RecoveryTests.test_failure_reuses_only_committed_state) ... ok
+test_forced_reassignment_does_not_reuse_old_itinerary (test_plan_recovery.RecoveryTests.test_forced_reassignment_does_not_reuse_old_itinerary) ... ok
+test_legacy_failure_still_pauses (test_plan_recovery.RecoveryTests.test_legacy_failure_still_pauses) ... ok
+test_loaded_custody_is_preserved (test_plan_recovery.RecoveryTests.test_loaded_custody_is_preserved) ... ok
+test_manual_pause_is_preserved (test_plan_recovery.RecoveryTests.test_manual_pause_is_preserved) ... ok
+test_new_task_cannot_be_starved_by_recovery (test_plan_recovery.RecoveryTests.test_new_task_cannot_be_starved_by_recovery) ... ok
+test_orphan_task_is_rejected (test_plan_recovery.RecoveryTests.test_orphan_task_is_rejected) ... ok
+test_rechecks_do_not_extend_lease_and_expiry_replans (test_plan_recovery.RecoveryTests.test_rechecks_do_not_extend_lease_and_expiry_replans) ... ok
+test_rolling_prefix_never_gets_an_extended_recovery_certificate (test_plan_recovery.RecoveryTests.test_rolling_prefix_never_gets_an_extended_recovery_certificate) ... ok
+test_stationary_routes_cannot_claim_progress (test_plan_recovery.RecoveryTests.test_stationary_routes_cannot_claim_progress) ... ok
+test_successful_replan_clears_retention_status_message (test_plan_recovery.RecoveryTests.test_successful_replan_clears_retention_status_message) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.324s
+
+OK

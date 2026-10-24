@@ -1,0 +1,91 @@
+[
+  {
+    "request_id": "306411a709c14506bb8742692ba6eca5",
+    "name": "get_status",
+    "arguments": {
+      "task_id": "T001"
+    },
+    "operation_id": "306411a709c14506bb8742692ba6eca5/1",
+    "generation": 0,
+    "start": 1792573619.136572,
+    "result": {
+      "tasks": [
+        {
+          "task_id": "T001",
+          "pickup_id": "P05",
+          "pickup_name": "取货点05",
+          "pickup_label": "四号货架",
+          "shelf_names": [
+            "四号货架"
+          ],
+          "delivery_id": "D2",
+          "delivery_name": "2号配送点",
+          "priority": 2,
+          "business_phase": "completed",
+          "phase_label": "已完成",
+          "assigned_robot": "R4",
+          "assignment_mode": "auto",
+          "requested_robot": null,
+          "assignment_label": "自动分配",
+          "copied_from": null
+        }
+      ],
+      "robots": [
+        {
+          "robot_id": "R1",
+          "position": [
+            4,
+            58
+          ],
+          "business_phase": "idle",
+          "phase_label": "空闲",
+          "loaded": false,
+          "task_id": null,
+          "reserved_task": null,
+          "completed": 0
+        },
+        {
+          "robot_id": "R2",
+          "position": [
+            5,
+            58
+          ],
+          "business_phase": "idle",
+          "phase_label": "空闲",
+          "loaded": false,
+          "task_id": null,
+          "reserved_task": null,
+          "completed": 0
+        },
+        {
+          "robot_id": "R3",
+          "position": [
+            6,
+            58
+          ],
+          "business_phase": "idle",
+          "phase_label": "空闲",
+          "loaded": false,
+          "task_id": null,
+          "reserved_task": null,
+          "completed": 0
+        },
+        {
+          "robot_id": "R4",
+          "position": [
+            27,
+            55
+          ],
+          "business_phase": "parking",
+          "phase_label": "前往停车位",
+          "loaded": false,
+          "task_id": null,
+          "reserved_task": null,
+          "completed": 1
+        }
+      ],
+      "note": "业务阶段不证明当前实际移动，预约不等于已开始搬运。"
+    },
+    "seconds": 0.0004227161407470703
+  }
+]

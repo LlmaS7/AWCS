@@ -1,0 +1,15 @@
+{
+  "case_id": "C08",
+  "map": "M01",
+  "text": "照这单再创建两份，原单保留。",
+  "kind": "chat",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true
+}

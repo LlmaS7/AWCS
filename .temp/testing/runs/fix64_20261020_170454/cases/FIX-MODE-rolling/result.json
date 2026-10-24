@@ -1,0 +1,383 @@
+{
+  "case_id": "FIX-MODE-rolling",
+  "stage": "P6-mode",
+  "status": "PASS",
+  "assignment_correct": null,
+  "path_safe": true,
+  "tasks_completed": true,
+  "plan_checks": 93,
+  "path_points_checked": 11916,
+  "actual_steps_checked": 359,
+  "planning_times": [
+    0.10840210000060324,
+    0.0024861999991117045,
+    0.0025483000008534873,
+    0.002637400000821799,
+    0.0026405000007798662,
+    0.002578600000560982,
+    0.0025432999991608085,
+    0.002585199999884935,
+    0.002374099998633028,
+    0.002203799998824252,
+    0.002240199999505421,
+    0.002211699998952099,
+    0.0026437000014993828,
+    0.00251620000017283,
+    0.0023888000014267163,
+    0.0022098000008554664,
+    0.002206899998782319,
+    0.0021556000010605203,
+    0.002474699998856522,
+    0.0020816999985981965,
+    0.0020465999987209216,
+    0.002614799999719253,
+    0.0024468999999953667,
+    0.002375000000029104,
+    0.0022231000002648216,
+    0.0021848000014870195,
+    0.0017845999991550343,
+    0.00687379999908444,
+    0.0019691999987117015,
+    0.007162200001403107,
+    0.0026717999990069075,
+    0.0023665000007895287,
+    0.002410200000667828,
+    0.0023811999999452382,
+    0.002370999998674961,
+    0.0024183000004995847,
+    0.0022955999993428122,
+    0.002210999999078922,
+    0.002266000001327484,
+    0.002284500000314438,
+    0.002092599999741651,
+    0.001907599998958176,
+    0.002416100000118604,
+    0.0033569000006536953,
+    0.0024431000001641223,
+    0.0026840999998967163,
+    0.002491100000042934,
+    0.0032219999993685633,
+    0.0023919000013847835,
+    0.0021867000014026416,
+    0.002245400000902009,
+    0.0019301000011182623,
+    0.002355399999942165,
+    0.002451899999869056,
+    0.0030442000006587477,
+    0.002501200000551762,
+    0.0022577999989152886,
+    0.0022088000005169306,
+    0.0020313000004534842,
+    0.001880699999674107,
+    0.00182679999852553,
+    0.001737499998853309,
+    0.0029423000014503486,
+    0.006400700000085635,
+    0.006824399999459274,
+    0.0013937000003352296,
+    0.001257600000826642,
+    0.0013700999988941476,
+    0.0012100000003556488,
+    0.0010894000006373972,
+    0.0011544999997568084,
+    0.0012055999995936872,
+    0.001029100001687766,
+    0.005935499999395688,
+    0.0010722999995778082,
+    0.0009773000001587206,
+    0.0009580000005371403,
+    0.0009351000007882249,
+    0.0009787999988475349,
+    0.00094600000011269,
+    0.0009178999989671865,
+    0.0009382000007462921,
+    0.0010209000010945601,
+    0.001151899999968009,
+    0.00120739999874786,
+    0.0009988999991037417,
+    0.000916299999516923,
+    0.0009355000001960434,
+    0.0011100000010628719,
+    0.0010261999996146187,
+    0.0009764000005816342,
+    0.0008606999999756226,
+    0.000806199999715318
+  ],
+  "inputs": {
+    "case_id": "FIX-MODE-rolling",
+    "stage": "P6-mode",
+    "map_file": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\MODE-rolling\\actual_map.json",
+    "robots": 4,
+    "seed": 20262018,
+    "tasks": [
+      {
+        "tick": 0,
+        "pickup": 24,
+        "delivery": 3,
+        "priority": 1
+      },
+      {
+        "tick": 0,
+        "pickup": 14,
+        "delivery": 2,
+        "priority": 2
+      },
+      {
+        "tick": 0,
+        "pickup": 23,
+        "delivery": 2,
+        "priority": 3
+      },
+      {
+        "tick": 0,
+        "pickup": 45,
+        "delivery": 1,
+        "priority": 4
+      },
+      {
+        "tick": 0,
+        "pickup": 47,
+        "delivery": 0,
+        "priority": 5
+      },
+      {
+        "tick": 0,
+        "pickup": 26,
+        "delivery": 0,
+        "priority": 1
+      },
+      {
+        "tick": 0,
+        "pickup": 2,
+        "delivery": 2,
+        "priority": 2
+      },
+      {
+        "tick": 0,
+        "pickup": 18,
+        "delivery": 1,
+        "priority": 3
+      }
+    ],
+    "mode": "rolling",
+    "plan_seconds": 3,
+    "ticks": 4000,
+    "timeout": 90,
+    "wall_seconds": 85,
+    "source_case": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\MODE-rolling"
+  },
+  "actual_map_sha256": "d1baf9fa9d50b58c6637aec1c64d0fa218c9a4826dd2a13be2fcdac0a9643692",
+  "tick": 359,
+  "completed": 8,
+  "total": 8,
+  "submitted": 8,
+  "scheduled": 8,
+  "remaining": 0,
+  "terminal": "all_tasks_completed",
+  "message": "T001 已完成 · R3 可接新任务",
+  "metrics": {
+    "planning_seconds": 0.294690199994875,
+    "last_plan_ms": 0.7224000000860542,
+    "plans": 93,
+    "cbs_nodes": 0,
+    "preemptions": 0,
+    "collisions": 0,
+    "recovery_attempts": 0,
+    "reservation_plans": 93,
+    "planner": "SIPP-window",
+    "reservation_orders": 1,
+    "candidate_count": 1,
+    "planning_scope": "两阶段硬优先级 / 软偏好 / 静态ETA匹配＋协调可行路线",
+    "planning_status": "success",
+    "completed": 8,
+    "total": 8,
+    "pending": 0,
+    "avg_completion": 212.0,
+    "avg_wait": 144.75,
+    "distance": 1102,
+    "waits": 0
+  },
+  "all_parked": false,
+  "final_tasks": [
+    {
+      "id": 1,
+      "pickup": [
+        5,
+        24
+      ],
+      "delivery": [
+        55,
+        58
+      ],
+      "priority": 1,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 3,
+      "picked_at": 273,
+      "completed_at": 359,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 2,
+      "pickup": [
+        68,
+        12
+      ],
+      "delivery": [
+        41,
+        58
+      ],
+      "priority": 2,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 1,
+      "picked_at": 198,
+      "completed_at": 273,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 3,
+      "pickup": [
+        82,
+        18
+      ],
+      "delivery": [
+        41,
+        58
+      ],
+      "priority": 3,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 3,
+      "picked_at": 118,
+      "completed_at": 201,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 4,
+      "pickup": [
+        61,
+        48
+      ],
+      "delivery": [
+        27,
+        55
+      ],
+      "priority": 4,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 1,
+      "picked_at": 69,
+      "completed_at": 112,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 5,
+      "pickup": [
+        82,
+        48
+      ],
+      "delivery": [
+        14,
+        55
+      ],
+      "priority": 5,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 4,
+      "picked_at": 87,
+      "completed_at": 164,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 6,
+      "pickup": [
+        19,
+        24
+      ],
+      "delivery": [
+        14,
+        55
+      ],
+      "priority": 1,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 4,
+      "picked_at": 202,
+      "completed_at": 240,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 7,
+      "pickup": [
+        19,
+        6
+      ],
+      "delivery": [
+        41,
+        58
+      ],
+      "priority": 2,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 2,
+      "picked_at": 164,
+      "completed_at": 242,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 8,
+      "pickup": [
+        26,
+        18
+      ],
+      "delivery": [
+        27,
+        55
+      ],
+      "priority": 3,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 2,
+      "picked_at": 63,
+      "completed_at": 105,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    }
+  ],
+  "elapsed": 0.3930617000005441,
+  "planning_p50": 0.002211699998952099,
+  "planning_p95": 0.006400700000085635,
+  "planning_max": 0.10840210000060324
+}

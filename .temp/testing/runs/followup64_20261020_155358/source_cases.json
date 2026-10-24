@@ -1,0 +1,38 @@
+[
+  {
+    "case_id": "EXPERIMENT64-experimental_128x96-20262018",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-experimental_128x96-20262018",
+    "input_sha256": "d0b2b13869d685b8a0a4be7e2f8bbf3e800b65b8c4b6e931d7269a5f61cb0af7",
+    "final_state_sha256": "544dee3b431ae374af7b854a55c9f1e91247f4d8363e1fd167984a566e25c530"
+  },
+  {
+    "case_id": "EXPERIMENT64-experimental_128x96-20262019",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-experimental_128x96-20262019",
+    "input_sha256": "7a307c31e327b18c9bc9c3a49b47567654d39e2096cf7c653ee4d861ce2e806a",
+    "final_state_sha256": "3d40333ce697cad32927f0fb413ab166817f61db3e693b882ecf9539d3e51c52"
+  },
+  {
+    "case_id": "EXPERIMENT64-rectangle-20262018",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rectangle-20262018",
+    "input_sha256": "6a6dfc7311479451b33a5b504ec3a170bf11f99d44df6ca6108c8f76657c4099",
+    "final_state_sha256": "147b80f47964c7de4fb59b314f953ca5dc4046516708529e679258e4a96c31ba"
+  },
+  {
+    "case_id": "EXPERIMENT64-rectangle-20262019",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rectangle-20262019",
+    "input_sha256": "2d7fe20638201d139d9b0d0b7ff0d1fac42f1978fd2b4ff6308bd893317cee41",
+    "final_state_sha256": "237b2b4024635ccd7edc6cadd2129709c0401c3f7ab6ec9caeff46dcf774e9f0"
+  },
+  {
+    "case_id": "EXPERIMENT64-rooms-20262018",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rooms-20262018",
+    "input_sha256": "b22a4752d9bf5995722099f72d1df7e8947c49e76d0107f4422bd8a83af754cf",
+    "final_state_sha256": "308746923dbfce1cc50443a5c860656e1a1a6642c4fd509425a7ad85db959b8e"
+  },
+  {
+    "case_id": "EXPERIMENT64-rooms-20262019",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rooms-20262019",
+    "input_sha256": "b44b478250789562f297ce1af0b4f4e43378dc4d55abb75269e46c9781317d3f",
+    "final_state_sha256": "ebe2bbcd7be41e05423ec254467c1b6ccb9de6fff8a213b91eac04c2d53634b0"
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "case_id": "EXPERIMENT64-rooms-20262018-retention-cold",
+  "source_case": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rooms-20262018",
+  "strategy": "retain_safe_suffix",
+  "status": "PASS",
+  "plan_checks": 113,
+  "path_points_checked": 791428,
+  "actual_steps_checked": 511,
+  "failures": 4,
+  "retentions": 4,
+  "stable_parking_attempts": 0,
+  "path_safe": true,
+  "initial_tick": 0,
+  "initial_completed": 0,
+  "reconstruction": {
+    "from_start": true,
+    "source_case": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rooms-20262018"
+  },
+  "inputs": {
+    "case_id": "EXPERIMENT64-rooms-20262018-retention-cold",
+    "source_case": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rooms-20262018",
+    "from_start": true,
+    "wall_seconds": 600
+  },
+  "terminal": "all_128_tasks_completed",
+  "completed": 128,
+  "total": 128,
+  "tick": 511,
+  "new_completed": 128,
+  "elapsed": 138.2237382000003
+}

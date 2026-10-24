@@ -1,0 +1,1 @@
+{"case_id": "COUPLING-off-2", "status": "PASS", "completed": 8, "total": 8, "tick": 359, "elapsed": 1.2911692000006951, "error": null, "terminal": "all_tasks_completed"}

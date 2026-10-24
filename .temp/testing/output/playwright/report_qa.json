@@ -1,0 +1,148 @@
+{
+  "passed": 28,
+  "checks": [
+    {
+      "name": "desktop statistics and initial replay",
+      "pass": true,
+      "detail": {
+        "rows": 19,
+        "scenes": 6,
+        "completed": "112",
+        "tick": "376",
+        "overflow": false
+      }
+    },
+    {
+      "name": "rectangle final frame",
+      "pass": true
+    },
+    {
+      "name": "rooms original stop",
+      "pass": true
+    },
+    {
+      "name": "rooms final frame",
+      "pass": true
+    },
+    {
+      "name": "initial frame",
+      "pass": true
+    },
+    {
+      "name": "individual robot tracking",
+      "pass": true
+    },
+    {
+      "name": "playback advances real frames",
+      "pass": true
+    },
+    {
+      "name": "slider keyboard control",
+      "pass": true
+    },
+    {
+      "name": "PASS filtering",
+      "pass": true
+    },
+    {
+      "name": "recovery filtering",
+      "pass": true
+    },
+    {
+      "name": "empty filter combination",
+      "pass": true
+    },
+    {
+      "name": "export contains real evidence",
+      "pass": true
+    },
+    {
+      "name": "copy conclusion feedback",
+      "pass": true
+    },
+    {
+      "name": "evidence link %E4%BA%A4%E4%BB%98%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A.md",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "evidence link %E9%AA%8C%E6%94%B6%E7%BB%93%E6%9E%9C.csv",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "evidence link adjudications.json",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "evidence link 64%E5%8F%B0%E8%BF%BD%E5%8A%A0%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A.md",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "evidence link summary.csv",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "evidence link feasibility_witness.json",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "evidence link parking_diagnosis.json",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "evidence link trace_audit.json",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "evidence link source_integrity.json",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "evidence link provenance.json",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "375px mobile no page overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "scroll": 375
+      }
+    },
+    {
+      "name": "reduced motion supported",
+      "pass": true
+    },
+    {
+      "name": "print hides interactive controls",
+      "pass": true
+    },
+    {
+      "name": "no runtime errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "no external assets",
+      "pass": true,
+      "detail": [
+        "http://127.0.0.1:18069/.report/AWCS_%E9%A1%B9%E7%9B%AE%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A.html"
+      ]
+    }
+  ],
+  "errors": [],
+  "mobile": {
+    "width": 375,
+    "scroll": 375
+  },
+  "exportTrials": 19
+}

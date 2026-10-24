@@ -1,0 +1,52 @@
+{
+  "case_id": "EXPERIMENT64-rooms-20262018-rolling128-cold",
+  "source_case": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rooms-20262018",
+  "strategy": "fixed_rolling128",
+  "status": "INCONCLUSIVE",
+  "plan_checks": 78,
+  "path_points_checked": 487593,
+  "actual_steps_checked": 288,
+  "failures": 1,
+  "path_safe": true,
+  "profiles_used": [
+    {
+      "mode": "rolling",
+      "coupling": "off",
+      "seconds": 10,
+      "window": 128,
+      "execute": 16,
+      "candidates": 4,
+      "external": false
+    }
+  ],
+  "inputs": {
+    "case_id": "EXPERIMENT64-rooms-20262018-rolling128-cold",
+    "source_case": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rooms-20262018",
+    "strategy": "fixed_rolling128",
+    "wall_seconds": 240,
+    "ticks": 12000,
+    "from_start": true,
+    "respect_progress_watchdog": true,
+    "profile": {
+      "mode": "rolling",
+      "coupling": "off",
+      "seconds": 10,
+      "window": 128,
+      "execute": 16,
+      "candidates": 4,
+      "external": false
+    }
+  },
+  "reconstruction": {
+    "from_start": true,
+    "source_case": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rooms-20262018"
+  },
+  "initial_completed": 0,
+  "initial_tick": 0,
+  "terminal": "all_configurations_unsolved",
+  "completed": 91,
+  "total": 128,
+  "tick": 288,
+  "new_completed": 91,
+  "elapsed": 41.428367500000604
+}

@@ -1,0 +1,530 @@
+[
+  {
+    "case_id": "FIX-ACTOR64-rectangle-20262018",
+    "status": "PASS",
+    "plans": 0,
+    "ticks": 99,
+    "service_transitions": 16,
+    "position_samples": 12672
+  },
+  {
+    "case_id": "FIX-ACTOR64-rectangle-20262019",
+    "status": "PASS",
+    "plans": 0,
+    "ticks": 121,
+    "service_transitions": 20,
+    "position_samples": 15488
+  },
+  {
+    "case_id": "FIX-ACTOR64-rooms-20262018",
+    "status": "PASS",
+    "plans": 0,
+    "ticks": 223,
+    "service_transitions": 43,
+    "position_samples": 28544
+  },
+  {
+    "case_id": "FIX-ACTOR64-rooms-20262019",
+    "status": "PASS",
+    "plans": 0,
+    "ticks": 225,
+    "service_transitions": 46,
+    "position_samples": 28800
+  },
+  {
+    "case_id": "FIX-COUPLING-candidate-0",
+    "status": "PASS",
+    "plans": 7,
+    "ticks": 359,
+    "service_transitions": 16,
+    "position_samples": 2872
+  },
+  {
+    "case_id": "FIX-COUPLING-candidate-1",
+    "status": "PASS",
+    "plans": 7,
+    "ticks": 359,
+    "service_transitions": 16,
+    "position_samples": 2872
+  },
+  {
+    "case_id": "FIX-COUPLING-candidate-2",
+    "status": "PASS",
+    "plans": 7,
+    "ticks": 359,
+    "service_transitions": 16,
+    "position_samples": 2872
+  },
+  {
+    "case_id": "FIX-COUPLING-estimated-0",
+    "status": "PASS",
+    "plans": 7,
+    "ticks": 359,
+    "service_transitions": 16,
+    "position_samples": 2872
+  },
+  {
+    "case_id": "FIX-COUPLING-estimated-1",
+    "status": "PASS",
+    "plans": 7,
+    "ticks": 359,
+    "service_transitions": 16,
+    "position_samples": 2872
+  },
+  {
+    "case_id": "FIX-COUPLING-estimated-2",
+    "status": "PASS",
+    "plans": 7,
+    "ticks": 359,
+    "service_transitions": 16,
+    "position_samples": 2872
+  },
+  {
+    "case_id": "FIX-COUPLING-off-0",
+    "status": "PASS",
+    "plans": 7,
+    "ticks": 359,
+    "service_transitions": 16,
+    "position_samples": 2872
+  },
+  {
+    "case_id": "FIX-COUPLING-off-1",
+    "status": "PASS",
+    "plans": 7,
+    "ticks": 359,
+    "service_transitions": 16,
+    "position_samples": 2872
+  },
+  {
+    "case_id": "FIX-COUPLING-off-2",
+    "status": "PASS",
+    "plans": 7,
+    "ticks": 359,
+    "service_transitions": 16,
+    "position_samples": 2872
+  },
+  {
+    "case_id": "FIX-DYNAMIC-courtyard",
+    "status": "PASS",
+    "plans": 37,
+    "ticks": 337,
+    "service_transitions": 80,
+    "position_samples": 10784
+  },
+  {
+    "case_id": "FIX-DYNAMIC-rectangle",
+    "status": "PASS",
+    "plans": 44,
+    "ticks": 396,
+    "service_transitions": 95,
+    "position_samples": 12672
+  },
+  {
+    "case_id": "FIX-DYNAMIC-rooms",
+    "status": "PASS",
+    "plans": 60,
+    "ticks": 604,
+    "service_transitions": 120,
+    "position_samples": 19328
+  },
+  {
+    "case_id": "FIX-EXPERIMENT64-experimental_128x96-20262018",
+    "status": "PASS",
+    "plans": 8,
+    "ticks": 118,
+    "service_transitions": 74,
+    "position_samples": 15104
+  },
+  {
+    "case_id": "FIX-EXPERIMENT64-experimental_128x96-20262019",
+    "status": "PASS",
+    "plans": 0,
+    "ticks": 0,
+    "service_transitions": 0,
+    "position_samples": 0
+  },
+  {
+    "case_id": "FIX-EXPERIMENT64-rectangle-20262018",
+    "status": "PASS",
+    "plans": 0,
+    "ticks": 0,
+    "service_transitions": 0,
+    "position_samples": 0
+  },
+  {
+    "case_id": "FIX-EXPERIMENT64-rectangle-20262019",
+    "status": "PASS",
+    "plans": 0,
+    "ticks": 0,
+    "service_transitions": 0,
+    "position_samples": 0
+  },
+  {
+    "case_id": "FIX-EXPERIMENT64-rooms-20262018",
+    "status": "PASS",
+    "plans": 113,
+    "ticks": 511,
+    "service_transitions": 256,
+    "position_samples": 65408
+  },
+  {
+    "case_id": "FIX-EXPERIMENT64-rooms-20262019",
+    "status": "PASS",
+    "plans": 112,
+    "ticks": 489,
+    "service_transitions": 256,
+    "position_samples": 62592
+  },
+  {
+    "case_id": "FIX-GEN-courtyard-20261018-16",
+    "status": "PASS",
+    "plans": 32,
+    "ticks": 396,
+    "service_transitions": 64,
+    "position_samples": 12672
+  },
+  {
+    "case_id": "FIX-GEN-courtyard-20261018-4",
+    "status": "PASS",
+    "plans": 8,
+    "ticks": 369,
+    "service_transitions": 16,
+    "position_samples": 2952
+  },
+  {
+    "case_id": "FIX-GEN-courtyard-20261019-16",
+    "status": "PASS",
+    "plans": 31,
+    "ticks": 344,
+    "service_transitions": 64,
+    "position_samples": 11008
+  },
+  {
+    "case_id": "FIX-GEN-courtyard-20261019-4",
+    "status": "PASS",
+    "plans": 7,
+    "ticks": 339,
+    "service_transitions": 16,
+    "position_samples": 2712
+  },
+  {
+    "case_id": "FIX-GEN-l-20261018-16",
+    "status": "PASS",
+    "plans": 30,
+    "ticks": 302,
+    "service_transitions": 64,
+    "position_samples": 9664
+  },
+  {
+    "case_id": "FIX-GEN-l-20261018-4",
+    "status": "PASS",
+    "plans": 8,
+    "ticks": 296,
+    "service_transitions": 16,
+    "position_samples": 2368
+  },
+  {
+    "case_id": "FIX-GEN-l-20261019-16",
+    "status": "PASS",
+    "plans": 31,
+    "ticks": 295,
+    "service_transitions": 64,
+    "position_samples": 9440
+  },
+  {
+    "case_id": "FIX-GEN-l-20261019-4",
+    "status": "PASS",
+    "plans": 8,
+    "ticks": 316,
+    "service_transitions": 16,
+    "position_samples": 2528
+  },
+  {
+    "case_id": "FIX-GEN-random-20261018-16",
+    "status": "PASS",
+    "plans": 30,
+    "ticks": 373,
+    "service_transitions": 64,
+    "position_samples": 11936
+  },
+  {
+    "case_id": "FIX-GEN-random-20261018-4",
+    "status": "PASS",
+    "plans": 8,
+    "ticks": 266,
+    "service_transitions": 16,
+    "position_samples": 2128
+  },
+  {
+    "case_id": "FIX-GEN-random-20261019-16",
+    "status": "PASS",
+    "plans": 32,
+    "ticks": 294,
+    "service_transitions": 64,
+    "position_samples": 9408
+  },
+  {
+    "case_id": "FIX-GEN-random-20261019-4",
+    "status": "PASS",
+    "plans": 8,
+    "ticks": 266,
+    "service_transitions": 16,
+    "position_samples": 2128
+  },
+  {
+    "case_id": "FIX-GEN-rectangle-20261018-16",
+    "status": "PASS",
+    "plans": 30,
+    "ticks": 365,
+    "service_transitions": 64,
+    "position_samples": 11680
+  },
+  {
+    "case_id": "FIX-GEN-rectangle-20261018-4",
+    "status": "PASS",
+    "plans": 7,
+    "ticks": 359,
+    "service_transitions": 16,
+    "position_samples": 2872
+  },
+  {
+    "case_id": "FIX-GEN-rectangle-20261019-16",
+    "status": "PASS",
+    "plans": 32,
+    "ticks": 346,
+    "service_transitions": 64,
+    "position_samples": 11072
+  },
+  {
+    "case_id": "FIX-GEN-rectangle-20261019-4",
+    "status": "PASS",
+    "plans": 8,
+    "ticks": 344,
+    "service_transitions": 16,
+    "position_samples": 2752
+  },
+  {
+    "case_id": "FIX-GEN-rooms-20261018-16",
+    "status": "PASS",
+    "plans": 32,
+    "ticks": 373,
+    "service_transitions": 64,
+    "position_samples": 11936
+  },
+  {
+    "case_id": "FIX-GEN-rooms-20261018-4",
+    "status": "PASS",
+    "plans": 8,
+    "ticks": 332,
+    "service_transitions": 16,
+    "position_samples": 2656
+  },
+  {
+    "case_id": "FIX-GEN-rooms-20261019-16",
+    "status": "PASS",
+    "plans": 31,
+    "ticks": 328,
+    "service_transitions": 64,
+    "position_samples": 10496
+  },
+  {
+    "case_id": "FIX-GEN-rooms-20261019-4",
+    "status": "PASS",
+    "plans": 8,
+    "ticks": 289,
+    "service_transitions": 16,
+    "position_samples": 2312
+  },
+  {
+    "case_id": "FIX-GEN-t-20261018-16",
+    "status": "PASS",
+    "plans": 30,
+    "ticks": 358,
+    "service_transitions": 64,
+    "position_samples": 11456
+  },
+  {
+    "case_id": "FIX-GEN-t-20261018-4",
+    "status": "PASS",
+    "plans": 8,
+    "ticks": 346,
+    "service_transitions": 16,
+    "position_samples": 2768
+  },
+  {
+    "case_id": "FIX-GEN-t-20261019-16",
+    "status": "PASS",
+    "plans": 30,
+    "ticks": 307,
+    "service_transitions": 64,
+    "position_samples": 9824
+  },
+  {
+    "case_id": "FIX-GEN-t-20261019-4",
+    "status": "PASS",
+    "plans": 8,
+    "ticks": 319,
+    "service_transitions": 16,
+    "position_samples": 2552
+  },
+  {
+    "case_id": "FIX-GEN-u-20261018-16",
+    "status": "PASS",
+    "plans": 31,
+    "ticks": 363,
+    "service_transitions": 64,
+    "position_samples": 11616
+  },
+  {
+    "case_id": "FIX-GEN-u-20261018-4",
+    "status": "PASS",
+    "plans": 8,
+    "ticks": 326,
+    "service_transitions": 16,
+    "position_samples": 2608
+  },
+  {
+    "case_id": "FIX-GEN-u-20261019-16",
+    "status": "PASS",
+    "plans": 32,
+    "ticks": 397,
+    "service_transitions": 64,
+    "position_samples": 12704
+  },
+  {
+    "case_id": "FIX-GEN-u-20261019-4",
+    "status": "PASS",
+    "plans": 8,
+    "ticks": 409,
+    "service_transitions": 16,
+    "position_samples": 3272
+  },
+  {
+    "case_id": "FIX-MODE-legacy_full",
+    "status": "PASS",
+    "plans": 7,
+    "ticks": 359,
+    "service_transitions": 16,
+    "position_samples": 2872
+  },
+  {
+    "case_id": "FIX-MODE-rolling",
+    "status": "PASS",
+    "plans": 93,
+    "ticks": 359,
+    "service_transitions": 16,
+    "position_samples": 2872
+  },
+  {
+    "case_id": "FIX-SCALE32-fleet_64x64-20262018",
+    "status": "PASS",
+    "plans": 53,
+    "ticks": 282,
+    "service_transitions": 128,
+    "position_samples": 18048
+  },
+  {
+    "case_id": "FIX-SCALE32-fleet_64x64-20262019",
+    "status": "PASS",
+    "plans": 56,
+    "ticks": 276,
+    "service_transitions": 128,
+    "position_samples": 17664
+  },
+  {
+    "case_id": "FIX-SCALE32-irregular_96x64-20262018",
+    "status": "PASS",
+    "plans": 6,
+    "ticks": 80,
+    "service_transitions": 33,
+    "position_samples": 5120
+  },
+  {
+    "case_id": "FIX-SCALE32-irregular_96x64-20262019",
+    "status": "PASS",
+    "plans": 31,
+    "ticks": 175,
+    "service_transitions": 82,
+    "position_samples": 11200
+  },
+  {
+    "case_id": "FIX-SCALE32-rectangle-20262018",
+    "status": "PASS",
+    "plans": 58,
+    "ticks": 341,
+    "service_transitions": 128,
+    "position_samples": 21824
+  },
+  {
+    "case_id": "FIX-SCALE32-rectangle-20262019",
+    "status": "PASS",
+    "plans": 6,
+    "ticks": 71,
+    "service_transitions": 29,
+    "position_samples": 4544
+  },
+  {
+    "case_id": "FIX-SCALE32-rooms-20262018",
+    "status": "PASS",
+    "plans": 60,
+    "ticks": 388,
+    "service_transitions": 128,
+    "position_samples": 24832
+  },
+  {
+    "case_id": "FIX-SCALE32-rooms-20262019",
+    "status": "PASS",
+    "plans": 60,
+    "ticks": 318,
+    "service_transitions": 128,
+    "position_samples": 20352
+  },
+  {
+    "case_id": "FIX10-EXPERIMENT64-experimental_128x96-20262018",
+    "status": "PASS",
+    "plans": 13,
+    "ticks": 126,
+    "service_transitions": 81,
+    "position_samples": 16128
+  },
+  {
+    "case_id": "FIX10-EXPERIMENT64-experimental_128x96-20262019",
+    "status": "PASS",
+    "plans": 0,
+    "ticks": 0,
+    "service_transitions": 0,
+    "position_samples": 0
+  },
+  {
+    "case_id": "FIX10-EXPERIMENT64-rectangle-20262018",
+    "status": "PASS",
+    "plans": 54,
+    "ticks": 234,
+    "service_transitions": 160,
+    "position_samples": 29952
+  },
+  {
+    "case_id": "FIX10-EXPERIMENT64-rectangle-20262019",
+    "status": "PASS",
+    "plans": 44,
+    "ticks": 185,
+    "service_transitions": 136,
+    "position_samples": 23680
+  },
+  {
+    "case_id": "FIX10-EXPERIMENT64-rooms-20262018",
+    "status": "PASS",
+    "plans": 113,
+    "ticks": 511,
+    "service_transitions": 256,
+    "position_samples": 65408
+  },
+  {
+    "case_id": "FIX10-EXPERIMENT64-rooms-20262019",
+    "status": "PASS",
+    "plans": 112,
+    "ticks": 489,
+    "service_transitions": 256,
+    "position_samples": 62592
+  }
+]

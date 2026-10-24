@@ -1,0 +1,15 @@
+{
+  "archiveUnchanged": true,
+  "archivedDocuments": 4,
+  "copiedEvidenceFiles": 52,
+  "originalAlgorithmDataUnchanged": true,
+  "originalAgentReviewsUnchanged": true,
+  "liveSourceHashesMatched": true,
+  "summaryScores": {
+    "PASS": 146,
+    "FAIL": 10,
+    "INCONCLUSIVE": 1,
+    "NOT_RUN": 23
+  },
+  "htmlSha256": "2e8a85e605f092ec984f2cde3e23b703a773ff7738dfccbe0b14fadbfb7533eb"
+}

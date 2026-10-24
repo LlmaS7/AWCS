@@ -1,0 +1,42 @@
+[
+  {
+    "case_id": "EXPERIMENT64-rectangle-20262018",
+    "independent_validation": "PASS",
+    "production_validation": "PASS",
+    "path_points": 1383,
+    "max_path_steps": 154,
+    "production_horizon": 410,
+    "within_horizon": true,
+    "robot_count": 64
+  },
+  {
+    "case_id": "EXPERIMENT64-rectangle-20262019",
+    "independent_validation": "PASS",
+    "production_validation": "PASS",
+    "path_points": 1983,
+    "max_path_steps": 167,
+    "production_horizon": 423,
+    "within_horizon": true,
+    "robot_count": 64
+  },
+  {
+    "case_id": "EXPERIMENT64-rooms-20262018",
+    "independent_validation": "PASS",
+    "production_validation": "PASS",
+    "path_points": 4182,
+    "max_path_steps": 229,
+    "production_horizon": 485,
+    "within_horizon": true,
+    "robot_count": 64
+  },
+  {
+    "case_id": "EXPERIMENT64-rooms-20262019",
+    "independent_validation": "PASS",
+    "production_validation": "PASS",
+    "path_points": 4528,
+    "max_path_steps": 236,
+    "production_horizon": 492,
+    "within_horizon": true,
+    "robot_count": 64
+  }
+]

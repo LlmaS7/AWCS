@@ -1,0 +1,38 @@
+{
+  "case_id": "EXPERIMENT64-rectangle-20262019-adaptive-resume",
+  "source_case": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rectangle-20262019",
+  "strategy": "adaptive",
+  "status": "INCONCLUSIVE",
+  "plan_checks": 0,
+  "path_points_checked": 0,
+  "actual_steps_checked": 0,
+  "failures": 7,
+  "path_safe": true,
+  "profiles_used": [],
+  "inputs": {
+    "case_id": "EXPERIMENT64-rectangle-20262019-adaptive-resume",
+    "source_case": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rectangle-20262019",
+    "strategy": "adaptive",
+    "wall_seconds": 600,
+    "ticks": 30000,
+    "from_start": false
+  },
+  "reconstruction": {
+    "from_start": false,
+    "source_case": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rectangle-20262019",
+    "domain_fields_exact": true,
+    "initial_tick": 337,
+    "initial_completed": 109,
+    "restored_dirty": true,
+    "restored_last_progress": 337,
+    "note": "Physical robot/task fields verified exactly. Pause cleared as an explicit retry; event/frame history is not used by planning. Full-mode dirty flag reconstructed from terminal reason and final-tick completions."
+  },
+  "initial_completed": 109,
+  "initial_tick": 337,
+  "terminal": "all_configurations_unsolved",
+  "completed": 109,
+  "total": 128,
+  "tick": 337,
+  "new_completed": 0,
+  "elapsed": 55.44095389999984
+}

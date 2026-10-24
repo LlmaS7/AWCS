@@ -1,0 +1,1 @@
+{"case_id": "FIX-EXPERIMENT64-rooms-20262019", "status": "PASS", "completed": 128, "total": 128, "tick": 489, "elapsed": 282.86402689999886, "error": null, "terminal": "all_tasks_completed"}

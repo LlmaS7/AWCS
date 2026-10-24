@@ -1,0 +1,10 @@
+{
+  "case_id": "H15",
+  "status": "PASS",
+  "scope": "synthetic harness regression; detailed coverage in source",
+  "details": {
+    "deadline_stops": true,
+    "process_cleanup": "owned PlannerWorker.close only"
+  },
+  "seconds": 4.850000004807953e-05
+}

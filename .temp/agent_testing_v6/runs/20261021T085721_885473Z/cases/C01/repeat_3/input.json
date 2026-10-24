@@ -1,0 +1,15 @@
+{
+  "case_id": "C01",
+  "map": "M03",
+  "text": "这单必须由空闲的R3执行。",
+  "kind": "chat",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true
+}

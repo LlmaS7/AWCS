@@ -1,0 +1,22 @@
+{
+  "reportSha256": "8435d60f772e9c7900e1cc373780503d69b86028d3818e54033b3ba8b9def218",
+  "sourceHashes": {
+    ".report\\test_res\\64台追加测试结论.md": "7e7864719ec1589983e6cfb0c886ca28caf1e47408132c5e5c5c68b498999592",
+    ".report\\test_res\\Agent测试报告.md": "a0b9b214183f39d48f6fb98f78d5e7be54922e1b875b739e25266176c59abd74",
+    ".report\\test_res\\AWCS_Agent_Test_Handoff_20261021.md": "809ceb706c7e457fbad0ef4e3f9cec1e585525a390ad2858b439644d72336e81",
+    ".report\\test_res\\交付测试结论.md": "bc4062f39174865ca3a7c0b33c4660794b09dc9847cc92facb2cc16e8eab96ca",
+    ".report\\test_res\\修复后测试结论.md": "bc4062f39174865ca3a7c0b33c4660794b09dc9847cc92facb2cc16e8eab96ca",
+    "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing_v6\\reviews\\20261021T085721_885473Z\\summary_reviewed.json": "803aeb27c67529a54526d68cd8ece313c9ae0345bccc2764e20daca24599cca4",
+    "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing_v6\\reviews\\20261021T085721_885473Z\\adjudications.json": "b7f5034c556efc4c05d3d07b1f9edb61d19c9c4d2def2bab747ec6a2503c31b1",
+    "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing_v6\\reviews\\20261021T085721_885473Z\\D07_最小反例证据.json": "d18e43b9572af548a9df89ce6d7984a9fe4134570227c3937bacc5f0096c20aa"
+  },
+  "preservedAlgorithmDataSha256": "6cd8c93e383bf7287f35e02ed117098bd4c7d017c839f82a3a7103d6dba8baa1",
+  "reviewedCases": 157,
+  "rawPathOnlyChangeVerified": true,
+  "criticalHashesVerified": {
+    "provider_calls.json": "6f921275602bb4a9a895b1eac1d186fcc4d6e145445a4e44937f9dd58361054d",
+    "tool_trace.json": "262bef1217e49311f8416bc0c0f76b30c67efa91b8e6ddd50f0f0ea402e117d4",
+    "case_initial.json": "e5c81cec5479a56bafc35972c257529c03d1419142efcc2b2c4bf38198fe63b8",
+    "case_final.json": "a77f507f9a80d4a15665c543b313a08e8235bdb3560aa3b32e0b94a3a2ff6eeb"
+  }
+}

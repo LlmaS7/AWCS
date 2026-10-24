@@ -1,0 +1,524 @@
+{
+  "case_id": "B10",
+  "repeat": 2,
+  "layer": "matrix",
+  "execution_status": "COMPLETED",
+  "raw_status": "INCONCLUSIVE",
+  "effective_status": "INCONCLUSIVE",
+  "review_status": "PENDING",
+  "human_signoff": null,
+  "evidence": "E:\\_PROJECTS\\AWCS\\.temp\\agent_testing_v6\\runs\\20261021T085721_885473Z\\cases\\B10\\repeat_2",
+  "fixture_valid": true,
+  "protocol_verdict": "PASS",
+  "business_verdict": "PASS",
+  "required_process_verdict": "PASS",
+  "response_verdict": "PENDING",
+  "network_error": false,
+  "details": {
+    "business_errors": [],
+    "process_errors": [],
+    "before": {
+      "generation": 0,
+      "tick": 0,
+      "tasks": [],
+      "task_views": [],
+      "robots": [
+        {
+          "id": 1,
+          "position": [
+            24,
+            58
+          ],
+          "previous": [
+            24,
+            58
+          ],
+          "parking": [
+            24,
+            58
+          ],
+          "phase": "idle",
+          "task_id": null,
+          "next_task_id": null,
+          "service_left": 0,
+          "loaded": false,
+          "path": [
+            [
+              24,
+              58
+            ]
+          ],
+          "distance": 0,
+          "waits": 0,
+          "completed": 0
+        },
+        {
+          "id": 2,
+          "position": [
+            25,
+            58
+          ],
+          "previous": [
+            25,
+            58
+          ],
+          "parking": [
+            25,
+            58
+          ],
+          "phase": "idle",
+          "task_id": null,
+          "next_task_id": null,
+          "service_left": 0,
+          "loaded": false,
+          "path": [
+            [
+              25,
+              58
+            ]
+          ],
+          "distance": 0,
+          "waits": 0,
+          "completed": 0
+        },
+        {
+          "id": 3,
+          "position": [
+            26,
+            58
+          ],
+          "previous": [
+            26,
+            58
+          ],
+          "parking": [
+            26,
+            58
+          ],
+          "phase": "idle",
+          "task_id": null,
+          "next_task_id": null,
+          "service_left": 0,
+          "loaded": false,
+          "path": [
+            [
+              26,
+              58
+            ]
+          ],
+          "distance": 0,
+          "waits": 0,
+          "completed": 0
+        },
+        {
+          "id": 4,
+          "position": [
+            27,
+            58
+          ],
+          "previous": [
+            27,
+            58
+          ],
+          "parking": [
+            27,
+            58
+          ],
+          "phase": "idle",
+          "task_id": null,
+          "next_task_id": null,
+          "service_left": 0,
+          "loaded": false,
+          "path": [
+            [
+              27,
+              58
+            ]
+          ],
+          "distance": 0,
+          "waits": 0,
+          "completed": 0
+        }
+      ],
+      "dirty": false,
+      "auto": false,
+      "planning": false,
+      "metrics": {
+        "planning_seconds": 0.013595999998869956,
+        "last_plan_ms": 13.595999998869956,
+        "plans": 1,
+        "cbs_nodes": 1,
+        "preemptions": 0,
+        "collisions": 0,
+        "recovery_attempts": 0,
+        "reservation_plans": 0,
+        "planner": "CBS",
+        "reservation_orders": 0,
+        "candidate_count": 1,
+        "planning_scope": "两阶段硬优先级 / 软偏好 / 静态ETA匹配＋协调可行路线",
+        "planning_status": "success"
+      },
+      "assignment": {
+        "pairs": {},
+        "eta_sum": 0,
+        "priority_prefix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "scope": "两阶段硬优先级 / 软偏好 / 静态ETA匹配＋协调可行路线",
+        "cost_model": "静态ETA匹配；静态/预约估计",
+        "path_cost": [
+          0,
+          0,
+          0
+        ],
+        "candidate_count": 1
+      }
+    },
+    "after": {
+      "generation": 0,
+      "tick": 0,
+      "tasks": [],
+      "task_views": [],
+      "robots": [
+        {
+          "id": 1,
+          "position": [
+            24,
+            58
+          ],
+          "previous": [
+            24,
+            58
+          ],
+          "parking": [
+            24,
+            58
+          ],
+          "phase": "idle",
+          "task_id": null,
+          "next_task_id": null,
+          "service_left": 0,
+          "loaded": false,
+          "path": [
+            [
+              24,
+              58
+            ]
+          ],
+          "distance": 0,
+          "waits": 0,
+          "completed": 0
+        },
+        {
+          "id": 2,
+          "position": [
+            25,
+            58
+          ],
+          "previous": [
+            25,
+            58
+          ],
+          "parking": [
+            25,
+            58
+          ],
+          "phase": "idle",
+          "task_id": null,
+          "next_task_id": null,
+          "service_left": 0,
+          "loaded": false,
+          "path": [
+            [
+              25,
+              58
+            ]
+          ],
+          "distance": 0,
+          "waits": 0,
+          "completed": 0
+        },
+        {
+          "id": 3,
+          "position": [
+            26,
+            58
+          ],
+          "previous": [
+            26,
+            58
+          ],
+          "parking": [
+            26,
+            58
+          ],
+          "phase": "idle",
+          "task_id": null,
+          "next_task_id": null,
+          "service_left": 0,
+          "loaded": false,
+          "path": [
+            [
+              26,
+              58
+            ]
+          ],
+          "distance": 0,
+          "waits": 0,
+          "completed": 0
+        },
+        {
+          "id": 4,
+          "position": [
+            27,
+            58
+          ],
+          "previous": [
+            27,
+            58
+          ],
+          "parking": [
+            27,
+            58
+          ],
+          "phase": "idle",
+          "task_id": null,
+          "next_task_id": null,
+          "service_left": 0,
+          "loaded": false,
+          "path": [
+            [
+              27,
+              58
+            ]
+          ],
+          "distance": 0,
+          "waits": 0,
+          "completed": 0
+        }
+      ],
+      "dirty": false,
+      "auto": false,
+      "planning": false,
+      "metrics": {
+        "planning_seconds": 0.013595999998869956,
+        "last_plan_ms": 13.595999998869956,
+        "plans": 1,
+        "cbs_nodes": 1,
+        "preemptions": 0,
+        "collisions": 0,
+        "recovery_attempts": 0,
+        "reservation_plans": 0,
+        "planner": "CBS",
+        "reservation_orders": 0,
+        "candidate_count": 1,
+        "planning_scope": "两阶段硬优先级 / 软偏好 / 静态ETA匹配＋协调可行路线",
+        "planning_status": "success"
+      },
+      "assignment": {
+        "pairs": {},
+        "eta_sum": 0,
+        "priority_prefix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "scope": "两阶段硬优先级 / 软偏好 / 静态ETA匹配＋协调可行路线",
+        "cost_model": "静态ETA匹配；静态/预约估计",
+        "path_cost": [
+          0,
+          0,
+          0
+        ],
+        "candidate_count": 1
+      }
+    },
+    "expected_new": [],
+    "events": [
+      {
+        "id": 1,
+        "kind": "start",
+        "request_id": "685dc9f9deeb4451a2f8f2fe277dab57",
+        "job": "message",
+        "generation": 0,
+        "text": "查询T999999999任务的当前状态。",
+        "task_id": null
+      },
+      {
+        "id": 2,
+        "kind": "progress",
+        "request_id": "685dc9f9deeb4451a2f8f2fe277dab57",
+        "tool": "get_status"
+      },
+      {
+        "id": 3,
+        "kind": "text",
+        "request_id": "685dc9f9deeb4451a2f8f2fe277dab57",
+        "text": "未"
+      },
+      {
+        "id": 4,
+        "kind": "text",
+        "request_id": "685dc9f9deeb4451a2f8f2fe277dab57",
+        "text": "查到"
+      },
+      {
+        "id": 5,
+        "kind": "text",
+        "request_id": "685dc9f9deeb4451a2f8f2fe277dab57",
+        "text": "该"
+      },
+      {
+        "id": 6,
+        "kind": "text",
+        "request_id": "685dc9f9deeb4451a2f8f2fe277dab57",
+        "text": "任务"
+      },
+      {
+        "id": 7,
+        "kind": "text",
+        "request_id": "685dc9f9deeb4451a2f8f2fe277dab57",
+        "text": "："
+      },
+      {
+        "id": 8,
+        "kind": "text",
+        "request_id": "685dc9f9deeb4451a2f8f2fe277dab57",
+        "text": "系统中"
+      },
+      {
+        "id": 9,
+        "kind": "text",
+        "request_id": "685dc9f9deeb4451a2f8f2fe277dab57",
+        "text": "不存在"
+      },
+      {
+        "id": 10,
+        "kind": "text",
+        "request_id": "685dc9f9deeb4451a2f8f2fe277dab57",
+        "text": "任务"
+      },
+      {
+        "id": 11,
+        "kind": "text",
+        "request_id": "685dc9f9deeb4451a2f8f2fe277dab57",
+        "text": " **"
+      },
+      {
+        "id": 12,
+        "kind": "text",
+        "request_id": "685dc9f9deeb4451a2f8f2fe277dab57",
+        "text": "T"
+      },
+      {
+        "id": 13,
+        "kind": "text",
+        "request_id": "685dc9f9deeb4451a2f8f2fe277dab57",
+        "text": "999"
+      },
+      {
+        "id": 14,
+        "kind": "text",
+        "request_id": "685dc9f9deeb4451a2f8f2fe277dab57",
+        "text": "999"
+      },
+      {
+        "id": 15,
+        "kind": "text",
+        "request_id": "685dc9f9deeb4451a2f8f2fe277dab57",
+        "text": "999"
+      },
+      {
+        "id": 16,
+        "kind": "text",
+        "request_id": "685dc9f9deeb4451a2f8f2fe277dab57",
+        "text": "**"
+      },
+      {
+        "id": 17,
+        "kind": "text",
+        "request_id": "685dc9f9deeb4451a2f8f2fe277dab57",
+        "text": "。"
+      },
+      {
+        "id": 18,
+        "kind": "text",
+        "request_id": "685dc9f9deeb4451a2f8f2fe277dab57",
+        "text": "请"
+      },
+      {
+        "id": 19,
+        "kind": "text",
+        "request_id": "685dc9f9deeb4451a2f8f2fe277dab57",
+        "text": "确认"
+      },
+      {
+        "id": 20,
+        "kind": "text",
+        "request_id": "685dc9f9deeb4451a2f8f2fe277dab57",
+        "text": "任务"
+      },
+      {
+        "id": 21,
+        "kind": "text",
+        "request_id": "685dc9f9deeb4451a2f8f2fe277dab57",
+        "text": "编号"
+      },
+      {
+        "id": 22,
+        "kind": "text",
+        "request_id": "685dc9f9deeb4451a2f8f2fe277dab57",
+        "text": "是否正确"
+      },
+      {
+        "id": 23,
+        "kind": "text",
+        "request_id": "685dc9f9deeb4451a2f8f2fe277dab57",
+        "text": "。"
+      },
+      {
+        "id": 24,
+        "kind": "done",
+        "request_id": "685dc9f9deeb4451a2f8f2fe277dab57"
+      }
+    ],
+    "pending": [
+      {
+        "claim": "Chinese response correctness and required clarification",
+        "evidence": "provider_calls.json, events.json, tool_trace.json"
+      }
+    ],
+    "early_stop": false,
+    "guard_errors": [],
+    "fixture_errors": []
+  },
+  "protocol_errors": []
+}

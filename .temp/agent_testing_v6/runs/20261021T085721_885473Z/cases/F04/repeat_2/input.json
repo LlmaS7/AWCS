@@ -1,0 +1,43 @@
+{
+  "case_id": "F04",
+  "map": "M03",
+  "text": "",
+  "kind": "document",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true,
+  "document": {
+    "filename": "F04.md",
+    "lines": [
+      "需求甲：四号货架送二号配送点。",
+      "历史甲：已完成四号货架到一号配送点的搬运。",
+      "示例甲：例如登记货架2到一号配送点，不是真实订单。",
+      "否定甲：不要搬运登记货架2到二号配送点。"
+    ],
+    "text": "| 搬运要求 |\n| --- |\n| 需求甲：四号货架送二号配送点。 |\n| 历史甲：已完成四号货架到一号配送点的搬运。 |\n| 示例甲：例如登记货架2到一号配送点，不是真实订单。 |\n| 否定甲：不要搬运登记货架2到二号配送点。 |",
+    "truth": [
+      {
+        "marker": "需求甲",
+        "text": "需求甲：四号货架送二号配送点。",
+        "pickup_id": "P05",
+        "delivery_id": "D2",
+        "priority": 2,
+        "count": 1,
+        "quantity_kind": "unspecified",
+        "constraints": []
+      }
+    ],
+    "excluded": [
+      "历史甲：已完成四号货架到一号配送点的搬运。",
+      "示例甲：例如登记货架2到一号配送点，不是真实订单。",
+      "否定甲：不要搬运登记货架2到二号配送点。"
+    ],
+    "confirmation": "extract_only"
+  }
+}

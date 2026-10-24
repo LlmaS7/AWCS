@@ -1,0 +1,65 @@
+{
+  "case_id": "PROBE-rectangle",
+  "stage": "P4-probe",
+  "status": "PASS",
+  "assignment_correct": null,
+  "path_safe": null,
+  "tasks_completed": false,
+  "plan_checks": 0,
+  "path_points_checked": 0,
+  "actual_steps_checked": 0,
+  "planning_times": [],
+  "inputs": {
+    "case_id": "PROBE-rectangle",
+    "stage": "P4-probe",
+    "kind": "probe",
+    "map_file": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\datasets\\maps\\rectangle_20261018.json",
+    "robots": 16,
+    "seed": 20262018,
+    "timeout": 90
+  },
+  "details": {
+    "analysis": {
+      "valid": true,
+      "width": 96,
+      "height": 64,
+      "default_robots": 16,
+      "max_robots": 32,
+      "floor_cells": 5520,
+      "void_cells": 624,
+      "free_cells": 4799,
+      "shelves": 49,
+      "pickups": 49,
+      "deliveries": 6,
+      "parking": 40,
+      "obstacles": 20,
+      "pending_obstacles": 0,
+      "sha256": "d1baf9fa9d50b58c6637aec1c64d0fa218c9a4826dd2a13be2fcdac0a9643692",
+      "topology": {
+        "map_hash": "3ffb99a5c0b54c18ae337bf22b5c0e3a6f86dcc4d00a16d61fb72cf9515e8b96",
+        "free_cells": 4799,
+        "cutpoints": 1,
+        "bridges": 1,
+        "corridors": 0,
+        "dead_ends": 1,
+        "longest_corridor": 0,
+        "note": "拓扑风险诊断，不是多机可解证明"
+      },
+      "warning": "静态检查通过不代表任意任务流或机器人数量都能成功规划。"
+    },
+    "probe": {
+      "status": "passed",
+      "robots": 16,
+      "seed": 20262018,
+      "tasks": 16,
+      "completed": 16,
+      "tick": 183,
+      "collisions": 0,
+      "elapsed": 1.398,
+      "plan_seconds": 3,
+      "failure": null,
+      "note": "仅此地图快照、数量、种子和有限随机任务批；不是无死锁证明。"
+    }
+  },
+  "elapsed": 1.434609399999772
+}

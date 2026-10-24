@@ -1,0 +1,32 @@
+{
+  "stage": "protocol",
+  "passed": true,
+  "scope": "read-only production adapter and tool roundtrip",
+  "events": [
+    {
+      "id": 1,
+      "kind": "start",
+      "request_id": "59f2781a46884da4bb62db7fa483611b",
+      "job": "test",
+      "generation": 0,
+      "text": "",
+      "task_id": null
+    },
+    {
+      "id": 2,
+      "kind": "notice",
+      "request_id": "59f2781a46884da4bb62db7fa483611b",
+      "message": "连接与只读工具往返测试通过"
+    },
+    {
+      "id": 3,
+      "kind": "done",
+      "request_id": "59f2781a46884da4bb62db7fa483611b"
+    }
+  ],
+  "calls": 2,
+  "tasks": 0,
+  "network_errors": [],
+  "evidence_origin": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\protocol\\result.json",
+  "inherited": true
+}

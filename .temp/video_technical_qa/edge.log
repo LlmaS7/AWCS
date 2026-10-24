@@ -1,0 +1,13 @@
+[31568:1056:1024/180045.683:ERROR:net\socket\tcp_socket_win.cc:615] bind() returned an error: 以一种访问权限不允许的方式做了一个访问套接字的尝试。 (0x271D)
+
+DevTools listening on ws://[::1]:9336/devtools/browser/47450f9e-1f07-4cfc-9a90-65966961d954
+[31568:29932:1024/180050.775:ERROR:components\device_event_log\device_event_log_impl.cc:257] [18:00:50.775] USB: usb_device_win.cc:66 Failed to open \\?\usb#vid_05e3&pid_0610#5&28cf2cd7&0&1#{f18a0e88-c30c-11d0-8815-00a0c906bed8}: 拒绝访问。 (0x5)
+[31568:29932:1024/180050.777:ERROR:components\device_event_log\device_event_log_impl.cc:257] [18:00:50.777] USB: usb_device_win.cc:66 Failed to open \\?\usb#root_hub30#4&30bc4138&0&0#{f18a0e88-c30c-11d0-8815-00a0c906bed8}: 拒绝访问。 (0x5)
+[31568:29932:1024/180050.777:ERROR:components\device_event_log\device_event_log_impl.cc:257] [18:00:50.778] USB: usb_device_win.cc:66 Failed to open \\?\usb#vid_05e3&pid_0610#5&28cf2cd7&0&4#{f18a0e88-c30c-11d0-8815-00a0c906bed8}: 拒绝访问。 (0x5)
+[31568:29932:1024/180050.778:ERROR:components\device_event_log\device_event_log_impl.cc:257] [18:00:50.778] USB: usb_device_win.cc:66 Failed to open \\?\usb#root_hub30#4&30bc4138&0&0#{f18a0e88-c30c-11d0-8815-00a0c906bed8}: 拒绝访问。 (0x5)
+[31568:29932:1024/180050.781:ERROR:components\device_event_log\device_event_log_impl.cc:257] [18:00:50.781] USB: usb_device_win.cc:66 Failed to open \\?\usb#vid_05e3&pid_0610#5&28cf2cd7&0&1#{f18a0e88-c30c-11d0-8815-00a0c906bed8}: 拒绝访问。 (0x5)
+[31568:29932:1024/180051.034:ERROR:chrome\browser\edge_pinned_sites\secondary_tile_client.cc:283] OnSecondaryTileManagerDisconnected. Probing host package health before responding to callbacks
+[31568:29932:1024/180051.034:ERROR:chrome\browser\edge_pinned_sites\pinned_sites_cache.cc:284] Failed to retrieve pinned sites
+[1024/180051.437:ERROR:third_party\crashpad\crashpad\util\win\registration_protocol_win.cc:136] TransactNamedPipe: 管道已结束。 (0x6D)
+[1024/180051.447:ERROR:third_party\crashpad\crashpad\client\crashpad_client_win.cc:874] crash server failed to launch, no dump captured
+[1024/180053.512:ERROR:third_party\crashpad\crashpad\client\crashpad_client_win.cc:158] crash server failed to launch

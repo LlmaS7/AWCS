@@ -1,0 +1,7 @@
+{
+  "actor": "test_harness_confirmation",
+  "frozen_changes": {
+    "delivery_id": "D2",
+    "reviewed": true
+  }
+}

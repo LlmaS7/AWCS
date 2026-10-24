@@ -1,0 +1,341 @@
+{
+  "document": "01_AWCS研究报告_预览稿.md",
+  "checked_at": "2026-10-22T19:19:29.901173+08:00",
+  "scope": "文稿、已有结果重算与相对链接检查；不运行新增业务实验或模型请求",
+  "status": "PASS",
+  "statistics": {
+    "characters": 29639,
+    "chinese_characters": 16364,
+    "lines": 705,
+    "numbered_result_and_method_tables": 12,
+    "mermaid_figures": 3,
+    "archived_map_figures": 1,
+    "public_references": 8
+  },
+  "checks": [
+    {
+      "name": "00_研究报告大纲.md:UTF8",
+      "pass": true,
+      "detail": "可解码，无替换字符或空字节"
+    },
+    {
+      "name": "00_研究报告大纲.md:代码围栏",
+      "pass": true,
+      "detail": {
+        "fence_lines": 0
+      }
+    },
+    {
+      "name": "00_研究报告大纲.md:相对链接",
+      "pass": true,
+      "detail": {
+        "local_links": 0,
+        "web_links": 0,
+        "missing": []
+      }
+    },
+    {
+      "name": "00_研究报告大纲.md:表格列数",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "00_研究报告大纲.md:无凭据模式",
+      "pass": true,
+      "detail": "仅检查文稿文本，不读取凭据文件"
+    },
+    {
+      "name": "01_AWCS研究报告_预览稿.md:UTF8",
+      "pass": true,
+      "detail": "可解码，无替换字符或空字节"
+    },
+    {
+      "name": "01_AWCS研究报告_预览稿.md:代码围栏",
+      "pass": true,
+      "detail": {
+        "fence_lines": 6
+      }
+    },
+    {
+      "name": "01_AWCS研究报告_预览稿.md:相对链接",
+      "pass": true,
+      "detail": {
+        "local_links": 44,
+        "web_links": 16,
+        "missing": []
+      }
+    },
+    {
+      "name": "01_AWCS研究报告_预览稿.md:表格列数",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "01_AWCS研究报告_预览稿.md:无凭据模式",
+      "pass": true,
+      "detail": "仅检查文稿文本，不读取凭据文件"
+    },
+    {
+      "name": "02_资料来源与核验说明.md:UTF8",
+      "pass": true,
+      "detail": "可解码，无替换字符或空字节"
+    },
+    {
+      "name": "02_资料来源与核验说明.md:代码围栏",
+      "pass": true,
+      "detail": {
+        "fence_lines": 0
+      }
+    },
+    {
+      "name": "02_资料来源与核验说明.md:相对链接",
+      "pass": true,
+      "detail": {
+        "local_links": 4,
+        "web_links": 8,
+        "missing": []
+      }
+    },
+    {
+      "name": "02_资料来源与核验说明.md:表格列数",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "02_资料来源与核验说明.md:无凭据模式",
+      "pass": true,
+      "detail": "仅检查文稿文本，不读取凭据文件"
+    },
+    {
+      "name": "正文七章齐全",
+      "pass": true,
+      "detail": [
+        "研究背景与目标",
+        "相关方法与问题建模",
+        "系统总体方案与功能设计",
+        "核心方法与实现",
+        "实验设计与评价方法",
+        "实验结果与讨论",
+        "结论与展望"
+      ]
+    },
+    {
+      "name": "研究图齐全",
+      "pass": true,
+      "detail": {
+        "mermaid": 3,
+        "archived_map_atlas": true
+      }
+    },
+    {
+      "name": "结果表编号连续",
+      "pass": true,
+      "detail": "表1—12"
+    },
+    {
+      "name": "无旧项目内容",
+      "pass": true,
+      "detail": "报告事实仅来自AWCS和公开资料"
+    },
+    {
+      "name": "背景篇幅受控",
+      "pass": true,
+      "detail": {
+        "background_chars": 2304,
+        "body_chars": 23635,
+        "fraction": 0.0975
+      }
+    },
+    {
+      "name": "表5核心检查组成",
+      "pass": true,
+      "detail": {
+        "P0": 10,
+        "P1": 1325,
+        "P2": 12,
+        "P3": 354,
+        "P5": 14
+      }
+    },
+    {
+      "name": "交付记录统计",
+      "pass": true,
+      "detail": {
+        "records": 1767,
+        "status_counts": {
+          "PASS": 1762,
+          "INCONCLUSIVE": 5
+        }
+      }
+    },
+    {
+      "name": "P4-main:完成数",
+      "pass": true,
+      "detail": {
+        "total": 28,
+        "passed": 28
+      }
+    },
+    {
+      "name": "P6-32:完成数",
+      "pass": true,
+      "detail": {
+        "total": 8,
+        "passed": 5
+      }
+    },
+    {
+      "name": "P4-dynamic:完成数",
+      "pass": true,
+      "detail": {
+        "total": 3,
+        "passed": 1
+      }
+    },
+    {
+      "name": "表8:FIX-DYNAMIC-courtyard",
+      "pass": true,
+      "detail": "| 庭院，有限动态流 | 16 | 35/60 | 337 | 0.633 | INCONCLUSIVE |"
+    },
+    {
+      "name": "表8:FIX-DYNAMIC-rectangle",
+      "pass": true,
+      "detail": "| 规整，有限动态流 | 16 | 43/60 | 396 | 0.746 | INCONCLUSIVE |"
+    },
+    {
+      "name": "表8:FIX-DYNAMIC-rooms",
+      "pass": true,
+      "detail": "| 组合房间，有限动态流 | 16 | 60/60 | 604 | 0.449 | PASS |"
+    },
+    {
+      "name": "表8:FIX-SCALE32-fleet_64x64-20262018",
+      "pass": true,
+      "detail": "| fleet_64x64，任务种子 20262018 | 32 | 64/64 | 282 | 1.039 | PASS |"
+    },
+    {
+      "name": "表8:FIX-SCALE32-fleet_64x64-20262019",
+      "pass": true,
+      "detail": "| fleet_64x64，任务种子 20262019 | 32 | 64/64 | 276 | 1.342 | PASS |"
+    },
+    {
+      "name": "表8:FIX-SCALE32-irregular_96x64-20262018",
+      "pass": true,
+      "detail": "| irregular_96x64，任务种子 20262018 | 32 | 6/64 | 80 | 3.003 | INCONCLUSIVE |"
+    },
+    {
+      "name": "表8:FIX-SCALE32-irregular_96x64-20262019",
+      "pass": true,
+      "detail": "| irregular_96x64，任务种子 20262019 | 32 | 32/64 | 175 | 2.205 | INCONCLUSIVE |"
+    },
+    {
+      "name": "表8:FIX-SCALE32-rectangle-20262018",
+      "pass": true,
+      "detail": "| 规整，任务种子 20262018 | 32 | 64/64 | 341 | 1.971 | PASS |"
+    },
+    {
+      "name": "表8:FIX-SCALE32-rectangle-20262019",
+      "pass": true,
+      "detail": "| 规整，任务种子 20262019 | 32 | 6/64 | 71 | 3.004 | INCONCLUSIVE |"
+    },
+    {
+      "name": "表8:FIX-SCALE32-rooms-20262018",
+      "pass": true,
+      "detail": "| 组合房间，任务种子 20262018 | 32 | 64/64 | 388 | 1.064 | PASS |"
+    },
+    {
+      "name": "表8:FIX-SCALE32-rooms-20262019",
+      "pass": true,
+      "detail": "| 组合房间，任务种子 20262019 | 32 | 64/64 | 318 | 1.542 | PASS |"
+    },
+    {
+      "name": "Agent原矩阵",
+      "pass": true,
+      "detail": {
+        "PASS": 146,
+        "FAIL": 10,
+        "INCONCLUSIVE": 1,
+        "NOT_RUN": 23
+      }
+    },
+    {
+      "name": "表10:A",
+      "pass": true,
+      "detail": "30 | 0 | 0 | 0"
+    },
+    {
+      "name": "表10:B",
+      "pass": true,
+      "detail": "30 | 0 | 0 | 0"
+    },
+    {
+      "name": "表10:C",
+      "pass": true,
+      "detail": "27 | 2 | 1 | 0"
+    },
+    {
+      "name": "表10:D",
+      "pass": true,
+      "detail": "24 | 3 | 0 | 3"
+    },
+    {
+      "name": "表10:E",
+      "pass": true,
+      "detail": "20 | 0 | 0 | 10"
+    },
+    {
+      "name": "表10:F",
+      "pass": true,
+      "detail": "15 | 5 | 0 | 10"
+    },
+    {
+      "name": "D07真实模型批次",
+      "pass": true,
+      "detail": {
+        "calls": 22,
+        "sessions": 12
+      }
+    },
+    {
+      "name": "D07:ambiguous",
+      "pass": true,
+      "detail": {
+        "count": 3,
+        "guard_rejections": 0
+      }
+    },
+    {
+      "name": "D07:explicit_followup",
+      "pass": true,
+      "detail": {
+        "count": 3,
+        "guard_rejections": 0
+      }
+    },
+    {
+      "name": "D07:associated",
+      "pass": true,
+      "detail": {
+        "count": 3,
+        "guard_rejections": 0
+      }
+    },
+    {
+      "name": "D07模型配置",
+      "pass": true,
+      "detail": {
+        "model": "deepseek-flash",
+        "effort": "high"
+      }
+    }
+  ],
+  "document_sha256": {
+    "00_研究报告大纲.md": "6acefb4ec145eea83523b2068162ea05ccd49c8f96177032d2aeb75839787ff6",
+    "01_AWCS研究报告_预览稿.md": "c0865b43d36fec90af023ad291b31a6c7cacf6a7c67f29d2405e1321c45eb4c6",
+    "02_资料来源与核验说明.md": "631e4c5c407344f27e7f1a265143d6f8efc672cac097afb5c3a64e26f37b35d8"
+  },
+  "evidence_sha256": {
+    ".temp\\testing\\runs\\fix64_20261020_170454\\delivery_32\\验收结果.jsonl": "a12258678b7c1edd326b2d02b6a027b6ef68be20471788515afe91817228e361",
+    ".report\\test_res\\evidence\\agent_v6\\summary_reviewed.json": "803aeb27c67529a54526d68cd8ece313c9ae0345bccc2764e20daca24599cca4",
+    ".report\\test_res\\evidence\\d07_live_20261022\\summary.json": "d4cd6aa376f810a3e339589d4cacdc3b1ff0c3a9000548b1359e57778a4358bf"
+  }
+}

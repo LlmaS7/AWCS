@@ -1,0 +1,1 @@
+{"case_id": "FIX-COUPLING-estimated-0", "status": "PASS", "completed": 8, "total": 8, "tick": 359, "elapsed": 1.3559814000000188, "error": null, "terminal": "all_tasks_completed"}

@@ -1,0 +1,1543 @@
+[
+  {
+    "case_id": "A01",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "当前货架映射P03、D2、默认2级和R4取货阶段均与创建回执一致。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A01\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "6052bb4006d33c4c1aa005a14a7e06629ceb2ee05fc93e2db8bd72a8b36b45e3",
+      "case_initial.json": "32ea50bb6e278177001a130471d2b76a2b56f95fe9ce09c79bd5c7a8f57a9314",
+      "final.json": "6052bb4006d33c4c1aa005a14a7e06629ceb2ee05fc93e2db8bd72a8b36b45e3",
+      "input.json": "46297e95a6df861a85089a4c7482376f03c695413b3abf4f02d7ad817d4f9d6c",
+      "provider_calls.json": "573c6ffbaebeeb0202a4f590670778630f28ff1a99a5781855f763a5760195b4",
+      "result.json": "259c96e1e05fed992520b1a414533c3fc992ba00e5c2c9b77e026c945d6527e4",
+      "tool_trace.json": "3e0d221c9cdf167650121b18121afab4df7333d97d16efd7c575e38dd852a0d1"
+    },
+    "claims": [
+      {
+        "quote": "已创建任务 T001：\n\n- 取货：四号货架（对应取货点03）\n- 配送：2号配送点（复核台）\n- 等级：2（普通）\n- 当前状态：已分配机器人 R4，处于取货阶段；该分配由系统自动完成。\n\n如需加急、指定机器人或再复制一份，请告诉我。",
+        "provider_call_index": 3,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A01\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A01\\repeat_1\\case_final.json"
+        ],
+        "reason": "当前货架映射P03、D2、默认2级和R4取货阶段均与创建回执一致。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "A02",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "当前地图四号货架P01，正确创建D2普通单，不凭编号猜测。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A02\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "069865664940e6f0b0eb6e07c38fd733c4864e1e236fb8a5a099522706257cdd",
+      "case_initial.json": "7a3c8574e4ab8a14e5cff8743f949f15788f9b4d78fa93d6e48bb9bef7ac9677",
+      "final.json": "069865664940e6f0b0eb6e07c38fd733c4864e1e236fb8a5a099522706257cdd",
+      "input.json": "5ff674406fd311eab2617532ebc3d4bf0d2111377e0876b7e3e77c9ae6397033",
+      "provider_calls.json": "44ea6471301bb6b2202ba19eea0f8ea96bb25b02c65f495248efc246b5b248aa",
+      "result.json": "c2330fda0ff0c3b084ea102a29587a777580220dfe5213b7d1be7e76f2820719",
+      "tool_trace.json": "bfe1a7752315c2b9c651d2cc8adec1b3d087f0f8a37cc51947249affeb3b42e8"
+    },
+    "claims": [
+      {
+        "quote": "任务已创建：\n\n- **任务**：T001\n- **取货点**：四号货架（P01）\n- **配送点**：2号配送点（D2）\n- **等级**：2级\n- **当前状态**：已分配，处于取货阶段\n- **执行机器人**：R4（自动分配）\n\n如需改为紧急、指定机器人或取消，请告诉我。",
+        "provider_call_index": 3,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A02\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A02\\repeat_1\\case_final.json"
+        ],
+        "reason": "当前地图四号货架P01，正确创建D2普通单，不凭编号猜测。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "A03",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "蓝色货架P05、复核台D2映射正确；创建中与已创建的时点区分正确。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A03\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "7779a09479f403ae030bbb022a5f4b20532ecf8e90cfc6a4fa5efcd1a15cfd03",
+      "case_initial.json": "c08d78e4c18e12b2be10861b96e4c0eff6ac319b818a2bddd6392498ddb7aa4c",
+      "final.json": "7779a09479f403ae030bbb022a5f4b20532ecf8e90cfc6a4fa5efcd1a15cfd03",
+      "input.json": "732537d3f31798bc56564d8d63be5c5cd66aae5fa31a10912c5586f8ced92218",
+      "provider_calls.json": "8d5cff460bffc958923b1c2d4ed2f00bda8ed2735b3ef7bbc566c3cbaf35f38c",
+      "result.json": "36c763a52c76b8768a7eed0eb4122083a3176be6b7c586e082b281620d7eb6a2",
+      "tool_trace.json": "f7cf49a6cb590698a80616e8f78c0ae23143b9a043b38a09e59c77ed42dd3689"
+    },
+    "claims": [
+      {
+        "quote": "蓝色货架在登记信息中对应“四号货架”（取货点P05）；复核台对应2号配送点（D2）。创建任务中。",
+        "provider_call_index": 2,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A03\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A03\\repeat_1\\case_final.json"
+        ],
+        "reason": "蓝色货架P05、复核台D2映射正确；创建中与已创建的时点区分正确。"
+      },
+      {
+        "quote": "任务已创建：\n\n- 任务号：T001\n- 取货：四号货架（别名“蓝色货架”，取货点05）\n- 配送：复核台（2号配送点 D2）\n- 等级：2级（普通），默认\n- 当前状态：已自动分配给机器人 R4，处于取货阶段（尚未装货）\n\n需要紧急提升等级、指定机器人或取消的话告诉我。",
+        "provider_call_index": 3,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A03\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A03\\repeat_1\\case_final.json"
+        ],
+        "reason": "蓝色货架P05、复核台D2映射正确；创建中与已创建的时点区分正确。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "A04",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "紧急5级，地点、数量、执行机器人和阶段均与回执一致。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A04\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "433a8de1e3b36208ff9d2986b1d48bfd8d4b21ec74a8b8862777031a058724f4",
+      "case_initial.json": "a618cf2112028f3f4c91d424f796f5b588de51e84ea9713d084923f4c0dd4389",
+      "final.json": "433a8de1e3b36208ff9d2986b1d48bfd8d4b21ec74a8b8862777031a058724f4",
+      "input.json": "ea3e75a58dcd5ae249fd85b44111e849e43785e4592012a6a7e0f1c03e66a6a6",
+      "provider_calls.json": "fd72e59576f5f15274ab90e621f8da5df1ec445aded510a15e205084e5d1d62b",
+      "result.json": "24c3101ade250c2997f28dcd0d6f69afe2a55fba17a4a06d0533db7b661cd553",
+      "tool_trace.json": "068f47ffefc56931d1fa02a8be63ddde728677272bcaf12ebcf99b1de7a690c0"
+    },
+    "claims": [
+      {
+        "quote": "已按紧急（5级）创建任务 **T001**：\n\n- 取货：四号货架（取货点03，P03）\n- 配送：2号配送点（D2）\n- 当前状态：已分配，取货阶段；执行机器人 R4（自动分配）",
+        "provider_call_index": 3,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A04\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A04\\repeat_1\\case_final.json"
+        ],
+        "reason": "紧急5级，地点、数量、执行机器人和阶段均与回执一致。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "A05",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "明确3级未误设紧急5级；状态说明准确。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A05\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "86334bd50dafaeccd733d3e568a621d54b992c872fd80c8856a27f1f719b96e6",
+      "case_initial.json": "d3177d0a502f23c474bcf70ef2b2424ead9a0203a88c8c3becc7f08b1a4588cc",
+      "final.json": "86334bd50dafaeccd733d3e568a621d54b992c872fd80c8856a27f1f719b96e6",
+      "input.json": "378d05d76dfe8a3237d95c856138c51ab2c65dc4796885b5c3397c4bee17d84c",
+      "provider_calls.json": "bfa0688de3fbd7197d345e4722f08cdb56336e0107016b5ecdb88652e4dffb24",
+      "result.json": "b89af8d6613c4bdf39cf0c9fe4ebe2574942c365227282f87dcc7b7ef149c2f7",
+      "tool_trace.json": "8dab44b5b956a957f27b06c35527c299ce22fed97fc3992fb440118ad946d065"
+    },
+    "claims": [
+      {
+        "quote": "已创建任务 **T001**：\n\n- 取货：四号货架（取货点01，P01）\n- 配送：2号配送点（D2）\n- 等级：3级\n- 当前状态：已自动分配给 R4，处于取货阶段（尚未开始装货）\n\n如需改派、提升等级或取消，请告诉我。",
+        "provider_call_index": 3,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A05\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A05\\repeat_1\\case_final.json"
+        ],
+        "reason": "明确3级未误设紧急5级；状态说明准确。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "A06",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "两条路线、数量、2级及R4/R1实际分配与逐项回执一致。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A06\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "4b051821ab27213204067ea67eeee910d26f7594e21fdd04e4d0cb9db71f1e19",
+      "case_initial.json": "1db3ffef68d0cd1c8d4c3a0acbfe9b1b3a021000b40fa7e94276fadcf45dca69",
+      "final.json": "4b051821ab27213204067ea67eeee910d26f7594e21fdd04e4d0cb9db71f1e19",
+      "input.json": "13f91ae329bdb092b0e70b40c1a5c832408db18b837f23605fa4b345d63f24c5",
+      "provider_calls.json": "8ac8ad4f819837edb30d51c5b920dac1c2f0c6f2f712729cd41e1fefcb0b9ab5",
+      "result.json": "b86aa231aaaa3098686434f92dbb68033ca9e28cf1b31fcc4022aaf15b85a598",
+      "tool_trace.json": "8498f57dd4c1f9a941b9594849f2d19130deec437c0465bdd03ac66821130e37"
+    },
+    "claims": [
+      {
+        "quote": "两个任务均已创建成功，等级均为 2 级：\n\n- **T001**：四号货架（取货点05）→ 2号配送点，自动分配给 R4，当前处于取货阶段。\n- **T002**：登记货架2（取货点01）→ 1号配送点，自动分配给 R1，当前处于取货阶段。\n\n两单均已分配、路线可用，尚未开始装货。",
+        "provider_call_index": 3,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A06\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A06\\repeat_1\\case_final.json"
+        ],
+        "reason": "两条路线、数量、2级及R4/R1实际分配与逐项回执一致。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "A07",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "一次批量创建3项，保留重复；R4/R3/R2和阶段准确，未声称已移动或装货。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A07\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "0cc9a001bc35b1302ffd1f46e55c8925bee7fef026655d772c1b8e193a386bd6",
+      "case_initial.json": "3f9580604ecf53ab87cc2ee9fbbc8da736d8ce72dfee27b1fa8cd0a07cba4e53",
+      "final.json": "0cc9a001bc35b1302ffd1f46e55c8925bee7fef026655d772c1b8e193a386bd6",
+      "input.json": "2292ea5b57fa6e25770edecd88445573127f51266032e3af035991438d04340c",
+      "provider_calls.json": "3bcb1688096f2e8b5853df7b2585e8f3ffed6a8501305d9895c95c9e657cfde8",
+      "result.json": "96ecd921fcef92679d0a7f761b933a33e3f53947baec75e7fcd6f48b94ada3b4",
+      "tool_trace.json": "a4b1395267b73c41f517d610e100aa1ce568ae1e76d97ba506f700134004a400"
+    },
+    "claims": [
+      {
+        "quote": "我先查一下地图登记信息，确认“四号货架”和“二号配送点”的正式对应关系。",
+        "provider_call_index": 1,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A07\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A07\\repeat_1\\case_final.json"
+        ],
+        "reason": "一次批量创建3项，保留重复；R4/R3/R2和阶段准确，未声称已移动或装货。"
+      },
+      {
+        "quote": "已确认：四号货架对应取货点 P03，二号配送点对应配送点 D2。现在按同样安排创建3次，等级为默认2级。",
+        "provider_call_index": 2,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A07\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A07\\repeat_1\\case_final.json"
+        ],
+        "reason": "一次批量创建3项，保留重复；R4/R3/R2和阶段准确，未声称已移动或装货。"
+      },
+      {
+        "quote": "已创建3个任务，均为四号货架（取货点03）→ 2号配送点，等级2级：\n\n| 任务 | 执行机器人 | 分配方式 | 当前阶段 |\n|---|---|---|---|\n| T001 | R4 | 自动分配 | 已分配，取货阶段 |\n| T002 | R3 | 自动分配 | 已分配，取货阶段 |\n| T003 | R2 | 自动分配 | 已分配，取货阶段 |\n\n阶段仅表示任务已进入取货环节，不代表机器人已完成移动或已装货。需要改派、提升等级或取消的话可以告诉我。",
+        "provider_call_index": 3,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A07\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A07\\repeat_1\\case_final.json"
+        ],
+        "reason": "一次批量创建3项，保留重复；R4/R3/R2和阶段准确，未声称已移动或装货。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "A08",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "正式P01/D2先经当前地点查询，未改错取货点。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A08\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "7677da0019e70742cefd1f8a8b85bd47d310196baa9d1953454318a144a8d263",
+      "case_initial.json": "ce7b440d12cd9b18f657ec83061985727578971ad0e157cb4656556f843c9cad",
+      "final.json": "7677da0019e70742cefd1f8a8b85bd47d310196baa9d1953454318a144a8d263",
+      "input.json": "e526b989418641ba88899840fe93f5b73232b6a9a8c52998d976abf51913c61f",
+      "provider_calls.json": "c515e221de1c8d81d757e73987cf7428dd4a9528e84b9d294f8ef90cd0a9ba51",
+      "result.json": "50b61b027302e090d4fe84821b3892e0f39b0ea41f192a0d9158dfaba303b474",
+      "tool_trace.json": "32a168ab7a678a691c7469a360ac8866a18e3461491ce12717c125960159657a"
+    },
+    "claims": [
+      {
+        "quote": "任务已创建：\n\n- 任务号：T001\n- 取货点：P01（四号货架）\n- 配送点：D2（2号配送点，别名“复核台”）\n- 等级：2级（普通）\n- 状态：已分配，处于取货阶段，执行机器人 R4（自动分配）",
+        "provider_call_index": 3,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A08\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A08\\repeat_1\\case_final.json"
+        ],
+        "reason": "正式P01/D2先经当前地点查询，未改错取货点。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "A09",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "仅新增T002，初始T001关键字段保持不变；回复未夸大副作用。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A09\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "d87749acca8294e911d625bac061892436f827b774ccd33b094ca21b9cd30545",
+      "case_initial.json": "106263a09aec28708c91777ecdd55c066772cda3ef86123fd29f358fe216a1d7",
+      "final.json": "d87749acca8294e911d625bac061892436f827b774ccd33b094ca21b9cd30545",
+      "input.json": "75ceff87bd71541d2c0ccc92bc487456cf032244bcd95b1a7361d92116c97b9e",
+      "provider_calls.json": "65b7bb82f47f98192a9d569483ec65628a36824acf770153065b68c858d11afd",
+      "result.json": "7a74b8d3dd835c823fc17a6652e2980d417d8817b2d494e3d638f2708ed63f54",
+      "tool_trace.json": "690f1f9741455b33b48d572f314f3ab2d932d3d6bd6c0e82d34fa51773365d87"
+    },
+    "claims": [
+      {
+        "quote": "已创建，仅此一单：\n\n- 任务 T002：四号货架（取货点05，P05）→ 2号配送点（D2），优先级2级\n- 状态：已分配，取货阶段，执行机器人 R3（自动分配）\n- 未处理其他任何任务",
+        "provider_call_index": 3,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A09\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A09\\repeat_1\\case_final.json"
+        ],
+        "reason": "仅新增T002，初始T001关键字段保持不变；回复未夸大副作用。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "A10",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "显式新需求优先于旧关联对象；T002的P01/D1、2级、R1与回执一致。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A10\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "a775d44529fa317d0e1e0cdbdbf946d2fa439b1aa02110571b16550a347769ed",
+      "case_initial.json": "e17acd56e858e80f83ef5eaf8815987379058d0cceae9345bd3d908e1024e2fc",
+      "final.json": "a775d44529fa317d0e1e0cdbdbf946d2fa439b1aa02110571b16550a347769ed",
+      "input.json": "8028dec8649b668f2466f40dd7dde75aeec94a07e78a001d6c192b4f59b42de4",
+      "provider_calls.json": "d979f41eee7d48487e7849789cdd6c52bf15f79f82329422d5e2858c1b0040eb",
+      "result.json": "f783b8aafce3fe57d466981721be59e7687063c538f776c18d01f152957d3f39",
+      "tool_trace.json": "dc6f7e64de5272a19a44ca11a75e9b841f10fe2884a93f4daca8a57bd08bf852"
+    },
+    "claims": [
+      {
+        "quote": "已新建任务，与旧任务无关：\n\n- **任务号**：T002\n- **取货**：登记货架2（P01）\n- **送货**：1号配送点（D1）\n- **等级**：2级（普通）\n- **当前状态**：已自动分配给 R1，处于取货阶段，路线可用\n\n需要提升等级、指定机器人或再复制几份，告诉我即可。",
+        "provider_call_index": 3,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A10\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\A10\\repeat_1\\case_final.json"
+        ],
+        "reason": "显式新需求优先于旧关联对象；T002的P01/D1、2级、R1与回执一致。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "B01",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "一个待处理任务及R1/R2/R3空闲均有本轮状态证据。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B01\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "0cf5c1377ce7bb8acc14c45006b9d4e2d2a785a9df1aab5c96dd5e32593764e3",
+      "case_initial.json": "0cf5c1377ce7bb8acc14c45006b9d4e2d2a785a9df1aab5c96dd5e32593764e3",
+      "final.json": "0cf5c1377ce7bb8acc14c45006b9d4e2d2a785a9df1aab5c96dd5e32593764e3",
+      "input.json": "1e45dc69d8a3d189876edfbd37b1d52ad7bd01d38bb102618026a19d9d85555c",
+      "provider_calls.json": "085072d6ec0772bb3eb774e5d73e3ab37156d900f4eb6a62d5912cf6f19c06a9",
+      "result.json": "5a8acf7c2e254abf59dc0cd6c141aa7c741de2eedfdee661d96215c6c2b17988",
+      "tool_trace.json": "3e5884d16d6691b4f0d06808e2dd83615f4569e214a61f3a29bdafc70049fedd"
+    },
+    "claims": [
+      {
+        "quote": "当前仅有 1 个待处理任务：\n\n- **T001**：从四号货架（P01）运至2号配送点（D2），优先级 2 级；已自动分配给 R4，当前处于**取货阶段**（尚未装货）。\n\n其余机器人 R1、R2、R3 均空闲。注意：业务阶段不代表实际位移已完成。",
+        "provider_call_index": 2,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B01\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B01\\repeat_1\\case_final.json"
+        ],
+        "reason": "一个待处理任务及R1/R2/R3空闲均有本轮状态证据。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "B02",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "R3空闲未载货，T001实际由R4执行，查询对象与关联对象未混淆。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B02\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "b78a0f9ea012976dd5ee5adc6e51d10779ba7721136688ad1a4e4820b859b8d7",
+      "case_initial.json": "b78a0f9ea012976dd5ee5adc6e51d10779ba7721136688ad1a4e4820b859b8d7",
+      "final.json": "b78a0f9ea012976dd5ee5adc6e51d10779ba7721136688ad1a4e4820b859b8d7",
+      "input.json": "392aad0ddb153df31a9290d058e7d29c56eddcde89b55e2f482c18670acc3874",
+      "provider_calls.json": "3b3b732d13c9b2bda0118a259f1104966e2cdbc68560111f7240b355ea662136",
+      "result.json": "e1cf775454d4d138e77a5c470302a7a5752993a9893c069f5d4a68401caf7022",
+      "tool_trace.json": "7fc4772082ed8a05e055f1c2c17e04a1cfcd954fd52cae80085ef8bf611371b5"
+    },
+    "claims": [
+      {
+        "quote": "R3 当前**空闲**，没有任务在身，**未载货**（位置 [6,58]，已完成任务数 0）。\n\n补充：本轮关联的 T001（四号货架 → 2号配送点，2级）目前处于取货阶段，自动分配给 **R4**，与 R3 无关。阶段状态不代表实际位移。",
+        "provider_call_index": 2,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B02\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B02\\repeat_1\\case_final.json"
+        ],
+        "reason": "R3空闲未载货，T001实际由R4执行，查询对象与关联对象未混淆。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "B03",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "3至4级的原子increment，状态及机器人说明准确。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B03\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "82500c3a1a78016a173be341da4cdb6dd2ade48f4797ea8a84683af2a43ca8d7",
+      "case_initial.json": "5f64237f9d7f63265dddf4abdae5b71fa28e402bb86f1804d37c7aac3b7c74c3",
+      "final.json": "82500c3a1a78016a173be341da4cdb6dd2ade48f4797ea8a84683af2a43ca8d7",
+      "input.json": "22183f18207f08263c144a3b4a10adc76bd58590af9b59e79888437f4637be39",
+      "provider_calls.json": "dcd99479b7edc1518c91ca7aa597d05792085bfea8c101e9de179c5eca09b481",
+      "result.json": "b1f8ed34ae49b4a09e5559673c7a897275236c19b286c837b79af0a8f46081dc",
+      "tool_trace.json": "376eabd3c35897a59c027b126c73b2fd8e6b515cede8d0297b0bc121fc0cf113"
+    },
+    "claims": [
+      {
+        "quote": "已把 T001（四号货架取货点 P03 → 2号配送点 D2）的优先级由 3 级提升到 4 级。当前仍处于取货阶段，由 R4 自动分配执行。",
+        "provider_call_index": 3,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B03\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B03\\repeat_1\\case_final.json"
+        ],
+        "reason": "3至4级的原子increment，状态及机器人说明准确。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "B04",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "2级提升至5级，装货前状态准确。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B04\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "808ae7ebd01ceae4d4405ffc2d9b6f747e98fd0ffd6e85e22eca4dc1e5853620",
+      "case_initial.json": "11d1f34d9e0179dd8355512c2a52b84f89aa928286f41b4b103d9cd078df60ac",
+      "final.json": "808ae7ebd01ceae4d4405ffc2d9b6f747e98fd0ffd6e85e22eca4dc1e5853620",
+      "input.json": "63093c8648b0d8b75062e8a8d2849af1c8f74798d8b6e651add4c0fef0150442",
+      "provider_calls.json": "ca097333572cf198ee7484a6ebd8bcb27b1c0b18553744bc536fbc465fc55377",
+      "result.json": "37c83b55e9908fe845248b590d2ef87ab1e719858c1397d4ddf8ad82431eefb1",
+      "tool_trace.json": "c6866aa32b54c826a3ea48ca6ec7b38efeb56be1b84f7eaff4f86ab0eddc40b4"
+    },
+    "claims": [
+      {
+        "quote": "已将 T001（四号货架 → 2号配送点）设为紧急任务，等级从 2 提升到 5 级，当前仍处于取货阶段（自动分配，执行机器人 R4，装货尚未开始）。",
+        "provider_call_index": 3,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B04\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B04\\repeat_1\\case_final.json"
+        ],
+        "reason": "2级提升至5级，装货前状态准确。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "B05",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "真实查询证明已为5级，正确说明无法继续提升，零写入。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B05\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "a17cab608ff4d3b119b1591042bb18aa17424af50c7853715cae93850337b2b4",
+      "case_initial.json": "a17cab608ff4d3b119b1591042bb18aa17424af50c7853715cae93850337b2b4",
+      "final.json": "a17cab608ff4d3b119b1591042bb18aa17424af50c7853715cae93850337b2b4",
+      "input.json": "0da36e8b29ae32113bd4e05ccff974a085c64cc802b4bdc26e87a6d828864d48",
+      "provider_calls.json": "9df57493c2ef6ac91306732cd059613804af7e3616faaa1aae3ebd882f79ec4c",
+      "result.json": "d8fea177a8bdfd4cccb15aa814499f19ff97bb3ecf9b7ae157c8953442b8b6dd",
+      "tool_trace.json": "347cd154aad00820e2f7bdc8b0bee7660a8e938ead0b10934646258a90437dce"
+    },
+    "claims": [
+      {
+        "quote": "T001 当前已是最高等级 5 级（紧急），无法再提升。",
+        "provider_call_index": 2,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B05\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B05\\repeat_1\\case_final.json"
+        ],
+        "reason": "真实查询证明已为5级，正确说明无法继续提升，零写入。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "B06",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "正确拒绝降级，零写入；提议取消后另建未擅自执行。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B06\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "44b9294822cbd44aa3247d106d4d0bd5f8bf1d0dec69b0e60a5541baf50aef72",
+      "case_initial.json": "44b9294822cbd44aa3247d106d4d0bd5f8bf1d0dec69b0e60a5541baf50aef72",
+      "final.json": "44b9294822cbd44aa3247d106d4d0bd5f8bf1d0dec69b0e60a5541baf50aef72",
+      "input.json": "6bd14de7271f317789f4d05ba3d83b2d9fe7d529580637c638705ea3e2d77466",
+      "provider_calls.json": "40398dc04a49c5b68cf9c95bcdc18a1dad823573dc575522e7c0427735b4fe60",
+      "result.json": "6ac42361a3f5f0a5266be0d43b342741f025a1c46954eb37f5795b1c188eb4b0",
+      "tool_trace.json": "1b9f31e798fba4593074d992b2ae37307fec232d38cf29b8e8e5d7c478185d62"
+    },
+    "claims": [
+      {
+        "quote": "无法执行降级。系统只支持提升等级（increment 或 set 到更高等级），不能降级；当前 T001 确为 4 级（四号货架→2号配送点，已自动分配给 R4，处于取货阶段，未装货）。\n\n如需，我可以：提升该任务等级，或取消任务后按 2 级重新创建（会生成新任务、不保留原分配关系）。",
+        "provider_call_index": 2,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B06\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B06\\repeat_1\\case_final.json"
+        ],
+        "reason": "正确拒绝降级，零写入；提议取消后另建未擅自执行。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "B07",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "只取消T001并解除机器人归属，未取消独立的T002。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B07\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "ae75f8a0e1d954fcbcf286761ed92c0cf7ff1e0844ed85677648f553b11e67bf",
+      "case_initial.json": "ed6b7656d0c3c4dd0d64db664f3bcb867633218a24158434168882dd4f3c1427",
+      "final.json": "ae75f8a0e1d954fcbcf286761ed92c0cf7ff1e0844ed85677648f553b11e67bf",
+      "input.json": "5ae18c3cf8c15d0f127cc952dacc4713a71fbfa5367bb497c1c8a98534d6721c",
+      "provider_calls.json": "f095cd0883eab7137e15eb6b54a26afb429e3e410b767c9ede0875d849a2f010",
+      "result.json": "92d500f10e2261bd148e47697339037f30a687beb7ed91572398dc779cd3b7ef",
+      "tool_trace.json": "ea0298244d717bb5d7c8cf121f2d1963751a039fd42bc48855005b2ebe040807"
+    },
+    "claims": [
+      {
+        "quote": "已取消任务 T001（四号货架 → 2号配送点，2级，原自动分配给 R4，取货阶段尚未装货）。当前状态：已取消，机器人归属已解除。",
+        "provider_call_index": 3,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B07\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B07\\repeat_1\\case_final.json"
+        ],
+        "reason": "只取消T001并解除机器人归属，未取消独立的T002。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "B08",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "查询证实已载货配送，正确拒绝取消，无非法写提议。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B08\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "134497f94db70de87d4b1318834532899f8bb2fe3038aa1c9635110805276f40",
+      "case_initial.json": "134497f94db70de87d4b1318834532899f8bb2fe3038aa1c9635110805276f40",
+      "final.json": "134497f94db70de87d4b1318834532899f8bb2fe3038aa1c9635110805276f40",
+      "input.json": "57541dfbe60a2172b93e0a5914778589f635bcc0a2607072f57343f938089055",
+      "provider_calls.json": "62b651e4551e687acc581d84cb35ff93109a820b5ed1cf11cf6fd0e65b85965a",
+      "result.json": "f6a691650974e180c0e3d64bb18c3707c9e9754d350e8b88b012d7f90c34e830",
+      "tool_trace.json": "b5a80724fb43c117abc1598fceb94176e2d274de4f753d7a6c975de19ed3a77a"
+    },
+    "claims": [
+      {
+        "quote": "无法取消 T001：该任务已装货并处于配送阶段，且已由自动分配交给 R4 执行，装货开始后不可取消。\n\n如需要，可以等它完成后为同样的运送需求新建任务，或告诉我其他任务号。",
+        "provider_call_index": 2,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B08\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B08\\repeat_1\\case_final.json"
+        ],
+        "reason": "查询证实已载货配送，正确拒绝取消，无非法写提议。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "B09",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "完成数、平均周转等均与metrics为0一致，单位为调度时间步；零指标不普遍证明无历史订单，此处初始快照确无任务。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B09\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "2a6679fe911f734dce516529b168c2e4b417f88841e64d69b96e5c4a6cc9a8c0",
+      "case_initial.json": "2a6679fe911f734dce516529b168c2e4b417f88841e64d69b96e5c4a6cc9a8c0",
+      "final.json": "2a6679fe911f734dce516529b168c2e4b417f88841e64d69b96e5c4a6cc9a8c0",
+      "input.json": "1aa355535bff2626d9e5ab9b76f502e5eae171be12d64484b90cc017a08a25ac",
+      "provider_calls.json": "180189d6d107957e24b495f35d3f6dd4989ce2d86f20eaa55f1f03cb3b18ce98",
+      "result.json": "91322b7a603440d66aa13b0d8e0e8d18c13c29838116eadb7299d0c695cbb62b",
+      "tool_trace.json": "cb7d0bbc32a06f490aa58807d7e7be17ed66dbf7f46f030cfb7d396656fd22c8"
+    },
+    "claims": [
+      {
+        "quote": "当前业务指标：\n\n- 已完成任务数：0\n- 待处理任务：0\n- 平均周转时间：0（调度时间步）\n- 平均下单至装货耗时：0（调度时间步）\n- 累计距离：0\n- 路径等待：0\n\n目前系统还没有产生任何任务记录，因此指标均为 0。",
+        "provider_call_index": 2,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B09\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B09\\repeat_1\\case_final.json"
+        ],
+        "reason": "完成数、平均周转等均与metrics为0一致，单位为调度时间步；零指标不普遍证明无历史订单，此处初始快照确无任务。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "B10",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "真实查询准确的不存在ID并取得领域异常，未用其他任务替换。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B10\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "e3082c0262edcf5e5eaa480afb9f9b617acb411ce70ffc48c57f33d69cf0c04c",
+      "case_initial.json": "e3082c0262edcf5e5eaa480afb9f9b617acb411ce70ffc48c57f33d69cf0c04c",
+      "final.json": "e3082c0262edcf5e5eaa480afb9f9b617acb411ce70ffc48c57f33d69cf0c04c",
+      "input.json": "8e007b43ea503db9ddbcc27e61772e69ba12db203232ba97e2cc3f9cc3e4d9e7",
+      "provider_calls.json": "8f6dbe90a14d2e7a71b966f3882bf88207ad2d2567f5915827042dec9d7b5ac0",
+      "result.json": "8b905f91e7961015ade0993dbc53acb39bc25f82bb9a05d6f07889221a700654",
+      "tool_trace.json": "2bb82263e475e8e9bfcaa7b31929c320db9d5bae757c4b632925f9f8a01e4388"
+    },
+    "claims": [
+      {
+        "quote": "任务 T999999999 不存在，请确认任务编号是否正确。",
+        "provider_call_index": 2,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B10\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\B10\\repeat_1\\case_final.json"
+        ],
+        "reason": "真实查询准确的不存在ID并取得领域异常，未用其他任务替换。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "C01",
+    "repeat": 1,
+    "verdict": "FAIL",
+    "severity": "major",
+    "reason": "操作正确，但最终回复把改派后的R3标为空闲；回执和最终快照均为R3执行T001、to_pickup。按冻结rubric属状态主张错误。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C01\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "2d1ca8f28238382cfcc53ae50e85ee0d025658f6ec0bfbc65613431ca9349be2",
+      "case_initial.json": "993539b42ee90aa40a8144c1c8211a6b790df238297b846bfacb45494f12a563",
+      "final.json": "2d1ca8f28238382cfcc53ae50e85ee0d025658f6ec0bfbc65613431ca9349be2",
+      "input.json": "b2579c7532ed3e9548832fdafcee3fe5c9eb8dda5cff3c4db879d77ce9767e0c",
+      "provider_calls.json": "793f3a1e40ceccbb159509308db834d2b190969f0770544c6af3270e28b1771f",
+      "result.json": "36769b8a53d958c32f361e64950021c2e6a66e4fb8ec5ff924d4a30909ad261f",
+      "tool_trace.json": "170cc1fb1dc3827ce7ba0f36cd437ebaa9b2006072957da871a1142e499d0f46"
+    },
+    "claims": [
+      {
+        "quote": "已完成指定。\n\n- **任务 T001**：四号货架（P05）→ 2号配送点（D2），等级 2\n- **执行机器人**：R3（空闲，人工指定，原为自动分配给 R4）\n- 当前阶段：装货前，取货阶段；路线规划可用\n\n说明：这是硬性指定，任务会保留与 R3 的指定关系，但若出现更高等级（如紧急）任务，可能被暂时抢占，之后仍交回 R3。指定不改变任务等级。",
+        "provider_call_index": 3,
+        "verdict": "mixed_correct_and_incorrect",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C01\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C01\\repeat_1\\case_final.json"
+        ],
+        "reason": "操作正确，但最终回复把改派后的R3标为空闲；回执和最终快照均为R3执行T001、to_pickup。按冻结rubric属状态主张错误。"
+      },
+      {
+        "quote": "执行机器人：R3（空闲，人工指定，原为自动分配给R4）",
+        "verdict": "incorrect",
+        "reason": "指定后R3为to_pickup且task_id=T001，空闲只适用于操作之前。",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C01\\repeat_1\\tool_trace.json#/2/result/actions/0",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C01\\repeat_1\\case_final.json#/robots"
+        ]
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "C02",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "软偏好preferred、当前R3接手、无保证一定执行，主语与范围正确。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C02\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "113d65d390416fe19ac800bf77fcd5ea056b384df456b69f1ec583ff3c97fe10",
+      "case_initial.json": "5f8f77c0444c9ddecc68588f0ab281c5c513e7059f354a6d8355ddd20b58f6d1",
+      "final.json": "113d65d390416fe19ac800bf77fcd5ea056b384df456b69f1ec583ff3c97fe10",
+      "input.json": "727a657f02a58e0597d8cb6fe1ee6c05f2d359e57bea1231563a911a26f98090",
+      "provider_calls.json": "7c2cfdc029e6b189732d238f9ae85a3cc7b700f9e433491c6b636722f1cb2f70",
+      "result.json": "1183d7318d8180400baed0be6790a11417467dedd6006f08d11f9465a072f168",
+      "tool_trace.json": "0f4c2a8df05dfbe229b649a1996326b3638a9e8dd73f265db4b4c1f7c55e5d0f"
+    },
+    "claims": [
+      {
+        "quote": "已为 T001（四号货架 → 2号配送点，2级）设置软偏好 R3。\n\n- 当前状态：装货前取货阶段（尚未装货），已由 R3 接手，分配方式为“软偏好”。\n- 说明：这是优先满足的偏好，不是硬性指定——若 R3 后续忙碌，任务可能由其他机器人执行；路线仍由本地程序规划。",
+        "provider_call_index": 3,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C02\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C02\\repeat_1\\case_final.json"
+        ],
+        "reason": "软偏好preferred、当前R3接手、无保证一定执行，主语与范围正确。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "C03",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "解除指定恢复auto，原任务保留，实际R4接手与回执一致。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C03\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "18b0a869ab2b4f5ae42489d62cb5739d3684a28312ea058cfda58e230577219a",
+      "case_initial.json": "95ce036b192af1b4500042198134fab214626483bc33b2d7024199423318845a",
+      "final.json": "18b0a869ab2b4f5ae42489d62cb5739d3684a28312ea058cfda58e230577219a",
+      "input.json": "49168c67cba61f66c82718c89b601cb0fe0e5f985058b30004b1be6e0ec5fbb9",
+      "provider_calls.json": "07d50926c0aa4c71508311f2a9a24efcc91bd1eb996f5d98d43c88d4d0e83dc3",
+      "result.json": "e9ff4013dc8126f0b39cce4ac4441c04538b39c5970b3c276664641d151adbda",
+      "tool_trace.json": "5cd73a91582df4d91a8da37fcf288aa3775736c2e91058f2bbcb327e17f87fa7"
+    },
+    "claims": [
+      {
+        "quote": "已解除 T001 的人工指定，恢复自动分配，任务本身保留未取消。\n\n- 任务：T001（四号货架 → 2号配送点，等级2）\n- 当前阶段：已分配、取货阶段（装货前）\n- 分配方式：自动分配，现由 R4 接手（原指定 R3 已解除）\n- 路线规划：可用\n\n说明：自动分配的结果由本地程序计算，后续仍可能变化。",
+        "provider_call_index": 3,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C03\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C03\\repeat_1\\case_final.json"
+        ],
+        "reason": "解除指定恢复auto，原任务保留，实际R4接手与回执一致。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "C04",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "R3忙于独立已载货任务，正确拒绝强制指定，未取消/改派其他任务腾资源。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C04\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "38603b2a9723b812e871fa19fa3ea0c6e06109af799cfb8725b17f6c7290b56d",
+      "case_initial.json": "38603b2a9723b812e871fa19fa3ea0c6e06109af799cfb8725b17f6c7290b56d",
+      "final.json": "38603b2a9723b812e871fa19fa3ea0c6e06109af799cfb8725b17f6c7290b56d",
+      "input.json": "a3f2b49d46b64b1d7da3963731b114076bd38cf22a053e2eff258ae4af1d83dc",
+      "provider_calls.json": "4d38e1f24033f2c3a9c346a5829587e375443ca7ae9a1a9cf4ea67c1edee953c",
+      "result.json": "01eafabff6cc23f85e1afa4f54e377ce3866892f8163516f3b4110b8dd560287",
+      "tool_trace.json": "7dd6baaca1349f2d5c6a648834bc2669aeeb98aefc08d4474559414c372b8d4e"
+    },
+    "claims": [
+      {
+        "quote": "我先核对任务 T002 和机器人 R3 的当前状态。",
+        "provider_call_index": 1,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C04\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C04\\repeat_1\\case_final.json"
+        ],
+        "reason": "R3忙于独立已载货任务，正确拒绝强制指定，未取消/改派其他任务腾资源。"
+      },
+      {
+        "quote": "无法执行这项指定，原因如下：\n\n- **T002**：登记货架2 → 1号配送点，2级，尚在取货阶段（未开始装货），当前由 R1 自动分配执行。\n- **R3**：已载货，正执行 T001（四号货架 → 2号配送点），并非空闲，也没有可预约的空位。\n\n硬性指定要求目标机器人无其他任务，R3 现在忙于 T001，因此不能把 T002 指定给它；我不会为腾出 R3 而取消或改派 T001。\n\n可选做法：\n1. 等 R3 完成 T001 后再告诉我，届时再把 T002 指定给 R3；\n2. 如果你想“优先交给 R3、忙不过来交给其他机器人”，我可以改为设置软偏好（但不保证一定由 R3 执行）；\n3. 也可以改指定给当前空闲的 R2 或 R4。\n\n请告知你想采用哪种方式。",
+        "provider_call_index": 2,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C04\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C04\\repeat_1\\case_final.json"
+        ],
+        "reason": "R3忙于独立已载货任务，正确拒绝强制指定，未取消/改派其他任务腾资源。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "C05",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "查询空闲R3后从R1改派R3，等级、任务和阶段准确，未声称已实际移动。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C05\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "b34aed2a12028536a871932532e6c7344cf0581e588dd37dea4435669c6490f5",
+      "case_initial.json": "3b88b9654866976e12f5d70460af22de4066a3798a318bdab450020525e75477",
+      "final.json": "b34aed2a12028536a871932532e6c7344cf0581e588dd37dea4435669c6490f5",
+      "input.json": "090ed8bf5d4b413f64aae6102453f3e8268d34f53ed48cb07582fe35b6c69db6",
+      "provider_calls.json": "8af092285224a6790b5bd14add3f33a3576a4b9e9ca65ec7a4aa7a935a9543fa",
+      "result.json": "e954ae56368e63ac88a434a5a3a4a2b30c1c8ea83a32d8b4edb676e40fd52354",
+      "tool_trace.json": "265ddfe6812c6193ae6f1d62b0e3c244c566b5a3d884947d55e0176be38e3347"
+    },
+    "claims": [
+      {
+        "quote": "我先查询 T001 和 R3 的真实状态。",
+        "provider_call_index": 1,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C05\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C05\\repeat_1\\case_final.json"
+        ],
+        "reason": "查询空闲R3后从R1改派R3，等级、任务和阶段准确，未声称已实际移动。"
+      },
+      {
+        "quote": "T001 尚未装货，R3 空闲。执行改派：",
+        "provider_call_index": 2,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C05\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C05\\repeat_1\\case_final.json"
+        ],
+        "reason": "查询空闲R3后从R1改派R3，等级、任务和阶段准确，未声称已实际移动。"
+      },
+      {
+        "quote": "改派已完成。\n\n- **任务**：T001（四号货架 → 2号配送点，2级）\n- **阶段**：装货前，取货阶段\n- **执行机器人**：R3（人工指定，原为 R1）\n- **路线规划**：可用\n\nT001 现在处于已人工指定给 R3 的状态，但该阶段信息并不表示机器人已实际移动。",
+        "provider_call_index": 3,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C05\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C05\\repeat_1\\case_final.json"
+        ],
+        "reason": "查询空闲R3后从R1改派R3，等级、任务和阶段准确，未声称已实际移动。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "C06",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "已装货任务不可改派，R3空闲有查询依据，零非法写提议。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C06\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "a04eada7ecfe9dcb823b495f62e1a8f9929da18b87452076571041963d7eeb7f",
+      "case_initial.json": "a04eada7ecfe9dcb823b495f62e1a8f9929da18b87452076571041963d7eeb7f",
+      "final.json": "a04eada7ecfe9dcb823b495f62e1a8f9929da18b87452076571041963d7eeb7f",
+      "input.json": "78b9a2103022586cdf7ff458c7edeaafa62ce17e223b52b93f0dc76e7dce4280",
+      "provider_calls.json": "11ce4825ffc64e02209db993fa10549921e14e4791dc8fddb0c67361e692ef14",
+      "result.json": "862135ccbdb2ba342bcbdbe560263fd8e49f08493f720b00336526b4883eaa82",
+      "tool_trace.json": "8754a97a6a7243eb0d3e609273593f2cfcfd069fa35b70adfa453de682447a14"
+    },
+    "claims": [
+      {
+        "quote": "我先查一下 T001 和 R3 的当前状态。",
+        "provider_call_index": 1,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C06\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C06\\repeat_1\\case_final.json"
+        ],
+        "reason": "已装货任务不可改派，R3空闲有查询依据，零非法写提议。"
+      },
+      {
+        "quote": "无法改派：\n\n- **T001** 目前状态为「已载货，处于配送阶段」，由 R4 执行，且装货已经开始。\n- 指定或改派仅在**装货开始前**可行，装货后不能改派，也不能取消。\n\nR3 当前空闲，如果你有其他（尚未装货的）任务要交给 R3，可以告诉我任务号。",
+        "provider_call_index": 2,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C06\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C06\\repeat_1\\case_final.json"
+        ],
+        "reason": "已装货任务不可改派，R3空闲有查询依据，零非法写提议。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "C07",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "紧急单5级，普通单保留R3指定；说明的是抢占规则与可能性，未声称已发生抢占。此夹具不证明实际竞争。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C07\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "0dda76006a74854bc4ae1fef7f62ee6ddc3d555ee87f9f6ead9dd7f3bcafe51f",
+      "case_initial.json": "6c8cfeb19037c5402faf4c748c775e5ab325b9eb451da33465c025b7093a91ad",
+      "final.json": "0dda76006a74854bc4ae1fef7f62ee6ddc3d555ee87f9f6ead9dd7f3bcafe51f",
+      "input.json": "5e6359c172f3cd6313ca4bc7f5d582b18861401f60a068e05de334caf36cb314",
+      "provider_calls.json": "ae5b77f60ce6331e803ffe73206172693869d9b0e675ec85730fe8ab07cda053",
+      "result.json": "2506311fc03bf49978e7140ba0419ee5a5b78c87b002eca65d5cae247cb8f871",
+      "tool_trace.json": "d8c6bbe4421a819a299e85898298bcddd559e3b407ac5f4f6dc9b95047a9b2b7"
+    },
+    "claims": [
+      {
+        "quote": "已创建紧急任务 **T002**：\n\n- 取货：四号货架（P05，取货点05）\n- 配送：2号配送点（D2）\n- 等级：5（紧急）\n- 当前状态：已分配，取货阶段，执行机器人 R4（自动分配）\n\n关于原任务 T001：四号货架→2号配送点，等级2，仍保持对 R3 的人工指定，未被改动。需注意，紧急任务在装货前可暂时抢占未装货的普通任务；T001 目前处于取货阶段、尚未装货，可能会被临时抢占，但其对 R3 的人工指定关系会保留，之后仍交给 R3 执行。",
+        "provider_call_index": 3,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C07\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C07\\repeat_1\\case_final.json"
+        ],
+        "reason": "紧急单5级，普通单保留R3指定；说明的是抢占规则与可能性，未声称已发生抢占。此夹具不证明实际竞争。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "C08",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "新增2份，来源保留；新单机器人不继承原归属，当前分配与回执一致。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C08\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "46845cbdcc018ee724841cbdce6f60358bc2dee4b5216590ee538c669bea50b6",
+      "case_initial.json": "98b481e7bf24462590d56968646ddba38436d573fd28b5fe53fa4c707cfa32bd",
+      "final.json": "46845cbdcc018ee724841cbdce6f60358bc2dee4b5216590ee538c669bea50b6",
+      "input.json": "3240a8138f9bdbe18bcb4df244d3b6a94ba4843c0a0751ce53fe08c37643ccac",
+      "provider_calls.json": "9a1933a2bd4a53d4276c969ad130c433c1ab38efec23cc8cad04ef97ae714e75",
+      "result.json": "022ddf45e43302d20be4ba9968d8422f5248320dcf74f8e49202cd5d918b2e2d",
+      "tool_trace.json": "b344adaa53381dea957113afadfe6ecea5dd625696b49fd48d3d289a2963b509"
+    },
+    "claims": [
+      {
+        "quote": "已按 T001 复制创建两份新任务，原单 T001 保留未变：\n\n- **T002**：四号货架（取货点03/P03）→ 2号配送点（D2），2级，自动分配给 R3\n- **T003**：同样地点与等级，2级，自动分配给 R2\n\nT001 仍为 2级，由 R4 执行，处于取货阶段。三单均为普通自动分配，未继承原单的机器人归属或偏好。",
+        "provider_call_index": 3,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C08\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C08\\repeat_1\\case_final.json"
+        ],
+        "reason": "新增2份，来源保留；新单机器人不继承原归属，当前分配与回执一致。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "C09",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "已取消来源保持取消，仅创建独立新单，复制字段正确。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C09\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "d6bf3372b7a804763ccd3ab615065ccededc8f48ef47380f898af9bf6293477a",
+      "case_initial.json": "702e56506078df252fef015fad0ff5b5330dc19a8731e64cfc16a0b34840cb07",
+      "final.json": "d6bf3372b7a804763ccd3ab615065ccededc8f48ef47380f898af9bf6293477a",
+      "input.json": "df0baf819f56406f9efa84707045a4eb54f8e01703ed202015f4d5c04e2cca2e",
+      "provider_calls.json": "b26ad41cbf328d450f170cc4210f21d5905219213765bbe556e1a9f61433a82b",
+      "result.json": "0c9317ab106db863a8144ab8404aa9e31d26ea34b09bd9dfe2ba9143f0bb412a",
+      "tool_trace.json": "b79f0ea879a247af62318f8ae1194557c4a980ec6d33379569f251c153437a71"
+    },
+    "claims": [
+      {
+        "quote": "已按 T001 复制创建新任务：\n\n- **新任务 T002**：四号货架（P01）→ 2号配送点（D2），等级 2（继承原等级）\n- 当前阶段：已分配，取货阶段；执行机器人 R4，自动分配\n- 来源：复制自 T001\n\n原任务 **T001 保持已取消状态**，未被修改；复制不会继承原任务的状态、指定关系或偏好。",
+        "provider_call_index": 3,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C09\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C09\\repeat_1\\case_final.json"
+        ],
+        "reason": "已取消来源保持取消，仅创建独立新单，复制字段正确。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "C10",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "继承紧急5级，不继承指定/偏好，新单auto且原R3指定保留。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C10\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "0d1f80e706da35bfa8a3a25bc41f6efd1303e7f7a25744007bd7ef907db91d13",
+      "case_initial.json": "383f21a2425a2e02d5ccf053b8490f345a1e140a684c07c2ffb18df0fc94bf53",
+      "final.json": "0d1f80e706da35bfa8a3a25bc41f6efd1303e7f7a25744007bd7ef907db91d13",
+      "input.json": "4fedac6b1d3d66b683ac7e76dd18a920566e975a746e75a248ac0f864d5d7c9b",
+      "provider_calls.json": "46ce74df32bb43dd9f4d8d6a208edd14762deb82aaae03bc47225a321efb7f6c",
+      "result.json": "256ee5353efc6c3c1479c3cbd7768c5bacf947246304a3cbf939aaf3d141ce39",
+      "tool_trace.json": "002f495f9465e3b1a4b1b713ed73934c40d72096ca302f1f9c2ce13158a48987"
+    },
+    "claims": [
+      {
+        "quote": "已按 T001 复制创建新任务 **T002**：\n\n- 取货：四号货架（P05 取货点05）\n- 配送：2号配送点（D2）\n- 等级：5 级（继承原任务）\n- 指定/偏好：无，自动分配，当前已分配给 R4\n- 原任务 T001 保持不变（仍由 R3 人工指定执行）",
+        "provider_call_index": 3,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C10\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\C10\\repeat_1\\case_final.json"
+        ],
+        "reason": "继承紧急5级，不继承指定/偏好，新单auto且原R3指定保留。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "D01",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "真实新建ID用于下一轮关联，2至3级增量正确，回执说明准确。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D01\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "e9a8e7597afef19921c622cf0d6b89b893acad9768ddc80b4ec126bc8c57a413",
+      "case_initial.json": "764c376b8a4b6e45ef9af9d03c23649924677b3adb1407624e6323fd37dabdeb",
+      "final.json": "e9a8e7597afef19921c622cf0d6b89b893acad9768ddc80b4ec126bc8c57a413",
+      "input.json": "6c7e25c573f2d7e07ef1f677ab50559169aa4714ba31f054f4925bb839a46135",
+      "provider_calls.json": "cb4f2ebdc182a940877cf218e68c5a837785aae8e9bf7bd87c566d5101df17b8",
+      "result.json": "9f571acdf8e024678f554378830772384b617303d19a9acd91e304a56f985f66",
+      "tool_trace.json": "611f8fe3529a7e746d152c8193b51b02cc43ab555e88b1d3e107a6ab56a351a7"
+    },
+    "claims": [
+      {
+        "quote": "任务已创建：\n\n- 任务号：T001\n- 从四号货架（取货点03）送到 2号配送点\n- 等级：2级（普通）\n- 状态：已分配，处于取货阶段，由 R4 执行（自动分配）",
+        "provider_call_index": 3,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D01\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D01\\repeat_1\\case_final.json"
+        ],
+        "reason": "真实新建ID用于下一轮关联，2至3级增量正确，回执说明准确。"
+      },
+      {
+        "quote": "T001 已提升一级：2级 → 3级。仍由 R4 执行，处于取货阶段。",
+        "provider_call_index": 5,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D01\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D01\\repeat_1\\case_final.json"
+        ],
+        "reason": "真实新建ID用于下一轮关联，2至3级增量正确，回执说明准确。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "D02",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "同时查过两个任务后对模糊取消追问，没有擅自选择对象。第二轮列表是上一轮上下文提示。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D02\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "edbee27553b769aa45be9be1d828185226d97b8ddfe347522782b945b68b9a4d",
+      "case_initial.json": "edbee27553b769aa45be9be1d828185226d97b8ddfe347522782b945b68b9a4d",
+      "final.json": "edbee27553b769aa45be9be1d828185226d97b8ddfe347522782b945b68b9a4d",
+      "input.json": "bb36fed57f42b9db4c9aa49822973b122f62d048ccae6b3515e05d4d956d59e4",
+      "provider_calls.json": "d559efb43f4677dd51e0aa9f8a42ea8dd204dd7dcb3409686c15090eb96aa281",
+      "result.json": "0a32b94a78f411358089a5e90462f3de479cefc7b756496eb18f782137aa86aa",
+      "tool_trace.json": "8a5034c6ee3cf1493bf99e9b9088db88606943ef7df15d1d42973f09d8e97945"
+    },
+    "claims": [
+      {
+        "quote": "两个任务的状态如下：\n\n| 任务 | 取货点 | 配送点 | 等级 | 当前阶段 | 执行机器人 | 分配方式 |\n|---|---|---|---|---|---|---|\n| T001 | 四号货架（P01） | 2号配送点（D2） | 2 | 已分配，取货阶段（未装货） | R4 | 自动分配 |\n| T002 | 登记货架2（P02） | 1号配送点（D1） | 3 | 已分配，取货阶段（未装货） | R3 | 自动分配 |\n\n说明：两者均处于取货阶段、尚未装货；业务阶段不代表实际位移，机器人是否已在移动需以现场为准。R1、R2 当前空闲。",
+        "provider_call_index": 2,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D02\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D02\\repeat_1\\case_final.json"
+        ],
+        "reason": "同时查过两个任务后对模糊取消追问，没有擅自选择对象。第二轮列表是上一轮上下文提示。"
+      },
+      {
+        "quote": "需要确认取消哪一个任务：本轮没有明确的关联对象，上一轮同时查了 T001 和 T002。\n\n- T001：四号货架 → 2号配送点，2级，R4，取货阶段\n- T002：登记货架2 → 1号配送点，3级，R3，取货阶段\n\n请明确是 T001 还是 T002（或两个都取消），我再执行。",
+        "provider_call_index": 3,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D02\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D02\\repeat_1\\case_final.json"
+        ],
+        "reason": "同时查过两个任务后对模糊取消追问，没有擅自选择对象。第二轮列表是上一轮上下文提示。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "D03",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "文本明示T002优先于关联T001，只取消T002，原T001保持。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D03\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "7fb36fee61377a518539414a360dae1b63addb365ec540dcb178204ae1489ff5",
+      "case_initial.json": "5cf232fc7903f02ae1970400c8b8d93b05fafce1b3adb0c1d33d4501c775ad1b",
+      "final.json": "7fb36fee61377a518539414a360dae1b63addb365ec540dcb178204ae1489ff5",
+      "input.json": "b6acdb7548b49d7252e2b4cca1a792fa82087c8c9c6a636a46f7ab7c46b7feaf",
+      "provider_calls.json": "b67c38e94345b27ecd26c8580041787216cd83db1e60fc4d260ed0b21eb07f7e",
+      "result.json": "d2f799c4a3aede65da31e073cd4190849bdeac1379241026c704955fc52bf4bc",
+      "tool_trace.json": "e167d1bfc342ddb9b5073a561aea15e6eabf49dc4e24821a0077b9fbd74f8625"
+    },
+    "claims": [
+      {
+        "quote": "已取消 T002：该任务原为取货阶段、等级 3、由 R1 自动分配，取消后状态为“已取消”，R1 已解除该任务。T001 等其他任务未作任何操作。",
+        "provider_call_index": 3,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D03\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D03\\repeat_1\\case_final.json"
+        ],
+        "reason": "文本明示T002优先于关联T001，只取消T002，原T001保持。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "D04",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "有旧关联时仍按新路线创建，地点映射正确。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D04\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "c903d0e65903c05afcb5155292c918c2a3175363b1a74f34e1ac877d236428e6",
+      "case_initial.json": "a39dca045c9f3f24860f6cc85d732a6c31e9cf50a1b59076d9e5ccdfe5c2789d",
+      "final.json": "c903d0e65903c05afcb5155292c918c2a3175363b1a74f34e1ac877d236428e6",
+      "input.json": "7391b1e17c4628ff8578496a63b72d6c6032f781b863cf1aed846cca66dac49a",
+      "provider_calls.json": "ca33ddb1ed2afe8508fb83786470b2d01692b4ae2d9f17c969e0e3200de3ba11",
+      "result.json": "ff655c81b83af8ca0ba37d9caf6b752188655cfae2fc482de755a63974583d09",
+      "tool_trace.json": "0686d287db3b8dc38c3ed3f7236111f2da6eae6a14af4597b5aeafc7498a7cbd"
+    },
+    "claims": [
+      {
+        "quote": "我先查一下地图中“货架2”和“一号配送点”的正式对应关系。",
+        "provider_call_index": 1,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D04\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D04\\repeat_1\\case_final.json"
+        ],
+        "reason": "有旧关联时仍按新路线创建，地点映射正确。"
+      },
+      {
+        "quote": "任务已创建：\n\n- 任务号：T002\n- 取货：登记货架2（P01，取货点01）\n- 配送：1号配送点（D1，别名“西侧收货区”）\n- 优先级：2级（默认）\n- 当前状态：已分配，处于取货阶段，执行机器人R1（自动分配）\n\n如需修改优先级、指定机器人或取消，请告知。",
+        "provider_call_index": 3,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D04\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D04\\repeat_1\\case_final.json"
+        ],
+        "reason": "有旧关联时仍按新路线创建，地点映射正确。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "D05",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "两份复制后重新查全部任务，3个任务、复制来源、R2/R3/R4和空闲R1均正确。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D05\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "df10a0131eb31f2127ea06f28376133ab3181df945d4278e63a2af6a5701f8dc",
+      "case_initial.json": "3f6123a6b0c9d4665c7f015a0f8858d802b87f94a4a7a069828c97c3a51c464e",
+      "final.json": "df10a0131eb31f2127ea06f28376133ab3181df945d4278e63a2af6a5701f8dc",
+      "input.json": "942cf284ffe913c0e446d1b2804f1685438638f2f6075e1c6b05396b033bcbfb",
+      "provider_calls.json": "2ff2493535bbcf75264f31126b9d750c9a9958f1425aed8012ef5ccaa5f07ab4",
+      "result.json": "87a4fd0bd3a7988c928b780de6ef848e01a9b8d9845bb8ff14ea084acfb85691",
+      "tool_trace.json": "5abbf6779fb30324fceb23282233084b5bebe663cafcc17c1faca7f70466fb0c"
+    },
+    "claims": [
+      {
+        "quote": "已按 T001 复制生成 2 份新任务：\n\n- **T002**：四号货架（P01）→ 2号配送点（D2），2级，自动分配给 R3\n- **T003**：同上，2级，自动分配给 R2\n\n原任务 T001 保持不变（仍由 R4 执行，取货阶段）。新任务等级继承原任务 2 级，不带原指定或偏好。",
+        "provider_call_index": 3,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D05\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D05\\repeat_1\\case_final.json"
+        ],
+        "reason": "两份复制后重新查全部任务，3个任务、复制来源、R2/R3/R4和空闲R1均正确。"
+      },
+      {
+        "quote": "当前共 3 个任务，均为四号货架（P01）→ 2号配送点（D2），2级，处于“已分配、取货阶段”（尚未开始装货）：\n\n| 任务 | 等级 | 执行机器人 | 分配方式 | 来源 |\n|---|---|---|---|---|\n| T001 | 2级 | R4 | 自动分配 | 原始任务 |\n| T002 | 2级 | R3 | 自动分配 | 复制自 T001 |\n| T003 | 2级 | R2 | 自动分配 | 复制自 T001 |\n\n机器人：R1 空闲；R2/R3/R4 各承接一单，均未装货。\n\n注：业务阶段不代表实际位移。",
+        "provider_call_index": 5,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D05\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D05\\repeat_1\\case_final.json"
+        ],
+        "reason": "两份复制后重新查全部任务，3个任务、复制来源、R2/R3/R4和空闲R1均正确。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "D06",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "完成前提之后重新实时查询并如实说明completed；停车表述对应业务phase。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D06\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "6f57d03f63e7d330bafe0f7d8a51a76bd3000f45d988f717a30ef67da9c92923",
+      "case_initial.json": "6f57d03f63e7d330bafe0f7d8a51a76bd3000f45d988f717a30ef67da9c92923",
+      "final.json": "6f57d03f63e7d330bafe0f7d8a51a76bd3000f45d988f717a30ef67da9c92923",
+      "input.json": "8d4619336171096b8e9e460d341a891a92e0a1bad03e74007ff72e2ce6d309c5",
+      "provider_calls.json": "80c76e08bb07d0924aafb9b37d053df146bdae1d372463b0f32cc6061524d850",
+      "result.json": "2dbdea9ea93233f580240e81956e931a3e48f9a00b8821529609d6e85b725b29",
+      "tool_trace.json": "d436b280b8953544e010801935be6fe685baa029e1fea6bcc77493f39e9fad04"
+    },
+    "claims": [
+      {
+        "quote": "T001 已完成 ✅\n\n- 取货：四号货架（P05）\n- 送达：2号配送点（D2）\n- 等级：2级，自动分配\n- 执行机器人：R4（已完成 1 单，当前正前往停车位）",
+        "provider_call_index": 2,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D06\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D06\\repeat_1\\case_final.json"
+        ],
+        "reason": "完成前提之后重新实时查询并如实说明completed；停车表述对应业务phase。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "D07",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "清空后重新查询并请求确认，不凭唯一任务猜测指代直接取消。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D07\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "5ebe1567866cbf47f2ae612a2ba1cd5788edb7fc05e35b32b25500a55f51ebda",
+      "case_initial.json": "5ebe1567866cbf47f2ae612a2ba1cd5788edb7fc05e35b32b25500a55f51ebda",
+      "final.json": "5ebe1567866cbf47f2ae612a2ba1cd5788edb7fc05e35b32b25500a55f51ebda",
+      "input.json": "d5105eed8ff317020b30ceba95f62eee9df842a9cdfe489198b75748853538e8",
+      "provider_calls.json": "ded26b200878407b35394a6156ab12af9233e1b5d38f9b20b29f8efd3ed5dc5d",
+      "result.json": "ea3a8c5243bddde0c12f9e7a92c6df1778a827f2b87d0ed7968d0bfd58606c84",
+      "tool_trace.json": "1848a02222c0f2fe19b74898b873d06ba092de47bf300a796f36a4c5b45bbf93"
+    },
+    "claims": [
+      {
+        "quote": "任务 T001 当前状态：\n\n- 取货点：P03（四号货架）\n- 配送点：D2（2号配送点）\n- 等级：2级\n- 阶段：已分配，处于取货阶段（to_pickup），尚未装货\n- 执行机器人：R4（自动分配，未人工指定）\n\n提示：阶段信息不代表机器人已实际移动，装货尚未开始。",
+        "provider_call_index": 2,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D07\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D07\\repeat_1\\case_final.json"
+        ],
+        "reason": "清空后重新查询并请求确认，不凭唯一任务猜测指代直接取消。"
+      },
+      {
+        "quote": "当前系统里只有一个任务，请确认是不是它：\n\n- **T001**：四号货架（取货点03）→ 2号配送点，2级，当前为**取货阶段**（已分配 R4，自动分配），尚未开始装货，可以取消。\n\n确认取消 T001 吗？",
+        "provider_call_index": 4,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D07\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D07\\repeat_1\\case_final.json"
+        ],
+        "reason": "清空后重新查询并请求确认，不凭唯一任务猜测指代直接取消。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "D08",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "实际切图后重新查询，同名货架P01变P03，两个场景的创建参数均正确。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D08\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "5f1c365ed1f805cadb76be1545184b975e1525454a5621d62d09c99d04356126",
+      "case_initial.json": "e649347ff6648f094073b4403f87efab9e65cbb92ba1490aa8c4cdf56e4c6329",
+      "final.json": "5f1c365ed1f805cadb76be1545184b975e1525454a5621d62d09c99d04356126",
+      "input.json": "c884ecf7acad469e8b1b58b62992deade01f4c5aa528672bca3433c46d900b76",
+      "provider_calls.json": "548c54fa6c92e0d2daeee18193e122e25c21cfb0d04c74deffd0121bd9b07820",
+      "result.json": "a197cd1a94f3c1acb4033297cbf4284c2a6691f4b10d49b367b8ab3ebdf53201",
+      "tool_trace.json": "bf5f41881655e6dcd034ccd5f5e33bcd8db36d36097f29a4ad646f0ff4325d3f"
+    },
+    "claims": [
+      {
+        "quote": "我先查一下地图里的正式对应关系。",
+        "provider_call_index": 1,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D08\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D08\\repeat_1\\case_final.json"
+        ],
+        "reason": "实际切图后重新查询，同名货架P01变P03，两个场景的创建参数均正确。"
+      },
+      {
+        "quote": "已创建任务 **T001**：\n\n- 取货：四号货架（取货点 P01）\n- 配送：2 号配送点（D2）\n- 等级：2 级（普通）\n- 当前状态：已分配，取货阶段，自动分配给 R4，路线规划可用\n\n如需提升等级、指定机器人或取消，请告诉我。",
+        "provider_call_index": 3,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D08\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D08\\repeat_1\\case_final.json"
+        ],
+        "reason": "实际切图后重新查询，同名货架P01变P03，两个场景的创建参数均正确。"
+      },
+      {
+        "quote": "我先确认四号货架和二号配送点的正式映射。",
+        "provider_call_index": 4,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D08\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D08\\repeat_1\\case_final.json"
+        ],
+        "reason": "实际切图后重新查询，同名货架P01变P03，两个场景的创建参数均正确。"
+      },
+      {
+        "quote": "已创建任务 **T001**：\n\n- 取货：四号货架（P03，取货点03）\n- 配送：2号配送点（D2）\n- 等级：2级（普通）\n- 当前状态：已分配，取货阶段，执行机器人 R4（自动分配）",
+        "provider_call_index": 6,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D08\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\D08\\repeat_1\\case_final.json"
+        ],
+        "reason": "实际切图后重新查询，同名货架P01变P03，两个场景的创建参数均正确。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "E03",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "识别两个共享别名候选并询问，目的地保持D2，未写入。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\E03\\repeat_1",
+    "evidence_hashes": {
+      "case_final.json": "6d3c089382978e25df02ee741c3dfabac9584cdd2f4a102961dab3960252e3cf",
+      "case_initial.json": "6d3c089382978e25df02ee741c3dfabac9584cdd2f4a102961dab3960252e3cf",
+      "final.json": "6d3c089382978e25df02ee741c3dfabac9584cdd2f4a102961dab3960252e3cf",
+      "input.json": "36a850bea283202644c0781da6b0a2f7bfc9233c7a277c5a5567db09a04e53b7",
+      "provider_calls.json": "adc3224d7a609c705ec055cdbdb3f2c70ebbc18a369e52c9dbe6b1769a270c12",
+      "result.json": "bf78a1589c474076b512498812badd163f0e8cf64a9efc8b238b2c02c9051805",
+      "tool_trace.json": "a105ea23464dbf043ab612f8ce8970d685f2fc03fd86c4be5cc155d907384f3d"
+    },
+    "claims": [
+      {
+        "quote": "我先查一下地图上的货架和配送点对应关系。",
+        "provider_call_index": 1,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\E03\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\E03\\repeat_1\\case_final.json"
+        ],
+        "reason": "识别两个共享别名候选并询问，目的地保持D2，未写入。"
+      },
+      {
+        "quote": "“东侧货架”在地图上有两个登记候选，需要您确认是哪一个：\n\n- **登记货架2**（别名“东侧货架”），取货点 **P01**\n- **登记货架3**（别名“东侧货架”），取货点 **P02**\n\n目的地已确认为 **2号配送点（D2，别名“复核台”）**。请告知取哪一个货架，我再为您下单。",
+        "provider_call_index": 2,
+        "verdict": "correct",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\E03\\repeat_1\\tool_trace.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\E03\\repeat_1\\case_final.json"
+        ],
+        "reason": "识别两个共享别名候选并询问，目的地保持D2，未写入。"
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "F01",
+    "repeat": 1,
+    "verdict": "FAIL",
+    "severity": "major",
+    "reason": "三条候选及核心字段/来源正确，但紧急和3级被重复放进unsupported constraints，造成额外确认门槛；不放宽既定规则。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\F01\\repeat_1",
+    "evidence_hashes": {
+      "draft_first.json": "9576778108cde3ab8463de5742ecc56386b1465cf685300ecd5bc7c35050cf30",
+      "final.json": "65bd757350f4ab603ee5d09981e96a0e62fe83cad8c17e95b663c447281a01fe",
+      "input.json": "08fc00f70562886674f45f51700a438c9083f736662f853084de2f0486f7ace1",
+      "provider_calls.json": "3b7437e46f55b88ec46032ab3221673c76376b6ca91cdb52371230bfd7f4f917",
+      "result.json": "e644d7788819d9fc613b8d6febf1db798da2960c3738c36931577b1813338853",
+      "source_truth.json": "3420943cf97aa5896763b5ce62880053896127430e24554be847d0240ce42f06",
+      "tool_trace.json": "0a3d0a30437a468a56810bda4052ef772c04b4faf8668810f1de1e533cea7da5"
+    },
+    "claims": [
+      {
+        "quote": "{\"candidate_id\": \"c1\", \"source_ids\": [\"b1\", \"b2\", \"b3\"], \"pickup_id\": \"P01\", \"delivery_id\": \"D2\", \"priority\": 2, \"count\": 1, \"constraints\": []}",
+        "verdict": "correct",
+        "reason": "默认一次提示真实、保守，不因此判错。",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\F01\\repeat_1\\source_truth.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\F01\\repeat_1\\draft_first.json"
+        ]
+      },
+      {
+        "quote": "{\"candidate_id\": \"c2\", \"source_ids\": [\"b1\", \"b2\", \"b4\"], \"pickup_id\": \"P02\", \"delivery_id\": \"D1\", \"priority\": 5, \"count\": 1, \"constraints\": [\"紧急\"]}",
+        "verdict": "incorrect",
+        "reason": "地点/等级/次数/来源支持；constraints中的等级已受支持，不是未支持执行约束。",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\F01\\repeat_1\\source_truth.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\F01\\repeat_1\\draft_first.json"
+        ]
+      },
+      {
+        "quote": "{\"candidate_id\": \"c3\", \"source_ids\": [\"b1\", \"b2\", \"b5\"], \"pickup_id\": \"P01\", \"delivery_id\": \"D1\", \"priority\": 3, \"count\": 1, \"constraints\": [\"优先级3级\"]}",
+        "verdict": "incorrect",
+        "reason": "地点/等级/次数/来源支持；constraints中的等级已受支持，不是未支持执行约束。",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\F01\\repeat_1\\source_truth.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\F01\\repeat_1\\draft_first.json"
+        ]
+      }
+    ],
+    "override": null
+  },
+  {
+    "case_id": "F10",
+    "repeat": 1,
+    "verdict": "PASS",
+    "severity": null,
+    "reason": "真实DOCX表格两来源，目标次数3/2；各确认1次，仅2项生效，原身份重发未再创建，确认者为测试驱动。",
+    "reviewer_type": "AI",
+    "reviewer": "execution assistant; independent of tested deepseek-flash",
+    "rubric_version": "plan-v2.0-section10.2-10.5",
+    "evidence_dir": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\F10\\repeat_1",
+    "evidence_hashes": {
+      "confirmation.json": "17f8505aaedfa26ac23ae9d641853d9a4c3f0dd59460e34eb7fa283a2478e94e",
+      "draft_first.json": "b7b39f42d74185210093c29773577650cb05d039cec15f151d05ce2e9c1eeeb0",
+      "final.json": "3127f6987a92b6e4e73ea8ffe01184fca1c11e6bc32c6955affb0ed74a92946c",
+      "input.json": "a17a856c264b9d16cf7fb3f42156f331028c1ef92b6444239c5a5866bf06c60d",
+      "provider_calls.json": "e17c72942948f371a3868b0defd1441f4c8c7bb5846b33dfa7d98a602473acde",
+      "result.json": "33f62d323573e0ca7bd0c340660245b1378585dc2b6fe712a9485a33b3647fc2",
+      "source_truth.json": "e93adf088617d0fab68afb5cf7a763f952340524f59a4700f74f08c219e1c754",
+      "tool_trace.json": "46fb7d79e06ea1bdbef980e3f9ff57aa2e1dc21ab48a88c27a1643f56e1e1731"
+    },
+    "claims": [
+      {
+        "quote": "候选目标3/2，各确认1次；原confirmation_id与原revision重发",
+        "verdict": "correct",
+        "reason": "真实DOCX表格两来源，目标次数3/2；各确认1次，仅2项生效，原身份重发未再创建，确认者为测试驱动。",
+        "evidence_refs": [
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\F10\\repeat_1\\source_truth.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\F10\\repeat_1\\draft_first.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\F10\\repeat_1\\confirmation.json",
+          "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\F10\\repeat_1\\final.json"
+        ]
+      }
+    ],
+    "override": null
+  }
+]

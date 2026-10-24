@@ -1,0 +1,13 @@
+{
+  "distinct_random_maps": 14,
+  "shapes": 7,
+  "seeds": 2,
+  "main_cases": 28,
+  "main_pass": 28,
+  "replay_datasets": 15,
+  "business_runs": 50,
+  "core_checks": 1715,
+  "record_count": 1767,
+  "scope_max_robots": 32,
+  "html_bytes": 2046015
+}

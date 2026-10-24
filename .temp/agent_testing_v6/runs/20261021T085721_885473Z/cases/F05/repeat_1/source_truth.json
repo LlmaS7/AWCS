@@ -1,0 +1,33 @@
+{
+  "document": {
+    "filename": "F05.txt",
+    "size": 58,
+    "sha256": "85398e89bdcb0054c9c272d77cefc632ca0653debde2db0a122407245e866858",
+    "format": "txt",
+    "encoding": "utf-8-sig",
+    "blocks": [
+      {
+        "id": "b1",
+        "text": "需求甲：四号货架送二号配送点，搬运3次。",
+        "locator": {
+          "type": "text_line",
+          "line": 1
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "truth": [
+    {
+      "marker": "需求甲",
+      "text": "需求甲：四号货架送二号配送点，搬运3次。",
+      "pickup_id": "P03",
+      "delivery_id": "D2",
+      "priority": 2,
+      "count": 3,
+      "quantity_kind": "trips",
+      "constraints": []
+    }
+  ],
+  "excluded": []
+}

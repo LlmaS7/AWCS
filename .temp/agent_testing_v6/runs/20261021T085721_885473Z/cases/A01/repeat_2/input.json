@@ -1,0 +1,15 @@
+{
+  "case_id": "A01",
+  "map": "M01",
+  "text": "把四号货架的货送到二号配送点。",
+  "kind": "chat",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true
+}

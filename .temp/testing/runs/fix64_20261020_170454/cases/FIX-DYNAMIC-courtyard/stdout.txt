@@ -1,0 +1,1 @@
+{"case_id": "FIX-DYNAMIC-courtyard", "status": "INCONCLUSIVE", "completed": 35, "total": 60, "tick": 337, "elapsed": 11.382213599999886, "error": null, "terminal": "no_safe_plan_within_budget"}

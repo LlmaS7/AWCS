@@ -1,0 +1,69 @@
+{
+  "document": {
+    "filename": "F02.txt",
+    "size": 154,
+    "sha256": "1b166555b6053f9c9d225f5fd1b3686bbece7fb03a548b04052a95eefb0bab76",
+    "format": "txt",
+    "encoding": "utf-8-sig",
+    "blocks": [
+      {
+        "id": "b1",
+        "text": "需求甲：四号货架送二号配送点。",
+        "locator": {
+          "type": "text_line",
+          "line": 1
+        }
+      },
+      {
+        "id": "b2",
+        "text": "需求乙：登记货架2送一号配送点，紧急。",
+        "locator": {
+          "type": "text_line",
+          "line": 2
+        }
+      },
+      {
+        "id": "b3",
+        "text": "需求丙：四号货架送一号配送点，3级。",
+        "locator": {
+          "type": "text_line",
+          "line": 3
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "truth": [
+    {
+      "marker": "需求甲",
+      "text": "需求甲：四号货架送二号配送点。",
+      "pickup_id": "P03",
+      "delivery_id": "D2",
+      "priority": 2,
+      "count": 1,
+      "quantity_kind": "unspecified",
+      "constraints": []
+    },
+    {
+      "marker": "需求乙",
+      "text": "需求乙：登记货架2送一号配送点，紧急。",
+      "pickup_id": "P01",
+      "delivery_id": "D1",
+      "priority": 5,
+      "count": 1,
+      "quantity_kind": "unspecified",
+      "constraints": []
+    },
+    {
+      "marker": "需求丙",
+      "text": "需求丙：四号货架送一号配送点，3级。",
+      "pickup_id": "P03",
+      "delivery_id": "D1",
+      "priority": 3,
+      "count": 1,
+      "quantity_kind": "unspecified",
+      "constraints": []
+    }
+  ],
+  "excluded": []
+}

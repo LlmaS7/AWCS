@@ -1,0 +1,476 @@
+[
+  {
+    "request_id": "cffb895edf60422aab2dad6d7c7d19de",
+    "name": "get_locations",
+    "arguments": {
+      "kind": "all"
+    },
+    "operation_id": "cffb895edf60422aab2dad6d7c7d19de/1",
+    "generation": 0,
+    "start": 1792573357.5161555,
+    "result": {
+      "pickup": [
+        {
+          "id": "P01",
+          "name": "取货点01",
+          "aliases": [],
+          "position": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "P02",
+          "name": "取货点02",
+          "aliases": [],
+          "position": [
+            12,
+            6
+          ]
+        },
+        {
+          "id": "P03",
+          "name": "取货点03",
+          "aliases": [],
+          "position": [
+            19,
+            6
+          ]
+        },
+        {
+          "id": "P04",
+          "name": "取货点04",
+          "aliases": [],
+          "position": [
+            33,
+            6
+          ]
+        },
+        {
+          "id": "P05",
+          "name": "取货点05",
+          "aliases": [],
+          "position": [
+            40,
+            6
+          ]
+        },
+        {
+          "id": "P06",
+          "name": "取货点06",
+          "aliases": [],
+          "position": [
+            5,
+            12
+          ]
+        },
+        {
+          "id": "P07",
+          "name": "取货点07",
+          "aliases": [],
+          "position": [
+            12,
+            12
+          ]
+        },
+        {
+          "id": "P08",
+          "name": "取货点08",
+          "aliases": [],
+          "position": [
+            33,
+            12
+          ]
+        },
+        {
+          "id": "P09",
+          "name": "取货点09",
+          "aliases": [],
+          "position": [
+            40,
+            12
+          ]
+        },
+        {
+          "id": "P10",
+          "name": "取货点10",
+          "aliases": [],
+          "position": [
+            19,
+            18
+          ]
+        },
+        {
+          "id": "P11",
+          "name": "取货点11",
+          "aliases": [],
+          "position": [
+            26,
+            18
+          ]
+        },
+        {
+          "id": "P12",
+          "name": "取货点12",
+          "aliases": [],
+          "position": [
+            5,
+            24
+          ]
+        },
+        {
+          "id": "P13",
+          "name": "取货点13",
+          "aliases": [],
+          "position": [
+            12,
+            24
+          ]
+        },
+        {
+          "id": "P14",
+          "name": "取货点14",
+          "aliases": [],
+          "position": [
+            19,
+            24
+          ]
+        },
+        {
+          "id": "P15",
+          "name": "取货点15",
+          "aliases": [],
+          "position": [
+            26,
+            24
+          ]
+        },
+        {
+          "id": "P16",
+          "name": "取货点16",
+          "aliases": [],
+          "position": [
+            33,
+            24
+          ]
+        },
+        {
+          "id": "P17",
+          "name": "取货点17",
+          "aliases": [],
+          "position": [
+            40,
+            24
+          ]
+        },
+        {
+          "id": "P18",
+          "name": "取货点18",
+          "aliases": [],
+          "position": [
+            12,
+            36
+          ]
+        },
+        {
+          "id": "P19",
+          "name": "取货点19",
+          "aliases": [],
+          "position": [
+            19,
+            36
+          ]
+        },
+        {
+          "id": "P20",
+          "name": "取货点20",
+          "aliases": [],
+          "position": [
+            26,
+            36
+          ]
+        },
+        {
+          "id": "P21",
+          "name": "取货点21",
+          "aliases": [],
+          "position": [
+            33,
+            36
+          ]
+        },
+        {
+          "id": "P22",
+          "name": "取货点22",
+          "aliases": [],
+          "position": [
+            40,
+            36
+          ]
+        },
+        {
+          "id": "P23",
+          "name": "取货点23",
+          "aliases": [],
+          "position": [
+            61,
+            36
+          ]
+        },
+        {
+          "id": "P24",
+          "name": "取货点24",
+          "aliases": [],
+          "position": [
+            12,
+            42
+          ]
+        },
+        {
+          "id": "P25",
+          "name": "取货点25",
+          "aliases": [],
+          "position": [
+            19,
+            42
+          ]
+        },
+        {
+          "id": "P26",
+          "name": "取货点26",
+          "aliases": [],
+          "position": [
+            26,
+            42
+          ]
+        },
+        {
+          "id": "P27",
+          "name": "取货点27",
+          "aliases": [],
+          "position": [
+            40,
+            42
+          ]
+        },
+        {
+          "id": "P28",
+          "name": "取货点28",
+          "aliases": [],
+          "position": [
+            61,
+            42
+          ]
+        },
+        {
+          "id": "P29",
+          "name": "取货点29",
+          "aliases": [],
+          "position": [
+            82,
+            42
+          ]
+        },
+        {
+          "id": "P30",
+          "name": "取货点30",
+          "aliases": [],
+          "position": [
+            33,
+            48
+          ]
+        },
+        {
+          "id": "P31",
+          "name": "取货点31",
+          "aliases": [],
+          "position": [
+            54,
+            48
+          ]
+        },
+        {
+          "id": "P32",
+          "name": "取货点32",
+          "aliases": [],
+          "position": [
+            61,
+            48
+          ]
+        },
+        {
+          "id": "P33",
+          "name": "取货点33",
+          "aliases": [],
+          "position": [
+            68,
+            48
+          ]
+        },
+        {
+          "id": "P34",
+          "name": "取货点34",
+          "aliases": [],
+          "position": [
+            82,
+            48
+          ]
+        },
+        {
+          "id": "P35",
+          "name": "取货点35",
+          "aliases": [],
+          "position": [
+            75,
+            54
+          ]
+        }
+      ],
+      "delivery": [
+        {
+          "id": "D1",
+          "name": "1号配送点",
+          "aliases": [
+            "西侧收货区"
+          ],
+          "position": [
+            14,
+            55
+          ]
+        },
+        {
+          "id": "D2",
+          "name": "2号配送点",
+          "aliases": [
+            "复核台"
+          ],
+          "position": [
+            27,
+            55
+          ]
+        },
+        {
+          "id": "D3",
+          "name": "3号配送点",
+          "aliases": [],
+          "position": [
+            41,
+            58
+          ]
+        },
+        {
+          "id": "D4",
+          "name": "4号配送点",
+          "aliases": [],
+          "position": [
+            55,
+            58
+          ]
+        },
+        {
+          "id": "D5",
+          "name": "5号配送点",
+          "aliases": [],
+          "position": [
+            69,
+            58
+          ]
+        },
+        {
+          "id": "D6",
+          "name": "6号配送点",
+          "aliases": [],
+          "position": [
+            82,
+            58
+          ]
+        }
+      ],
+      "shelf": [
+        {
+          "id": "S1",
+          "name": "四号货架",
+          "aliases": [
+            "4号货架",
+            "四号架",
+            "蓝色货架"
+          ],
+          "pickup_id": "P05",
+          "pickup_position": [
+            40,
+            6
+          ]
+        },
+        {
+          "id": "S2",
+          "name": "登记货架2",
+          "aliases": [
+            "东侧货架"
+          ],
+          "pickup_id": "P01",
+          "pickup_position": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "S3",
+          "name": "登记货架3",
+          "aliases": [
+            "东侧货架"
+          ],
+          "pickup_id": "P02",
+          "pickup_position": [
+            12,
+            6
+          ]
+        }
+      ],
+      "note": "货架通过pickup_id取货，编号不必相同；没有登记的货架不能猜测。名称或别名有多个候选时先询问。当前无库存系统，一项任务表示一次搬运，不推断全部库存数量。"
+    },
+    "seconds": 0.0006549358367919922
+  },
+  {
+    "request_id": "cffb895edf60422aab2dad6d7c7d19de",
+    "name": "create_tasks",
+    "arguments": {
+      "tasks": [
+        {
+          "pickup_id": "P05",
+          "delivery_id": "D2"
+        }
+      ]
+    },
+    "operation_id": "cffb895edf60422aab2dad6d7c7d19de/2",
+    "generation": 0,
+    "start": 1792573360.8275084,
+    "result": {
+      "status": "finished",
+      "actions": [
+        {
+          "operation": "add",
+          "outcome": "applied",
+          "task_id": "T002",
+          "pickup_id": "P05",
+          "pickup_name": "取货点05",
+          "pickup_label": "四号货架",
+          "shelf_names": [
+            "四号货架"
+          ],
+          "delivery_id": "D2",
+          "delivery_name": "2号配送点",
+          "priority": 2,
+          "business_phase": "to_pickup",
+          "phase_label": "已分配，处于取货阶段",
+          "assigned_robot": "R3",
+          "assignment_mode": "auto",
+          "requested_robot": null,
+          "assignment_label": "自动分配",
+          "copied_from": null,
+          "planning": "available"
+        }
+      ]
+    },
+    "seconds": 0.31806445121765137
+  }
+]

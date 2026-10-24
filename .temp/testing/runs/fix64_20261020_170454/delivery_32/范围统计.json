@@ -1,0 +1,50 @@
+{
+  "max_robots": 32,
+  "records": 1767,
+  "counts": {
+    "PASS": 1762,
+    "INCONCLUSIVE": 5
+  },
+  "groups": {
+    "P0": {
+      "PASS": 10
+    },
+    "P1": {
+      "PASS": 1325
+    },
+    "P2": {
+      "PASS": 12
+    },
+    "P3": {
+      "PASS": 354
+    },
+    "P4-dynamic": {
+      "INCONCLUSIVE": 2,
+      "PASS": 1
+    },
+    "P4-main": {
+      "PASS": 28
+    },
+    "P5": {
+      "PASS": 14
+    },
+    "P5-process": {
+      "PASS": 2
+    },
+    "P6-32": {
+      "PASS": 5,
+      "INCONCLUSIVE": 3
+    },
+    "P6-coupling": {
+      "PASS": 9
+    },
+    "P6-mode": {
+      "PASS": 2
+    }
+  },
+  "unit_tests": 25,
+  "traces": 50,
+  "trace_ticks": 16634,
+  "plans": 1178,
+  "service_transitions": 2375
+}

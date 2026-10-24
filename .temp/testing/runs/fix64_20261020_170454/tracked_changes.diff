@@ -1,0 +1,69 @@
+diff --git a/controller.py b/controller.py
+index daf6533..d916a8c 100644
+--- a/controller.py
++++ b/controller.py
+@@ -126,6 +126,12 @@ class Controller:
+             return
+         if self._requested and self._requested.domain_revision == self._domain_revision:
+             return
++        if self.sim.continue_retained_plan():
++            self._planning = False
++            self._publish()
++            self._finish_waiters()
++            self._resume_jobs()
++            return
+         self._request_serial += 1
+         key = RequestKey(self.run_id, self.generation, self._domain_revision, self.sim.tick,
+                          self._request_serial, self.sim.warehouse.topology.map_hash)
+diff --git a/simulation.py b/simulation.py
+index 953c432..14a5f92 100644
+--- a/simulation.py
++++ b/simulation.py
+@@ -332,16 +332,44 @@ class Simulation:
+             return True
+         if self.profile.mode=='legacy_full':
+             return self._legacy_ensure_plan()
++        if self.continue_retained_plan():
++            return True
+         from coordination.coordinator import solve
+         return self.apply_proposal(solve(self))
+ 
++    def continue_retained_plan(self):
++        """Recheck a retained route after execution events, without extending its lease."""
++        if self.profile.mode != 'scalable_full' or self.plan_valid_until is None:
++            return False
++        from coordination.recovery import can_retain_routes
++        if (self.metrics.get('planning_status') == 'retained_safe_plan'
++                and self.tick < self.plan_valid_until and can_retain_routes(self)):
++            self.dirty = False
++            self.metrics['retained_rechecks'] = self.metrics.get('retained_rechecks', 0)+1
++            return True
++        self.plan_valid_until = None
++        return False
++
+     def apply_proposal(self, proposal):
+-        # 预算内未找到安全方案时暂停；这不代表已证明当前问题无解。
+         if not proposal.success:
+-            self.paused = True
+             self.failed_attempts += 1
+-            self.metrics['last_plan_ms'] = proposal.metrics.get('last_plan_ms',0)
++            elapsed_ms = proposal.metrics.get('last_plan_ms', 0)
++            self.metrics['last_plan_ms'] = elapsed_ms
++            self.metrics['planning_seconds'] += elapsed_ms/1000
+             self.metrics['planning_status'] = proposal.status
++            # Revalidate the LIVE committed state; never adopt a failed candidate.
++            # Cancellation and worker errors must not grant an execution lease.
++            from coordination.recovery import RETAIN_STEPS, can_retain_routes
++            if (proposal.status in ('timeout', 'no_safe_plan', 'ordering_exhausted')
++                    and can_retain_routes(self)):
++                self.plan_valid_until = self.tick+RETAIN_STEPS
++                self.dirty = False
++                self.metrics['retained_plans'] = self.metrics.get('retained_plans', 0)+1
++                self.metrics['last_replan_status'] = proposal.status
++                self.metrics['planning_status'] = 'retained_safe_plan'
++                self.message = '重规划未成功，已复核现有完整安全路线，限步继续执行'
++                return True
++            self.paused = True
+             self.message = '已安全暂停：当前预算内未形成完整安全方案（不是无解证明）'
+             return False
+         from copy import copy

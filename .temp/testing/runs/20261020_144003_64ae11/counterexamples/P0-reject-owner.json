@@ -1,0 +1,8 @@
+{
+  "case_id": "P0-reject-owner",
+  "stage": "P0",
+  "inputs": null,
+  "status": "FAIL",
+  "error": "AssertionError: duplicate ownership accepted",
+  "traceback": "Traceback (most recent call last):\n  File \"E:\\_PROJECTS\\AWCS\\.temp\\testing\\core.py\", line 65, in case\n    details=fn() or {}\n            ~~^^\n  File \"E:\\_PROJECTS\\AWCS\\.temp\\testing\\core.py\", line 111, in unique_checker\n    raise AssertionError('duplicate ownership accepted')\nAssertionError: duplicate ownership accepted\n"
+}

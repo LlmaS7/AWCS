@@ -1,0 +1,87 @@
+[
+  {
+    "id": 1,
+    "kind": "start",
+    "request_id": "f14392cbe8f8423680dc93b9077a10a0",
+    "job": "import_extract",
+    "generation": 0,
+    "text": "",
+    "task_id": null,
+    "filename": "F07.txt"
+  },
+  {
+    "id": 2,
+    "kind": "import_progress",
+    "request_id": "f14392cbe8f8423680dc93b9077a10a0",
+    "stage": "正在分析文件；确认前不会创建任务"
+  },
+  {
+    "id": 3,
+    "kind": "import_ready",
+    "request_id": "f14392cbe8f8423680dc93b9077a10a0",
+    "draft_id": "c46e32c6ea754f7ea5860d90fb64b463",
+    "generation": 0,
+    "count": 1
+  },
+  {
+    "id": 4,
+    "kind": "done",
+    "request_id": "f14392cbe8f8423680dc93b9077a10a0"
+  },
+  {
+    "id": 5,
+    "kind": "start",
+    "request_id": "4622311b67a74b47a85e96b7efa2cac9",
+    "job": "import_commit",
+    "generation": 0,
+    "filename": "F07.txt"
+  },
+  {
+    "id": 6,
+    "kind": "import_progress",
+    "request_id": "4622311b67a74b47a85e96b7efa2cac9",
+    "stage": "正在逐项创建并规划路线",
+    "completed": 1,
+    "total": 1
+  },
+  {
+    "id": 7,
+    "kind": "result",
+    "request_id": "4622311b67a74b47a85e96b7efa2cac9",
+    "generation": 0,
+    "tool": "create_tasks",
+    "result": {
+      "status": "finished",
+      "actions": [
+        {
+          "operation": "add",
+          "outcome": "applied",
+          "task_id": "T001",
+          "pickup_id": "P05",
+          "pickup_name": "取货点05",
+          "pickup_label": "四号货架",
+          "shelf_names": [
+            "四号货架"
+          ],
+          "delivery_id": "D2",
+          "delivery_name": "2号配送点",
+          "priority": 2,
+          "business_phase": "to_pickup",
+          "phase_label": "已分配，处于取货阶段",
+          "assigned_robot": "R4",
+          "assignment_mode": "auto",
+          "requested_robot": null,
+          "assignment_label": "自动分配",
+          "copied_from": null,
+          "planning": "available"
+        }
+      ]
+    },
+    "submission_id": "4622311b67a74b47a85e96b7efa2cac9"
+  },
+  {
+    "id": 8,
+    "kind": "done",
+    "request_id": "4622311b67a74b47a85e96b7efa2cac9"
+  }
+]

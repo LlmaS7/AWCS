@@ -1,0 +1,11 @@
+{
+  "matrix_manifest": "source_hashes_after_fix.json",
+  "final_manifest": "source_hashes_cleanup.json",
+  "changed": [
+    "simulation.py",
+    "tests/test_plan_recovery.py"
+  ],
+  "scope": "successful-plan status message; direct legacy mode clears obsolete execution lease; three regression cases added",
+  "route_recovery_module_unchanged": true,
+  "controller_unchanged": true
+}

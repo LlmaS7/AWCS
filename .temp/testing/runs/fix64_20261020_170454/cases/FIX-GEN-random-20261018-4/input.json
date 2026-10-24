@@ -1,0 +1,62 @@
+{
+  "case_id": "FIX-GEN-random-20261018-4",
+  "stage": "P4-main",
+  "map_file": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-random-20261018-4\\actual_map.json",
+  "robots": 4,
+  "seed": 20262018,
+  "tasks": [
+    {
+      "tick": 0,
+      "pickup": 12,
+      "delivery": 3,
+      "priority": 1
+    },
+    {
+      "tick": 0,
+      "pickup": 7,
+      "delivery": 2,
+      "priority": 2
+    },
+    {
+      "tick": 0,
+      "pickup": 24,
+      "delivery": 2,
+      "priority": 3
+    },
+    {
+      "tick": 0,
+      "pickup": 8,
+      "delivery": 5,
+      "priority": 4
+    },
+    {
+      "tick": 0,
+      "pickup": 28,
+      "delivery": 1,
+      "priority": 5
+    },
+    {
+      "tick": 0,
+      "pickup": 23,
+      "delivery": 0,
+      "priority": 1
+    },
+    {
+      "tick": 0,
+      "pickup": 26,
+      "delivery": 3,
+      "priority": 2
+    },
+    {
+      "tick": 0,
+      "pickup": 0,
+      "delivery": 0,
+      "priority": 3
+    }
+  ],
+  "plan_seconds": 3,
+  "ticks": 6000,
+  "timeout": 90,
+  "wall_seconds": 85,
+  "source_case": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-random-20261018-4"
+}

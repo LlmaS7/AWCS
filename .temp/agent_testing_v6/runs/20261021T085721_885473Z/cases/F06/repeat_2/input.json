@@ -1,0 +1,38 @@
+{
+  "case_id": "F06",
+  "map": "M02",
+  "text": "",
+  "kind": "document",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true,
+  "document": {
+    "filename": "F06.docx",
+    "lines": [
+      "需求甲：四号货架的20箱货送二号配送点，搬运次数未定。"
+    ],
+    "text": "需求甲：四号货架的20箱货送二号配送点，搬运次数未定。",
+    "truth": [
+      {
+        "marker": "需求甲",
+        "text": "需求甲：四号货架的20箱货送二号配送点，搬运次数未定。",
+        "pickup_id": "P01",
+        "delivery_id": "D2",
+        "priority": 2,
+        "count": null,
+        "quantity_kind": "goods",
+        "constraints": []
+      }
+    ],
+    "excluded": [],
+    "confirmation": {
+      "count": 2
+    }
+  }
+}

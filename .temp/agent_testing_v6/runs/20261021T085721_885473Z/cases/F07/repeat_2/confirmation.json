@@ -1,0 +1,72 @@
+{
+  "actor": "test_harness_confirmation",
+  "payload": {
+    "draft_id": "fe644e1e412249bd904a29f72dc87f05",
+    "expected_revision": 2,
+    "confirmation_id": "bc45a60fa84148bdaa33f5f946101a2f",
+    "selections": [
+      {
+        "candidate_id": "c1",
+        "count": 1
+      }
+    ]
+  },
+  "operation": {
+    "submission_id": "bc45a60fa84148bdaa33f5f946101a2f",
+    "draft_id": "fe644e1e412249bd904a29f72dc87f05",
+    "generation": 0,
+    "status": "finished",
+    "request_id": "bc45a60fa84148bdaa33f5f946101a2f",
+    "items": [
+      {
+        "candidate_id": "c1",
+        "occurrence_index": 1,
+        "pickup_id": "P05",
+        "delivery_id": "D2",
+        "priority": 2,
+        "source": {
+          "kind": "file_import",
+          "filename": "F07.txt",
+          "sha256": "8be07338773a3f4287cf804eec6700a86352f5eb4420c51b8a509050524901a3",
+          "import_batch_id": "fe644e1e412249bd904a29f72dc87f05",
+          "candidate_id": "c1",
+          "occurrence_index": 1,
+          "locators": [
+            {
+              "type": "text_line",
+              "line": 1
+            }
+          ],
+          "human_edited": true
+        }
+      }
+    ],
+    "result": {
+      "status": "finished",
+      "actions": [
+        {
+          "operation": "add",
+          "outcome": "applied",
+          "task_id": "T001",
+          "pickup_id": "P05",
+          "pickup_name": "取货点05",
+          "pickup_label": "四号货架",
+          "shelf_names": [
+            "四号货架"
+          ],
+          "delivery_id": "D2",
+          "delivery_name": "2号配送点",
+          "priority": 2,
+          "business_phase": "to_pickup",
+          "phase_label": "已分配，处于取货阶段",
+          "assigned_robot": "R4",
+          "assignment_mode": "auto",
+          "requested_robot": null,
+          "assignment_label": "自动分配",
+          "copied_from": null,
+          "planning": "available"
+        }
+      ]
+    }
+  }
+}

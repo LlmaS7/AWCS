@@ -1,0 +1,15 @@
+{
+  "case_id": "D07",
+  "map": "M01",
+  "text": "查询任务{first}的状态。",
+  "kind": "chat",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true
+}

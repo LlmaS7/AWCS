@@ -1,0 +1,23 @@
+{
+  "case_id": "F08",
+  "repeat": 1,
+  "layer": "matrix",
+  "execution_status": "COMPLETED",
+  "raw_status": "PASS",
+  "effective_status": "PASS",
+  "review_status": "COMPLETED",
+  "human_signoff": null,
+  "evidence": "E:\\_PROJECTS\\AWCS\\.temp\\agent_testing_v6\\runs\\20261021T085721_885473Z\\cases\\F08\\repeat_1",
+  "fixture_valid": true,
+  "protocol_verdict": "PASS",
+  "business_verdict": "PASS",
+  "required_process_verdict": "PASS",
+  "response_verdict": "PASS",
+  "network_error": false,
+  "details": {
+    "business_errors": [],
+    "pending": [],
+    "confirmation": "intentionally blocked until explicit acceptance"
+  },
+  "protocol_errors": []
+}

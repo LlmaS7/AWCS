@@ -1,0 +1,296 @@
+{
+  "case_id": "GEN-rooms-20261018-4",
+  "stage": "P4-main",
+  "status": "PASS",
+  "assignment_correct": null,
+  "path_safe": true,
+  "tasks_completed": true,
+  "plan_checks": 8,
+  "path_points_checked": 5239,
+  "actual_steps_checked": 332,
+  "planning_times": [
+    0.10286379999979545,
+    0.02506970000013098,
+    0.03303440000036062,
+    0.028731799999604846,
+    0.02088370000001305,
+    0.018724699999893346,
+    0.010475999999925989,
+    0.004769800000303803
+  ],
+  "inputs": {
+    "case_id": "GEN-rooms-20261018-4",
+    "stage": "P4-main",
+    "map_file": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\datasets\\maps\\rooms_20261018.json",
+    "robots": 4,
+    "seed": 20262018,
+    "tasks": [
+      {
+        "tick": 0,
+        "pickup": 12,
+        "delivery": 3,
+        "priority": 1
+      },
+      {
+        "tick": 0,
+        "pickup": 7,
+        "delivery": 2,
+        "priority": 2
+      },
+      {
+        "tick": 0,
+        "pickup": 24,
+        "delivery": 2,
+        "priority": 3
+      },
+      {
+        "tick": 0,
+        "pickup": 8,
+        "delivery": 5,
+        "priority": 4
+      },
+      {
+        "tick": 0,
+        "pickup": 28,
+        "delivery": 1,
+        "priority": 5
+      },
+      {
+        "tick": 0,
+        "pickup": 23,
+        "delivery": 0,
+        "priority": 1
+      },
+      {
+        "tick": 0,
+        "pickup": 26,
+        "delivery": 3,
+        "priority": 2
+      },
+      {
+        "tick": 0,
+        "pickup": 0,
+        "delivery": 0,
+        "priority": 3
+      }
+    ],
+    "plan_seconds": 3,
+    "ticks": 6000,
+    "timeout": 90,
+    "wall_seconds": 85
+  },
+  "actual_map_sha256": "0a9f8b76248d9e4b1561bec4319873b1eed156371b33b3dc0d4137d594775c73",
+  "tick": 332,
+  "completed": 8,
+  "total": 8,
+  "submitted": 8,
+  "scheduled": 8,
+  "remaining": 0,
+  "terminal": "all_tasks_completed",
+  "message": "T001 已完成 · R1 可接新任务",
+  "metrics": {
+    "planning_seconds": 0.23630099999991216,
+    "last_plan_ms": 4.6158999998624495,
+    "plans": 8,
+    "cbs_nodes": 1,
+    "preemptions": 0,
+    "collisions": 0,
+    "recovery_attempts": 0,
+    "reservation_plans": 0,
+    "planner": "CBS",
+    "reservation_orders": 0,
+    "candidate_count": 1,
+    "planning_scope": "两阶段硬优先级 / 软偏好 / 静态ETA匹配＋协调可行路线",
+    "planning_status": "success",
+    "completed": 8,
+    "total": 8,
+    "pending": 0,
+    "avg_completion": 177.0,
+    "avg_wait": 118.875,
+    "distance": 939,
+    "waits": 0
+  },
+  "all_parked": false,
+  "final_tasks": [
+    {
+      "id": 1,
+      "pickup": [
+        26,
+        18
+      ],
+      "delivery": [
+        55,
+        55
+      ],
+      "priority": 1,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 1,
+      "picked_at": 264,
+      "completed_at": 332,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 2,
+      "pickup": [
+        12,
+        12
+      ],
+      "delivery": [
+        41,
+        55
+      ],
+      "priority": 2,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 4,
+      "picked_at": 187,
+      "completed_at": 261,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 3,
+      "pickup": [
+        54,
+        48
+      ],
+      "delivery": [
+        41,
+        55
+      ],
+      "priority": 3,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 2,
+      "picked_at": 41,
+      "completed_at": 63,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 4,
+      "pickup": [
+        33,
+        12
+      ],
+      "delivery": [
+        82,
+        58
+      ],
+      "priority": 4,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 1,
+      "picked_at": 69,
+      "completed_at": 166,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 5,
+      "pickup": [
+        75,
+        54
+      ],
+      "delivery": [
+        28,
+        55
+      ],
+      "priority": 5,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 4,
+      "picked_at": 54,
+      "completed_at": 104,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 6,
+      "pickup": [
+        33,
+        48
+      ],
+      "delivery": [
+        25,
+        55
+      ],
+      "priority": 1,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 2,
+      "picked_at": 152,
+      "completed_at": 169,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 7,
+      "pickup": [
+        68,
+        48
+      ],
+      "delivery": [
+        55,
+        55
+      ],
+      "priority": 2,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 2,
+      "picked_at": 99,
+      "completed_at": 121,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 8,
+      "pickup": [
+        5,
+        6
+      ],
+      "delivery": [
+        25,
+        55
+      ],
+      "priority": 3,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 3,
+      "picked_at": 101,
+      "completed_at": 200,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    }
+  ],
+  "elapsed": 0.29507269999976415,
+  "planning_p50": 0.022976700000072015,
+  "planning_p95": 0.10286379999979545,
+  "planning_max": 0.10286379999979545
+}

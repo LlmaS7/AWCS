@@ -1,0 +1,1 @@
+{"case_id": "FIX-DYNAMIC-rooms", "status": "PASS", "completed": 60, "total": 60, "tick": 604, "elapsed": 8.929624099999273, "error": null, "terminal": "all_tasks_completed"}

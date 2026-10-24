@@ -1,0 +1,1204 @@
+{
+  "tick": 373,
+  "message": "T026 已完成 · R4 可接新任务",
+  "robots": [
+    {
+      "id": 1,
+      "position": [
+        24,
+        58
+      ],
+      "previous": [
+        24,
+        58
+      ],
+      "parking": [
+        24,
+        58
+      ],
+      "phase": "idle",
+      "task_id": null,
+      "next_task_id": null,
+      "service_left": 0,
+      "loaded": false,
+      "path": [
+        [
+          24,
+          58
+        ]
+      ],
+      "distance": 172,
+      "waits": 2,
+      "completed": 2
+    },
+    {
+      "id": 2,
+      "position": [
+        25,
+        58
+      ],
+      "previous": [
+        25,
+        58
+      ],
+      "parking": [
+        25,
+        58
+      ],
+      "phase": "idle",
+      "task_id": null,
+      "next_task_id": null,
+      "service_left": 0,
+      "loaded": false,
+      "path": [
+        [
+          25,
+          58
+        ]
+      ],
+      "distance": 294,
+      "waits": 0,
+      "completed": 3
+    },
+    {
+      "id": 3,
+      "position": [
+        26,
+        58
+      ],
+      "previous": [
+        26,
+        58
+      ],
+      "parking": [
+        26,
+        58
+      ],
+      "phase": "idle",
+      "task_id": null,
+      "next_task_id": null,
+      "service_left": 0,
+      "loaded": false,
+      "path": [
+        [
+          26,
+          58
+        ]
+      ],
+      "distance": 266,
+      "waits": 0,
+      "completed": 2
+    },
+    {
+      "id": 4,
+      "position": [
+        55,
+        55
+      ],
+      "previous": [
+        55,
+        55
+      ],
+      "parking": [
+        51,
+        58
+      ],
+      "phase": "parking",
+      "task_id": null,
+      "next_task_id": null,
+      "service_left": 0,
+      "loaded": false,
+      "path": [
+        [
+          55,
+          55
+        ],
+        [
+          55,
+          56
+        ],
+        [
+          55,
+          57
+        ],
+        [
+          54,
+          57
+        ],
+        [
+          53,
+          57
+        ],
+        [
+          52,
+          57
+        ],
+        [
+          51,
+          57
+        ],
+        [
+          51,
+          58
+        ]
+      ],
+      "distance": 365,
+      "waits": 0,
+      "completed": 2
+    },
+    {
+      "id": 5,
+      "position": [
+        40,
+        58
+      ],
+      "previous": [
+        40,
+        58
+      ],
+      "parking": [
+        40,
+        58
+      ],
+      "phase": "idle",
+      "task_id": null,
+      "next_task_id": null,
+      "service_left": 0,
+      "loaded": false,
+      "path": [
+        [
+          40,
+          58
+        ]
+      ],
+      "distance": 164,
+      "waits": 1,
+      "completed": 1
+    },
+    {
+      "id": 6,
+      "position": [
+        52,
+        58
+      ],
+      "previous": [
+        52,
+        58
+      ],
+      "parking": [
+        52,
+        58
+      ],
+      "phase": "idle",
+      "task_id": null,
+      "next_task_id": null,
+      "service_left": 0,
+      "loaded": false,
+      "path": [
+        [
+          52,
+          58
+        ]
+      ],
+      "distance": 291,
+      "waits": 4,
+      "completed": 2
+    },
+    {
+      "id": 7,
+      "position": [
+        28,
+        58
+      ],
+      "previous": [
+        28,
+        58
+      ],
+      "parking": [
+        28,
+        58
+      ],
+      "phase": "idle",
+      "task_id": null,
+      "next_task_id": null,
+      "service_left": 0,
+      "loaded": false,
+      "path": [
+        [
+          28,
+          58
+        ]
+      ],
+      "distance": 172,
+      "waits": 0,
+      "completed": 2
+    },
+    {
+      "id": 8,
+      "position": [
+        27,
+        58
+      ],
+      "previous": [
+        27,
+        58
+      ],
+      "parking": [
+        27,
+        58
+      ],
+      "phase": "idle",
+      "task_id": null,
+      "next_task_id": null,
+      "service_left": 0,
+      "loaded": false,
+      "path": [
+        [
+          27,
+          58
+        ]
+      ],
+      "distance": 218,
+      "waits": 2,
+      "completed": 2
+    },
+    {
+      "id": 9,
+      "position": [
+        25,
+        52
+      ],
+      "previous": [
+        25,
+        52
+      ],
+      "parking": [
+        25,
+        52
+      ],
+      "phase": "idle",
+      "task_id": null,
+      "next_task_id": null,
+      "service_left": 0,
+      "loaded": false,
+      "path": [
+        [
+          25,
+          52
+        ]
+      ],
+      "distance": 217,
+      "waits": 4,
+      "completed": 2
+    },
+    {
+      "id": 10,
+      "position": [
+        29,
+        58
+      ],
+      "previous": [
+        29,
+        58
+      ],
+      "parking": [
+        29,
+        58
+      ],
+      "phase": "idle",
+      "task_id": null,
+      "next_task_id": null,
+      "service_left": 0,
+      "loaded": false,
+      "path": [
+        [
+          29,
+          58
+        ]
+      ],
+      "distance": 160,
+      "waits": 2,
+      "completed": 2
+    },
+    {
+      "id": 11,
+      "position": [
+        53,
+        58
+      ],
+      "previous": [
+        53,
+        58
+      ],
+      "parking": [
+        53,
+        58
+      ],
+      "phase": "idle",
+      "task_id": null,
+      "next_task_id": null,
+      "service_left": 0,
+      "loaded": false,
+      "path": [
+        [
+          53,
+          58
+        ]
+      ],
+      "distance": 253,
+      "waits": 0,
+      "completed": 2
+    },
+    {
+      "id": 12,
+      "position": [
+        54,
+        58
+      ],
+      "previous": [
+        54,
+        58
+      ],
+      "parking": [
+        54,
+        58
+      ],
+      "phase": "idle",
+      "task_id": null,
+      "next_task_id": null,
+      "service_left": 0,
+      "loaded": false,
+      "path": [
+        [
+          54,
+          58
+        ]
+      ],
+      "distance": 191,
+      "waits": 0,
+      "completed": 2
+    },
+    {
+      "id": 13,
+      "position": [
+        90,
+        40
+      ],
+      "previous": [
+        90,
+        40
+      ],
+      "parking": [
+        90,
+        40
+      ],
+      "phase": "idle",
+      "task_id": null,
+      "next_task_id": null,
+      "service_left": 0,
+      "loaded": false,
+      "path": [
+        [
+          90,
+          40
+        ]
+      ],
+      "distance": 214,
+      "waits": 0,
+      "completed": 2
+    },
+    {
+      "id": 14,
+      "position": [
+        26,
+        52
+      ],
+      "previous": [
+        26,
+        52
+      ],
+      "parking": [
+        26,
+        52
+      ],
+      "phase": "idle",
+      "task_id": null,
+      "next_task_id": null,
+      "service_left": 0,
+      "loaded": false,
+      "path": [
+        [
+          26,
+          52
+        ]
+      ],
+      "distance": 231,
+      "waits": 0,
+      "completed": 2
+    },
+    {
+      "id": 15,
+      "position": [
+        41,
+        58
+      ],
+      "previous": [
+        41,
+        58
+      ],
+      "parking": [
+        41,
+        58
+      ],
+      "phase": "idle",
+      "task_id": null,
+      "next_task_id": null,
+      "service_left": 0,
+      "loaded": false,
+      "path": [
+        [
+          41,
+          58
+        ]
+      ],
+      "distance": 191,
+      "waits": 0,
+      "completed": 2
+    },
+    {
+      "id": 16,
+      "position": [
+        55,
+        58
+      ],
+      "previous": [
+        55,
+        58
+      ],
+      "parking": [
+        55,
+        58
+      ],
+      "phase": "idle",
+      "task_id": null,
+      "next_task_id": null,
+      "service_left": 0,
+      "loaded": false,
+      "path": [
+        [
+          55,
+          58
+        ]
+      ],
+      "distance": 186,
+      "waits": 5,
+      "completed": 2
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "pickup": [
+        54,
+        18
+      ],
+      "delivery": [
+        55,
+        55
+      ],
+      "priority": 1,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 11,
+      "picked_at": 214,
+      "completed_at": 256,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 2,
+      "pickup": [
+        40,
+        12
+      ],
+      "delivery": [
+        41,
+        55
+      ],
+      "priority": 2,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 15,
+      "picked_at": 148,
+      "completed_at": 196,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 3,
+      "pickup": [
+        61,
+        48
+      ],
+      "delivery": [
+        41,
+        55
+      ],
+      "priority": 3,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 12,
+      "picked_at": 38,
+      "completed_at": 67,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 4,
+      "pickup": [
+        61,
+        12
+      ],
+      "delivery": [
+        82,
+        58
+      ],
+      "priority": 4,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 11,
+      "picked_at": 75,
+      "completed_at": 144,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 5,
+      "pickup": [
+        75,
+        54
+      ],
+      "delivery": [
+        28,
+        55
+      ],
+      "priority": 5,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 16,
+      "picked_at": 42,
+      "completed_at": 92,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 6,
+      "pickup": [
+        54,
+        48
+      ],
+      "delivery": [
+        25,
+        55
+      ],
+      "priority": 1,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 1,
+      "picked_at": 140,
+      "completed_at": 178,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 7,
+      "pickup": [
+        82,
+        48
+      ],
+      "delivery": [
+        55,
+        55
+      ],
+      "priority": 2,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 16,
+      "picked_at": 155,
+      "completed_at": 191,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 8,
+      "pickup": [
+        5,
+        6
+      ],
+      "delivery": [
+        25,
+        55
+      ],
+      "priority": 3,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 14,
+      "picked_at": 162,
+      "completed_at": 235,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 9,
+      "pickup": [
+        19,
+        18
+      ],
+      "delivery": [
+        41,
+        55
+      ],
+      "priority": 4,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 2,
+      "picked_at": 50,
+      "completed_at": 111,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 10,
+      "pickup": [
+        5,
+        12
+      ],
+      "delivery": [
+        41,
+        55
+      ],
+      "priority": 5,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 3,
+      "picked_at": 69,
+      "completed_at": 150,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 11,
+      "pickup": [
+        33,
+        36
+      ],
+      "delivery": [
+        25,
+        55
+      ],
+      "priority": 1,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 9,
+      "picked_at": 193,
+      "completed_at": 226,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 12,
+      "pickup": [
+        61,
+        24
+      ],
+      "delivery": [
+        82,
+        58
+      ],
+      "priority": 2,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 13,
+      "picked_at": 139,
+      "completed_at": 196,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 13,
+      "pickup": [
+        26,
+        12
+      ],
+      "delivery": [
+        25,
+        55
+      ],
+      "priority": 3,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 6,
+      "picked_at": 57,
+      "completed_at": 105,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 14,
+      "pickup": [
+        26,
+        12
+      ],
+      "delivery": [
+        55,
+        55
+      ],
+      "priority": 4,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 1,
+      "picked_at": 54,
+      "completed_at": 128,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 15,
+      "pickup": [
+        33,
+        12
+      ],
+      "delivery": [
+        69,
+        58
+      ],
+      "priority": 5,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 9,
+      "picked_at": 49,
+      "completed_at": 133,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 16,
+      "pickup": [
+        33,
+        42
+      ],
+      "delivery": [
+        28,
+        55
+      ],
+      "priority": 1,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 2,
+      "picked_at": 134,
+      "completed_at": 154,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 17,
+      "pickup": [
+        33,
+        6
+      ],
+      "delivery": [
+        25,
+        55
+      ],
+      "priority": 2,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 8,
+      "picked_at": 164,
+      "completed_at": 223,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 18,
+      "pickup": [
+        33,
+        24
+      ],
+      "delivery": [
+        25,
+        55
+      ],
+      "priority": 3,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 7,
+      "picked_at": 39,
+      "completed_at": 80,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 19,
+      "pickup": [
+        33,
+        24
+      ],
+      "delivery": [
+        41,
+        55
+      ],
+      "priority": 4,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 10,
+      "picked_at": 42,
+      "completed_at": 85,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 20,
+      "pickup": [
+        54,
+        36
+      ],
+      "delivery": [
+        41,
+        55
+      ],
+      "priority": 5,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 14,
+      "picked_at": 41,
+      "completed_at": 75,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 21,
+      "pickup": [
+        54,
+        18
+      ],
+      "delivery": [
+        25,
+        55
+      ],
+      "priority": 1,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 3,
+      "picked_at": 202,
+      "completed_at": 270,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 22,
+      "pickup": [
+        5,
+        12
+      ],
+      "delivery": [
+        69,
+        58
+      ],
+      "priority": 2,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 6,
+      "picked_at": 172,
+      "completed_at": 284,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 23,
+      "pickup": [
+        61,
+        24
+      ],
+      "delivery": [
+        55,
+        55
+      ],
+      "priority": 3,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 13,
+      "picked_at": 61,
+      "completed_at": 100,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 24,
+      "pickup": [
+        26,
+        12
+      ],
+      "delivery": [
+        82,
+        58
+      ],
+      "priority": 4,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 4,
+      "picked_at": 51,
+      "completed_at": 155,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 25,
+      "pickup": [
+        40,
+        12
+      ],
+      "delivery": [
+        41,
+        55
+      ],
+      "priority": 5,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 15,
+      "picked_at": 50,
+      "completed_at": 98,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 26,
+      "pickup": [
+        12,
+        6
+      ],
+      "delivery": [
+        55,
+        55
+      ],
+      "priority": 1,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 4,
+      "picked_at": 279,
+      "completed_at": 373,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 27,
+      "pickup": [
+        54,
+        36
+      ],
+      "delivery": [
+        28,
+        55
+      ],
+      "priority": 2,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 7,
+      "picked_at": 130,
+      "completed_at": 177,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 28,
+      "pickup": [
+        40,
+        18
+      ],
+      "delivery": [
+        69,
+        58
+      ],
+      "priority": 3,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 12,
+      "picked_at": 111,
+      "completed_at": 184,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 29,
+      "pickup": [
+        5,
+        6
+      ],
+      "delivery": [
+        41,
+        55
+      ],
+      "priority": 4,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 5,
+      "picked_at": 77,
+      "completed_at": 165,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 30,
+      "pickup": [
+        33,
+        12
+      ],
+      "delivery": [
+        41,
+        55
+      ],
+      "priority": 5,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 8,
+      "picked_at": 52,
+      "completed_at": 105,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 31,
+      "pickup": [
+        5,
+        6
+      ],
+      "delivery": [
+        25,
+        55
+      ],
+      "priority": 1,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 2,
+      "picked_at": 228,
+      "completed_at": 303,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    },
+    {
+      "id": 32,
+      "pickup": [
+        54,
+        36
+      ],
+      "delivery": [
+        28,
+        55
+      ],
+      "priority": 2,
+      "created_at": 0,
+      "status": "completed",
+      "robot_id": 10,
+      "picked_at": 119,
+      "completed_at": 166,
+      "preemptions": 0,
+      "assignment_mode": "auto",
+      "assignment_robot_id": null,
+      "copied_from": null,
+      "source": null
+    }
+  ]
+}

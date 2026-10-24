@@ -1,0 +1,9 @@
+{
+  "case_id": "PROBE-rooms",
+  "stage": "P4-probe",
+  "kind": "probe",
+  "map_file": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\datasets\\maps\\rooms_20261018.json",
+  "robots": 16,
+  "seed": 20262018,
+  "timeout": 90
+}

@@ -1,0 +1,1 @@
+{"case_id": "SCALE32-rectangle-20262019", "status": "PASS", "completed": 64, "total": 64, "tick": 352, "elapsed": 29.626075500000297, "error": null, "terminal": "all_tasks_completed"}

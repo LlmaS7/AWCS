@@ -1,0 +1,308 @@
+[
+  {
+    "id": 1,
+    "kind": "start",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "job": "message",
+    "generation": 0,
+    "text": "这单必须由空闲的R3执行。",
+    "task_id": "T001"
+  },
+  {
+    "id": 2,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "我先"
+  },
+  {
+    "id": 3,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "查询"
+  },
+  {
+    "id": 4,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": " T"
+  },
+  {
+    "id": 5,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "001"
+  },
+  {
+    "id": 6,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": " "
+  },
+  {
+    "id": 7,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "的状态"
+  },
+  {
+    "id": 8,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "和"
+  },
+  {
+    "id": 9,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": " R"
+  },
+  {
+    "id": 10,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "3"
+  },
+  {
+    "id": 11,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": " "
+  },
+  {
+    "id": 12,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "的情况"
+  },
+  {
+    "id": 13,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "。"
+  },
+  {
+    "id": 14,
+    "kind": "progress",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "tool": "get_status"
+  },
+  {
+    "id": 15,
+    "kind": "progress",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "tool": "get_status"
+  },
+  {
+    "id": 16,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "T"
+  },
+  {
+    "id": 17,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "001"
+  },
+  {
+    "id": 18,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": " "
+  },
+  {
+    "id": 19,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "尚未"
+  },
+  {
+    "id": 20,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "开始"
+  },
+  {
+    "id": 21,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "装"
+  },
+  {
+    "id": 22,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "货"
+  },
+  {
+    "id": 23,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "（"
+  },
+  {
+    "id": 24,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "取"
+  },
+  {
+    "id": 25,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "货"
+  },
+  {
+    "id": 26,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "阶段"
+  },
+  {
+    "id": 27,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "），"
+  },
+  {
+    "id": 28,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "R"
+  },
+  {
+    "id": 29,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "3"
+  },
+  {
+    "id": 30,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": " "
+  },
+  {
+    "id": 31,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "当前"
+  },
+  {
+    "id": 32,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "空闲"
+  },
+  {
+    "id": 33,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "，"
+  },
+  {
+    "id": 34,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "符合"
+  },
+  {
+    "id": 35,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "改"
+  },
+  {
+    "id": 36,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "派"
+  },
+  {
+    "id": 37,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "条件"
+  },
+  {
+    "id": 38,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "，"
+  },
+  {
+    "id": 39,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "现在"
+  },
+  {
+    "id": 40,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "执行"
+  },
+  {
+    "id": 41,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "指定"
+  },
+  {
+    "id": 42,
+    "kind": "text",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "text": "。"
+  },
+  {
+    "id": 43,
+    "kind": "progress",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "tool": "assign_task"
+  },
+  {
+    "id": 44,
+    "kind": "result",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "generation": 0,
+    "tool": "assign_task",
+    "result": {
+      "status": "finished",
+      "actions": [
+        {
+          "operation": "assignment",
+          "outcome": "applied",
+          "task_id": "T001",
+          "pickup_id": "P05",
+          "pickup_name": "取货点05",
+          "pickup_label": "四号货架",
+          "shelf_names": [
+            "四号货架"
+          ],
+          "delivery_id": "D2",
+          "delivery_name": "2号配送点",
+          "priority": 2,
+          "business_phase": "to_pickup",
+          "phase_label": "已分配，处于取货阶段",
+          "assigned_robot": "R3",
+          "assignment_mode": "forced",
+          "requested_robot": "R3",
+          "assignment_label": "人工指定",
+          "copied_from": null,
+          "planning": "available"
+        }
+      ]
+    }
+  },
+  {
+    "id": 45,
+    "kind": "error",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9",
+    "message": "上游流式连接中断或响应格式不兼容；已生效操作保留"
+  },
+  {
+    "id": 46,
+    "kind": "done",
+    "request_id": "4e4bbfbdc5984cc0a21504d6356500a9"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "case_id": "A08",
+  "map": "M02",
+  "text": "创建一次从{pickup}到D2的搬运任务。",
+  "kind": "chat",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true
+}

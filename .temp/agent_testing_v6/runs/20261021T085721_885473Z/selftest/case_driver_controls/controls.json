@@ -1,0 +1,67 @@
+[
+  {
+    "case": "A01",
+    "mode": "correct",
+    "expected_error": false,
+    "passed": true,
+    "actual_errors": []
+  },
+  {
+    "case": "A01",
+    "mode": "wrong_pickup",
+    "expected_error": true,
+    "passed": true,
+    "actual_errors": [
+      "unauthorized new task prefix",
+      "new task multiset differs from frozen intent"
+    ]
+  },
+  {
+    "case": "B03",
+    "mode": "correct",
+    "expected_error": false,
+    "passed": true,
+    "actual_errors": []
+  },
+  {
+    "case": "C02",
+    "mode": "correct",
+    "expected_error": false,
+    "passed": true,
+    "actual_errors": []
+  },
+  {
+    "case": "C02",
+    "mode": "wrong_forced",
+    "expected_error": true,
+    "passed": true,
+    "actual_errors": [
+      "unauthorized assignment modification",
+      "wrong target assignment_mode"
+    ]
+  },
+  {
+    "case": "D03",
+    "mode": "correct",
+    "expected_error": false,
+    "passed": true,
+    "actual_errors": []
+  },
+  {
+    "case": "F01",
+    "mode": "correct",
+    "expected_error": false,
+    "passed": true,
+    "actual_errors": []
+  },
+  {
+    "case": "F09",
+    "mode": "wrong_delivery",
+    "expected_error": true,
+    "passed": true,
+    "actual_errors": [
+      "需求甲:raw model field wrong delivery_id",
+      "需求甲:wrong delivery_id 'D1' expected 'D2'"
+    ]
+  }
+]

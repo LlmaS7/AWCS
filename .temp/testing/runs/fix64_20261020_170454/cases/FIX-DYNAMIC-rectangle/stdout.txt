@@ -1,0 +1,1 @@
+{"case_id": "FIX-DYNAMIC-rectangle", "status": "INCONCLUSIVE", "completed": 43, "total": 60, "tick": 396, "elapsed": 19.54618880000089, "error": null, "terminal": "no_safe_plan_within_budget"}

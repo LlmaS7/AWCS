@@ -1,0 +1,15 @@
+{
+  "case_id": "E05",
+  "map": "M03",
+  "text": "考虑一下要不要取消这单。",
+  "kind": "chat",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true
+}

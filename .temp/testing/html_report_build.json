@@ -1,0 +1,12 @@
+{
+  "output": "E:\\_PROJECTS\\AWCS\\.report\\AWCS_项目测试报告.html",
+  "bytes": 1165886,
+  "sha256": "cde2ac202409256a2ec85f615a1238218a2f6d6b79e14ba9cb4cce045d6dee57",
+  "main_cases": 2029,
+  "followup_trials": 19,
+  "replay_frames": [
+    476,
+    512
+  ],
+  "created": "2026-10-20T16:36:59.886303+08:00"
+}

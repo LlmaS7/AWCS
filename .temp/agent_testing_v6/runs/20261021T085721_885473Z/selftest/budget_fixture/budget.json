@@ -1,0 +1,29 @@
+{
+  "start": 1792573047.3596613,
+  "reservations": [
+    {
+      "id": 1,
+      "phase": "protocol",
+      "kind": "chat",
+      "reserved_at": 1792573047.3596613,
+      "state": "reserved",
+      "reserved": true,
+      "send_attempted": false,
+      "response_received": false,
+      "stream_complete": false,
+      "usage_known": false
+    },
+    {
+      "id": 2,
+      "phase": "matrix",
+      "kind": "summary",
+      "reserved_at": 1792573047.361843,
+      "state": "reserved",
+      "reserved": true,
+      "send_attempted": false,
+      "response_received": false,
+      "stream_complete": false,
+      "usage_known": false
+    }
+  ]
+}

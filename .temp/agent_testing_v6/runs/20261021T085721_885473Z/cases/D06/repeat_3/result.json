@@ -1,0 +1,820 @@
+{
+  "case_id": "D06",
+  "repeat": 3,
+  "layer": "matrix",
+  "execution_status": "COMPLETED",
+  "raw_status": "INCONCLUSIVE",
+  "effective_status": "INCONCLUSIVE",
+  "review_status": "PENDING",
+  "human_signoff": null,
+  "evidence": "E:\\_PROJECTS\\AWCS\\.temp\\agent_testing_v6\\runs\\20261021T085721_885473Z\\cases\\D06\\repeat_3",
+  "fixture_valid": true,
+  "protocol_verdict": "PASS",
+  "business_verdict": "PASS",
+  "required_process_verdict": "PASS",
+  "response_verdict": "PENDING",
+  "network_error": false,
+  "details": {
+    "business_errors": [],
+    "process_errors": [],
+    "before": {
+      "generation": 0,
+      "tick": 151,
+      "tasks": [
+        {
+          "id": 1,
+          "pickup": [
+            40,
+            6
+          ],
+          "delivery": [
+            27,
+            55
+          ],
+          "priority": 2,
+          "created_at": 0,
+          "status": "completed",
+          "robot_id": 4,
+          "picked_at": 87,
+          "completed_at": 151,
+          "preemptions": 0,
+          "assignment_mode": "auto",
+          "assignment_robot_id": null,
+          "copied_from": null,
+          "source": null
+        }
+      ],
+      "task_views": [
+        {
+          "task_id": "T001",
+          "pickup_id": "P05",
+          "pickup_name": "取货点05",
+          "pickup_label": "四号货架",
+          "shelf_names": [
+            "四号货架"
+          ],
+          "delivery_id": "D2",
+          "delivery_name": "2号配送点",
+          "priority": 2,
+          "business_phase": "completed",
+          "phase_label": "已完成",
+          "assigned_robot": "R4",
+          "assignment_mode": "auto",
+          "requested_robot": null,
+          "assignment_label": "自动分配",
+          "copied_from": null
+        }
+      ],
+      "robots": [
+        {
+          "id": 1,
+          "position": [
+            4,
+            58
+          ],
+          "previous": [
+            4,
+            58
+          ],
+          "parking": [
+            4,
+            58
+          ],
+          "phase": "idle",
+          "task_id": null,
+          "next_task_id": null,
+          "service_left": 0,
+          "loaded": false,
+          "path": [
+            [
+              4,
+              58
+            ]
+          ],
+          "distance": 0,
+          "waits": 0,
+          "completed": 0
+        },
+        {
+          "id": 2,
+          "position": [
+            5,
+            58
+          ],
+          "previous": [
+            5,
+            58
+          ],
+          "parking": [
+            5,
+            58
+          ],
+          "phase": "idle",
+          "task_id": null,
+          "next_task_id": null,
+          "service_left": 0,
+          "loaded": false,
+          "path": [
+            [
+              5,
+              58
+            ]
+          ],
+          "distance": 0,
+          "waits": 0,
+          "completed": 0
+        },
+        {
+          "id": 3,
+          "position": [
+            6,
+            58
+          ],
+          "previous": [
+            6,
+            58
+          ],
+          "parking": [
+            6,
+            58
+          ],
+          "phase": "idle",
+          "task_id": null,
+          "next_task_id": null,
+          "service_left": 0,
+          "loaded": false,
+          "path": [
+            [
+              6,
+              58
+            ]
+          ],
+          "distance": 0,
+          "waits": 0,
+          "completed": 0
+        },
+        {
+          "id": 4,
+          "position": [
+            27,
+            55
+          ],
+          "previous": [
+            27,
+            55
+          ],
+          "parking": [
+            27,
+            58
+          ],
+          "phase": "parking",
+          "task_id": null,
+          "next_task_id": null,
+          "service_left": 0,
+          "loaded": false,
+          "path": [
+            [
+              27,
+              55
+            ],
+            [
+              27,
+              56
+            ],
+            [
+              27,
+              57
+            ],
+            [
+              27,
+              58
+            ]
+          ],
+          "distance": 147,
+          "waits": 0,
+          "completed": 1
+        }
+      ],
+      "dirty": false,
+      "auto": false,
+      "planning": false,
+      "metrics": {
+        "planning_seconds": 0.04621019999831333,
+        "last_plan_ms": 0.3515999997034669,
+        "plans": 3,
+        "cbs_nodes": 1,
+        "preemptions": 0,
+        "collisions": 0,
+        "recovery_attempts": 0,
+        "reservation_plans": 0,
+        "planner": "CBS",
+        "reservation_orders": 0,
+        "candidate_count": 1,
+        "planning_scope": "两阶段硬优先级 / 软偏好 / 静态ETA匹配＋协调可行路线",
+        "planning_status": "success"
+      },
+      "assignment": {
+        "pairs": {},
+        "eta_sum": 0,
+        "priority_prefix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "scope": "两阶段硬优先级 / 软偏好 / 静态ETA匹配＋协调可行路线",
+        "cost_model": "静态ETA匹配；静态/预约估计",
+        "path_cost": [
+          0,
+          0,
+          3
+        ],
+        "candidate_count": 1
+      }
+    },
+    "after": {
+      "generation": 0,
+      "tick": 151,
+      "tasks": [
+        {
+          "id": 1,
+          "pickup": [
+            40,
+            6
+          ],
+          "delivery": [
+            27,
+            55
+          ],
+          "priority": 2,
+          "created_at": 0,
+          "status": "completed",
+          "robot_id": 4,
+          "picked_at": 87,
+          "completed_at": 151,
+          "preemptions": 0,
+          "assignment_mode": "auto",
+          "assignment_robot_id": null,
+          "copied_from": null,
+          "source": null
+        }
+      ],
+      "task_views": [
+        {
+          "task_id": "T001",
+          "pickup_id": "P05",
+          "pickup_name": "取货点05",
+          "pickup_label": "四号货架",
+          "shelf_names": [
+            "四号货架"
+          ],
+          "delivery_id": "D2",
+          "delivery_name": "2号配送点",
+          "priority": 2,
+          "business_phase": "completed",
+          "phase_label": "已完成",
+          "assigned_robot": "R4",
+          "assignment_mode": "auto",
+          "requested_robot": null,
+          "assignment_label": "自动分配",
+          "copied_from": null
+        }
+      ],
+      "robots": [
+        {
+          "id": 1,
+          "position": [
+            4,
+            58
+          ],
+          "previous": [
+            4,
+            58
+          ],
+          "parking": [
+            4,
+            58
+          ],
+          "phase": "idle",
+          "task_id": null,
+          "next_task_id": null,
+          "service_left": 0,
+          "loaded": false,
+          "path": [
+            [
+              4,
+              58
+            ]
+          ],
+          "distance": 0,
+          "waits": 0,
+          "completed": 0
+        },
+        {
+          "id": 2,
+          "position": [
+            5,
+            58
+          ],
+          "previous": [
+            5,
+            58
+          ],
+          "parking": [
+            5,
+            58
+          ],
+          "phase": "idle",
+          "task_id": null,
+          "next_task_id": null,
+          "service_left": 0,
+          "loaded": false,
+          "path": [
+            [
+              5,
+              58
+            ]
+          ],
+          "distance": 0,
+          "waits": 0,
+          "completed": 0
+        },
+        {
+          "id": 3,
+          "position": [
+            6,
+            58
+          ],
+          "previous": [
+            6,
+            58
+          ],
+          "parking": [
+            6,
+            58
+          ],
+          "phase": "idle",
+          "task_id": null,
+          "next_task_id": null,
+          "service_left": 0,
+          "loaded": false,
+          "path": [
+            [
+              6,
+              58
+            ]
+          ],
+          "distance": 0,
+          "waits": 0,
+          "completed": 0
+        },
+        {
+          "id": 4,
+          "position": [
+            27,
+            55
+          ],
+          "previous": [
+            27,
+            55
+          ],
+          "parking": [
+            27,
+            58
+          ],
+          "phase": "parking",
+          "task_id": null,
+          "next_task_id": null,
+          "service_left": 0,
+          "loaded": false,
+          "path": [
+            [
+              27,
+              55
+            ],
+            [
+              27,
+              56
+            ],
+            [
+              27,
+              57
+            ],
+            [
+              27,
+              58
+            ]
+          ],
+          "distance": 147,
+          "waits": 0,
+          "completed": 1
+        }
+      ],
+      "dirty": false,
+      "auto": false,
+      "planning": false,
+      "metrics": {
+        "planning_seconds": 0.04621019999831333,
+        "last_plan_ms": 0.3515999997034669,
+        "plans": 3,
+        "cbs_nodes": 1,
+        "preemptions": 0,
+        "collisions": 0,
+        "recovery_attempts": 0,
+        "reservation_plans": 0,
+        "planner": "CBS",
+        "reservation_orders": 0,
+        "candidate_count": 1,
+        "planning_scope": "两阶段硬优先级 / 软偏好 / 静态ETA匹配＋协调可行路线",
+        "planning_status": "success"
+      },
+      "assignment": {
+        "pairs": {},
+        "eta_sum": 0,
+        "priority_prefix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "scope": "两阶段硬优先级 / 软偏好 / 静态ETA匹配＋协调可行路线",
+        "cost_model": "静态ETA匹配；静态/预约估计",
+        "path_cost": [
+          0,
+          0,
+          3
+        ],
+        "candidate_count": 1
+      }
+    },
+    "expected_new": [],
+    "events": [
+      {
+        "id": 1,
+        "kind": "start",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "job": "message",
+        "generation": 0,
+        "text": "现在完成了吗？",
+        "task_id": "T001"
+      },
+      {
+        "id": 2,
+        "kind": "progress",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "tool": "get_status"
+      },
+      {
+        "id": 3,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "T"
+      },
+      {
+        "id": 4,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "001"
+      },
+      {
+        "id": 5,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": " "
+      },
+      {
+        "id": 6,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "已完成"
+      },
+      {
+        "id": 7,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "："
+      },
+      {
+        "id": 8,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "四"
+      },
+      {
+        "id": 9,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "号"
+      },
+      {
+        "id": 10,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "货"
+      },
+      {
+        "id": 11,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "架"
+      },
+      {
+        "id": 12,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "（"
+      },
+      {
+        "id": 13,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "取"
+      },
+      {
+        "id": 14,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "货"
+      },
+      {
+        "id": 15,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "点"
+      },
+      {
+        "id": 16,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "05"
+      },
+      {
+        "id": 17,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "）"
+      },
+      {
+        "id": 18,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "→"
+      },
+      {
+        "id": 19,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": " "
+      },
+      {
+        "id": 20,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "2"
+      },
+      {
+        "id": 21,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "号"
+      },
+      {
+        "id": 22,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "配送"
+      },
+      {
+        "id": 23,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "点"
+      },
+      {
+        "id": 24,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "，"
+      },
+      {
+        "id": 25,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "优先级"
+      },
+      {
+        "id": 26,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "2"
+      },
+      {
+        "id": 27,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "，"
+      },
+      {
+        "id": 28,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "由"
+      },
+      {
+        "id": 29,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "R"
+      },
+      {
+        "id": 30,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "4"
+      },
+      {
+        "id": 31,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "自动"
+      },
+      {
+        "id": 32,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "分配"
+      },
+      {
+        "id": 33,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "执行"
+      },
+      {
+        "id": 34,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "，"
+      },
+      {
+        "id": 35,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "任务"
+      },
+      {
+        "id": 36,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "阶段"
+      },
+      {
+        "id": 37,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "为"
+      },
+      {
+        "id": 38,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "“"
+      },
+      {
+        "id": 39,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "已完成"
+      },
+      {
+        "id": 40,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "”。"
+      },
+      {
+        "id": 41,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "R"
+      },
+      {
+        "id": 42,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "4"
+      },
+      {
+        "id": 43,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": " "
+      },
+      {
+        "id": 44,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "随后"
+      },
+      {
+        "id": 45,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "已"
+      },
+      {
+        "id": 46,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "回"
+      },
+      {
+        "id": 47,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "停车"
+      },
+      {
+        "id": 48,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "位"
+      },
+      {
+        "id": 49,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "，"
+      },
+      {
+        "id": 50,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "当前"
+      },
+      {
+        "id": 51,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "未"
+      },
+      {
+        "id": 52,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "在执行"
+      },
+      {
+        "id": 53,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "任务"
+      },
+      {
+        "id": 54,
+        "kind": "text",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59",
+        "text": "。"
+      },
+      {
+        "id": 55,
+        "kind": "done",
+        "request_id": "c9d04eb28816428487bc558cd24a3a59"
+      }
+    ],
+    "pending": [
+      {
+        "claim": "Chinese response correctness and required clarification",
+        "evidence": "provider_calls.json, events.json, tool_trace.json"
+      }
+    ],
+    "early_stop": false,
+    "guard_errors": [],
+    "fixture_errors": []
+  },
+  "protocol_errors": []
+}

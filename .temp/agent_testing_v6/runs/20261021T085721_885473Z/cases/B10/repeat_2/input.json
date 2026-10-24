@@ -1,0 +1,15 @@
+{
+  "case_id": "B10",
+  "map": "M02",
+  "text": "查询T999999999任务的当前状态。",
+  "kind": "chat",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true
+}

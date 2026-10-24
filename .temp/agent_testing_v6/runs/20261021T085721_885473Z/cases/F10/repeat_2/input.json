@@ -1,0 +1,47 @@
+{
+  "case_id": "F10",
+  "map": "M03",
+  "text": "",
+  "kind": "document",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true,
+  "document": {
+    "filename": "F10.docx",
+    "lines": [
+      "需求甲：四号货架送二号配送点，搬运3次。",
+      "需求乙：登记货架2送一号配送点，搬运2次。"
+    ],
+    "text": "需求甲：四号货架送二号配送点，搬运3次。\n需求乙：登记货架2送一号配送点，搬运2次。",
+    "truth": [
+      {
+        "marker": "需求甲",
+        "text": "需求甲：四号货架送二号配送点，搬运3次。",
+        "pickup_id": "P05",
+        "delivery_id": "D2",
+        "priority": 2,
+        "count": 3,
+        "quantity_kind": "trips",
+        "constraints": []
+      },
+      {
+        "marker": "需求乙",
+        "text": "需求乙：登记货架2送一号配送点，搬运2次。",
+        "pickup_id": "P01",
+        "delivery_id": "D1",
+        "priority": 2,
+        "count": 2,
+        "quantity_kind": "trips",
+        "constraints": []
+      }
+    ],
+    "excluded": [],
+    "confirmation": "each_one_retry_original"
+  }
+}

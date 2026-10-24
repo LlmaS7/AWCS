@@ -1,0 +1,17 @@
+{
+  "trials": 19,
+  "statuses": {
+    "PASS": 8,
+    "INCONCLUSIVE": 11
+  },
+  "plan_checks": 643,
+  "actual_steps_checked": 3034,
+  "path_points_checked": 4488445,
+  "planning_attempts": 589,
+  "service_transitions": 1318,
+  "source_integrity": {
+    "unchanged": true,
+    "unchanged_since_original_batch": true,
+    "changed": []
+  }
+}

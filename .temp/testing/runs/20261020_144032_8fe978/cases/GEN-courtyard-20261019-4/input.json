@@ -1,0 +1,61 @@
+{
+  "case_id": "GEN-courtyard-20261019-4",
+  "stage": "P4-main",
+  "map_file": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\datasets\\maps\\courtyard_20261019.json",
+  "robots": 4,
+  "seed": 20262019,
+  "tasks": [
+    {
+      "tick": 0,
+      "pickup": 3,
+      "delivery": 0,
+      "priority": 1
+    },
+    {
+      "tick": 0,
+      "pickup": 44,
+      "delivery": 0,
+      "priority": 2
+    },
+    {
+      "tick": 0,
+      "pickup": 23,
+      "delivery": 0,
+      "priority": 3
+    },
+    {
+      "tick": 0,
+      "pickup": 23,
+      "delivery": 1,
+      "priority": 4
+    },
+    {
+      "tick": 0,
+      "pickup": 32,
+      "delivery": 2,
+      "priority": 5
+    },
+    {
+      "tick": 0,
+      "pickup": 10,
+      "delivery": 2,
+      "priority": 1
+    },
+    {
+      "tick": 0,
+      "pickup": 42,
+      "delivery": 5,
+      "priority": 2
+    },
+    {
+      "tick": 0,
+      "pickup": 6,
+      "delivery": 5,
+      "priority": 3
+    }
+  ],
+  "plan_seconds": 3,
+  "ticks": 6000,
+  "timeout": 90,
+  "wall_seconds": 85
+}

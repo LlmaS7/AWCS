@@ -1,0 +1,397 @@
+{
+  "case_id": "SCALE32-fleet_64x64-20262019",
+  "stage": "P6-32",
+  "map_file": "E:\\_PROJECTS\\AWCS\\maps\\fleet_64x64.json",
+  "robots": 32,
+  "seed": 20262019,
+  "tasks": [
+    {
+      "tick": 0,
+      "pickup": 3,
+      "delivery": 0,
+      "priority": 1
+    },
+    {
+      "tick": 0,
+      "pickup": 44,
+      "delivery": 1,
+      "priority": 2
+    },
+    {
+      "tick": 0,
+      "pickup": 23,
+      "delivery": 1,
+      "priority": 3
+    },
+    {
+      "tick": 0,
+      "pickup": 23,
+      "delivery": 3,
+      "priority": 4
+    },
+    {
+      "tick": 0,
+      "pickup": 32,
+      "delivery": 4,
+      "priority": 5
+    },
+    {
+      "tick": 0,
+      "pickup": 10,
+      "delivery": 4,
+      "priority": 1
+    },
+    {
+      "tick": 0,
+      "pickup": 42,
+      "delivery": 1,
+      "priority": 2
+    },
+    {
+      "tick": 0,
+      "pickup": 43,
+      "delivery": 7,
+      "priority": 3
+    },
+    {
+      "tick": 0,
+      "pickup": 15,
+      "delivery": 7,
+      "priority": 4
+    },
+    {
+      "tick": 0,
+      "pickup": 28,
+      "delivery": 2,
+      "priority": 5
+    },
+    {
+      "tick": 0,
+      "pickup": 1,
+      "delivery": 5,
+      "priority": 1
+    },
+    {
+      "tick": 0,
+      "pickup": 0,
+      "delivery": 4,
+      "priority": 2
+    },
+    {
+      "tick": 0,
+      "pickup": 2,
+      "delivery": 7,
+      "priority": 3
+    },
+    {
+      "tick": 0,
+      "pickup": 29,
+      "delivery": 7,
+      "priority": 4
+    },
+    {
+      "tick": 0,
+      "pickup": 6,
+      "delivery": 4,
+      "priority": 5
+    },
+    {
+      "tick": 0,
+      "pickup": 24,
+      "delivery": 1,
+      "priority": 1
+    },
+    {
+      "tick": 0,
+      "pickup": 27,
+      "delivery": 2,
+      "priority": 2
+    },
+    {
+      "tick": 0,
+      "pickup": 13,
+      "delivery": 3,
+      "priority": 3
+    },
+    {
+      "tick": 0,
+      "pickup": 7,
+      "delivery": 1,
+      "priority": 4
+    },
+    {
+      "tick": 0,
+      "pickup": 33,
+      "delivery": 0,
+      "priority": 5
+    },
+    {
+      "tick": 0,
+      "pickup": 1,
+      "delivery": 3,
+      "priority": 1
+    },
+    {
+      "tick": 0,
+      "pickup": 23,
+      "delivery": 6,
+      "priority": 2
+    },
+    {
+      "tick": 0,
+      "pickup": 37,
+      "delivery": 0,
+      "priority": 3
+    },
+    {
+      "tick": 0,
+      "pickup": 44,
+      "delivery": 7,
+      "priority": 4
+    },
+    {
+      "tick": 0,
+      "pickup": 13,
+      "delivery": 1,
+      "priority": 5
+    },
+    {
+      "tick": 0,
+      "pickup": 10,
+      "delivery": 4,
+      "priority": 1
+    },
+    {
+      "tick": 0,
+      "pickup": 42,
+      "delivery": 3,
+      "priority": 2
+    },
+    {
+      "tick": 0,
+      "pickup": 5,
+      "delivery": 0,
+      "priority": 3
+    },
+    {
+      "tick": 0,
+      "pickup": 1,
+      "delivery": 3,
+      "priority": 4
+    },
+    {
+      "tick": 0,
+      "pickup": 41,
+      "delivery": 4,
+      "priority": 5
+    },
+    {
+      "tick": 0,
+      "pickup": 21,
+      "delivery": 3,
+      "priority": 1
+    },
+    {
+      "tick": 0,
+      "pickup": 27,
+      "delivery": 4,
+      "priority": 2
+    },
+    {
+      "tick": 0,
+      "pickup": 16,
+      "delivery": 6,
+      "priority": 3
+    },
+    {
+      "tick": 0,
+      "pickup": 40,
+      "delivery": 4,
+      "priority": 4
+    },
+    {
+      "tick": 0,
+      "pickup": 23,
+      "delivery": 4,
+      "priority": 5
+    },
+    {
+      "tick": 0,
+      "pickup": 47,
+      "delivery": 5,
+      "priority": 1
+    },
+    {
+      "tick": 0,
+      "pickup": 28,
+      "delivery": 5,
+      "priority": 2
+    },
+    {
+      "tick": 0,
+      "pickup": 33,
+      "delivery": 6,
+      "priority": 3
+    },
+    {
+      "tick": 0,
+      "pickup": 24,
+      "delivery": 6,
+      "priority": 4
+    },
+    {
+      "tick": 0,
+      "pickup": 41,
+      "delivery": 7,
+      "priority": 5
+    },
+    {
+      "tick": 0,
+      "pickup": 27,
+      "delivery": 7,
+      "priority": 1
+    },
+    {
+      "tick": 0,
+      "pickup": 36,
+      "delivery": 6,
+      "priority": 2
+    },
+    {
+      "tick": 0,
+      "pickup": 3,
+      "delivery": 6,
+      "priority": 3
+    },
+    {
+      "tick": 0,
+      "pickup": 26,
+      "delivery": 4,
+      "priority": 4
+    },
+    {
+      "tick": 0,
+      "pickup": 43,
+      "delivery": 4,
+      "priority": 5
+    },
+    {
+      "tick": 0,
+      "pickup": 20,
+      "delivery": 2,
+      "priority": 1
+    },
+    {
+      "tick": 0,
+      "pickup": 35,
+      "delivery": 1,
+      "priority": 2
+    },
+    {
+      "tick": 0,
+      "pickup": 35,
+      "delivery": 4,
+      "priority": 3
+    },
+    {
+      "tick": 0,
+      "pickup": 39,
+      "delivery": 4,
+      "priority": 4
+    },
+    {
+      "tick": 0,
+      "pickup": 9,
+      "delivery": 6,
+      "priority": 5
+    },
+    {
+      "tick": 0,
+      "pickup": 31,
+      "delivery": 1,
+      "priority": 1
+    },
+    {
+      "tick": 0,
+      "pickup": 2,
+      "delivery": 5,
+      "priority": 2
+    },
+    {
+      "tick": 0,
+      "pickup": 20,
+      "delivery": 0,
+      "priority": 3
+    },
+    {
+      "tick": 0,
+      "pickup": 10,
+      "delivery": 5,
+      "priority": 4
+    },
+    {
+      "tick": 0,
+      "pickup": 32,
+      "delivery": 0,
+      "priority": 5
+    },
+    {
+      "tick": 0,
+      "pickup": 6,
+      "delivery": 4,
+      "priority": 1
+    },
+    {
+      "tick": 0,
+      "pickup": 32,
+      "delivery": 1,
+      "priority": 2
+    },
+    {
+      "tick": 0,
+      "pickup": 5,
+      "delivery": 4,
+      "priority": 3
+    },
+    {
+      "tick": 0,
+      "pickup": 17,
+      "delivery": 7,
+      "priority": 4
+    },
+    {
+      "tick": 0,
+      "pickup": 28,
+      "delivery": 6,
+      "priority": 5
+    },
+    {
+      "tick": 0,
+      "pickup": 23,
+      "delivery": 6,
+      "priority": 1
+    },
+    {
+      "tick": 0,
+      "pickup": 12,
+      "delivery": 2,
+      "priority": 2
+    },
+    {
+      "tick": 0,
+      "pickup": 24,
+      "delivery": 1,
+      "priority": 3
+    },
+    {
+      "tick": 0,
+      "pickup": 38,
+      "delivery": 1,
+      "priority": 4
+    }
+  ],
+  "plan_seconds": 3,
+  "ticks": 10000,
+  "timeout": 120,
+  "wall_seconds": 115
+}

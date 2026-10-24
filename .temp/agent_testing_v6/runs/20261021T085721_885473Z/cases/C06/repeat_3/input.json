@@ -1,0 +1,15 @@
+{
+  "case_id": "C06",
+  "map": "M02",
+  "text": "将这单改派给R3。",
+  "kind": "chat",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true
+}

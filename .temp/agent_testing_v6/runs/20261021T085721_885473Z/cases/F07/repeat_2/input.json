@@ -1,0 +1,38 @@
+{
+  "case_id": "F07",
+  "map": "M03",
+  "text": "",
+  "kind": "document",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true,
+  "document": {
+    "filename": "F07.txt",
+    "lines": [
+      "需求甲：四号货架送包装区。"
+    ],
+    "text": "需求甲：四号货架送包装区。",
+    "truth": [
+      {
+        "marker": "需求甲",
+        "text": "需求甲：四号货架送包装区。",
+        "pickup_id": "P05",
+        "delivery_id": null,
+        "priority": 2,
+        "count": 1,
+        "quantity_kind": "unspecified",
+        "constraints": []
+      }
+    ],
+    "excluded": [],
+    "confirmation": {
+      "delivery_id": "D2"
+    }
+  }
+}

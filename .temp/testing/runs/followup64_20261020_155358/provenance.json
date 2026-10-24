@@ -1,0 +1,154 @@
+[
+  {
+    "case_id": "EXPERIMENT64-experimental_128x96-20262018-adaptive-resume",
+    "original_input_sha256": "d0b2b13869d685b8a0a4be7e2f8bbf3e800b65b8c4b6e931d7269a5f61cb0af7",
+    "original_map_sha256": "4f18f866becc11797d39d4c83ca8a547b0a9fe0fefe591b947187ef1570c21ed",
+    "original_final_state_sha256": "544dee3b431ae374af7b854a55c9f1e91247f4d8363e1fd167984a566e25c530",
+    "identical_grid": true,
+    "result_sha256": "71e569fcb3f74aceb2070c4f4f433087cbc6ce88b22a4150bb2b6cf2800c5a18"
+  },
+  {
+    "case_id": "EXPERIMENT64-experimental_128x96-20262018-baseline8-resume",
+    "original_input_sha256": "d0b2b13869d685b8a0a4be7e2f8bbf3e800b65b8c4b6e931d7269a5f61cb0af7",
+    "original_map_sha256": "4f18f866becc11797d39d4c83ca8a547b0a9fe0fefe591b947187ef1570c21ed",
+    "original_final_state_sha256": "544dee3b431ae374af7b854a55c9f1e91247f4d8363e1fd167984a566e25c530",
+    "identical_grid": true,
+    "result_sha256": "12af382c83f724a2c9b48963adbbc1e907cccd04804d06520b275c2377623e71"
+  },
+  {
+    "case_id": "EXPERIMENT64-experimental_128x96-20262019-baseline8-resume",
+    "original_input_sha256": "7a307c31e327b18c9bc9c3a49b47567654d39e2096cf7c653ee4d861ce2e806a",
+    "original_map_sha256": "115cb0957430086d5b20134979c679adb879c9200a9929ee3ebe915cc8a55656",
+    "original_final_state_sha256": "3d40333ce697cad32927f0fb413ab166817f61db3e693b882ecf9539d3e51c52",
+    "identical_grid": true,
+    "result_sha256": "97070e6abbd8a4266067e6bd3262e69a3ee5fed58d671e36ac44d68a39254447"
+  },
+  {
+    "case_id": "EXPERIMENT64-rectangle-20262018-adaptive-resume",
+    "original_input_sha256": "6a6dfc7311479451b33a5b504ec3a170bf11f99d44df6ca6108c8f76657c4099",
+    "original_map_sha256": "57940db3ff53932ae505aad297c2bcbcca681e2965b5b81c7a8ed2556c6b459c",
+    "original_final_state_sha256": "147b80f47964c7de4fb59b314f953ca5dc4046516708529e679258e4a96c31ba",
+    "identical_grid": true,
+    "result_sha256": "3318b21468ea488a7ae0b3d2ab8060b4b86460e68501848a603727336f7a89ba"
+  },
+  {
+    "case_id": "EXPERIMENT64-rectangle-20262018-baseline8-resume",
+    "original_input_sha256": "6a6dfc7311479451b33a5b504ec3a170bf11f99d44df6ca6108c8f76657c4099",
+    "original_map_sha256": "57940db3ff53932ae505aad297c2bcbcca681e2965b5b81c7a8ed2556c6b459c",
+    "original_final_state_sha256": "147b80f47964c7de4fb59b314f953ca5dc4046516708529e679258e4a96c31ba",
+    "identical_grid": true,
+    "result_sha256": "9ca79e74c226033f8c121f5b59f3da022835b428c7bdf5951d878b6ba8323e92"
+  },
+  {
+    "case_id": "EXPERIMENT64-rectangle-20262018-retention-cold",
+    "original_input_sha256": "6a6dfc7311479451b33a5b504ec3a170bf11f99d44df6ca6108c8f76657c4099",
+    "original_map_sha256": "57940db3ff53932ae505aad297c2bcbcca681e2965b5b81c7a8ed2556c6b459c",
+    "original_final_state_sha256": "147b80f47964c7de4fb59b314f953ca5dc4046516708529e679258e4a96c31ba",
+    "identical_grid": true,
+    "result_sha256": "213dade4f3260fd7132280c4d081f655ba6325f21e8ae0cb9ed2b7b6df81defa"
+  },
+  {
+    "case_id": "EXPERIMENT64-rectangle-20262018-retention-resume",
+    "original_input_sha256": "6a6dfc7311479451b33a5b504ec3a170bf11f99d44df6ca6108c8f76657c4099",
+    "original_map_sha256": "57940db3ff53932ae505aad297c2bcbcca681e2965b5b81c7a8ed2556c6b459c",
+    "original_final_state_sha256": "147b80f47964c7de4fb59b314f953ca5dc4046516708529e679258e4a96c31ba",
+    "identical_grid": true,
+    "result_sha256": "6bf342fb5d55ad49a49338aa10e7a0855045909f624ce6d2f584fe5f8692145e"
+  },
+  {
+    "case_id": "EXPERIMENT64-rectangle-20262018-rolling128-cold",
+    "original_input_sha256": "6a6dfc7311479451b33a5b504ec3a170bf11f99d44df6ca6108c8f76657c4099",
+    "original_map_sha256": "57940db3ff53932ae505aad297c2bcbcca681e2965b5b81c7a8ed2556c6b459c",
+    "original_final_state_sha256": "147b80f47964c7de4fb59b314f953ca5dc4046516708529e679258e4a96c31ba",
+    "identical_grid": true,
+    "result_sha256": "717e69446584bb0ef05e72590076440d758a474c8c3fdd73e0b21f21a97da551"
+  },
+  {
+    "case_id": "EXPERIMENT64-rectangle-20262019-adaptive-resume",
+    "original_input_sha256": "2d7fe20638201d139d9b0d0b7ff0d1fac42f1978fd2b4ff6308bd893317cee41",
+    "original_map_sha256": "57940db3ff53932ae505aad297c2bcbcca681e2965b5b81c7a8ed2556c6b459c",
+    "original_final_state_sha256": "237b2b4024635ccd7edc6cadd2129709c0401c3f7ab6ec9caeff46dcf774e9f0",
+    "identical_grid": true,
+    "result_sha256": "7647fbe09072cc2e90bb44671c1dd69472c8de83a9bcce9b8937b977422f700d"
+  },
+  {
+    "case_id": "EXPERIMENT64-rectangle-20262019-baseline8-resume",
+    "original_input_sha256": "2d7fe20638201d139d9b0d0b7ff0d1fac42f1978fd2b4ff6308bd893317cee41",
+    "original_map_sha256": "57940db3ff53932ae505aad297c2bcbcca681e2965b5b81c7a8ed2556c6b459c",
+    "original_final_state_sha256": "237b2b4024635ccd7edc6cadd2129709c0401c3f7ab6ec9caeff46dcf774e9f0",
+    "identical_grid": true,
+    "result_sha256": "eb2c3fc93e58601f43b37e5e3468386dba7152459682a5322c102c2a41fe56ac"
+  },
+  {
+    "case_id": "EXPERIMENT64-rectangle-20262019-retention-resume",
+    "original_input_sha256": "2d7fe20638201d139d9b0d0b7ff0d1fac42f1978fd2b4ff6308bd893317cee41",
+    "original_map_sha256": "57940db3ff53932ae505aad297c2bcbcca681e2965b5b81c7a8ed2556c6b459c",
+    "original_final_state_sha256": "237b2b4024635ccd7edc6cadd2129709c0401c3f7ab6ec9caeff46dcf774e9f0",
+    "identical_grid": true,
+    "result_sha256": "c7ff052328cf163c814ad632f6f75c2d1b8f4fb45e19d9727ab19f506cc38450"
+  },
+  {
+    "case_id": "EXPERIMENT64-rooms-20262018-adaptive-resume",
+    "original_input_sha256": "b22a4752d9bf5995722099f72d1df7e8947c49e76d0107f4422bd8a83af754cf",
+    "original_map_sha256": "1b3c072509d9e4cd40d65bf2c366be60e286b44ee0b5807fc6d1b6de7dd16b70",
+    "original_final_state_sha256": "308746923dbfce1cc50443a5c860656e1a1a6642c4fd509425a7ad85db959b8e",
+    "identical_grid": true,
+    "result_sha256": "3867fe7a4859754eb4cb6d165ed15c8f2c529ff48270a038d5aa34d6b2f11836"
+  },
+  {
+    "case_id": "EXPERIMENT64-rooms-20262018-baseline8-resume",
+    "original_input_sha256": "b22a4752d9bf5995722099f72d1df7e8947c49e76d0107f4422bd8a83af754cf",
+    "original_map_sha256": "1b3c072509d9e4cd40d65bf2c366be60e286b44ee0b5807fc6d1b6de7dd16b70",
+    "original_final_state_sha256": "308746923dbfce1cc50443a5c860656e1a1a6642c4fd509425a7ad85db959b8e",
+    "identical_grid": true,
+    "result_sha256": "7abbcb326ccd7eab51631d21f0a3667c42d531b26faa9ac64db30fbefe97fa21"
+  },
+  {
+    "case_id": "EXPERIMENT64-rooms-20262018-retention-cold",
+    "original_input_sha256": "b22a4752d9bf5995722099f72d1df7e8947c49e76d0107f4422bd8a83af754cf",
+    "original_map_sha256": "1b3c072509d9e4cd40d65bf2c366be60e286b44ee0b5807fc6d1b6de7dd16b70",
+    "original_final_state_sha256": "308746923dbfce1cc50443a5c860656e1a1a6642c4fd509425a7ad85db959b8e",
+    "identical_grid": true,
+    "result_sha256": "d4e07fc0bdabb69f94323448b989348beda744a0213093539ba4e89f177baaea"
+  },
+  {
+    "case_id": "EXPERIMENT64-rooms-20262018-retention-resume",
+    "original_input_sha256": "b22a4752d9bf5995722099f72d1df7e8947c49e76d0107f4422bd8a83af754cf",
+    "original_map_sha256": "1b3c072509d9e4cd40d65bf2c366be60e286b44ee0b5807fc6d1b6de7dd16b70",
+    "original_final_state_sha256": "308746923dbfce1cc50443a5c860656e1a1a6642c4fd509425a7ad85db959b8e",
+    "identical_grid": true,
+    "result_sha256": "faa7cf773e23f794bfc179634e596a127be83185aed3055d74412300afb01d41"
+  },
+  {
+    "case_id": "EXPERIMENT64-rooms-20262018-rolling128-cold",
+    "original_input_sha256": "b22a4752d9bf5995722099f72d1df7e8947c49e76d0107f4422bd8a83af754cf",
+    "original_map_sha256": "1b3c072509d9e4cd40d65bf2c366be60e286b44ee0b5807fc6d1b6de7dd16b70",
+    "original_final_state_sha256": "308746923dbfce1cc50443a5c860656e1a1a6642c4fd509425a7ad85db959b8e",
+    "identical_grid": true,
+    "result_sha256": "50032dc612801effc4543d1bfc3bf89686716a6d024b18f381c70b12944053cd"
+  },
+  {
+    "case_id": "EXPERIMENT64-rooms-20262019-adaptive-resume",
+    "original_input_sha256": "b44b478250789562f297ce1af0b4f4e43378dc4d55abb75269e46c9781317d3f",
+    "original_map_sha256": "1b3c072509d9e4cd40d65bf2c366be60e286b44ee0b5807fc6d1b6de7dd16b70",
+    "original_final_state_sha256": "ebe2bbcd7be41e05423ec254467c1b6ccb9de6fff8a213b91eac04c2d53634b0",
+    "identical_grid": true,
+    "result_sha256": "51b4fce5c27871f344497027c0b9f7fd6c97bd376f1882be62a70cf704762fdc"
+  },
+  {
+    "case_id": "EXPERIMENT64-rooms-20262019-baseline8-resume",
+    "original_input_sha256": "b44b478250789562f297ce1af0b4f4e43378dc4d55abb75269e46c9781317d3f",
+    "original_map_sha256": "1b3c072509d9e4cd40d65bf2c366be60e286b44ee0b5807fc6d1b6de7dd16b70",
+    "original_final_state_sha256": "ebe2bbcd7be41e05423ec254467c1b6ccb9de6fff8a213b91eac04c2d53634b0",
+    "identical_grid": true,
+    "result_sha256": "3975d7ffb932576b2a948d5bd90fd39fb02e9f445c663b458d737f0e8674f31d"
+  },
+  {
+    "case_id": "EXPERIMENT64-rooms-20262019-retention-resume",
+    "original_input_sha256": "b44b478250789562f297ce1af0b4f4e43378dc4d55abb75269e46c9781317d3f",
+    "original_map_sha256": "1b3c072509d9e4cd40d65bf2c366be60e286b44ee0b5807fc6d1b6de7dd16b70",
+    "original_final_state_sha256": "ebe2bbcd7be41e05423ec254467c1b6ccb9de6fff8a213b91eac04c2d53634b0",
+    "identical_grid": true,
+    "result_sha256": "628767704cbcfb39d0bdbd642f09514eeebff06a6be2e65f150f8f137132c373"
+  }
+]

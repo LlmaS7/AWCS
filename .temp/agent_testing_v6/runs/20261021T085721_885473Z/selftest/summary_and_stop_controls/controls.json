@@ -1,0 +1,34 @@
+[
+  {
+    "control": "fixture failure is not an unauthorized side effect",
+    "passed": true
+  },
+  {
+    "control": "actual unauthorized side effect remains FAIL and stops",
+    "passed": true
+  },
+  {
+    "control": "fixture defect does not hide an established protocol error",
+    "passed": true
+  },
+  {
+    "control": "frozen pages have exact length and fit production user limit",
+    "passed": true
+  },
+  {
+    "control": "fixed no business/guard errors",
+    "passed": true
+  },
+  {
+    "control": "production threshold really triggers summary",
+    "passed": true
+  },
+  {
+    "control": "old_short_fixture no business/guard errors",
+    "passed": true
+  },
+  {
+    "control": "short fixture is TEST_INVALID without side-effect alarm",
+    "passed": true
+  }
+]

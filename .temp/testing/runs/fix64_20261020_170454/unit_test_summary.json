@@ -1,0 +1,8 @@
+{
+  "command": ".venv/Scripts/python.exe -B -m unittest discover -s tests -v",
+  "tests_run": 25,
+  "passed": 25,
+  "failed": 0,
+  "elapsed_seconds": 0.324,
+  "version": "final cleanup; see source_hashes_cleanup.json"
+}

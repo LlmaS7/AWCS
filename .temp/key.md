@@ -1,0 +1,4 @@
+base_url: https://api.deepseek.com
+api_key:
+model: deepseek-flash
+effort: high

@@ -1,0 +1,436 @@
+[
+  {
+    "id": 1,
+    "kind": "start",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "job": "message",
+    "generation": 0,
+    "text": "R3现在做什么，是否载货？",
+    "task_id": "T001"
+  },
+  {
+    "id": 2,
+    "kind": "progress",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "tool": "get_status"
+  },
+  {
+    "id": 3,
+    "kind": "progress",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "tool": "get_status"
+  },
+  {
+    "id": 4,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "R"
+  },
+  {
+    "id": 5,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "3"
+  },
+  {
+    "id": 6,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": " "
+  },
+  {
+    "id": 7,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "当前"
+  },
+  {
+    "id": 8,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "**"
+  },
+  {
+    "id": 9,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "空闲"
+  },
+  {
+    "id": 10,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "**"
+  },
+  {
+    "id": 11,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "，"
+  },
+  {
+    "id": 12,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "未"
+  },
+  {
+    "id": 13,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "执行"
+  },
+  {
+    "id": 14,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "任何"
+  },
+  {
+    "id": 15,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "任务"
+  },
+  {
+    "id": 16,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "，"
+  },
+  {
+    "id": 17,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "**"
+  },
+  {
+    "id": 18,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "未"
+  },
+  {
+    "id": 19,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "载"
+  },
+  {
+    "id": 20,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "货"
+  },
+  {
+    "id": 21,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "**"
+  },
+  {
+    "id": 22,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "（"
+  },
+  {
+    "id": 23,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "loaded"
+  },
+  {
+    "id": 24,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": ":"
+  },
+  {
+    "id": 25,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": " false"
+  },
+  {
+    "id": 26,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "），"
+  },
+  {
+    "id": 27,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "位置"
+  },
+  {
+    "id": 28,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "在"
+  },
+  {
+    "id": 29,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": " ["
+  },
+  {
+    "id": 30,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "6"
+  },
+  {
+    "id": 31,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": ","
+  },
+  {
+    "id": 32,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": " "
+  },
+  {
+    "id": 33,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "58"
+  },
+  {
+    "id": 34,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "]，"
+  },
+  {
+    "id": 35,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "已完成"
+  },
+  {
+    "id": 36,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": " "
+  },
+  {
+    "id": 37,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "0"
+  },
+  {
+    "id": 38,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": " "
+  },
+  {
+    "id": 39,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "个"
+  },
+  {
+    "id": 40,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "任务"
+  },
+  {
+    "id": 41,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "。\n\n"
+  },
+  {
+    "id": 42,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "补充"
+  },
+  {
+    "id": 43,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "："
+  },
+  {
+    "id": 44,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "T"
+  },
+  {
+    "id": 45,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "001"
+  },
+  {
+    "id": 46,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": " "
+  },
+  {
+    "id": 47,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "目前"
+  },
+  {
+    "id": 48,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "由"
+  },
+  {
+    "id": 49,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": " R"
+  },
+  {
+    "id": 50,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "4"
+  },
+  {
+    "id": 51,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": " "
+  },
+  {
+    "id": 52,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "执行"
+  },
+  {
+    "id": 53,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "（"
+  },
+  {
+    "id": 54,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "自动"
+  },
+  {
+    "id": 55,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "分配"
+  },
+  {
+    "id": 56,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "），"
+  },
+  {
+    "id": 57,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "处于"
+  },
+  {
+    "id": 58,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "取"
+  },
+  {
+    "id": 59,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "货"
+  },
+  {
+    "id": 60,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "阶段"
+  },
+  {
+    "id": 61,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "（"
+  },
+  {
+    "id": 62,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "to"
+  },
+  {
+    "id": 63,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "_p"
+  },
+  {
+    "id": 64,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "ick"
+  },
+  {
+    "id": 65,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "up"
+  },
+  {
+    "id": 66,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "），"
+  },
+  {
+    "id": 67,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "也"
+  },
+  {
+    "id": 68,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "尚未"
+  },
+  {
+    "id": 69,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "载"
+  },
+  {
+    "id": 70,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "货"
+  },
+  {
+    "id": 71,
+    "kind": "text",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e",
+    "text": "。"
+  },
+  {
+    "id": 72,
+    "kind": "done",
+    "request_id": "95dd23e036584e0c850f0db116e08e8e"
+  }
+]

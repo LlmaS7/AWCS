@@ -1,0 +1,16 @@
+{
+  "tick": 540,
+  "completed": 127,
+  "plans": 66,
+  "failures": 0,
+  "elapsed": 170.80226459999994,
+  "profile": {
+    "mode": "scalable_full",
+    "coupling": "off",
+    "seconds": 8,
+    "window": 32,
+    "execute": 4,
+    "candidates": 4,
+    "external": false
+  }
+}

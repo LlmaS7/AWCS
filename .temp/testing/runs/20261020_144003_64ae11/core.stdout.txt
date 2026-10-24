@@ -1,0 +1,2 @@
+P0-reject-owner FAIL AssertionError: duplicate ownership accepted
+{"stage": "core", "counts": {"PASS": 1714, "FAIL": 1, "INCONCLUSIVE": 0}}

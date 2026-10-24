@@ -1,0 +1,35 @@
+{
+  "document": {
+    "filename": "F06.docx",
+    "size": 643,
+    "sha256": "61d38debb4d0795242134c8e046a0364c57bd3951dbf08577fe31a4f127502f4",
+    "format": "docx",
+    "encoding": null,
+    "blocks": [
+      {
+        "id": "b1",
+        "text": "需求甲：四号货架的20箱货送二号配送点，搬运次数未定。",
+        "locator": {
+          "type": "docx_table",
+          "table": 1,
+          "row": 1,
+          "column": 1
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "truth": [
+    {
+      "marker": "需求甲",
+      "text": "需求甲：四号货架的20箱货送二号配送点，搬运次数未定。",
+      "pickup_id": "P01",
+      "delivery_id": "D2",
+      "priority": 2,
+      "count": null,
+      "quantity_kind": "goods",
+      "constraints": []
+    }
+  ],
+  "excluded": []
+}

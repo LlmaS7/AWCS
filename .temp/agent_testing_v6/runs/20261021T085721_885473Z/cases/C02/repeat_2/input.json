@@ -1,0 +1,15 @@
+{
+  "case_id": "C02",
+  "map": "M01",
+  "text": "这单尽量让R3做，忙不过来用其他机器人。",
+  "kind": "chat",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true
+}

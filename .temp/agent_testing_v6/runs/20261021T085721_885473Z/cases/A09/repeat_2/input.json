@@ -1,0 +1,15 @@
+{
+  "case_id": "A09",
+  "map": "M03",
+  "text": "四号货架送二号配送点，只创建这一单，别处理其他任务。",
+  "kind": "chat",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true
+}

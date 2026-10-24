@@ -1,0 +1,15 @@
+{
+  "case_id": "D08",
+  "map": "M02",
+  "text": "把四号货架送二号配送点，创建一次。",
+  "kind": "chat",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true
+}

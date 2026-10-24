@@ -1,0 +1,15 @@
+{
+  "case_id": "D10",
+  "map": "M01",
+  "text": "假设以后从四号货架送二号配送点，会怎样？现在不要下单。",
+  "kind": "chat",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true
+}

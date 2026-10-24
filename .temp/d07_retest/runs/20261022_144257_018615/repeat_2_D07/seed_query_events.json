@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "kind": "start",
+    "request_id": "44219a2a9a6543aaa738fb72be5f3a02",
+    "job": "message",
+    "generation": 0,
+    "text": "查询这个任务的状态。",
+    "task_id": "T001"
+  }
+]

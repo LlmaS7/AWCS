@@ -1,0 +1,1 @@
+{"case_id": "FIX10-EXPERIMENT64-rectangle-20262018", "status": "INCONCLUSIVE", "completed": 63, "total": 128, "tick": 234, "elapsed": 352.11594910000167, "error": null, "terminal": "no_safe_plan_within_budget"}

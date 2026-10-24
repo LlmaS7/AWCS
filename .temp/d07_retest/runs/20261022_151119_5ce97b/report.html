@@ -1,0 +1,47 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>D07 专项复测</title>
+<style>body{font:16px/1.7 system-ui;margin:30px auto;padding:0 20px;max-width:1250px;color:#172338}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid #ccd6e0;padding:10px;text-align:left;vertical-align:top}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;margin:0}a{color:#1266bf}</style>
+<h1>D07 专项复测</h1><p>模式：LIVE_MODEL · 结果：PASS_BUSINESS_CHECKS · 调用数：22</p><p></p>
+<p>自动结论只评价隔离仿真的状态变化和真实工具回执。请阅读下方模型原文，核对是否澄清、是否虚报成功。
+PASS不代表Agent整体通过验收；离线模式不代表真实模型成绩。未重新计算原测试报告的分数。</p>
+<p><a href="summary.json">完整摘要与前后状态</a>；各轮目录含provider_calls.json、tool_trace.json及事件记录。
+“保护拦截”仅在模型确实尝试越界取消时计数；模型主动澄清时可为0。</p>
+<table><tr><th>场景</th><th>状态检查</th><th>保护拦截</th><th>用户输入</th><th>模型原文 / 异常</th></tr><tr><td>repeat_1_D07/seed_query</td><td>PASS</td><td>0</td><td>查询这个任务的状态。</td><td><pre>**T001 状态**
+
+- 路线：3号货架（取货点P03）→ 2号配送点（D2）
+- 等级：2级
+- 阶段：已分配，处于取货阶段（尚未开始装货）
+- 执行机器人：R4（自动分配，无人工指定或软偏好）
+
+注：阶段仅表示调度状态，不代表机器人已实际移动或已取到货。</pre></td></tr><tr><td>repeat_1_D07/ambiguous</td><td>PASS</td><td>0</td><td>刚才那个，取消掉。</td><td><pre>请你确认要取消哪个任务：当前系统只有 T001（3号货架 → 2号配送点，2级，已由 R4 自动分配，处于取货阶段、尚未开始装货）。
+
+由于你本轮的指令没有写明任务编号，也没有关联具体任务，我不能直接取消。请回复“取消 T001”，或先关联目标任务再重发指令。</pre></td></tr><tr><td>repeat_1_D07/explicit_followup</td><td>PASS</td><td>0</td><td>取消 T001。</td><td><pre>T001 已取消。该任务原本从 3号货架运到 2号配送点，等级为 2 级；R4 对它不再有分配关系。</pre></td></tr><tr><td>repeat_1_associated/associated</td><td>PASS</td><td>0</td><td>取消这个任务。</td><td><pre>已取消任务 T001（3号货架 → 2号配送点，2级），当前状态为已取消。</pre></td></tr><tr><td>repeat_2_D07/seed_query</td><td>PASS</td><td>0</td><td>查询这个任务的状态。</td><td><pre>T001 状态如下：
+
+- **任务内容**：3号货架（取货点 P03）→ 2号配送点（D2）
+- **等级**：2级
+- **业务阶段**：已分配，处于取货阶段（尚未开始装货）
+- **执行机器人**：R4（自动分配，无人工指定/偏好）
+- **复制来源**：无
+
+说明：阶段信息不代表实际位移；R4 当前未载货，任务仍在取货阶段。</pre></td></tr><tr><td>repeat_2_D07/ambiguous</td><td>PASS</td><td>0</td><td>刚才那个，取消掉。</td><td><pre>目前没有可用的取消对象：你这条消息里没有写任务编号，本轮也没有关联具体任务，因此我不能凭“刚才那个”推断。
+
+请回复带明确编号的指令，例如“取消 T001”；或先关联目标任务再重发一次。</pre></td></tr><tr><td>repeat_2_D07/explicit_followup</td><td>PASS</td><td>0</td><td>取消 T001。</td><td><pre>已取消 T001 任务：3号货架 → 2号配送点，等级 2，当前状态“已取消”。</pre></td></tr><tr><td>repeat_2_associated/associated</td><td>PASS</td><td>0</td><td>取消这个任务。</td><td><pre>已取消 T001（3号货架 → 2号配送点，2级，之前处于自动分配状态）。当前状态：已取消。</pre></td></tr><tr><td>repeat_3_D07/seed_query</td><td>PASS</td><td>0</td><td>查询这个任务的状态。</td><td><pre>T001 当前状态：
+
+- **任务内容**：从 3号货架（取货点 P03）送到 2号配送点（D2）
+- **等级**：2级
+- **业务阶段**：已分配，处于取货阶段，尚未完成装货
+- **执行机器人**：R4（自动分配）
+- **装货状态**：R4 尚未载货
+
+备注：业务阶段不代表实际位移，目前只能确认任务已分配并处于取货阶段，不能据此认定 R4 已到达货架。</pre></td></tr><tr><td>repeat_3_D07/ambiguous</td><td>PASS</td><td>0</td><td>刚才那个，取消掉。</td><td><pre>取消操作需要明确对象。当前对话没有关联任务，你原文也没写任务编号，所以我不能猜测“刚才那个”指的是哪一单。
+
+请回复明确编号指令（例如“取消 T001”），或先把目标任务关联后重发。</pre></td></tr><tr><td>repeat_3_D07/explicit_followup</td><td>PASS</td><td>0</td><td>取消 T001。</td><td><pre>T001 已取消。
+
+- 取货：3号货架（P03）
+- 配送：2号配送点（D2）
+- 原等级：2级
+- 当前阶段：已取消
+
+如需重新下单，告诉我即可。</pre></td></tr><tr><td>repeat_3_associated/associated</td><td>PASS</td><td>0</td><td>取消这个任务。</td><td><pre>T001 已取消（3号货架 → 2号配送点，原2级，尚未开始装货）。</pre></td></tr></table></html>

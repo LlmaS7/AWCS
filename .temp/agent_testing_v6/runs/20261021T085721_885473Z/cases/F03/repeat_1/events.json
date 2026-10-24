@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "kind": "start",
+    "request_id": "f93b645c512e4e9e8cd52e500ccb46a9",
+    "job": "import_extract",
+    "generation": 0,
+    "text": "",
+    "task_id": null,
+    "filename": "F03.docx"
+  },
+  {
+    "id": 2,
+    "kind": "import_progress",
+    "request_id": "f93b645c512e4e9e8cd52e500ccb46a9",
+    "stage": "正在分析文件；确认前不会创建任务"
+  },
+  {
+    "id": 3,
+    "kind": "import_ready",
+    "request_id": "f93b645c512e4e9e8cd52e500ccb46a9",
+    "draft_id": "8d6e73c533124230a6fae73c2c6b6dd5",
+    "generation": 0,
+    "count": 3
+  },
+  {
+    "id": 4,
+    "kind": "done",
+    "request_id": "f93b645c512e4e9e8cd52e500ccb46a9"
+  }
+]

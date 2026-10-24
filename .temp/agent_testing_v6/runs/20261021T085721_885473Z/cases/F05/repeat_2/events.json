@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "kind": "start",
+    "request_id": "6f4b6ca6a2ae433c9c63e2c93e4f1385",
+    "job": "import_extract",
+    "generation": 0,
+    "text": "",
+    "task_id": null,
+    "filename": "F05.txt"
+  },
+  {
+    "id": 2,
+    "kind": "import_progress",
+    "request_id": "6f4b6ca6a2ae433c9c63e2c93e4f1385",
+    "stage": "正在分析文件；确认前不会创建任务"
+  },
+  {
+    "id": 3,
+    "kind": "import_ready",
+    "request_id": "6f4b6ca6a2ae433c9c63e2c93e4f1385",
+    "draft_id": "e9f2f4dd96b9434bac60e8e2389bc3b1",
+    "generation": 0,
+    "count": 1
+  },
+  {
+    "id": 4,
+    "kind": "done",
+    "request_id": "6f4b6ca6a2ae433c9c63e2c93e4f1385"
+  }
+]

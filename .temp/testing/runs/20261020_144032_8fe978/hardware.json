@@ -1,0 +1,7 @@
+{
+  "cpu": "Intel(R) Core(TM) i9-14900HX",
+  "cores": 24,
+  "logical_processors": 32,
+  "physical_memory_bytes": 34056667136,
+  "physical_memory_gib": 31.72
+}

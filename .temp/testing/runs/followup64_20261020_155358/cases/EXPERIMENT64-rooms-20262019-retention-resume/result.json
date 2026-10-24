@@ -1,0 +1,36 @@
+{
+  "case_id": "EXPERIMENT64-rooms-20262019-retention-resume",
+  "source_case": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rooms-20262019",
+  "strategy": "retain_safe_suffix",
+  "status": "PASS",
+  "plan_checks": 37,
+  "path_points_checked": 105831,
+  "actual_steps_checked": 225,
+  "failures": 4,
+  "retentions": 4,
+  "stable_parking_attempts": 0,
+  "path_safe": true,
+  "initial_tick": 264,
+  "initial_completed": 91,
+  "reconstruction": {
+    "from_start": false,
+    "source_case": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rooms-20262019",
+    "domain_fields_exact": true,
+    "initial_tick": 264,
+    "initial_completed": 91,
+    "restored_dirty": true,
+    "restored_last_progress": 264,
+    "note": "Physical robot/task fields verified exactly. Pause cleared as an explicit retry; event/frame history is not used by planning. Full-mode dirty flag reconstructed from terminal reason and final-tick completions."
+  },
+  "inputs": {
+    "case_id": "EXPERIMENT64-rooms-20262019-retention-resume",
+    "source_case": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rooms-20262019",
+    "wall_seconds": 600
+  },
+  "terminal": "all_128_tasks_completed",
+  "completed": 128,
+  "total": 128,
+  "tick": 489,
+  "new_completed": 37,
+  "elapsed": 31.764458399999057
+}

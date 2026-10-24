@@ -1,0 +1,15 @@
+{
+  "case_id": "E01",
+  "map": "M02",
+  "text": "把四号货架的货送过去。",
+  "kind": "chat",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true
+}

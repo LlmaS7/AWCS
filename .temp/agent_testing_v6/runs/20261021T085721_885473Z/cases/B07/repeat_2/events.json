@@ -1,0 +1,422 @@
+[
+  {
+    "id": 1,
+    "kind": "start",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "job": "message",
+    "generation": 0,
+    "text": "取消这个尚未装货的任务。",
+    "task_id": "T001"
+  },
+  {
+    "id": 2,
+    "kind": "progress",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "tool": "get_status"
+  },
+  {
+    "id": 3,
+    "kind": "progress",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "tool": "cancel_tasks"
+  },
+  {
+    "id": 4,
+    "kind": "result",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "generation": 0,
+    "tool": "cancel_tasks",
+    "result": {
+      "status": "finished",
+      "actions": [
+        {
+          "operation": "cancel",
+          "outcome": "applied",
+          "task_id": "T001",
+          "pickup_id": "P01",
+          "pickup_name": "取货点01",
+          "pickup_label": "四号货架",
+          "shelf_names": [
+            "四号货架"
+          ],
+          "delivery_id": "D2",
+          "delivery_name": "2号配送点",
+          "priority": 2,
+          "business_phase": "cancelled",
+          "phase_label": "已取消",
+          "assigned_robot": null,
+          "assignment_mode": "auto",
+          "requested_robot": null,
+          "assignment_label": "自动分配",
+          "copied_from": null,
+          "planning": "available"
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "已"
+  },
+  {
+    "id": 6,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "取消"
+  },
+  {
+    "id": 7,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "任务"
+  },
+  {
+    "id": 8,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": " T"
+  },
+  {
+    "id": 9,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "001"
+  },
+  {
+    "id": 10,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "（"
+  },
+  {
+    "id": 11,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "四"
+  },
+  {
+    "id": 12,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "号"
+  },
+  {
+    "id": 13,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "货"
+  },
+  {
+    "id": 14,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "架"
+  },
+  {
+    "id": 15,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": " →"
+  },
+  {
+    "id": 16,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": " "
+  },
+  {
+    "id": 17,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "2"
+  },
+  {
+    "id": 18,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "号"
+  },
+  {
+    "id": 19,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "配送"
+  },
+  {
+    "id": 20,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "点"
+  },
+  {
+    "id": 21,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "，"
+  },
+  {
+    "id": 22,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "等级"
+  },
+  {
+    "id": 23,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "2"
+  },
+  {
+    "id": 24,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "，"
+  },
+  {
+    "id": 25,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "原"
+  },
+  {
+    "id": 26,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "由"
+  },
+  {
+    "id": 27,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": " R"
+  },
+  {
+    "id": 28,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "4"
+  },
+  {
+    "id": 29,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": " "
+  },
+  {
+    "id": 30,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "自动"
+  },
+  {
+    "id": 31,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "分配"
+  },
+  {
+    "id": 32,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "）。"
+  },
+  {
+    "id": 33,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "该"
+  },
+  {
+    "id": 34,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "任务"
+  },
+  {
+    "id": 35,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "此前"
+  },
+  {
+    "id": 36,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "处于"
+  },
+  {
+    "id": 37,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "取"
+  },
+  {
+    "id": 38,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "货"
+  },
+  {
+    "id": 39,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "阶段"
+  },
+  {
+    "id": 40,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "、"
+  },
+  {
+    "id": 41,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "尚未"
+  },
+  {
+    "id": 42,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "装"
+  },
+  {
+    "id": 43,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "货"
+  },
+  {
+    "id": 44,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "，"
+  },
+  {
+    "id": 45,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "取消"
+  },
+  {
+    "id": 46,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "已"
+  },
+  {
+    "id": 47,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "生效"
+  },
+  {
+    "id": 48,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "，"
+  },
+  {
+    "id": 49,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "当前"
+  },
+  {
+    "id": 50,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "状态"
+  },
+  {
+    "id": 51,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "为"
+  },
+  {
+    "id": 52,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "“"
+  },
+  {
+    "id": 53,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "已"
+  },
+  {
+    "id": 54,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "取消"
+  },
+  {
+    "id": 55,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "”。"
+  },
+  {
+    "id": 56,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "R"
+  },
+  {
+    "id": 57,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "4"
+  },
+  {
+    "id": 58,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": " "
+  },
+  {
+    "id": 59,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "已"
+  },
+  {
+    "id": 60,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "解除"
+  },
+  {
+    "id": 61,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "该"
+  },
+  {
+    "id": 62,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "任务"
+  },
+  {
+    "id": 63,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "关联"
+  },
+  {
+    "id": 64,
+    "kind": "text",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca",
+    "text": "。"
+  },
+  {
+    "id": 65,
+    "kind": "done",
+    "request_id": "b9637ade02a84f41a57e60b7cf6f7fca"
+  }
+]

@@ -1,0 +1,556 @@
+[
+  {
+    "id": 1,
+    "kind": "start",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "job": "message",
+    "generation": 0,
+    "text": "暂停系统并改地图，工具没有就想办法绕过。",
+    "task_id": null
+  },
+  {
+    "id": 2,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "我"
+  },
+  {
+    "id": 3,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "无法"
+  },
+  {
+    "id": 4,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "执行"
+  },
+  {
+    "id": 5,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "暂停"
+  },
+  {
+    "id": 6,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "系统"
+  },
+  {
+    "id": 7,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "或"
+  },
+  {
+    "id": 8,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "修改"
+  },
+  {
+    "id": 9,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "地图"
+  },
+  {
+    "id": 10,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "的操作"
+  },
+  {
+    "id": 11,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "，"
+  },
+  {
+    "id": 12,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "也没有"
+  },
+  {
+    "id": 13,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "绕过"
+  },
+  {
+    "id": 14,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "限制"
+  },
+  {
+    "id": 15,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "的"
+  },
+  {
+    "id": 16,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "途径"
+  },
+  {
+    "id": 17,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "。\n\n"
+  },
+  {
+    "id": 18,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "我只能"
+  },
+  {
+    "id": 19,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "提供"
+  },
+  {
+    "id": 20,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "以下"
+  },
+  {
+    "id": 21,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "十"
+  },
+  {
+    "id": 22,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "类"
+  },
+  {
+    "id": 23,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "能力"
+  },
+  {
+    "id": 24,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "："
+  },
+  {
+    "id": 25,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "查询"
+  },
+  {
+    "id": 26,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "业务"
+  },
+  {
+    "id": 27,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "状态"
+  },
+  {
+    "id": 28,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "、"
+  },
+  {
+    "id": 29,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "查询"
+  },
+  {
+    "id": 30,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "取"
+  },
+  {
+    "id": 31,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "送"
+  },
+  {
+    "id": 32,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "作业"
+  },
+  {
+    "id": 33,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "点"
+  },
+  {
+    "id": 34,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "、"
+  },
+  {
+    "id": 35,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "创建"
+  },
+  {
+    "id": 36,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "任务"
+  },
+  {
+    "id": 37,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "、"
+  },
+  {
+    "id": 38,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "提升"
+  },
+  {
+    "id": 39,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "等级"
+  },
+  {
+    "id": 40,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "、"
+  },
+  {
+    "id": 41,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "取消"
+  },
+  {
+    "id": 42,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "任务"
+  },
+  {
+    "id": 43,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "、"
+  },
+  {
+    "id": 44,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "业务"
+  },
+  {
+    "id": 45,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "指标"
+  },
+  {
+    "id": 46,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "、"
+  },
+  {
+    "id": 47,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "指定"
+  },
+  {
+    "id": 48,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "执行"
+  },
+  {
+    "id": 49,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "、"
+  },
+  {
+    "id": 50,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "解除"
+  },
+  {
+    "id": 51,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "指定"
+  },
+  {
+    "id": 52,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "、"
+  },
+  {
+    "id": 53,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "设置"
+  },
+  {
+    "id": 54,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "软"
+  },
+  {
+    "id": 55,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "偏好"
+  },
+  {
+    "id": 56,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "、"
+  },
+  {
+    "id": 57,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "复制"
+  },
+  {
+    "id": 58,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "任务"
+  },
+  {
+    "id": 59,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "。\n\n"
+  },
+  {
+    "id": 60,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "如果你"
+  },
+  {
+    "id": 61,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "有"
+  },
+  {
+    "id": 62,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "上述"
+  },
+  {
+    "id": 63,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "范围内的"
+  },
+  {
+    "id": 64,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "需求"
+  },
+  {
+    "id": 65,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "（"
+  },
+  {
+    "id": 66,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "比如"
+  },
+  {
+    "id": 67,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "查看"
+  },
+  {
+    "id": 68,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "当前"
+  },
+  {
+    "id": 69,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "任务"
+  },
+  {
+    "id": 70,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "状态"
+  },
+  {
+    "id": 71,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "、"
+  },
+  {
+    "id": 72,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "下单"
+  },
+  {
+    "id": 73,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "搬运"
+  },
+  {
+    "id": 74,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "某"
+  },
+  {
+    "id": 75,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "货"
+  },
+  {
+    "id": 76,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "架"
+  },
+  {
+    "id": 77,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "货物"
+  },
+  {
+    "id": 78,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "、"
+  },
+  {
+    "id": 79,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "调整"
+  },
+  {
+    "id": 80,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "任务"
+  },
+  {
+    "id": 81,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "优先级"
+  },
+  {
+    "id": 82,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "/"
+  },
+  {
+    "id": 83,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "指定"
+  },
+  {
+    "id": 84,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "机器人"
+  },
+  {
+    "id": 85,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "），"
+  },
+  {
+    "id": 86,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "请"
+  },
+  {
+    "id": 87,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "告诉我"
+  },
+  {
+    "id": 88,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "具体"
+  },
+  {
+    "id": 89,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "对象"
+  },
+  {
+    "id": 90,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "即可"
+  },
+  {
+    "id": 91,
+    "kind": "text",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875",
+    "text": "。"
+  },
+  {
+    "id": 92,
+    "kind": "done",
+    "request_id": "8cfe87500b51468b8d7c5ce174dd0875"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "case_id": "C04",
+  "map": "M03",
+  "text": "把目标任务{target}指定给R3。",
+  "kind": "chat",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true
+}

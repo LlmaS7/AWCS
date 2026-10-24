@@ -1,0 +1,214 @@
+[
+  {
+    "case_id": "H01",
+    "status": "PASS",
+    "scope": "synthetic harness regression; detailed coverage in source",
+    "details": {
+      "positive": true,
+      "negative_detected": true
+    },
+    "seconds": 2.8299999939918052e-05
+  },
+  {
+    "case_id": "H02",
+    "status": "PASS",
+    "scope": "synthetic harness regression; detailed coverage in source",
+    "details": {
+      "positive": true,
+      "negative_detected": true
+    },
+    "seconds": 1.7600000319362152e-05
+  },
+  {
+    "case_id": "H03",
+    "status": "PASS",
+    "scope": "synthetic harness regression; detailed coverage in source",
+    "details": {
+      "positive": true,
+      "negative_detected": true
+    },
+    "seconds": 4.999999964638846e-05
+  },
+  {
+    "case_id": "H04",
+    "status": "PASS",
+    "scope": "synthetic harness regression; detailed coverage in source",
+    "details": {
+      "positive": true,
+      "negative_detected": true
+    },
+    "seconds": 0.00011799999992945231
+  },
+  {
+    "case_id": "H05",
+    "status": "PASS",
+    "scope": "synthetic harness regression; detailed coverage in source",
+    "details": {
+      "positive": true,
+      "negative_detected": true
+    },
+    "seconds": 6.52999997328152e-05
+  },
+  {
+    "case_id": "H06",
+    "status": "PASS",
+    "scope": "synthetic harness regression; detailed coverage in source",
+    "details": {
+      "positive": true,
+      "negative_detected": true
+    },
+    "seconds": 3.600000127335079e-06
+  },
+  {
+    "case_id": "H07",
+    "status": "PASS",
+    "scope": "synthetic harness regression; detailed coverage in source",
+    "details": {
+      "positive": true,
+      "negative_detected": true
+    },
+    "seconds": 7.099999493220821e-06
+  },
+  {
+    "case_id": "H08",
+    "status": "PASS",
+    "scope": "synthetic harness regression; detailed coverage in source",
+    "details": {
+      "positive": true,
+      "negative_detected": true
+    },
+    "seconds": 5.300000339047983e-06
+  },
+  {
+    "case_id": "H09",
+    "status": "PASS",
+    "scope": "synthetic harness regression; detailed coverage in source",
+    "details": {
+      "positive": true,
+      "negative_detected": true
+    },
+    "seconds": 0.0010027999996964354
+  },
+  {
+    "case_id": "H10",
+    "status": "PASS",
+    "scope": "synthetic harness regression; detailed coverage in source",
+    "details": {
+      "positive": true,
+      "negative_detected": true
+    },
+    "seconds": 4.800000169780105e-06
+  },
+  {
+    "case_id": "H11",
+    "status": "PASS",
+    "scope": "synthetic harness regression; detailed coverage in source",
+    "details": {
+      "positive": true,
+      "negative_detected": true
+    },
+    "seconds": 0.0007342999997490551
+  },
+  {
+    "case_id": "H12",
+    "status": "PASS",
+    "scope": "synthetic harness regression; detailed coverage in source",
+    "details": {
+      "positive": true,
+      "negative_detected": true
+    },
+    "seconds": 2.2899999748915434e-05
+  },
+  {
+    "case_id": "H13",
+    "status": "PASS",
+    "scope": "synthetic harness regression; detailed coverage in source",
+    "details": {
+      "positive": true,
+      "negative_detected": true,
+      "production_SSE": true
+    },
+    "seconds": 5.070348599999306
+  },
+  {
+    "case_id": "H14",
+    "status": "PASS",
+    "scope": "synthetic harness regression; detailed coverage in source",
+    "details": {
+      "positive": true,
+      "negative_detected": true
+    },
+    "seconds": 0.004721299999800976
+  },
+  {
+    "case_id": "H15",
+    "status": "PASS",
+    "scope": "synthetic harness regression; detailed coverage in source",
+    "details": {
+      "deadline_stops": true,
+      "process_cleanup": "owned PlannerWorker.close only"
+    },
+    "seconds": 4.850000004807953e-05
+  },
+  {
+    "case_id": "H16",
+    "status": "PASS",
+    "scope": "synthetic harness regression; detailed coverage in source",
+    "details": {
+      "positive": true,
+      "negative_detected": true
+    },
+    "seconds": 8.04999999672873e-05
+  },
+  {
+    "case_id": "H17",
+    "status": "PASS",
+    "scope": "synthetic harness regression; detailed coverage in source",
+    "details": {
+      "positive": true,
+      "negative_detected": true,
+      "recorder_failure_blocks_send": true
+    },
+    "seconds": 0.0013791999999739346
+  },
+  {
+    "case_id": "H18",
+    "status": "PASS",
+    "scope": "synthetic harness regression; detailed coverage in source",
+    "details": {
+      "positive": true,
+      "negative_detected": true
+    },
+    "seconds": 0.021599200000309793
+  },
+  {
+    "case_id": "H19",
+    "status": "PASS",
+    "scope": "synthetic harness regression; detailed coverage in source",
+    "details": {
+      "positive": true,
+      "negative_detected": true,
+      "variants": [
+        [
+          5,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    "seconds": 0.00024289999964821618
+  },
+  {
+    "case_id": "H20",
+    "status": "PASS",
+    "scope": "synthetic harness regression; detailed coverage in source",
+    "details": {
+      "positive": true,
+      "negative_detected": true
+    },
+    "seconds": 4.656797999999981
+  }
+]

@@ -1,0 +1,1 @@
+{"case_id": "FIX-SCALE32-irregular_96x64-20262018", "status": "INCONCLUSIVE", "completed": 6, "total": 64, "tick": 80, "elapsed": 7.29844090000006, "error": null, "terminal": "no_safe_plan_within_budget"}

@@ -1,0 +1,1 @@
+{"case_id": "FIX-COUPLING-off-1", "status": "PASS", "completed": 8, "total": 8, "tick": 359, "elapsed": 1.5560218999999051, "error": null, "terminal": "all_tasks_completed"}

@@ -1,0 +1,277 @@
+[
+  {
+    "request_id": "cfa7cc35c21e4d17a4e8608d2081a451",
+    "name": "get_status",
+    "arguments": {
+      "task_id": "T001"
+    },
+    "operation_id": "cfa7cc35c21e4d17a4e8608d2081a451/1",
+    "generation": 0,
+    "start": 1792573603.1837342,
+    "result": {
+      "tasks": [
+        {
+          "task_id": "T001",
+          "pickup_id": "P01",
+          "pickup_name": "取货点01",
+          "pickup_label": "四号货架",
+          "shelf_names": [
+            "四号货架"
+          ],
+          "delivery_id": "D2",
+          "delivery_name": "2号配送点",
+          "priority": 2,
+          "business_phase": "to_pickup",
+          "phase_label": "已分配，处于取货阶段",
+          "assigned_robot": "R4",
+          "assignment_mode": "auto",
+          "requested_robot": null,
+          "assignment_label": "自动分配",
+          "copied_from": null
+        }
+      ],
+      "robots": [
+        {
+          "robot_id": "R1",
+          "position": [
+            24,
+            58
+          ],
+          "business_phase": "idle",
+          "phase_label": "空闲",
+          "loaded": false,
+          "task_id": null,
+          "reserved_task": null,
+          "completed": 0
+        },
+        {
+          "robot_id": "R2",
+          "position": [
+            25,
+            58
+          ],
+          "business_phase": "idle",
+          "phase_label": "空闲",
+          "loaded": false,
+          "task_id": null,
+          "reserved_task": null,
+          "completed": 0
+        },
+        {
+          "robot_id": "R3",
+          "position": [
+            26,
+            58
+          ],
+          "business_phase": "idle",
+          "phase_label": "空闲",
+          "loaded": false,
+          "task_id": null,
+          "reserved_task": null,
+          "completed": 0
+        },
+        {
+          "robot_id": "R4",
+          "position": [
+            27,
+            58
+          ],
+          "business_phase": "to_pickup",
+          "phase_label": "已分配，处于取货阶段",
+          "loaded": false,
+          "task_id": "T001",
+          "reserved_task": null,
+          "completed": 0
+        }
+      ],
+      "note": "业务阶段不证明当前实际移动，预约不等于已开始搬运。"
+    },
+    "seconds": 0.0002701282501220703
+  },
+  {
+    "request_id": "cfa7cc35c21e4d17a4e8608d2081a451",
+    "name": "copy_task",
+    "arguments": {
+      "task_id": "T001",
+      "count": 2
+    },
+    "operation_id": "cfa7cc35c21e4d17a4e8608d2081a451/2",
+    "generation": 0,
+    "start": 1792573605.9459298,
+    "result": {
+      "status": "finished",
+      "actions": [
+        {
+          "operation": "copy",
+          "outcome": "applied",
+          "task_id": "T002",
+          "pickup_id": "P01",
+          "pickup_name": "取货点01",
+          "pickup_label": "四号货架",
+          "shelf_names": [
+            "四号货架"
+          ],
+          "delivery_id": "D2",
+          "delivery_name": "2号配送点",
+          "priority": 2,
+          "business_phase": "to_pickup",
+          "phase_label": "已分配，处于取货阶段",
+          "assigned_robot": "R3",
+          "assignment_mode": "auto",
+          "requested_robot": null,
+          "assignment_label": "自动分配",
+          "copied_from": "T001",
+          "planning": "available"
+        },
+        {
+          "operation": "copy",
+          "outcome": "applied",
+          "task_id": "T003",
+          "pickup_id": "P01",
+          "pickup_name": "取货点01",
+          "pickup_label": "四号货架",
+          "shelf_names": [
+            "四号货架"
+          ],
+          "delivery_id": "D2",
+          "delivery_name": "2号配送点",
+          "priority": 2,
+          "business_phase": "to_pickup",
+          "phase_label": "已分配，处于取货阶段",
+          "assigned_robot": "R2",
+          "assignment_mode": "auto",
+          "requested_robot": null,
+          "assignment_label": "自动分配",
+          "copied_from": "T001",
+          "planning": "available"
+        }
+      ]
+    },
+    "seconds": 0.5714364051818848
+  },
+  {
+    "request_id": "e964f4ac05e5447dbe2e42758bd7a602",
+    "name": "get_status",
+    "arguments": {},
+    "operation_id": "e964f4ac05e5447dbe2e42758bd7a602/1",
+    "generation": 0,
+    "start": 1792573612.2586126,
+    "result": {
+      "tasks": [
+        {
+          "task_id": "T001",
+          "pickup_id": "P01",
+          "pickup_name": "取货点01",
+          "pickup_label": "四号货架",
+          "shelf_names": [
+            "四号货架"
+          ],
+          "delivery_id": "D2",
+          "delivery_name": "2号配送点",
+          "priority": 2,
+          "business_phase": "to_pickup",
+          "phase_label": "已分配，处于取货阶段",
+          "assigned_robot": "R4",
+          "assignment_mode": "auto",
+          "requested_robot": null,
+          "assignment_label": "自动分配",
+          "copied_from": null
+        },
+        {
+          "task_id": "T002",
+          "pickup_id": "P01",
+          "pickup_name": "取货点01",
+          "pickup_label": "四号货架",
+          "shelf_names": [
+            "四号货架"
+          ],
+          "delivery_id": "D2",
+          "delivery_name": "2号配送点",
+          "priority": 2,
+          "business_phase": "to_pickup",
+          "phase_label": "已分配，处于取货阶段",
+          "assigned_robot": "R3",
+          "assignment_mode": "auto",
+          "requested_robot": null,
+          "assignment_label": "自动分配",
+          "copied_from": "T001"
+        },
+        {
+          "task_id": "T003",
+          "pickup_id": "P01",
+          "pickup_name": "取货点01",
+          "pickup_label": "四号货架",
+          "shelf_names": [
+            "四号货架"
+          ],
+          "delivery_id": "D2",
+          "delivery_name": "2号配送点",
+          "priority": 2,
+          "business_phase": "to_pickup",
+          "phase_label": "已分配，处于取货阶段",
+          "assigned_robot": "R2",
+          "assignment_mode": "auto",
+          "requested_robot": null,
+          "assignment_label": "自动分配",
+          "copied_from": "T001"
+        }
+      ],
+      "robots": [
+        {
+          "robot_id": "R1",
+          "position": [
+            24,
+            58
+          ],
+          "business_phase": "idle",
+          "phase_label": "空闲",
+          "loaded": false,
+          "task_id": null,
+          "reserved_task": null,
+          "completed": 0
+        },
+        {
+          "robot_id": "R2",
+          "position": [
+            25,
+            58
+          ],
+          "business_phase": "to_pickup",
+          "phase_label": "已分配，处于取货阶段",
+          "loaded": false,
+          "task_id": "T003",
+          "reserved_task": null,
+          "completed": 0
+        },
+        {
+          "robot_id": "R3",
+          "position": [
+            26,
+            58
+          ],
+          "business_phase": "to_pickup",
+          "phase_label": "已分配，处于取货阶段",
+          "loaded": false,
+          "task_id": "T002",
+          "reserved_task": null,
+          "completed": 0
+        },
+        {
+          "robot_id": "R4",
+          "position": [
+            27,
+            58
+          ],
+          "business_phase": "to_pickup",
+          "phase_label": "已分配，处于取货阶段",
+          "loaded": false,
+          "task_id": "T001",
+          "reserved_task": null,
+          "completed": 0
+        }
+      ],
+      "note": "业务阶段不证明当前实际移动，预约不等于已开始搬运。"
+    },
+    "seconds": 0.0002911090850830078
+  }
+]

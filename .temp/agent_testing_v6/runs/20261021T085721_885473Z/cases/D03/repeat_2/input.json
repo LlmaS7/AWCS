@@ -1,0 +1,15 @@
+{
+  "case_id": "D03",
+  "map": "M03",
+  "text": "取消任务{target}，不要操作其他任务。",
+  "kind": "chat",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true
+}

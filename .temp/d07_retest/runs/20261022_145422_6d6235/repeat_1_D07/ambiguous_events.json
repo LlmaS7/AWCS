@@ -1,0 +1,47 @@
+[
+  {
+    "id": 6,
+    "kind": "start",
+    "request_id": "9bfa2b8a8c384e579ab3660fc668599a",
+    "job": "message",
+    "generation": 0,
+    "text": "刚才那个，取消掉。",
+    "task_id": null
+  },
+  {
+    "id": 7,
+    "kind": "progress",
+    "request_id": "9bfa2b8a8c384e579ab3660fc668599a",
+    "tool": "get_status"
+  },
+  {
+    "id": 8,
+    "kind": "progress",
+    "request_id": "9bfa2b8a8c384e579ab3660fc668599a",
+    "tool": "cancel_tasks"
+  },
+  {
+    "id": 9,
+    "kind": "result",
+    "request_id": "9bfa2b8a8c384e579ab3660fc668599a",
+    "generation": 0,
+    "tool": "cancel_tasks",
+    "result": {
+      "error": "未明确要取消的任务，整批未执行。请回复“取消 T001”（替换为目标任务编号），或关联目标任务后重发。",
+      "code": "cancellation_target_required",
+      "executed": false,
+      "requires_clarification": true
+    }
+  },
+  {
+    "id": 10,
+    "kind": "text",
+    "request_id": "9bfa2b8a8c384e579ab3660fc668599a",
+    "text": "请明确要取消的任务编号。"
+  },
+  {
+    "id": 11,
+    "kind": "done",
+    "request_id": "9bfa2b8a8c384e579ab3660fc668599a"
+  }
+]

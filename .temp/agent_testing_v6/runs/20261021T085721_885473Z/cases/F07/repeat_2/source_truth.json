@@ -1,0 +1,33 @@
+{
+  "document": {
+    "filename": "F07.txt",
+    "size": 39,
+    "sha256": "8be07338773a3f4287cf804eec6700a86352f5eb4420c51b8a509050524901a3",
+    "format": "txt",
+    "encoding": "utf-8-sig",
+    "blocks": [
+      {
+        "id": "b1",
+        "text": "需求甲：四号货架送包装区。",
+        "locator": {
+          "type": "text_line",
+          "line": 1
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "truth": [
+    {
+      "marker": "需求甲",
+      "text": "需求甲：四号货架送包装区。",
+      "pickup_id": "P05",
+      "delivery_id": null,
+      "priority": 2,
+      "count": 1,
+      "quantity_kind": "unspecified",
+      "constraints": []
+    }
+  ],
+  "excluded": []
+}

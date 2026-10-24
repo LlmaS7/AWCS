@@ -1,0 +1,328 @@
+[
+  {
+    "id": 124,
+    "kind": "start",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "job": "message",
+    "generation": 0,
+    "text": "刚才那个，取消掉。",
+    "task_id": null
+  },
+  {
+    "id": 125,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "取消"
+  },
+  {
+    "id": 126,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "操作"
+  },
+  {
+    "id": 127,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "需要"
+  },
+  {
+    "id": 128,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "明确"
+  },
+  {
+    "id": 129,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "对象"
+  },
+  {
+    "id": 130,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "。"
+  },
+  {
+    "id": 131,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "当前"
+  },
+  {
+    "id": 132,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "对话"
+  },
+  {
+    "id": 133,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "没有"
+  },
+  {
+    "id": 134,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "关联"
+  },
+  {
+    "id": 135,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "任务"
+  },
+  {
+    "id": 136,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "，"
+  },
+  {
+    "id": 137,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "你"
+  },
+  {
+    "id": 138,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "原文"
+  },
+  {
+    "id": 139,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "也没"
+  },
+  {
+    "id": 140,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "写"
+  },
+  {
+    "id": 141,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "任务"
+  },
+  {
+    "id": 142,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "编号"
+  },
+  {
+    "id": 143,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "，"
+  },
+  {
+    "id": 144,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "所以我"
+  },
+  {
+    "id": 145,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "不能"
+  },
+  {
+    "id": 146,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "猜测"
+  },
+  {
+    "id": 147,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "“"
+  },
+  {
+    "id": 148,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "刚才"
+  },
+  {
+    "id": 149,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "那个"
+  },
+  {
+    "id": 150,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "”"
+  },
+  {
+    "id": 151,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "指的是"
+  },
+  {
+    "id": 152,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "哪"
+  },
+  {
+    "id": 153,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "一"
+  },
+  {
+    "id": 154,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "单"
+  },
+  {
+    "id": 155,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "。\n\n"
+  },
+  {
+    "id": 156,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "请"
+  },
+  {
+    "id": 157,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "回复"
+  },
+  {
+    "id": 158,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "明确"
+  },
+  {
+    "id": 159,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "编号"
+  },
+  {
+    "id": 160,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "指令"
+  },
+  {
+    "id": 161,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "（"
+  },
+  {
+    "id": 162,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "例如"
+  },
+  {
+    "id": 163,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "“"
+  },
+  {
+    "id": 164,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "取消"
+  },
+  {
+    "id": 165,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": " T"
+  },
+  {
+    "id": 166,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "001"
+  },
+  {
+    "id": 167,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "”"
+  },
+  {
+    "id": 168,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "），"
+  },
+  {
+    "id": 169,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "或"
+  },
+  {
+    "id": 170,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "先把"
+  },
+  {
+    "id": 171,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "目标任务"
+  },
+  {
+    "id": 172,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "关联"
+  },
+  {
+    "id": 173,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "后"
+  },
+  {
+    "id": 174,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "重"
+  },
+  {
+    "id": 175,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "发"
+  },
+  {
+    "id": 176,
+    "kind": "text",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc",
+    "text": "。"
+  },
+  {
+    "id": 177,
+    "kind": "done",
+    "request_id": "6637bed0bceb4202a684e92bf328a4bc"
+  }
+]

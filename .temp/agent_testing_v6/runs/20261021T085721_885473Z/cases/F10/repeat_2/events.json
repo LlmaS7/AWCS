@@ -1,0 +1,117 @@
+[
+  {
+    "id": 1,
+    "kind": "start",
+    "request_id": "10d577342447467ea39d6be457b87788",
+    "job": "import_extract",
+    "generation": 0,
+    "text": "",
+    "task_id": null,
+    "filename": "F10.docx"
+  },
+  {
+    "id": 2,
+    "kind": "import_progress",
+    "request_id": "10d577342447467ea39d6be457b87788",
+    "stage": "正在分析文件；确认前不会创建任务"
+  },
+  {
+    "id": 3,
+    "kind": "import_ready",
+    "request_id": "10d577342447467ea39d6be457b87788",
+    "draft_id": "355bf21fc1eb4791a8a1f43fca069eb5",
+    "generation": 0,
+    "count": 2
+  },
+  {
+    "id": 4,
+    "kind": "done",
+    "request_id": "10d577342447467ea39d6be457b87788"
+  },
+  {
+    "id": 5,
+    "kind": "start",
+    "request_id": "2ecc99da108940a1b822ef24b6684011",
+    "job": "import_commit",
+    "generation": 0,
+    "filename": "F10.docx"
+  },
+  {
+    "id": 6,
+    "kind": "import_progress",
+    "request_id": "2ecc99da108940a1b822ef24b6684011",
+    "stage": "正在逐项创建并规划路线",
+    "completed": 1,
+    "total": 2
+  },
+  {
+    "id": 7,
+    "kind": "import_progress",
+    "request_id": "2ecc99da108940a1b822ef24b6684011",
+    "stage": "正在逐项创建并规划路线",
+    "completed": 2,
+    "total": 2
+  },
+  {
+    "id": 8,
+    "kind": "result",
+    "request_id": "2ecc99da108940a1b822ef24b6684011",
+    "generation": 0,
+    "tool": "create_tasks",
+    "result": {
+      "status": "finished",
+      "actions": [
+        {
+          "operation": "add",
+          "outcome": "applied",
+          "task_id": "T001",
+          "pickup_id": "P05",
+          "pickup_name": "取货点05",
+          "pickup_label": "四号货架",
+          "shelf_names": [
+            "四号货架"
+          ],
+          "delivery_id": "D2",
+          "delivery_name": "2号配送点",
+          "priority": 2,
+          "business_phase": "to_pickup",
+          "phase_label": "已分配，处于取货阶段",
+          "assigned_robot": "R4",
+          "assignment_mode": "auto",
+          "requested_robot": null,
+          "assignment_label": "自动分配",
+          "copied_from": null,
+          "planning": "available"
+        },
+        {
+          "operation": "add",
+          "outcome": "applied",
+          "task_id": "T002",
+          "pickup_id": "P01",
+          "pickup_name": "取货点01",
+          "pickup_label": "登记货架2",
+          "shelf_names": [
+            "登记货架2"
+          ],
+          "delivery_id": "D1",
+          "delivery_name": "1号配送点",
+          "priority": 2,
+          "business_phase": "to_pickup",
+          "phase_label": "已分配，处于取货阶段",
+          "assigned_robot": "R1",
+          "assignment_mode": "auto",
+          "requested_robot": null,
+          "assignment_label": "自动分配",
+          "copied_from": null,
+          "planning": "available"
+        }
+      ]
+    },
+    "submission_id": "2ecc99da108940a1b822ef24b6684011"
+  },
+  {
+    "id": 9,
+    "kind": "done",
+    "request_id": "2ecc99da108940a1b822ef24b6684011"
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "case_id": "F01",
+  "repeat": 1,
+  "layer": "smoke",
+  "execution_status": "COMPLETED",
+  "raw_status": "FAIL",
+  "effective_status": "FAIL",
+  "review_status": "COMPLETED",
+  "human_signoff": null,
+  "evidence": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\F01\\repeat_1",
+  "fixture_valid": true,
+  "protocol_verdict": "PASS",
+  "business_verdict": "FAIL",
+  "required_process_verdict": "PASS",
+  "response_verdict": "PASS",
+  "network_error": false,
+  "details": {
+    "business_errors": [
+      "需求乙:spurious unsupported constraint",
+      "需求丙:spurious unsupported constraint"
+    ],
+    "pending": []
+  },
+  "protocol_errors": [],
+  "execution_origin": "inherited_first_attempt",
+  "origin_result": "E:\\_PROJECTS\\SDITADC\\.temp\\agent_testing\\runs\\20261021T081305_800091Z\\cases\\F01\\repeat_1\\result.json",
+  "origin_result_sha256": "e644d7788819d9fc613b8d6febf1db798da2960c3738c36931577b1813338853",
+  "origin_test_version": "awcs-agent-suite-20261021-v5"
+}

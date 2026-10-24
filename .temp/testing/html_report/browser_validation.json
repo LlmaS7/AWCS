@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "date": "2026-10-20",
+  "report": ".report/AWCS_测试报告.html",
+  "source_fingerprints_unchanged": 101,
+  "offline_external_resources": [],
+  "browser_console_errors": 0,
+  "checks": [
+    "14 different archived map geometries",
+    "15 complete real replay datasets",
+    "50 business runs, maximum 32 robots, original 5 incomplete outcomes retained",
+    "map filtering and zoom dialog",
+    "real playback, pause, seeking and robot selection",
+    "lecture chapters, keyboard navigation and notes",
+    "result filters and expansion",
+    "1440px desktop and 390px mobile without page overflow",
+    "print all 50 rows and 7 chapters",
+    "reduced motion supported"
+  ],
+  "screenshots": "output/playwright/awcs-report",
+  "note": "Reused archived planning tests; no new algorithm test run."
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "phase": "associated",
+    "tool": "cancel_tasks",
+    "arguments": {
+      "task_ids": [
+        "T001"
+      ]
+    },
+    "request_id": "eb41f130d922420b91e066525ad5cb21",
+    "session": "16eb0c60cd7c4b9d8ea45709fb8fa84e",
+    "result": {
+      "status": "finished",
+      "actions": [
+        {
+          "operation": "cancel",
+          "outcome": "applied",
+          "task_id": "T001",
+          "pickup_id": "P03",
+          "pickup_name": "取货点03",
+          "pickup_label": "3号货架",
+          "shelf_names": [
+            "3号货架"
+          ],
+          "delivery_id": "D2",
+          "delivery_name": "2号配送点",
+          "priority": 2,
+          "business_phase": "cancelled",
+          "phase_label": "已取消",
+          "assigned_robot": null,
+          "assignment_mode": "auto",
+          "requested_robot": null,
+          "assignment_label": "自动分配",
+          "copied_from": null,
+          "planning": "available"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,1 @@
+Retention runner initially failed before launching any test child because ROOT was not defined. Corrected test runner only; no case executed or production file changed.

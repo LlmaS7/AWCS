@@ -1,0 +1,62 @@
+[
+  {
+    "id": 12,
+    "kind": "start",
+    "request_id": "a14a15b5af844109b2b57419ea3fa01f",
+    "job": "message",
+    "generation": 0,
+    "text": "取消 T001。",
+    "task_id": null
+  },
+  {
+    "id": 13,
+    "kind": "progress",
+    "request_id": "a14a15b5af844109b2b57419ea3fa01f",
+    "tool": "cancel_tasks"
+  },
+  {
+    "id": 14,
+    "kind": "result",
+    "request_id": "a14a15b5af844109b2b57419ea3fa01f",
+    "generation": 0,
+    "tool": "cancel_tasks",
+    "result": {
+      "status": "finished",
+      "actions": [
+        {
+          "operation": "cancel",
+          "outcome": "applied",
+          "task_id": "T001",
+          "pickup_id": "P03",
+          "pickup_name": "取货点03",
+          "pickup_label": "3号货架",
+          "shelf_names": [
+            "3号货架"
+          ],
+          "delivery_id": "D2",
+          "delivery_name": "2号配送点",
+          "priority": 2,
+          "business_phase": "cancelled",
+          "phase_label": "已取消",
+          "assigned_robot": null,
+          "assignment_mode": "auto",
+          "requested_robot": null,
+          "assignment_label": "自动分配",
+          "copied_from": null,
+          "planning": "available"
+        }
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "kind": "text",
+    "request_id": "a14a15b5af844109b2b57419ea3fa01f",
+    "text": "请核对取消回执。"
+  },
+  {
+    "id": 16,
+    "kind": "done",
+    "request_id": "a14a15b5af844109b2b57419ea3fa01f"
+  }
+]

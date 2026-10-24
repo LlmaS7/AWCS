@@ -1,0 +1,1 @@
+{"case_id": "SCALE32-fleet_64x64-20262019", "status": "PASS", "completed": 64, "total": 64, "tick": 276, "elapsed": 20.421897400000034, "error": null, "terminal": "all_tasks_completed"}

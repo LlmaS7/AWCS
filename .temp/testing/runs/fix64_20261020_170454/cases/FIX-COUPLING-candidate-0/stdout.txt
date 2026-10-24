@@ -1,0 +1,1 @@
+{"case_id": "FIX-COUPLING-candidate-0", "status": "PASS", "completed": 8, "total": 8, "tick": 359, "elapsed": 1.3491162000009354, "error": null, "terminal": "all_tasks_completed"}

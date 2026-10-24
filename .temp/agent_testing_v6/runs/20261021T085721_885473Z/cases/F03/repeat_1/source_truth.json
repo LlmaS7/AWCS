@@ -1,0 +1,75 @@
+{
+  "document": {
+    "filename": "F03.docx",
+    "size": 664,
+    "sha256": "cd22b463e1525649d26d2931fdacb24d4b2341c05f115f1ce9a02df814929d79",
+    "format": "docx",
+    "encoding": null,
+    "blocks": [
+      {
+        "id": "b1",
+        "text": "需求甲：四号货架送二号配送点。",
+        "locator": {
+          "type": "docx_table",
+          "table": 1,
+          "row": 1,
+          "column": 1
+        }
+      },
+      {
+        "id": "b2",
+        "text": "需求乙：登记货架2送一号配送点，紧急。",
+        "locator": {
+          "type": "docx_table",
+          "table": 1,
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "id": "b3",
+        "text": "需求丙：四号货架送一号配送点，3级。",
+        "locator": {
+          "type": "docx_table",
+          "table": 1,
+          "row": 3,
+          "column": 1
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "truth": [
+    {
+      "marker": "需求甲",
+      "text": "需求甲：四号货架送二号配送点。",
+      "pickup_id": "P01",
+      "delivery_id": "D2",
+      "priority": 2,
+      "count": 1,
+      "quantity_kind": "unspecified",
+      "constraints": []
+    },
+    {
+      "marker": "需求乙",
+      "text": "需求乙：登记货架2送一号配送点，紧急。",
+      "pickup_id": "P02",
+      "delivery_id": "D1",
+      "priority": 5,
+      "count": 1,
+      "quantity_kind": "unspecified",
+      "constraints": []
+    },
+    {
+      "marker": "需求丙",
+      "text": "需求丙：四号货架送一号配送点，3级。",
+      "pickup_id": "P01",
+      "delivery_id": "D1",
+      "priority": 3,
+      "count": 1,
+      "quantity_kind": "unspecified",
+      "constraints": []
+    }
+  ],
+  "excluded": []
+}

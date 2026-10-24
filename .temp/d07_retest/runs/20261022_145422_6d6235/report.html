@@ -1,0 +1,11 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>D07 专项复测</title>
+<style>body{font:16px/1.7 system-ui;margin:30px auto;padding:0 20px;max-width:1250px;color:#172338}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid #ccd6e0;padding:10px;text-align:left;vertical-align:top}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;margin:0}a{color:#1266bf}</style>
+<h1>D07 专项复测</h1><p>模式：OFFLINE_SYNTHETIC · 结果：PASS_BUSINESS_CHECKS · 调用数：27</p><p></p>
+<p>自动结论只评价隔离仿真的状态变化和真实工具回执。请阅读下方模型原文，核对是否澄清、是否虚报成功。
+PASS不代表Agent整体通过验收；离线模式不代表真实模型成绩。未重新计算原测试报告的分数。</p>
+<p><a href="summary.json">完整摘要与前后状态</a>；各轮目录含provider_calls.json、tool_trace.json及事件记录。
+“保护拦截”仅在模型确实尝试越界取消时计数；模型主动澄清时可为0。</p>
+<table><tr><th>场景</th><th>状态检查</th><th>保护拦截</th><th>用户输入</th><th>模型原文 / 异常</th></tr><tr><td>repeat_1_D07/seed_query</td><td>PASS</td><td>0</td><td>查询这个任务的状态。</td><td><pre>请核对业务回执。</pre></td></tr><tr><td>repeat_1_D07/ambiguous</td><td>PASS</td><td>1</td><td>刚才那个，取消掉。</td><td><pre>请明确要取消的任务编号。</pre></td></tr><tr><td>repeat_1_D07/explicit_followup</td><td>PASS</td><td>0</td><td>取消 T001。</td><td><pre>请核对取消回执。</pre></td></tr><tr><td>repeat_1_associated/associated</td><td>PASS</td><td>0</td><td>取消这个任务。</td><td><pre>请核对取消回执。</pre></td></tr><tr><td>repeat_2_D07/seed_query</td><td>PASS</td><td>0</td><td>查询这个任务的状态。</td><td><pre>请核对业务回执。</pre></td></tr><tr><td>repeat_2_D07/ambiguous</td><td>PASS</td><td>1</td><td>刚才那个，取消掉。</td><td><pre>请明确要取消的任务编号。</pre></td></tr><tr><td>repeat_2_D07/explicit_followup</td><td>PASS</td><td>0</td><td>取消 T001。</td><td><pre>请核对取消回执。</pre></td></tr><tr><td>repeat_2_associated/associated</td><td>PASS</td><td>0</td><td>取消这个任务。</td><td><pre>请核对取消回执。</pre></td></tr><tr><td>repeat_3_D07/seed_query</td><td>PASS</td><td>0</td><td>查询这个任务的状态。</td><td><pre>请核对业务回执。</pre></td></tr><tr><td>repeat_3_D07/ambiguous</td><td>PASS</td><td>1</td><td>刚才那个，取消掉。</td><td><pre>请明确要取消的任务编号。</pre></td></tr><tr><td>repeat_3_D07/explicit_followup</td><td>PASS</td><td>0</td><td>取消 T001。</td><td><pre>请核对取消回执。</pre></td></tr><tr><td>repeat_3_associated/associated</td><td>PASS</td><td>0</td><td>取消这个任务。</td><td><pre>请核对取消回执。</pre></td></tr></table></html>

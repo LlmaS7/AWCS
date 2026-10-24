@@ -1,0 +1,210 @@
+[
+  {
+    "case_id": "EXPERIMENT64-rectangle-20262018",
+    "tick": 376,
+    "completed": 112,
+    "task_status_counts": {
+      "completed": 112,
+      "to_delivery": 16
+    },
+    "task_assignment_changes_on_dispatch": [],
+    "parking_changes_on_dispatch": [],
+    "current_suffix_independently_valid": true,
+    "suffix_points": 1383,
+    "distance_cache_prewarm_seconds": 1.9244717000001401,
+    "comparisons": [
+      {
+        "variant": "normal_parking",
+        "status": "no_safe_plan",
+        "success": false,
+        "elapsed": 4.626750899999024,
+        "diagnostics": {
+          "candidates": 1,
+          "expanded": 16,
+          "statuses": [
+            "ordering_exhausted"
+          ],
+          "scope": "两阶段硬优先级 / 软偏好 / 静态ETA匹配＋协调可行路线",
+          "global_optimal": false,
+          "mode": "scalable_full",
+          "coupling": "off"
+        }
+      },
+      {
+        "variant": "keep_previous_parking",
+        "status": "no_safe_plan",
+        "success": false,
+        "elapsed": 4.900744099999429,
+        "diagnostics": {
+          "candidates": 1,
+          "expanded": 16,
+          "statuses": [
+            "ordering_exhausted"
+          ],
+          "scope": "两阶段硬优先级 / 软偏好 / 静态ETA匹配＋协调可行路线",
+          "global_optimal": false,
+          "mode": "scalable_full",
+          "coupling": "off"
+        }
+      }
+    ],
+    "note": "Diagnostic A/B only. Both use original solver and 10-second budget on the identical frozen domain state. Parking function overridden only inside one test call and immediately restored."
+  },
+  {
+    "case_id": "EXPERIMENT64-rectangle-20262019",
+    "tick": 337,
+    "completed": 109,
+    "task_status_counts": {
+      "to_delivery": 18,
+      "completed": 109,
+      "to_pickup": 1
+    },
+    "task_assignment_changes_on_dispatch": [],
+    "parking_changes_on_dispatch": [],
+    "current_suffix_independently_valid": true,
+    "suffix_points": 1983,
+    "distance_cache_prewarm_seconds": 2.4458864999996877,
+    "comparisons": [
+      {
+        "variant": "normal_parking",
+        "status": "timeout",
+        "success": false,
+        "elapsed": 10.10139209999943,
+        "diagnostics": {
+          "candidates": 1,
+          "expanded": 14,
+          "statuses": [
+            "timeout"
+          ],
+          "scope": "两阶段硬优先级 / 软偏好 / 静态ETA匹配＋协调可行路线",
+          "global_optimal": false,
+          "mode": "scalable_full",
+          "coupling": "off"
+        }
+      },
+      {
+        "variant": "keep_previous_parking",
+        "status": "timeout",
+        "success": false,
+        "elapsed": 10.093273700000282,
+        "diagnostics": {
+          "candidates": 1,
+          "expanded": 15,
+          "statuses": [
+            "timeout"
+          ],
+          "scope": "两阶段硬优先级 / 软偏好 / 静态ETA匹配＋协调可行路线",
+          "global_optimal": false,
+          "mode": "scalable_full",
+          "coupling": "off"
+        }
+      }
+    ],
+    "note": "Diagnostic A/B only. Both use original solver and 10-second budget on the identical frozen domain state. Parking function overridden only inside one test call and immediately restored."
+  },
+  {
+    "case_id": "EXPERIMENT64-rooms-20262018",
+    "tick": 288,
+    "completed": 91,
+    "task_status_counts": {
+      "completed": 91,
+      "to_pickup": 6,
+      "to_delivery": 31
+    },
+    "task_assignment_changes_on_dispatch": [],
+    "parking_changes_on_dispatch": [],
+    "current_suffix_independently_valid": true,
+    "suffix_points": 4182,
+    "distance_cache_prewarm_seconds": 1.3273318999999901,
+    "comparisons": [
+      {
+        "variant": "normal_parking",
+        "status": "no_safe_plan",
+        "success": false,
+        "elapsed": 8.599055200000294,
+        "diagnostics": {
+          "candidates": 1,
+          "expanded": 16,
+          "statuses": [
+            "ordering_exhausted"
+          ],
+          "scope": "两阶段硬优先级 / 软偏好 / 静态ETA匹配＋协调可行路线",
+          "global_optimal": false,
+          "mode": "scalable_full",
+          "coupling": "off"
+        }
+      },
+      {
+        "variant": "keep_previous_parking",
+        "status": "no_safe_plan",
+        "success": false,
+        "elapsed": 8.818507100000716,
+        "diagnostics": {
+          "candidates": 1,
+          "expanded": 16,
+          "statuses": [
+            "ordering_exhausted"
+          ],
+          "scope": "两阶段硬优先级 / 软偏好 / 静态ETA匹配＋协调可行路线",
+          "global_optimal": false,
+          "mode": "scalable_full",
+          "coupling": "off"
+        }
+      }
+    ],
+    "note": "Diagnostic A/B only. Both use original solver and 10-second budget on the identical frozen domain state. Parking function overridden only inside one test call and immediately restored."
+  },
+  {
+    "case_id": "EXPERIMENT64-rooms-20262019",
+    "tick": 264,
+    "completed": 91,
+    "task_status_counts": {
+      "to_pickup": 9,
+      "to_delivery": 26,
+      "completed": 91,
+      "unloading": 2
+    },
+    "task_assignment_changes_on_dispatch": [],
+    "parking_changes_on_dispatch": [],
+    "current_suffix_independently_valid": true,
+    "suffix_points": 4528,
+    "distance_cache_prewarm_seconds": 1.1853962000004685,
+    "comparisons": [
+      {
+        "variant": "normal_parking",
+        "status": "no_safe_plan",
+        "success": false,
+        "elapsed": 6.620546600001035,
+        "diagnostics": {
+          "candidates": 1,
+          "expanded": 16,
+          "statuses": [
+            "ordering_exhausted"
+          ],
+          "scope": "两阶段硬优先级 / 软偏好 / 静态ETA匹配＋协调可行路线",
+          "global_optimal": false,
+          "mode": "scalable_full",
+          "coupling": "off"
+        }
+      },
+      {
+        "variant": "keep_previous_parking",
+        "status": "no_safe_plan",
+        "success": false,
+        "elapsed": 7.128875700000208,
+        "diagnostics": {
+          "candidates": 1,
+          "expanded": 16,
+          "statuses": [
+            "ordering_exhausted"
+          ],
+          "scope": "两阶段硬优先级 / 软偏好 / 静态ETA匹配＋协调可行路线",
+          "global_optimal": false,
+          "mode": "scalable_full",
+          "coupling": "off"
+        }
+      }
+    ],
+    "note": "Diagnostic A/B only. Both use original solver and 10-second budget on the identical frozen domain state. Parking function overridden only inside one test call and immediately restored."
+  }
+]

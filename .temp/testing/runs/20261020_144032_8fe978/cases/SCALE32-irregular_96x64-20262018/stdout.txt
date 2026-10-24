@@ -1,0 +1,1 @@
+{"case_id": "SCALE32-irregular_96x64-20262018", "status": "PASS", "completed": 64, "total": 64, "tick": 401, "elapsed": 34.0424466999998, "error": null, "terminal": "all_tasks_completed"}

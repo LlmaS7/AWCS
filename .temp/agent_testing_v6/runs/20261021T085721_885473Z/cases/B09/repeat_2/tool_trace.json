@@ -1,0 +1,20 @@
+[
+  {
+    "request_id": "4972d316297a4964aad36eda861cc117",
+    "name": "get_metrics",
+    "arguments": {},
+    "operation_id": "4972d316297a4964aad36eda861cc117/1",
+    "generation": 0,
+    "start": 1792573443.059886,
+    "result": {
+      "completed": 0,
+      "pending": 0,
+      "distance": 0,
+      "path_waits": 0,
+      "average_turnaround": 0,
+      "average_order_to_loading": 0,
+      "duration_unit": "调度时间步（不是秒）"
+    },
+    "seconds": 0.0003838539123535156
+  }
+]

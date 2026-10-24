@@ -1,0 +1,15 @@
+{
+  "case_id": "C10",
+  "map": "M03",
+  "text": "照这单再创建一份，继承原等级；新单不要指定或偏好机器人。",
+  "kind": "chat",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true
+}

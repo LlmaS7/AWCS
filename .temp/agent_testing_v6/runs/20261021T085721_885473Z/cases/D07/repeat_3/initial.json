@@ -1,0 +1,172 @@
+{
+  "generation": 0,
+  "tick": 0,
+  "tasks": [],
+  "task_views": [],
+  "robots": [
+    {
+      "id": 1,
+      "position": [
+        4,
+        58
+      ],
+      "previous": [
+        4,
+        58
+      ],
+      "parking": [
+        4,
+        58
+      ],
+      "phase": "idle",
+      "task_id": null,
+      "next_task_id": null,
+      "service_left": 0,
+      "loaded": false,
+      "path": [
+        [
+          4,
+          58
+        ]
+      ],
+      "distance": 0,
+      "waits": 0,
+      "completed": 0
+    },
+    {
+      "id": 2,
+      "position": [
+        5,
+        58
+      ],
+      "previous": [
+        5,
+        58
+      ],
+      "parking": [
+        5,
+        58
+      ],
+      "phase": "idle",
+      "task_id": null,
+      "next_task_id": null,
+      "service_left": 0,
+      "loaded": false,
+      "path": [
+        [
+          5,
+          58
+        ]
+      ],
+      "distance": 0,
+      "waits": 0,
+      "completed": 0
+    },
+    {
+      "id": 3,
+      "position": [
+        6,
+        58
+      ],
+      "previous": [
+        6,
+        58
+      ],
+      "parking": [
+        6,
+        58
+      ],
+      "phase": "idle",
+      "task_id": null,
+      "next_task_id": null,
+      "service_left": 0,
+      "loaded": false,
+      "path": [
+        [
+          6,
+          58
+        ]
+      ],
+      "distance": 0,
+      "waits": 0,
+      "completed": 0
+    },
+    {
+      "id": 4,
+      "position": [
+        7,
+        58
+      ],
+      "previous": [
+        7,
+        58
+      ],
+      "parking": [
+        7,
+        58
+      ],
+      "phase": "idle",
+      "task_id": null,
+      "next_task_id": null,
+      "service_left": 0,
+      "loaded": false,
+      "path": [
+        [
+          7,
+          58
+        ]
+      ],
+      "distance": 0,
+      "waits": 0,
+      "completed": 0
+    }
+  ],
+  "dirty": false,
+  "auto": false,
+  "planning": false,
+  "metrics": {
+    "planning_seconds": 0.020252000000255066,
+    "last_plan_ms": 20.252000000255066,
+    "plans": 1,
+    "cbs_nodes": 1,
+    "preemptions": 0,
+    "collisions": 0,
+    "recovery_attempts": 0,
+    "reservation_plans": 0,
+    "planner": "CBS",
+    "reservation_orders": 0,
+    "candidate_count": 1,
+    "planning_scope": "两阶段硬优先级 / 软偏好 / 静态ETA匹配＋协调可行路线",
+    "planning_status": "success"
+  },
+  "assignment": {
+    "pairs": {},
+    "eta_sum": 0,
+    "priority_prefix": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "scope": "两阶段硬优先级 / 软偏好 / 静态ETA匹配＋协调可行路线",
+    "cost_model": "静态ETA匹配；静态/预约估计",
+    "path_cost": [
+      0,
+      0,
+      0
+    ],
+    "candidate_count": 1
+  }
+}

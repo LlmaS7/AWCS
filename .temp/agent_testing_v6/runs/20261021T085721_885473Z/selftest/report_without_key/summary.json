@@ -1,0 +1,32 @@
+{
+  "H": {
+    "NOT_RUN": 20
+  },
+  "O": {
+    "NOT_RUN": 40
+  },
+  "matrix_raw": {
+    "NOT_RUN": 180
+  },
+  "matrix_effective": {
+    "NOT_RUN": 180
+  },
+  "challenge": {
+    "NOT_RUN": 24
+  },
+  "e2e": {
+    "NOT_RUN": 6
+  },
+  "stable_scenarios": 0,
+  "api_reservations": 0,
+  "api_send_attempted": 0,
+  "api_stream_complete": 0,
+  "usage_known": 0,
+  "acceptance": "EVIDENCE_INCOMPLETE",
+  "executed_matrix": 0,
+  "executed_challenge": 0,
+  "executed_e2e": 0,
+  "review_pending": 0,
+  "stop_reason": "SYNTHETIC_SELFTEST",
+  "source_integrity": true
+}

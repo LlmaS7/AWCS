@@ -1,0 +1,62 @@
+{
+  "case_id": "COUPLING-off-2",
+  "stage": "P6-coupling",
+  "map_file": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\datasets\\maps\\rectangle_20261018.json",
+  "robots": 4,
+  "seed": 20262018,
+  "tasks": [
+    {
+      "tick": 0,
+      "pickup": 24,
+      "delivery": 3,
+      "priority": 1
+    },
+    {
+      "tick": 0,
+      "pickup": 14,
+      "delivery": 2,
+      "priority": 2
+    },
+    {
+      "tick": 0,
+      "pickup": 23,
+      "delivery": 2,
+      "priority": 3
+    },
+    {
+      "tick": 0,
+      "pickup": 45,
+      "delivery": 1,
+      "priority": 4
+    },
+    {
+      "tick": 0,
+      "pickup": 47,
+      "delivery": 0,
+      "priority": 5
+    },
+    {
+      "tick": 0,
+      "pickup": 26,
+      "delivery": 0,
+      "priority": 1
+    },
+    {
+      "tick": 0,
+      "pickup": 2,
+      "delivery": 2,
+      "priority": 2
+    },
+    {
+      "tick": 0,
+      "pickup": 18,
+      "delivery": 1,
+      "priority": 3
+    }
+  ],
+  "coupling": "off",
+  "plan_seconds": 3,
+  "ticks": 3000,
+  "timeout": 60,
+  "wall_seconds": 55
+}

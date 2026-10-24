@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AWCS</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./theme.css">
+  <link rel="icon" type="image/svg+xml" href="./assets/logo-icon.svg">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body class="main-page">
+  <header class="topbar">
+    <div class="brand" title="Agent-Assisted Warehouse Coordination System"><span class="brand-mark awcs-mark" aria-hidden="true"><img src="./assets/logo-mark.svg" width="108" height="37" alt=""></span><div><h1>智能仓储协同调度系统</h1><p>AWCS · 仓库运行总览</p></div></div>
+    <div class="header-stats"><span id="connection" class="badge">正在连接</span><span>已完成 <strong id="overview-completed">0</strong></span><span>执行中 <strong id="overview-running">0</strong></span><span>待处理 <strong id="overview-pending">0</strong></span></div>
+  </header>
+  <nav class="toolbar" aria-label="仿真控制">
+    <button id="pause" class="primary" disabled>暂停</button>
+    <label class="speed-label">速度 <select id="speed" aria-label="仿真速度"><option value="1">1×</option><option value="2" selected>2×</option><option value="4">4×</option><option value="8">8×</option></select></label>
+    <span class="toolbar-spacer"></span>
+    <button id="ai-settings">AI 设置</button>
+    <button id="debug-window">调试窗口 ↗</button>
+  </nav>
+  <main class="workspace">
+    <section class="visuals" aria-label="同步仓库预览">
+      <article class="panel scene-panel">
+        <div class="panel-title"><div><span class="eyebrow">空间视图</span><h2>3D 仓库预览</h2></div><div class="panel-tools"><span class="hint">拖动旋转 · 滚轮缩放</span><button id="recenter" class="small">恢复视角</button></div></div>
+        <div id="scene3d" class="scene"><div id="scene-error" class="scene-message" hidden></div><div id="robot-legend" class="scene-legend"></div></div>
+      </article>
+      <article class="panel map-panel">
+        <div class="panel-title"><div><span class="eyebrow">俯视视图</span><h2>2D 路径预览</h2></div><div class="panel-tools"><span class="hint">拖动平移 · 滚轮缩放</span><button id="recenter-2d" class="small">恢复视图</button></div></div>
+        <div class="map-body"><div class="map-canvas-wrap"><canvas id="map2d" aria-label="仓库二维地图"></canvas></div><aside class="robot-strip"><div class="legend-text"><span>取货点</span><span>配送点</span><span>停车位</span></div><div id="robots"></div><p class="subtle map-tip">点击右侧任务，查看其取送位置。机器人上方的小货箱表示已载货。</p></aside></div>
+      </article>
+    </section>
+    <aside class="panel task-panel" aria-label="任务中心">
+      <div class="workspace-tabs" role="tablist" aria-label="任务与助手"><button id="tab-tasks" role="tab" aria-selected="true" class="active">任务列表</button><button id="tab-chat" role="tab" aria-selected="false">AI 助手</button></div>
+      <div id="task-content" class="sidebar-content" role="tabpanel" aria-labelledby="tab-tasks">
+      <div class="panel-title"><div><span class="eyebrow">任务调度</span><h2>任务中心 <span id="task-count" class="count">0</span></h2></div><span id="completed-count" class="subtle">完成 0</span></div>
+      <div class="task-filters" role="group" aria-label="任务筛选"><button data-filter="all" class="active">全部</button><button data-filter="active">未完成</button><button data-filter="completed">已完成</button></div>
+      <div id="tasks" class="task-list"><p class="empty">正在载入普通仓库场景…</p></div>
+      <section class="task-detail" aria-label="选中任务详情"><div class="detail-heading"><h3 id="detail-title">选择一个任务</h3><button id="clear-selection" class="text-button" title="清除位置高亮">清除高亮</button></div><p id="detail-route">点击任务查看其取送位置</p><p id="detail-note" class="subtle"></p><div class="task-actions"><button id="raise" disabled>提升一级</button><button id="urgent" class="danger" disabled>设为紧急</button><button id="cancel" disabled>取消任务</button></div></section>
+      </div>
+      <section id="chat-content" class="sidebar-content" role="tabpanel" aria-labelledby="tab-chat" hidden>
+        <div id="import-drop-hint" class="import-drop-hint" role="status" hidden><strong id="import-drop-label">松开以导入文件</strong><span>每次一个 MD / TXT / DOCX 文件</span></div>
+        <div class="chat-heading"><div><h2>仓库业务助手</h2><p id="ai-status" class="subtle">尚未配置</p></div><button id="chat-clear" class="text-button">清空对话</button></div>
+        <div id="chat-messages" class="chat-messages" aria-live="polite"><div class="chat-welcome"><span class="assistant-mark awcs-mark" aria-hidden="true"><img src="./assets/logo-mark.svg" width="108" height="37" alt=""></span><h3>用一句话安排搬运</h3><p>查询任务、创建取送任务、调整优先级、取消任务，也可指定机器人、设置偏好或复制任务。</p><p class="subtle">例如：将四号货架的货物送到二号配送点，设为紧急。</p><button id="chat-configure" class="small">配置 AI</button></div></div>
+        <div class="chat-compose">
+          <section class="chat-context" aria-label="当前关联任务">
+            <div class="chat-context-heading"><span id="chat-association">未关联任务</span><button id="chat-unlink" class="text-button">清除关联</button></div>
+            <div id="chat-task-summary" role="status" aria-atomic="true" aria-labelledby="chat-association" hidden><div class="chat-task-heading"><strong id="chat-task-status"></strong><span id="chat-task-priority" class="priority-tag"></span></div><p id="chat-task-route" class="chat-task-route"></p><p id="chat-task-meta" class="chat-task-meta"></p></div>
+            <p id="chat-task-empty" class="chat-task-empty">从任务列表选择任务，在此查看实时情况。</p>
+          </section>
+          <section id="import-attachment" class="import-attachment" aria-label="附件与导入草稿" hidden>
+            <div class="import-attachment-title"><strong id="import-filename"></strong><div class="import-attachment-actions"><button id="import-remove" class="text-button">放弃</button><button id="import-dismiss" class="text-button" title="收起附件提示，保留草稿与创建结果" aria-label="关闭附件提示">关闭</button></div></div>
+            <p id="import-attachment-status" class="subtle" role="status"></p>
+            <div id="import-duplicates" hidden><p class="import-warning">本次运行已导入相同文件。</p><div id="import-previous"></div><label class="import-check"><input id="import-reimport" type="checkbox">我已核对，明确再次导入</label></div>
+            <button id="import-open" class="small" hidden>查看草稿</button>
+          </section>
+          <p id="import-compose-error" class="result-error" role="alert" hidden></p>
+          <textarea id="chat-input" rows="3" maxlength="6000" placeholder="输入业务需求，或拖入文件后填写本次说明…" aria-label="业务消息或附件说明"></textarea>
+          <div class="chat-compose-actions"><input id="import-file" type="file" accept=".md,.txt,.docx" hidden><button id="import-add" class="small">添加文件</button><button id="import-history" class="small" hidden>导入记录</button><span class="subtle compose-hint">Enter 发送</span><button id="chat-stop" class="small" disabled>停止回复</button><button id="chat-send" class="primary" disabled>发送</button></div>
+          <p class="chat-footnote">可拖入一个 MD / TXT / DOCX 文件，或点击添加文件。文件任务需预览确认，已执行的操作不会因停止回复撤销。</p>
+        </div>
+      </section>
+    </aside>
+  </main>
+  <dialog id="import-dialog" aria-labelledby="import-title">
+    <div class="dialog-title"><div><span class="eyebrow">文件导入</span><h2 id="import-title">检查搬运任务草稿</h2></div><button id="import-close" class="text-button" aria-label="收起导入草稿">×</button></div>
+    <p id="import-document-note" class="subtle"></p>
+    <p class="import-privacy">文件在本机读取，提取文本会发送至当前配置的 AI 服务。这里只生成草稿，确认前不会创建任务。</p>
+    <div id="import-error" class="import-error" role="alert" tabindex="-1" hidden></div>
+    <div id="import-warnings" class="import-warning"></div>
+    <div class="import-table-tools"><button id="import-select-ready" class="small">选择全部就绪项</button><button id="import-unselect" class="text-button">清空选择</button><span id="import-draft-state" class="subtle"></span></div>
+    <div class="import-table-wrap"><table class="import-table"><caption class="sr-only">从文件识别的待确认搬运需求</caption><thead><tr><th scope="col">选择</th><th scope="col">取货点</th><th scope="col">配送点</th><th scope="col">等级</th><th scope="col">次数</th><th scope="col">核对与来源</th></tr></thead><tbody id="import-rows"></tbody></table></div>
+    <section id="import-source" class="import-source" tabindex="-1" aria-label="原文依据" hidden><h3>原文依据</h3><div id="import-source-content"></div></section>
+    <details id="import-excluded"><summary>未提取为任务的内容</summary><div id="import-excluded-content"></div></details>
+    <section id="import-results" class="import-results" aria-label="本次导入提交结果" hidden><h3>创建结果</h3><div id="import-result-content"></div></section>
+    <div class="import-footer"><div><strong id="import-selection-count" role="status" aria-live="polite" aria-atomic="true">未选择任务</strong><p class="subtle">每次最多创建20项，剩余项需再次明确确认。</p></div><div class="import-footer-actions"><button id="import-refresh" class="small">核实结果</button><button id="import-collapse">收起草稿</button><button id="import-commit" class="primary" disabled>确认创建</button></div></div>
+  </dialog>
+  <dialog id="settings-dialog" aria-labelledby="ai-settings-title"><div class="dialog-title"><h2 id="ai-settings-title">AI 接入设置</h2><button id="settings-close" class="text-button" aria-label="关闭设置">×</button></div><p class="subtle">密钥由本机后端使用。自定义地址将收到密钥及发送的对话内容。</p><form id="settings-form">
+    <label for="settings-url">API 地址</label><input id="settings-url" type="url" required value="https://api.deepseek.com" autocomplete="off">
+    <label for="settings-key">API Key <span id="key-state" class="subtle">未配置</span></label><input id="settings-key" type="password" autocomplete="new-password" placeholder="输入密钥；留空保留同地址已配置密钥">
+    <label class="remember-label"><input id="settings-remember" type="checkbox">记住密钥（Windows 凭据管理器）</label>
+    <label for="settings-model">模型 ID</label><div class="model-row"><input id="settings-model" list="model-options" autocomplete="off" placeholder="获取模型后选择，或手动填写" maxlength="160"><button id="settings-models" type="button">获取模型</button></div><datalist id="model-options"></datalist><p id="model-note" class="subtle">模型列表查询失败时仍可手动填写。</p>
+    <label for="settings-effort">思考程度</label><select id="settings-effort"><option value="off">关</option><option value="low">low（低）</option><option value="high" selected>high（高）</option><option value="max">max（最高）</option></select>
+    <details><summary>高级设置</summary><label for="settings-timeout">单轮等待上限（秒）</label><input id="settings-timeout" type="number" min="30" max="900" value="300"></details>
+    <p id="settings-message" class="settings-message" role="status"></p><p class="subtle">测试连接会调用选中模型，可能产生少量用量；测试只读取业务信息。</p><div class="dialog-actions"><button id="settings-delete" type="button" class="text-button">删除密钥</button><button id="settings-test" type="button">测试连接</button><button id="settings-save" type="submit" class="primary">保存设置</button></div>
+  </form></dialog>
+  <footer class="statusbar"><span id="status-message">正在初始化仓库…</span><span id="fleet-summary">机器人 · 单件搬运</span></footer>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

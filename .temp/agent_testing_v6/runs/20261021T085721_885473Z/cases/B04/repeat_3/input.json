@@ -1,0 +1,15 @@
+{
+  "case_id": "B04",
+  "map": "M02",
+  "text": "将该单设为紧急任务。",
+  "kind": "chat",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true
+}

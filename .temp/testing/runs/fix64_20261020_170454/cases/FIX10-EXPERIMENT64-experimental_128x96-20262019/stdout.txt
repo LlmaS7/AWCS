@@ -1,0 +1,1 @@
+{"case_id": "FIX10-EXPERIMENT64-experimental_128x96-20262019", "status": "INCONCLUSIVE", "completed": 0, "total": 128, "tick": 0, "elapsed": 10.048196800000369, "error": null, "terminal": "no_safe_plan_within_budget"}

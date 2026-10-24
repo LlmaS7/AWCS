@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "kind": "start",
+    "request_id": "54de854ca5d142908e46386188a3030e",
+    "job": "message",
+    "generation": 0,
+    "text": "把这单提升一级。",
+    "task_id": "T001"
+  },
+  {
+    "id": 2,
+    "kind": "progress",
+    "request_id": "54de854ca5d142908e46386188a3030e",
+    "tool": "raise_task_priorities"
+  },
+  {
+    "id": 3,
+    "kind": "result",
+    "request_id": "54de854ca5d142908e46386188a3030e",
+    "generation": 0,
+    "tool": "raise_task_priorities",
+    "result": {
+      "status": "finished",
+      "actions": [
+        {
+          "operation": "priority",
+          "outcome": "applied",
+          "task_id": "T001",
+          "pickup_id": "P03",
+          "pickup_name": "取货点03",
+          "pickup_label": "四号货架",
+          "shelf_names": [
+            "四号货架"
+          ],
+          "delivery_id": "D2",
+          "delivery_name": "2号配送点",
+          "priority": 4,
+          "business_phase": "to_pickup",
+          "phase_label": "已分配，处于取货阶段",
+          "assigned_robot": "R4",
+          "assignment_mode": "auto",
+          "requested_robot": null,
+          "assignment_label": "自动分配",
+          "copied_from": null,
+          "planning": "available"
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "kind": "text",
+    "request_id": "54de854ca5d142908e46386188a3030e",
+    "text": "已提升一级。"
+  },
+  {
+    "id": 5,
+    "kind": "done",
+    "request_id": "54de854ca5d142908e46386188a3030e"
+  }
+]

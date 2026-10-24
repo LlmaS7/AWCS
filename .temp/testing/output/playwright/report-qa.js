@@ -1,0 +1,50 @@
+async (page) => {
+  const checks = [], errors = [], requests = [];
+  const check=(name,ok,detail)=>{checks.push({name,pass:Boolean(ok),detail});if(!ok)throw new Error(name+': '+JSON.stringify(detail))};
+  page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>requests.push(r.url()));
+  await page.reload();await page.setViewportSize({width:1440,height:1000});
+  const initial=await page.evaluate(()=>({rows:document.querySelectorAll('#trialRows tr').length,scenes:document.querySelectorAll('#sceneRows tr').length,completed:document.getElementById('completed').textContent,tick:document.getElementById('tickValue').textContent,overflow:document.documentElement.scrollWidth>innerWidth}));
+  check('desktop statistics and initial replay',initial.rows===19&&initial.scenes===6&&initial.completed==='112'&&initial.tick==='376'&&!initial.overflow,initial);
+  await page.getByRole('button',{name:'全部完成',exact:true}).click();
+  check('rectangle final frame',await page.locator('#completed').textContent()==='128'&&await page.locator('#tickValue').textContent()==='475');
+  await page.getByLabel('选择真实场景').selectOption('1');
+  check('rooms original stop',await page.locator('#completed').textContent()==='91'&&await page.locator('#tickValue').textContent()==='288');
+  await page.getByRole('button',{name:'全部完成',exact:true}).click();
+  check('rooms final frame',await page.locator('#completed').textContent()==='128'&&await page.locator('#tickValue').textContent()==='511');
+  await page.getByRole('button',{name:'从头',exact:true}).click();
+  check('initial frame',await page.locator('#completed').textContent()==='0'&&await page.locator('#tickValue').textContent()==='0');
+  await page.getByLabel('跟踪',{exact:true}).selectOption('1');
+  check('individual robot tracking',(await page.locator('#robotStatus').textContent()).includes('R1'));
+  await page.getByRole('button',{name:'播放回放',exact:true}).click();await page.waitForTimeout(500);
+  await page.getByRole('button',{name:'暂停回放',exact:true}).click();
+  check('playback advances real frames',Number(await page.locator('#tickValue').textContent())>0);
+  await page.getByLabel('回放时间步',{exact:true}).focus();await page.keyboard.press('ArrowRight');
+  check('slider keyboard control',Number(await page.locator('#tickValue').textContent())>1);
+  await page.getByLabel('结果',{exact:true}).selectOption('PASS');
+  check('PASS filtering',await page.locator('#trialRows tr').count()===8);
+  await page.getByLabel('策略',{exact:true}).selectOption('recovery');
+  check('recovery filtering',await page.locator('#trialRows tr').count()===6);
+  await page.getByLabel('结果',{exact:true}).selectOption('INCONCLUSIVE');
+  check('empty filter combination',await page.locator('#trialRows tr').count()===0);
+  await page.getByLabel('结果',{exact:true}).selectOption('all');await page.getByLabel('策略',{exact:true}).selectOption('all');
+  const downloadPromise=page.waitForEvent('download');await page.getByRole('button',{name:'下载报告证据摘要'}).click();const dl=await downloadPromise;await dl.saveAs('E:/_PROJECTS/AWCS/.temp/testing/output/playwright/AWCS_evidence_export.json');
+  const exported=await page.evaluate(()=>JSON.parse(document.getElementById('reportData').textContent));
+  check('export contains real evidence',exported.trials.length===19&&exported.replays.length===2&&exported.main.counts.PASS===2023);
+  await page.getByRole('button',{name:'复制交付结论'}).click();
+  check('copy conclusion feedback',(await page.locator('#actionStatus').textContent()).includes('结论'));
+  await page.getByLabel('跟踪',{exact:true}).selectOption('0');await page.getByRole('button',{name:'原停滞时刻',exact:true}).click();
+  await page.locator('#replay').scrollIntoViewIfNeeded();await page.screenshot({path:'E:/_PROJECTS/AWCS/.temp/testing/output/playwright/report-replay-desktop-final.png'});
+  const allLinks=await page.evaluate(()=>Array.from(document.querySelectorAll('a[href]')).map(a=>a.href).filter(u=>u.includes('/.temp/')));
+  for(const url of allLinks){const resp=await page.request.get(url);check('evidence link '+url.split('/').at(-1),resp.ok(),resp.status())}
+  await page.setViewportSize({width:375,height:812});await page.evaluate(()=>window.scrollTo(0,0));
+  const mobile=await page.evaluate(()=>({width:innerWidth,scroll:document.documentElement.scrollWidth}));check('375px mobile no page overflow',mobile.scroll<=mobile.width,mobile);
+  await page.screenshot({path:'E:/_PROJECTS/AWCS/.temp/testing/output/playwright/report-mobile.png'});await page.locator('#replay').scrollIntoViewIfNeeded();await page.screenshot({path:'E:/_PROJECTS/AWCS/.temp/testing/output/playwright/report-mobile-replay.png'});
+  await page.emulateMedia({reducedMotion:'reduce'});check('reduced motion supported',await page.evaluate(()=>matchMedia('(prefers-reduced-motion: reduce)').matches));
+  await page.setViewportSize({width:1440,height:1000});await page.emulateMedia({media:'print'});
+  check('print hides interactive controls',await page.locator('.replay-controls').isVisible()===false);
+  await page.pdf({path:'E:/_PROJECTS/AWCS/.temp/testing/output/playwright/report-print-check.pdf',format:'A4',printBackground:true,margin:{top:'14mm',bottom:'14mm',left:'14mm',right:'14mm'}});
+  await page.emulateMedia({media:'screen',reducedMotion:'no-preference'});await page.evaluate(()=>window.scrollTo(0,0));await page.screenshot({path:'E:/_PROJECTS/AWCS/.temp/testing/output/playwright/report-desktop-final.png'});
+  check('no runtime errors',errors.length===0,errors);check('no external assets',requests.every(u=>u.startsWith('http://127.0.0.1:18069/')||u.startsWith('blob:')||u.startsWith('data:')),requests);
+
+  return {passed:checks.length,checks,errors,mobile,exportTrials:exported.trials.length};
+}

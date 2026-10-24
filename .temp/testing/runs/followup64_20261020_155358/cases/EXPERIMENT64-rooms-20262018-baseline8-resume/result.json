@@ -1,0 +1,38 @@
+{
+  "case_id": "EXPERIMENT64-rooms-20262018-baseline8-resume",
+  "source_case": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rooms-20262018",
+  "strategy": "baseline8",
+  "status": "INCONCLUSIVE",
+  "plan_checks": 0,
+  "path_points_checked": 0,
+  "actual_steps_checked": 0,
+  "failures": 1,
+  "path_safe": true,
+  "profiles_used": [],
+  "inputs": {
+    "case_id": "EXPERIMENT64-rooms-20262018-baseline8-resume",
+    "source_case": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rooms-20262018",
+    "strategy": "baseline8",
+    "wall_seconds": 600,
+    "ticks": 30000,
+    "from_start": false
+  },
+  "reconstruction": {
+    "from_start": false,
+    "source_case": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rooms-20262018",
+    "domain_fields_exact": true,
+    "initial_tick": 288,
+    "initial_completed": 91,
+    "restored_dirty": true,
+    "restored_last_progress": 288,
+    "note": "Physical robot/task fields verified exactly. Pause cleared as an explicit retry; event/frame history is not used by planning. Full-mode dirty flag reconstructed from terminal reason and final-tick completions."
+  },
+  "initial_completed": 91,
+  "initial_tick": 288,
+  "terminal": "all_configurations_unsolved",
+  "completed": 91,
+  "total": 128,
+  "tick": 288,
+  "new_completed": 0,
+  "elapsed": 8.309988400000293
+}

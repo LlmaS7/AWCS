@@ -1,0 +1,9 @@
+{
+  "case_id": "FIX-WORKER-PROCESS-UTF8",
+  "stage": "P5-process",
+  "kind": "worker",
+  "map_file": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\datasets\\maps\\rectangle_20261018.json",
+  "timeout": 30,
+  "retest_of": "WORKER-PROCESS",
+  "source_case": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\WORKER-PROCESS-UTF8"
+}

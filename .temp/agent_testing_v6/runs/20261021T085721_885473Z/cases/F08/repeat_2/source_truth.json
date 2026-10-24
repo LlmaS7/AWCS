@@ -1,0 +1,39 @@
+{
+  "document": {
+    "filename": "F08.docx",
+    "size": 681,
+    "sha256": "e13a0091cdf4318baae1b1597fe874ab802af6ee13724eea68571f561fbef9be",
+    "format": "docx",
+    "encoding": null,
+    "blocks": [
+      {
+        "id": "b1",
+        "text": "需求甲：四号货架送二号配送点，必须由R3执行，下午4点前到，易碎品需特殊运输。",
+        "locator": {
+          "type": "docx_table",
+          "table": 1,
+          "row": 1,
+          "column": 1
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "truth": [
+    {
+      "marker": "需求甲",
+      "text": "需求甲：四号货架送二号配送点，必须由R3执行，下午4点前到，易碎品需特殊运输。",
+      "pickup_id": "P03",
+      "delivery_id": "D2",
+      "priority": 2,
+      "count": 1,
+      "quantity_kind": "unspecified",
+      "constraints": [
+        "R3",
+        "下午4点",
+        "易碎"
+      ]
+    }
+  ],
+  "excluded": []
+}

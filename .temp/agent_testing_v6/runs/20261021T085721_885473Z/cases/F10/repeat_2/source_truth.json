@@ -1,0 +1,55 @@
+{
+  "document": {
+    "filename": "F10.docx",
+    "size": 655,
+    "sha256": "685b3d0e1576e5fa5230c38080860daf55d51f56ae52eadeec2446a4e751b176",
+    "format": "docx",
+    "encoding": null,
+    "blocks": [
+      {
+        "id": "b1",
+        "text": "需求甲：四号货架送二号配送点，搬运3次。",
+        "locator": {
+          "type": "docx_table",
+          "table": 1,
+          "row": 1,
+          "column": 1
+        }
+      },
+      {
+        "id": "b2",
+        "text": "需求乙：登记货架2送一号配送点，搬运2次。",
+        "locator": {
+          "type": "docx_table",
+          "table": 1,
+          "row": 2,
+          "column": 1
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "truth": [
+    {
+      "marker": "需求甲",
+      "text": "需求甲：四号货架送二号配送点，搬运3次。",
+      "pickup_id": "P05",
+      "delivery_id": "D2",
+      "priority": 2,
+      "count": 3,
+      "quantity_kind": "trips",
+      "constraints": []
+    },
+    {
+      "marker": "需求乙",
+      "text": "需求乙：登记货架2送一号配送点，搬运2次。",
+      "pickup_id": "P01",
+      "delivery_id": "D1",
+      "priority": 2,
+      "count": 2,
+      "quantity_kind": "trips",
+      "constraints": []
+    }
+  ],
+  "excluded": []
+}

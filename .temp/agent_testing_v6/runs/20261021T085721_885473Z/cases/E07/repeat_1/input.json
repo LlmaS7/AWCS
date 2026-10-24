@@ -1,0 +1,15 @@
+{
+  "case_id": "E07",
+  "map": "M02",
+  "text": "把四号货架的全部库存搬到二号配送点。",
+  "kind": "chat",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true
+}

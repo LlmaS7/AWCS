@@ -1,0 +1,8 @@
+{
+  "case_id": "WORKER-PROCESS-UTF8",
+  "stage": "P5-process",
+  "kind": "worker",
+  "map_file": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\datasets\\maps\\rectangle_20261018.json",
+  "timeout": 30,
+  "retest_of": "WORKER-PROCESS"
+}

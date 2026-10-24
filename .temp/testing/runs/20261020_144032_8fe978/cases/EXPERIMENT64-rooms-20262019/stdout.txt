@@ -1,0 +1,1 @@
+{"case_id": "EXPERIMENT64-rooms-20262019", "status": "INCONCLUSIVE", "completed": 91, "total": 128, "tick": 264, "elapsed": 96.84961310000017, "error": null, "terminal": "no_safe_plan_within_budget"}

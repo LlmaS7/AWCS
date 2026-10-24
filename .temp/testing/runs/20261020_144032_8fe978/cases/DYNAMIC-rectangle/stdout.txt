@@ -1,0 +1,1 @@
+{"case_id": "DYNAMIC-rectangle", "status": "PASS", "completed": 60, "total": 60, "tick": 570, "elapsed": 9.400353900000027, "error": null, "terminal": "all_tasks_completed"}

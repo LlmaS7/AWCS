@@ -1,0 +1,25 @@
+{
+  "case_id": "F02",
+  "repeat": 1,
+  "layer": "matrix",
+  "execution_status": "COMPLETED",
+  "raw_status": "FAIL",
+  "effective_status": "FAIL",
+  "review_status": "COMPLETED",
+  "human_signoff": null,
+  "evidence": "E:\\_PROJECTS\\AWCS\\.temp\\agent_testing_v6\\runs\\20261021T085721_885473Z\\cases\\F02\\repeat_1",
+  "fixture_valid": true,
+  "protocol_verdict": "PASS",
+  "business_verdict": "FAIL",
+  "required_process_verdict": "PASS",
+  "response_verdict": "PASS",
+  "network_error": false,
+  "details": {
+    "business_errors": [
+      "需求乙:spurious unsupported constraint",
+      "需求丙:spurious unsupported constraint"
+    ],
+    "pending": []
+  },
+  "protocol_errors": []
+}

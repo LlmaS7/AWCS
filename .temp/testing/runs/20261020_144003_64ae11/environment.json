@@ -1,0 +1,11 @@
+{
+  "time": "2026-10-20T14:40:03.920206+08:00",
+  "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "E:\\_PROJECTS\\AWCS\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "cpu_count": 32,
+  "cwd": "E:\\_PROJECTS\\AWCS",
+  "commit": "13d87c59de37ea5236e707572382edeebc0de444",
+  "git_status": ""
+}

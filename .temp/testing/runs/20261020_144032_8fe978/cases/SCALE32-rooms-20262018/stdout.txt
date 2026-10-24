@@ -1,0 +1,1 @@
+{"case_id": "SCALE32-rooms-20262018", "status": "PASS", "completed": 64, "total": 64, "tick": 388, "elapsed": 11.464966800000184, "error": null, "terminal": "all_tasks_completed"}

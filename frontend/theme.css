@@ -1,0 +1,101 @@
+/* Industrial graphite: raw colors → semantic roles → component values.
+   Layout and sizing remain in styles.css. Canvas/WebGL colors live in theme.js. */
+:root {
+  color-scheme: dark;
+  --graphite-950: #121416;
+  --graphite-900: #161a1e;
+  --graphite-850: #1c2024;
+  --graphite-800: #24292e;
+  --graphite-650: #3b4248;
+  --graphite-400: #abb2b8;
+  --graphite-050: #eef0f1;
+  --amber-400: #e6b568;
+  --bg: var(--graphite-950);
+  --panel: var(--graphite-850);
+  --raised: var(--graphite-800);
+  --line: var(--graphite-650);
+  --text: var(--graphite-050);
+  --muted: var(--graphite-400);
+  --accent: var(--amber-400);
+  --accent-ink: #241b0b;
+  --selection: #393023;
+  --selection-ink: #f4cf92;
+  --input-bg: var(--graphite-900);
+  --danger-bg: #49282c;
+  --red: #f7a2a6;
+  --success: #9cd7b4;
+  --success-bg: #233a30;
+  --blue: #68baff;
+  --orange: #f0b466;
+  --green: #76d1a3;
+  --scene-bg: #1c2126;
+  --map-canvas: var(--graphite-900);
+  --panel-shadow: 0 6px 20px #00000020, inset 0 1px 0 #ffffff04;
+  --panel-radius: 5px;
+  --control-radius: 4px;
+  --button-bg: var(--raised);
+  --button-primary: var(--accent);
+  --field-bg: var(--input-bg);
+}
+
+/* Appearance overrides only. Grid, dimensions, region order and controls stay original. */
+body{background:var(--bg);font-family:'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',sans-serif}
+.topbar{background:var(--panel);border-color:var(--line)}
+.brand h1{letter-spacing:.5px;font-weight:650}
+.brand-mark{flex-shrink:0;background:var(--raised);color:var(--accent);border:1px solid var(--line);border-radius:var(--control-radius);box-shadow:inset 0 1px 0 #ffffff08}
+.main-page .brand{gap:15px}
+.awcs-mark img{display:block;width:108px;height:37px;object-fit:contain}
+.header-stats strong,.task-id{font-variant-numeric:tabular-nums}
+.panel{border-color:var(--line);border-radius:var(--panel-radius);box-shadow:var(--panel-shadow)}
+.panel-title,.chat-heading{background:var(--panel)}
+.eyebrow{letter-spacing:1.6px}
+button,select{background:var(--button-bg);color:var(--text);border-color:var(--line);border-radius:var(--control-radius)}
+button{transition:background .16s,border-color .16s,box-shadow .16s}
+button:hover:not(:disabled){background:var(--selection);border-color:var(--accent);color:var(--selection-ink)}
+button:focus-visible,a:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+button.primary{background:var(--button-primary);color:var(--accent-ink);border-color:var(--accent)}
+button.primary:hover:not(:disabled){background:color-mix(in srgb,var(--accent) 86%,var(--text));color:var(--accent-ink)}
+.text-button{background:transparent;color:var(--muted);border:0}
+.text-button:hover:not(:disabled){background:transparent;color:var(--text)}
+.badge{background:var(--success-bg);color:var(--success);border-color:color-mix(in srgb,var(--success) 36%,var(--line))}
+.badge.offline,.danger{background:var(--danger-bg);border-color:color-mix(in srgb,var(--red) 40%,var(--line));color:var(--red)}
+.danger:hover:not(:disabled){background:var(--danger-bg);color:var(--red);border-color:var(--red)}
+.scene{background:var(--scene-bg)}
+.scene-legend{background:var(--panel);border-color:var(--line);box-shadow:0 3px 12px #0000000a}
+.robot-card,.task-card{background:var(--raised);border-color:var(--line);border-radius:var(--control-radius)}
+.task-card.selected{background:var(--selection);border-color:var(--accent);box-shadow:inset 3px 0 var(--accent)}
+.task-card .task-id,.chat-context-heading>span,.task-link{color:var(--blue)}
+.count{background:var(--raised);color:var(--muted);border:1px solid var(--line)}
+.priority-tag{color:var(--text);background:color-mix(in srgb,var(--text) 9%,var(--raised))}
+.priority-tag.urgent{color:var(--red);background:var(--danger-bg)}
+.workspace-tabs,.task-detail,.chat-heading,.chat-compose{border-color:var(--line)}
+.workspace-tabs .active,.task-filters .active{background:var(--selection);border-color:var(--accent);color:var(--selection-ink)}
+.task-list,.chat-messages{scrollbar-color:var(--muted) transparent}
+.task-list::-webkit-scrollbar,.chat-messages::-webkit-scrollbar{width:5px}
+.task-list::-webkit-scrollbar-thumb,.chat-messages::-webkit-scrollbar-thumb{background:var(--line);border-radius:8px}
+.statusbar span:first-child{color:var(--muted)}
+.chat-context{background:var(--raised);border-color:var(--line);border-radius:var(--control-radius)}
+.chat-user{background:var(--selection);color:var(--text);border-color:var(--line);border-radius:var(--panel-radius) var(--panel-radius) 2px var(--panel-radius)}
+.result-card{background:var(--raised);border-color:var(--line);border-radius:var(--control-radius)}
+.result-card.success{background:var(--success-bg);border-color:color-mix(in srgb,var(--success) 45%,var(--line))}
+.result-error{color:var(--red)}
+.assistant-mark{display:inline-grid;place-items:center;background:var(--raised);color:var(--selection-ink);border-color:var(--line);border-radius:var(--control-radius);padding:10px}
+/* Approved A variant: silver/amber paths sit directly on the dark surface. */
+.awcs-mark{width:112px;height:46px;padding:0;background:transparent;border:0;border-radius:0;box-shadow:none}
+input,textarea{background:var(--field-bg);border-color:var(--line);color:var(--text);border-radius:var(--control-radius)}
+input::placeholder,textarea::placeholder{color:var(--muted);opacity:.85}
+input:focus,textarea:focus{outline-color:var(--accent);border-color:var(--accent)}
+dialog{background:var(--panel);border-color:var(--line);border-radius:var(--panel-radius);box-shadow:0 28px 100px #00000040}
+dialog::backdrop{background:color-mix(in srgb,var(--bg) 65%,transparent);backdrop-filter:blur(4px)}
+.settings-message{color:var(--success)}
+.map-canvas-wrap{background:var(--map-canvas);border-radius:var(--control-radius)}
+.brand p,.header-stats strong{font-family:Consolas,'Microsoft YaHei',monospace}
+.panel-title{box-shadow:inset 0 -1px var(--line)}
+.primary{box-shadow:inset 0 1px 0 #fff4,inset 0 -1px 0 #0002}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;scroll-behavior:auto!important}}
+
+/* The separate debug window uses the same surfaces and form states. */
+.debug-grid>div{background:var(--raised);border-radius:var(--control-radius)}
+.legend-text span:before{background:#a0c8dc}
+.legend-text span:nth-child(2):before{background:#a4d2b9}
+.legend-text span:nth-child(3):before{background:#c0b4d2}

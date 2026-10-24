@@ -1,0 +1,65 @@
+{
+  "counts": {
+    "INCONCLUSIVE": 13,
+    "PASS": 1770
+  },
+  "groups": {
+    "FIX-actor64": {
+      "PASS": 4
+    },
+    "P0": {
+      "PASS": 10
+    },
+    "P1": {
+      "PASS": 1325
+    },
+    "P2": {
+      "PASS": 12
+    },
+    "P3": {
+      "PASS": 354
+    },
+    "P4-dynamic": {
+      "INCONCLUSIVE": 2,
+      "PASS": 1
+    },
+    "P4-main": {
+      "PASS": 28
+    },
+    "P5": {
+      "PASS": 14
+    },
+    "P5-process": {
+      "PASS": 2
+    },
+    "P6-32": {
+      "PASS": 5,
+      "INCONCLUSIVE": 3
+    },
+    "P6-64": {
+      "INCONCLUSIVE": 8,
+      "PASS": 4
+    },
+    "P6-coupling": {
+      "PASS": 9
+    },
+    "P6-mode": {
+      "PASS": 2
+    }
+  },
+  "unit": {
+    "command": ".venv/Scripts/python.exe -B -m unittest discover -s tests -v",
+    "tests_run": 25,
+    "passed": 25,
+    "failed": 0,
+    "elapsed_seconds": 0.324,
+    "version": "final cleanup; see source_hashes_cleanup.json"
+  },
+  "scale64_8s_pass": 2,
+  "scale64_10s_pass": 2,
+  "trace_count": 66,
+  "trace_ticks": 19965,
+  "service_transitions": 3975,
+  "source_unchanged_since_fix": true,
+  "cleanup_integrity": "cleanup_integrity.json"
+}

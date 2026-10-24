@@ -1,0 +1,7 @@
+{
+  "base_url": "https://api.deepseek.com",
+  "model": "deepseek-flash",
+  "effort": "high",
+  "timeout": 300,
+  "remember": false
+}

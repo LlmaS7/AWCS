@@ -1,0 +1,58 @@
+{
+  "case_id": "F02",
+  "map": "M01",
+  "text": "",
+  "kind": "document",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true,
+  "document": {
+    "filename": "F02.txt",
+    "lines": [
+      "需求甲：四号货架送二号配送点。",
+      "需求乙：登记货架2送一号配送点，紧急。",
+      "需求丙：四号货架送一号配送点，3级。"
+    ],
+    "text": "需求甲：四号货架送二号配送点。\n需求乙：登记货架2送一号配送点，紧急。\n需求丙：四号货架送一号配送点，3级。",
+    "truth": [
+      {
+        "marker": "需求甲",
+        "text": "需求甲：四号货架送二号配送点。",
+        "pickup_id": "P03",
+        "delivery_id": "D2",
+        "priority": 2,
+        "count": 1,
+        "quantity_kind": "unspecified",
+        "constraints": []
+      },
+      {
+        "marker": "需求乙",
+        "text": "需求乙：登记货架2送一号配送点，紧急。",
+        "pickup_id": "P01",
+        "delivery_id": "D1",
+        "priority": 5,
+        "count": 1,
+        "quantity_kind": "unspecified",
+        "constraints": []
+      },
+      {
+        "marker": "需求丙",
+        "text": "需求丙：四号货架送一号配送点，3级。",
+        "pickup_id": "P03",
+        "delivery_id": "D1",
+        "priority": 3,
+        "count": 1,
+        "quantity_kind": "unspecified",
+        "constraints": []
+      }
+    ],
+    "excluded": [],
+    "confirmation": "extract_only"
+  }
+}

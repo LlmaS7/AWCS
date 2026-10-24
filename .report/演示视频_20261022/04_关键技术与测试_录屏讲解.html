@@ -1,0 +1,2109 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AWCS · 关键技术与测试验证</title>
+    <style>
+        :root {
+            color-scheme: dark;
+            --bg: #0b1420;
+            --panel: #122232;
+            --line: #2b3d4d;
+            --ink: #edf4f6;
+            --muted: #94aabb;
+            --lime: #c5ed6b;
+            --blue: #67c5ff;
+            --orange: #f4b681;
+            --teal: #80dccc
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            background: #050b12;
+            color: var(--ink);
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            overflow: hidden
+        }
+
+        button,
+        a {
+            font: inherit
+        }
+
+        button {
+            cursor: pointer;
+            color: var(--ink)
+        }
+
+        button:focus-visible,
+        a:focus-visible {
+            outline: 3px solid var(--lime);
+            outline-offset: 4px
+        }
+
+        #stage {
+            position: absolute;
+            width: 1600px;
+            height: 900px;
+            left: 50%;
+            top: 50%;
+            transform-origin: center;
+            transform: translate(-50%, -50%) scale(var(--scale, 1));
+            background: var(--bg);
+            overflow: hidden;
+            box-shadow: 0 0 100px #0008
+        }
+
+        .brandbar {
+            position: absolute;
+            top: 32px;
+            left: 66px;
+            right: 66px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 3
+        }
+
+        .brand {
+            font-size: 25px;
+            font-weight: 800;
+            letter-spacing: 3px
+        }
+
+        .brand span {
+            font-size: 14px;
+            color: var(--muted);
+            letter-spacing: 2px;
+            font-weight: 400;
+            margin-left: 19px
+        }
+
+        .edition {
+            font: 14px Consolas, monospace;
+            color: var(--muted);
+            letter-spacing: 1px
+        }
+
+        .edition b {
+            color: var(--lime);
+            font-weight: 400
+        }
+
+        .slide {
+            display: none;
+            position: absolute;
+            inset: 101px 66px 80px
+        }
+
+        .slide.active {
+            display: block;
+            animation: enter .3s ease
+        }
+
+        .eyebrow {
+            font: 15px Consolas, monospace;
+            letter-spacing: 2px;
+            color: var(--lime);
+            margin-bottom: 14px
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            line-height: 1.3
+        }
+
+        h2 {
+            font-size: 26px;
+            margin: 9px 0 14px;
+            line-height: 1.4;
+            font-weight: 650
+        }
+
+        p {
+            margin: 0;
+            line-height: 1.7;
+            font-size: 23px;
+            color: var(--muted)
+        }
+
+        .subtitle {
+            font-size: 23px;
+            margin-top: 12px
+        }
+
+        .mini {
+            font-size: 15px;
+            color: var(--muted);
+            letter-spacing: 1px;
+            line-height: 1.6
+        }
+
+        .small {
+            font-size: 20px !important
+        }
+
+        .mono {
+            font-family: Consolas, 'Microsoft YaHei', monospace
+        }
+
+        .teal {
+            color: var(--teal)
+        }
+
+        .orange {
+            color: var(--orange)
+        }
+
+        .fine {
+            font-size: 17px;
+            line-height: 1.7
+        }
+
+        .bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            font-size: 18px;
+            color: var(--muted);
+            border-top: 1px solid var(--line);
+            padding-top: 14px;
+            line-height: 1.5
+        }
+
+        .panel {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            padding: 25px 28px
+        }
+
+        .two {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 26px
+        }
+
+        .pill {
+            display: inline-flex;
+            padding: 8px 15px;
+            border: 1px solid #465b42;
+            border-radius: 30px;
+            background: #c5ed6b0a;
+            color: var(--lime);
+            font-size: 17px;
+            line-height: 1.4
+        }
+
+        .arrow {
+            font-size: 30px;
+            color: var(--muted);
+            align-self: center
+        }
+
+        .architecture {
+            display: flex;
+            align-items: stretch;
+            gap: 18px;
+            margin-top: 39px
+        }
+
+        .pillar {
+            width: calc((100% - 122px)/3);
+            padding: 25px 29px 28px;
+            border: 1px solid var(--line);
+            border-radius: 20px;
+            background: linear-gradient(160deg, #172c3d, #10202e);
+            position: relative
+        }
+
+        .pillar .number {
+            display: block;
+            font: 68px Consolas, monospace;
+            color: var(--lime);
+            margin-bottom: 18px
+        }
+
+        .pillar h2 {
+            font-size: 30px
+        }
+
+        .pillar p {
+            font-size: 22px;
+            margin-bottom: 20px
+        }
+
+        .connector {
+            display: flex;
+            align-items: center;
+            font-size: 33px;
+            color: #637d8e
+        }
+
+        .band {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 23px;
+            margin-top: 31px;
+            padding: 22px;
+            border: 1px solid var(--line);
+            border-radius: 13px;
+            font-size: 24px;
+            background: #10202e
+        }
+
+        .band>span {
+            color: #5e7b8f
+        }
+
+        .pulse {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--lime);
+            box-shadow: 0 0 20px #c5ed6b88;
+            animation: pulse 2s infinite
+        }
+
+        .agent-flow {
+            display: flex;
+            gap: 15px;
+            margin: 30px 0 24px;
+            align-items: stretch
+        }
+
+        .flow-cell {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            flex: 1;
+            padding: 18px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 7px
+        }
+
+        .flow-cell strong {
+            font-size: 23px;
+            line-height: 1.4
+        }
+
+        .agent-lower {
+            grid-template-columns: 1fr 1.04fr
+        }
+
+        .agent-lower h2 {
+            font-size: 27px
+        }
+
+        .rule {
+            font-size: 21px;
+            margin: 11px 0;
+            color: var(--lime);
+            display: flex;
+            gap: 14px
+        }
+
+        .rule span {
+            color: #dce7ed
+        }
+
+        .rule.muted {
+            color: var(--orange)
+        }
+
+        .rule.muted span {
+            color: var(--muted)
+        }
+
+        .agent-lower .fine {
+            margin-top: 17px
+        }
+
+        .code-panel {
+            border: 1px solid #304758;
+            border-radius: 15px;
+            background: #08131f;
+            overflow: hidden;
+            align-self: start
+        }
+
+        .codehead {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font: 16px Consolas, monospace;
+            background: #16293a;
+            padding: 17px 20px;
+            color: #d5e2e9;
+            border-bottom: 1px solid #304758
+        }
+
+        .codehead small {
+            margin-left: auto;
+            color: var(--muted);
+            font-family: 'Microsoft YaHei', sans-serif;
+            font-size: 14px
+        }
+
+        .codehead i {
+            width: 8px;
+            height: 8px;
+            background: var(--lime);
+            border-radius: 50%
+        }
+
+        .codebody {
+            padding: 21px 0;
+            font: 20px/1.75 Consolas, 'Microsoft YaHei', monospace;
+            overflow: hidden
+        }
+
+        .line {
+            display: flex;
+            white-space: pre;
+            min-height: 32px
+        }
+
+        .line code {
+            font: inherit;
+            color: #d7e5ee
+        }
+
+        .line b {
+            color: var(--blue);
+            font-weight: 400
+        }
+
+        .line>span {
+            display: inline-block;
+            flex-shrink: 0;
+            width: 47px;
+            text-align: right;
+            padding-right: 13px;
+            margin-right: 13px;
+            border-right: 1px solid #24384a;
+            color: #6c8397;
+            font-size: 15px;
+            user-select: none
+        }
+
+        .gap {
+            padding-left: 62px;
+            font-size: 18px;
+            color: #6c8397;
+            line-height: 1.2
+        }
+
+        .code-caption {
+            font-size: 17px;
+            line-height: 1.65;
+            padding: 14px 21px;
+            border-top: 1px solid #24384a;
+            color: var(--muted)
+        }
+
+        .agent-lower .codebody {
+            font-size: 16px
+        }
+
+        .agent-lower .line {
+            min-height: 30px
+        }
+
+        .priority-strip {
+            display: flex;
+            gap: 13px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 17px 20px;
+            margin: 28px 0 24px;
+            border: 1px solid var(--line);
+            border-radius: 13px;
+            background: #112333;
+            font-size: 20px;
+            color: var(--muted)
+        }
+
+        .priority-strip strong {
+            font-weight: 500;
+            font-size: 19px;
+            color: var(--ink)
+        }
+
+        .grade {
+            font-size: 21px;
+            padding: 6px 12px;
+            border-radius: 9px;
+            background: #243b47;
+            color: var(--ink);
+            white-space: nowrap
+        }
+
+        .grade.urgent {
+            background: var(--lime);
+            color: #142024;
+            font-weight: 700
+        }
+
+        .assignment-lower {
+            grid-template-columns: 1.1fr .9fr
+        }
+
+        .assignment-lower .codebody {
+            font-size: 19px;
+            padding: 24px 0
+        }
+
+        .matching {
+            padding: 23px 27px
+        }
+
+        .match-heading {
+            display: flex;
+            align-items: center;
+            justify-content: space-between
+        }
+
+        .match-heading h2 {
+            margin: 9px 0 15px
+        }
+
+        .matrix {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 8px;
+            text-align: center;
+            font-size: 26px
+        }
+
+        .matrix th {
+            font-size: 20px;
+            font-weight: 400;
+            color: var(--muted);
+            padding: 7px
+        }
+
+        .matrix td {
+            padding: 11px;
+            background: #1c3447;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            transition: .5s
+        }
+
+        .matrix td.selected {
+            color: var(--lime);
+            background: #294434;
+            border-color: var(--lime)
+        }
+
+        .matrix td.greedy {
+            color: var(--orange);
+            background: #3a302a;
+            border-color: var(--orange)
+        }
+
+        .cost-result {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 5px 10px 8px;
+            font-size: 22px
+        }
+
+        .cost-result strong {
+            font: 50px Consolas, monospace;
+            color: var(--lime)
+        }
+
+        .matching .fine {
+            margin-left: 10px
+        }
+
+        .path-lower {
+            margin-top: 26px;
+            grid-template-columns: 1.02fr .98fr;
+            gap: 24px
+        }
+
+        .map-panel {
+            padding: 20px 23px
+        }
+
+        .map-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        .map-heading h2 {
+            font-size: 24px;
+            margin: 4px 0
+        }
+
+        .tick-badge {
+            font: 24px Consolas, monospace;
+            color: var(--lime);
+            padding: 10px 16px;
+            background: #233c30;
+            border-radius: 10px
+        }
+
+        #crossMap {
+            width: 100%;
+            height: 276px;
+            display: block;
+            margin-top: 1px
+        }
+
+        #robotA,
+        #robotB {
+            transition: transform .6s ease
+        }
+
+        .map-state {
+            font-size: 21px;
+            text-align: center;
+            color: var(--blue);
+            height: 34px;
+            margin-top: 6px
+        }
+
+        .timeline-row {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            font-size: 16px;
+            color: var(--muted);
+            margin-top: 10px
+        }
+
+        .time-cells {
+            display: flex;
+            gap: 5px;
+            flex: 1
+        }
+
+        .time-cells i {
+            font-style: normal;
+            font: 15px Consolas, 'Microsoft YaHei', monospace;
+            padding: 9px 6px;
+            border-radius: 5px;
+            background: #23394b;
+            flex: 1;
+            text-align: center;
+            white-space: nowrap
+        }
+
+        .time-cells .reserved {
+            background: #c5ed6b;
+            color: #13221d
+        }
+
+        .time-cells .blue {
+            background: #67c5ff
+        }
+
+        .path-lower .codebody {
+            font-size: 19px;
+            padding: 22px 0
+        }
+
+        .path-lower .code-caption {
+            font-size: 17px
+        }
+
+        .safe-interval {
+            padding: 18px 4px 0
+        }
+
+        .interval-bar {
+            display: flex;
+            margin: 10px 0;
+            gap: 5px;
+            font: 19px Consolas, 'Microsoft YaHei', monospace;
+            text-align: center
+        }
+
+        .interval-bar span {
+            flex: 1;
+            padding: 12px;
+            border-radius: 6px;
+            background: #254735;
+            color: var(--lime)
+        }
+
+        .interval-bar .blocked {
+            flex: .75;
+            background: #49372e;
+            color: var(--orange)
+        }
+
+        .validation-pipeline {
+            display: flex;
+            gap: 17px;
+            align-items: stretch;
+            margin-top: 36px
+        }
+
+        .validation-step {
+            flex: 1;
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            padding: 22px 23px
+        }
+
+        .validation-step>span {
+            font: 40px Consolas, monospace;
+            color: var(--lime)
+        }
+
+        .validation-step h2 {
+            font-size: 26px;
+            margin-top: 14px
+        }
+
+        .validation-step p {
+            font-size: 20px
+        }
+
+        .check-list {
+            display: flex;
+            justify-content: space-between;
+            margin: 25px 0 26px;
+            padding: 0 6px;
+            gap: 16px;
+            font-size: 21px;
+            color: var(--teal)
+        }
+
+        .recovery {
+            display: grid;
+            grid-template-columns: .9fr 1.1fr 1fr;
+            border: 1px solid var(--line);
+            background: #10212f;
+            border-radius: 16px;
+            overflow: hidden
+        }
+
+        .recovery-label {
+            padding: 27px 26px
+        }
+
+        .recovery-label h2 {
+            font-size: 24px
+        }
+
+        .recovery-option {
+            padding: 25px 26px;
+            border-left: 1px solid var(--line)
+        }
+
+        .recovery-option>span {
+            font-size: 17px;
+            display: block;
+            margin-bottom: 11px
+        }
+
+        .recovery-option strong {
+            font-size: 24px;
+            font-weight: 500;
+            display: block;
+            margin-bottom: 9px
+        }
+
+        .recovery-option p {
+            font-size: 19px
+        }
+
+        .recovery-option.stop {
+            background: #f4b68108
+        }
+
+        .test-layout {
+            display: grid;
+            grid-template-columns: 1.15fr 1fr;
+            gap: 25px;
+            margin-top: 29px
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px
+        }
+
+        .stat-card {
+            padding: 26px 25px;
+            border: 1px solid #465b42;
+            border-radius: 17px;
+            background: linear-gradient(165deg, #21382d, #112332)
+        }
+
+        .stat-card>.mini {
+            font-size: 15px;
+            letter-spacing: 0
+        }
+
+        .stat-card>strong {
+            display: block;
+            font: 70px Consolas, monospace;
+            color: var(--lime);
+            margin: 30px 0 20px;
+            white-space: nowrap;
+            letter-spacing: -3px
+        }
+
+        .stat-card>strong span {
+            font-size: 25px;
+            letter-spacing: 0
+        }
+
+        .stat-card h2 {
+            font-size: 25px
+        }
+
+        .stat-card p {
+            font-size: 18px
+        }
+
+        .scale-panel {
+            padding: 23px 28px
+        }
+
+        .test-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 16px
+        }
+
+        .test-row h2 {
+            font-size: 24px;
+            margin: 0 0 3px
+        }
+
+        .test-row p {
+            font-size: 17px
+        }
+
+        .test-row>strong {
+            font: 43px Consolas, monospace;
+            color: var(--lime)
+        }
+
+        .test-row.second {
+            margin-top: 22px
+        }
+
+        .segments {
+            display: flex;
+            gap: 6px;
+            margin-top: 12px;
+            height: 14px
+        }
+
+        .segments i {
+            display: block;
+            flex: 1;
+            border-radius: 4px;
+            background: var(--lime)
+        }
+
+        .segments i.incomplete {
+            background: #7c6047
+        }
+
+        .legend {
+            font-size: 16px;
+            display: flex;
+            gap: 24px;
+            margin-top: 23px;
+            color: var(--muted)
+        }
+
+        .legend span:before {
+            content: '';
+            display: inline-block;
+            height: 9px;
+            width: 9px;
+            border-radius: 2px;
+            margin-right: 8px;
+            background: var(--lime)
+        }
+
+        .legend .legend-incomplete:before {
+            background: #7c6047
+        }
+
+        .scale-panel .fine {
+            margin-top: 10px
+        }
+
+        .audit-band {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            margin-top: 25px;
+            padding: 22px 27px;
+            background: #122637;
+            border: 1px solid var(--line);
+            border-radius: 15px
+        }
+
+        .audit-band>div {
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+            white-space: nowrap
+        }
+
+        .audit-band strong {
+            font: 43px Consolas, monospace;
+            color: var(--blue)
+        }
+
+        .audit-band span {
+            font-size: 18px;
+            color: var(--muted)
+        }
+
+        .audit-band p {
+            font-size: 19px;
+            border-left: 1px solid var(--line);
+            padding-left: 28px;
+            line-height: 1.65
+        }
+
+        .audit-band p span {
+            font-size: 17px
+        }
+
+        .agent-test-layout {
+            display: grid;
+            grid-template-columns: .87fr 1.13fr;
+            gap: 25px;
+            margin-top: 29px
+        }
+
+        .regular-results {
+            padding: 25px 29px
+        }
+
+        .big-number {
+            font: 76px Consolas, monospace;
+            color: var(--lime);
+            display: block;
+            margin: 25px 0 20px;
+            letter-spacing: -3px
+        }
+
+        .big-number span {
+            font-size: 30px;
+            letter-spacing: 0
+        }
+
+        .regular-results h2 {
+            font-size: 27px
+        }
+
+        .regular-results p {
+            font-size: 22px
+        }
+
+        .history-score {
+            padding-top: 20px;
+            margin-top: 21px;
+            border-top: 1px solid var(--line);
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+            font-size: 17px;
+            color: var(--muted)
+        }
+
+        .history-score b {
+            font: 20px Consolas, 'Microsoft YaHei', monospace;
+            font-weight: 400;
+            color: #cbd9e2
+        }
+
+        .d07-results {
+            padding: 25px 28px
+        }
+
+        .d07-results>h2 {
+            font-size: 27px;
+            margin-bottom: 15px
+        }
+
+        .d07-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--line)
+        }
+
+        .d07-row strong {
+            font-size: 22px;
+            font-weight: 500
+        }
+
+        .d07-row p {
+            font-size: 17px
+        }
+
+        .d07-row b {
+            font: 35px Consolas, monospace;
+            color: var(--lime)
+        }
+
+        .d07-results>.fine {
+            margin-top: 16px;
+            font-size: 16px
+        }
+
+        .scope-band {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            padding: 20px 25px;
+            margin-top: 23px;
+            border: 1px solid #5c4c3f;
+            border-radius: 13px;
+            background: #322b251f
+        }
+
+        .scope-band>span {
+            font-size: 19px;
+            white-space: nowrap
+        }
+
+        .scope-band p {
+            font-size: 19px;
+            line-height: 1.65
+        }
+
+        .scope-band b {
+            color: var(--ink);
+            font-weight: 500
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 28px;
+            left: 66px;
+            right: 66px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+            z-index: 3
+        }
+
+        .footer-label {
+            color: #70899c;
+            font: 14px Consolas, 'Microsoft YaHei', monospace;
+            min-width: 300px
+        }
+
+        .dots {
+            display: flex;
+            gap: 9px
+        }
+
+        .dots button {
+            height: 5px;
+            width: 46px;
+            border: 0;
+            background: #2d4252;
+            padding: 0;
+            border-radius: 3px
+        }
+
+        .dots button[aria-current=true] {
+            background: var(--lime)
+        }
+
+        .page {
+            font: 17px Consolas, monospace;
+            color: var(--muted);
+            min-width: 140px;
+            text-align: right
+        }
+
+        .page b {
+            color: var(--ink);
+            font-weight: 400
+        }
+
+        #toolbar {
+            position: fixed;
+            z-index: 10;
+            bottom: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px;
+            background: #1b2a37ed;
+            border: 1px solid #465868;
+            border-radius: 13px;
+            box-shadow: 0 10px 30px #0006
+        }
+
+        #toolbar button {
+            border: 0;
+            background: transparent;
+            border-radius: 7px;
+            padding: 9px 12px;
+            font-size: 13px;
+            white-space: nowrap
+        }
+
+        #toolbar button:hover,
+        #toolbar button.on {
+            background: #355063
+        }
+
+        #toolbar button.on {
+            color: var(--lime)
+        }
+
+        #clock {
+            font: 15px Consolas, monospace;
+            padding: 0 10px;
+            color: var(--lime);
+            min-width: 65px
+        }
+
+        .recording #toolbar,
+        .recording #notes,
+        .recording #help {
+            display: none !important
+        }
+
+        .recording #stage {
+            box-shadow: none
+        }
+
+        #notes {
+            display: none;
+            position: fixed;
+            right: 20px;
+            top: 20px;
+            width: min(470px, 40vw);
+            max-height: 80vh;
+            overflow: auto;
+            background: #f1f5f7;
+            color: #142332;
+            border: 1px solid #abc0ce;
+            border-radius: 16px;
+            padding: 25px;
+            z-index: 20;
+            box-shadow: 0 15px 70px #0009
+        }
+
+        #notes.open {
+            display: block
+        }
+
+        #notes h3 {
+            font-size: 21px;
+            margin: 10px 0 16px
+        }
+
+        #notes p {
+            font-size: 18px;
+            color: #263f50;
+            line-height: 1.9
+        }
+
+        #notes .cue {
+            font-size: 14px;
+            color: #577485;
+            margin-bottom: 15px
+        }
+
+        #notes header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #577485;
+            font-size: 13px
+        }
+
+        #notes button {
+            background: transparent;
+            border: 0;
+            font-size: 22px;
+            color: #203444
+        }
+
+        #help {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: #020711bb;
+            z-index: 25;
+            place-items: center
+        }
+
+        #help.open {
+            display: grid
+        }
+
+        .help-card {
+            padding: 32px;
+            background: #142535;
+            border: 1px solid #526879;
+            border-radius: 17px;
+            width: 620px
+        }
+
+        .help-card h2 {
+            margin-top: 0
+        }
+
+        .help-card p {
+            font-size: 19px;
+            margin: 10px 0
+        }
+
+        .help-card button {
+            margin-top: 16px;
+            background: #c5ed6b;
+            color: #122126;
+            padding: 10px 20px;
+            border: 0;
+            border-radius: 7px
+        }
+
+        .help-card a {
+            color: var(--blue)
+        }
+
+        .paused * {
+            animation-play-state: paused !important
+        }
+
+        .paused #robotA,
+        .paused #robotB {
+            transition: none
+        }
+
+        .paused .matrix td {
+            transition: none
+        }
+
+        @keyframes enter {
+            from {
+                opacity: .2;
+                transform: translateY(8px)
+            }
+
+            to {
+                opacity: 1;
+                transform: none
+            }
+        }
+
+        @keyframes pulse {
+            50% {
+                box-shadow: 0 0 8px #c5ed6b44;
+                opacity: .6
+            }
+        }
+
+        @media(prefers-reduced-motion:reduce) {
+            * {
+                animation: none !important;
+                transition: none !important
+            }
+        }
+
+        @media print {
+            body {
+                overflow: visible;
+                background: white
+            }
+
+            #stage {
+                position: static;
+                transform: none !important;
+                width: 100%;
+                height: auto;
+                box-shadow: none
+            }
+
+            .brandbar,
+            .footer,
+            #toolbar,
+            #notes,
+            #help {
+                display: none !important
+            }
+
+            .slide {
+                display: block !important;
+                position: relative;
+                inset: auto;
+                width: 1600px;
+                height: 800px;
+                page-break-after: always;
+                padding: 40px
+            }
+
+            .bottom {
+                bottom: 20px;
+                left: 40px;
+                right: 40px
+            }
+        }
+
+        .architecture {
+            margin-top: 26px
+        }
+
+        .pillar {
+            padding: 20px 26px
+        }
+
+        .pillar .number {
+            font-size: 50px;
+            line-height: 1.05;
+            margin-bottom: 12px
+        }
+
+        .pillar h2 {
+            font-size: 28px;
+            margin: 8px 0 10px
+        }
+
+        .pillar p {
+            font-size: 21px;
+            margin-bottom: 16px
+        }
+
+        .band {
+            margin-top: 20px;
+            padding: 18px;
+            font-size: 23px
+        }
+
+        .agent-flow {
+            margin-top: 25px;
+            margin-bottom: 20px
+        }
+
+        .flow-cell {
+            padding: 15px 19px
+        }
+
+        .agent-lower>.panel {
+            padding: 22px 25px
+        }
+
+        .agent-lower h2 {
+            font-size: 25px
+        }
+
+        .agent-lower .fine {
+            font-size: 16px
+        }
+
+        .priority-strip {
+            margin-top: 24px;
+            margin-bottom: 20px;
+            padding: 12px 20px
+        }
+
+        .grade {
+            font-size: 20px;
+            padding: 5px 11px
+        }
+
+        .matching {
+            padding: 16px 23px
+        }
+
+        .matching .mini {
+            font-size: 14px;
+            line-height: 1.5
+        }
+
+        .match-heading h2 {
+            font-size: 22px;
+            margin: 6px 0 9px
+        }
+
+        .matching .pill {
+            font-size: 15px;
+            padding: 6px 12px
+        }
+
+        .matrix {
+            border-spacing: 6px;
+            font-size: 24px
+        }
+
+        .matrix th {
+            font-size: 17px;
+            padding: 3px
+        }
+
+        .matrix td {
+            padding: 6px
+        }
+
+        .cost-result {
+            font-size: 20px;
+            margin: 4px 8px
+        }
+
+        .cost-result strong {
+            font-size: 40px
+        }
+
+        .matching .fine {
+            font-size: 16px;
+            line-height: 1.5
+        }
+
+        .map-panel {
+            padding: 18px 22px
+        }
+
+        .map-heading h2 {
+            font-size: 22px
+        }
+
+        #crossMap {
+            height: 210px
+        }
+
+        .map-state {
+            font-size: 19px;
+            height: 30px
+        }
+
+        .timeline-row {
+            font-size: 15px;
+            margin-top: 8px
+        }
+
+        .time-cells i {
+            font-size: 14px;
+            padding: 8px 5px
+        }
+
+        .scale-panel {
+            padding: 20px 24px
+        }
+
+        .scale-panel>.mini {
+            font-size: 14px
+        }
+
+        .test-row {
+            margin-top: 12px
+        }
+
+        .test-row>div {
+            display: flex;
+            align-items: center;
+            gap: 12px
+        }
+
+        .test-row h2 {
+            font-size: 22px;
+            margin: 0
+        }
+
+        .test-row p {
+            font-size: 15px
+        }
+
+        .test-row>strong {
+            font-size: 38px
+        }
+
+        .test-row.second {
+            margin-top: 16px
+        }
+
+        .segments {
+            margin-top: 8px;
+            height: 12px
+        }
+
+        .legend {
+            margin-top: 16px
+        }
+
+        .scale-panel .fine {
+            margin-top: 8px;
+            font-size: 15px
+        }
+
+        .audit-band {
+            margin-top: 20px;
+            padding: 20px 24px;
+            gap: 26px
+        }
+
+        .audit-band p {
+            font-size: 18px
+        }
+
+        .audit-band strong {
+            font-size: 40px
+        }
+
+        .regular-results {
+            padding: 20px 26px
+        }
+
+        .big-number {
+            font-size: 58px;
+            margin: 14px 0 12px
+        }
+
+        .big-number span {
+            font-size: 26px
+        }
+
+        .regular-results h2 {
+            font-size: 24px;
+            margin: 8px 0 10px
+        }
+
+        .regular-results p {
+            font-size: 18px;
+            line-height: 1.6
+        }
+
+        .history-score {
+            padding-top: 14px;
+            margin-top: 16px;
+            gap: 8px;
+            font-size: 15px
+        }
+
+        .history-score>span:first-child {
+            display: none
+        }
+
+        .history-score b {
+            font-size: 17px
+        }
+
+        .d07-results {
+            padding: 20px 26px
+        }
+
+        .d07-results>h2 {
+            font-size: 24px;
+            margin: 8px 0 12px
+        }
+
+        .d07-row {
+            padding: 8px 0
+        }
+
+        .d07-row strong {
+            font-size: 20px
+        }
+
+        .d07-row p {
+            font-size: 16px;
+            line-height: 1.55
+        }
+
+        .d07-row b {
+            font-size: 32px
+        }
+
+        .d07-results>.fine {
+            margin-top: 12px;
+            font-size: 14px
+        }
+
+        .scope-band {
+            margin-top: 20px;
+            padding: 18px 24px
+        }
+
+        .scope-band p {
+            font-size: 18px
+        }
+
+        :fullscreen #toolbar,
+        .fullscreen-view #toolbar {
+            display: none !important
+        }
+
+        .scale-panel {
+            display: flex;
+            flex-direction: column;
+            justify-content: center
+        }
+
+        .scale-panel .test-row {
+            margin-top: 24px
+        }
+
+        .scale-panel .segments {
+            margin-top: 17px;
+            height: 17px
+        }
+
+        .scale-panel .legend {
+            margin-top: 23px
+        }
+
+        .scale-panel .fine {
+            margin-top: 16px;
+            line-height: 1.7
+        }
+
+
+        .footer {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr
+        }
+
+        .footer .dots {
+            grid-column: 2
+        }
+
+        .footer .page {
+            grid-column: 3;
+            justify-self: end
+        }
+
+        .agent-overview {
+            display: grid;
+            grid-template-columns: .9fr 1.2fr;
+            gap: 22px;
+            margin-top: 20px
+        }
+
+        .agent-overview .panel {
+            padding: 18px 26px
+        }
+
+        .everyday-score {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 9px 0 10px;
+            gap: 14px
+        }
+
+        .everyday-score>strong {
+            font: 54px Consolas, monospace;
+            color: var(--lime)
+        }
+
+        .everyday-score>strong span {
+            font-size: 28px
+        }
+
+        .everyday p {
+            font-size: 19px;
+            line-height: 1.6
+        }
+
+        .summary-heading {
+            display: flex;
+            align-items: center;
+            justify-content: space-between
+        }
+
+        .summary-heading h2 {
+            font-size: 23px;
+            margin: 0
+        }
+
+        .summary-heading>span {
+            font-size: 19px;
+            color: var(--muted)
+        }
+
+        .summary-heading b {
+            color: var(--ink);
+            font-weight: 500
+        }
+
+        .agent-counts {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin: 15px 0 12px
+        }
+
+        .agent-counts>div {
+            display: flex;
+            align-items: baseline;
+            gap: 12px
+        }
+
+        .agent-counts strong {
+            font: 39px Consolas, monospace;
+            color: var(--lime)
+        }
+
+        .agent-counts span {
+            font-size: 17px;
+            color: var(--muted)
+        }
+
+        .agent-counts .count-fail strong {
+            color: var(--orange)
+        }
+
+        .matrix-summary .fine {
+            font-size: 14px
+        }
+
+        .agent-lessons {
+            display: grid;
+            grid-template-columns: 1fr 1.15fr;
+            gap: 22px;
+            margin-top: 20px
+        }
+
+        .agent-lessons .panel {
+            padding: 18px 26px
+        }
+
+        .lesson-label {
+            font-size: 17px;
+            letter-spacing: .5px
+        }
+
+        .agent-lessons h2 {
+            font-size: 25px;
+            margin: 8px 0 10px
+        }
+
+        .agent-lessons p {
+            font-size: 19px;
+            line-height: 1.6
+        }
+
+        .incident blockquote {
+            font-size: 24px;
+            line-height: 1.5;
+            margin: 12px 0;
+            padding: 10px 16px;
+            background: #f4b6810a;
+            border-left: 3px solid var(--orange)
+        }
+
+        .incident p strong {
+            font-weight: 500;
+            color: var(--orange)
+        }
+
+        .retest-strip {
+            display: flex;
+            justify-content: space-between;
+            gap: 18px;
+            align-items: center;
+            margin: 14px 0 10px;
+            padding: 12px 17px;
+            background: #c5ed6b09;
+            border: 1px solid #465b42;
+            border-radius: 10px
+        }
+
+        .retest-strip span {
+            font-size: 17px;
+            color: var(--muted)
+        }
+
+        .retest-strip strong {
+            font-size: 20px;
+            color: var(--lime);
+            font-weight: 500;
+            white-space: nowrap
+        }
+
+        .resolution .fine {
+            font-size: 15px;
+            line-height: 1.6
+        }
+
+        .agent-batch-note {
+            font-size: 15px;
+            line-height: 1.6;
+            color: var(--muted);
+            margin-top: 15px
+        }
+    
+.random-test-layout{display:grid;grid-template-columns:1fr 1.08fr;gap:24px;margin-top:25px}.random-map-panel{padding:18px 22px}.random-map-heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;gap:12px}.random-map-heading h2{font-size:24px;margin:0}.random-map-heading .pill{font-size:15px;padding:6px 12px}.tested-map-pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}.tested-map-pair figure{margin:0;min-width:0}.tested-map-svg{background:#edf1f4;border-radius:9px;overflow:hidden;padding:7px}.tested-map-svg svg{display:block;width:100%;height:183px;shape-rendering:crispEdges}.tested-map-pair figcaption{margin-top:9px;font-size:16px;line-height:1.6;color:var(--ink)}.tested-map-pair figcaption span{display:block;font:14px/1.6 Consolas,'Microsoft YaHei',monospace;color:var(--muted)}.map-shape-list{font-size:14px;line-height:1.6;margin-top:14px;color:var(--muted)}.six-results{display:flex;flex-direction:column;gap:18px}.six-stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.six-stat-grid .stat-card{padding:17px 20px}.six-stat-grid .stat-card .mini{font-size:13px;line-height:1.6;letter-spacing:0}.six-stat-grid .stat-card>strong{font-size:51px;line-height:1.1;letter-spacing:-2px;margin:11px 0 8px}.six-stat-grid .stat-card>strong span{font-size:23px;letter-spacing:0}.six-stat-grid .stat-card h2{font-size:22px;margin:6px 0 0}.six-scale{padding:16px 22px}.six-scale .mini{font-size:14px;line-height:1.6}.six-scale .test-row{margin-top:9px}.six-scale .test-row h2{font-size:23px;margin:0}.six-scale .test-row>strong{font-size:37px}.six-scale .segments{height:13px;margin-top:10px}.six-scale .fine{font-size:15px;line-height:1.6;margin-top:12px}#slide6 .audit-band{margin-top:21px;padding:18px 23px}#slide6 .audit-band p{font-size:17px}#slide6 .audit-band p span{font-size:16px}#slide6 .bottom{font-size:16px}
+</style>
+</head>
+
+<body>
+    <main id="stage" aria-label="AWCS 关键技术与测试讲解">
+        <header class="brandbar">
+            <div class="brand">AWCS<span>智能仓储协同调度系统</span></div>
+        </header>
+        <section class="slide" id="slide1" aria-label="从需求到机器人执行">
+            <div class="eyebrow">01 / SYSTEM DESIGN</div>
+            <h1>把业务需求，连接到协同执行</h1>
+            <p class="subtitle">AWCS · 关键技术与测试验证</p>
+            <div class="architecture">
+                <article class="pillar"><span class="number">01</span>
+                    <div class="mini">业务理解</div>
+                    <h2>Agent 工具调用</h2>
+                    <p>自然语言 / 文档<br>工具调用与执行结果</p><span class="pill">明确业务对象</span>
+                </article>
+                <div class="connector">→</div>
+                <article class="pillar"><span class="number">02</span>
+                    <div class="mini">调度决策</div>
+                    <h2>分层任务匹配</h2>
+                    <p>硬约束 + 等级优先<br>匈牙利算法整体匹配</p><span class="pill">选择执行机器人</span>
+                </article>
+                <div class="connector">→</div>
+                <article class="pillar"><span class="number">03</span>
+                    <div class="mini">时空协调</div>
+                    <h2>SIPP + 局部 CBS</h2>
+                    <p>安全时间区间与预约<br>路线检查后提交执行</p><span class="pill">安排路线与等待</span>
+                </article>
+            </div>
+            <div class="band"><i class="pulse"></i>业务输入 <span>→</span> 分配与规划 <span>→</span> 执行校验 <span>→</span>
+                运行状态与执行结果</div>
+            <div class="bottom">技术实现：业务建模、算法组合与执行保护 · 仓储调度仿真</div>
+        </section>
+        <section class="slide" id="slide2" aria-label="Agent 怎样操作系统">
+            <div class="eyebrow">02 / BUSINESS AGENT</div>
+            <h1>用工具与真实状态，约束模型操作</h1>
+            <p class="subtitle">语言模型理解需求，程序负责执行，并反馈操作结果。</p>
+            <div class="agent-flow">
+                <div class="flow-cell"><span class="mini">人员表达</span><strong>“取消 T001”</strong></div><span
+                    class="arrow">→</span>
+                <div class="flow-cell"><span class="mini">工具调用</span><strong class="mono">cancel_tasks</strong><span
+                        class="mono small">task_ids: ["T001"]</span></div><span class="arrow">→</span>
+                <div class="flow-cell"><span class="mini">服务层检查</span><strong>对象来源 · 任务阶段</strong></div><span
+                    class="arrow">→</span>
+                <div class="flow-cell"><span class="mini">实际执行结果</span><strong class="teal">applied / 拒绝原因</strong>
+                </div>
+            </div>
+            <div class="two agent-lower">
+                <div class="panel">
+                    <div class="mini">取消目标保护</div>
+                    <h2>目标只来自本轮明确输入</h2>
+                    <div class="rule">✓ <span>明确任务编号，优先采用</span></div>
+                    <div class="rule">✓ <span>无编号时，采用本轮界面关联对象</span></div>
+                    <div class="rule muted">× <span>查询结果、旧对话不能扩大取消范围</span></div>
+                    <p class="fine">整批预检查：含未指定目标 → 整批不执行。<br>该校验限定对象来源，并非完整的自然语言意图判定。</p>
+                </div>
+                <div class="code-panel">
+                    <div class="codehead"><i></i>ai/authorization.py<small>当前源码节选</small></div>
+                    <div class="codebody">
+                        <div class="line">
+                            <span>32</span><code><b>if</b> <b>any</b>(action[&quot;task_id&quot;] not <b>in</b> targets <b>for</b> action <b>in</b> actions):</code>
+                        </div>
+                        <div class="gap">···</div>
+                        <div class="line">
+                            <span>35</span><code>&quot;code&quot;: &quot;cancellation_target_required&quot;,</code>
+                        </div>
+                        <div class="line"><span>36</span><code>&quot;executed&quot;: False,</code></div>
+                        <div class="line"><span>37</span><code>&quot;requires_clarification&quot;: True,</code></div>
+                    </div>
+                    <div class="code-caption">在提交给仿真执行前，检查整批取消目标。</div>
+                </div>
+            </div>
+            <div class="bottom">文档导入：原文依据 → 可编辑草稿 → 人工确认 → 实际创建</div>
+        </section>
+        <section class="slide" id="slide3" aria-label="任务怎么分给机器人">
+            <div class="eyebrow">03 / TASK ASSIGNMENT</div>
+            <h1>先守业务优先级，再做整体匹配</h1>
+            <p class="subtitle">按完整目标范围构造权重，避免距离优势覆盖任务等级。</p>
+            <div class="priority-strip"><span class="mini">硬约束过滤后</span><span class="grade urgent">5 级</span>›<span
+                    class="grade">4 级</span>›<span class="grade">3 级</span>›<span class="grade">2 级</span>›<span
+                    class="grade">1 级</span>›<strong>软偏好</strong>›<strong>预计代价</strong>›<strong>创建时间</strong></div>
+            <div class="two assignment-lower">
+                <div class="code-panel">
+                    <div class="codehead"><i></i>coordination/assignment.py<small>当前源码节选</small></div>
+                    <div class="codebody">
+                        <div class="line"><span>29</span><code>value[5-task.priority] = -1</code></div>
+                        <div class="gap">···</div>
+                        <div class="line"><span>33</span><code>value[-2:] = [eta, task.created_at]</code></div>
+                        <div class="gap">···</div>
+                        <div class="line"><span>44</span><code>weights = [1] * dimensions</code></div>
+                        <div class="line">
+                            <span>45</span><code><b>for</b> d <b>in</b> <b>range</b>(dimensions-2, -1, -1):</code></div>
+                        <div class="line"><span>46</span><code>    weights[d] = weights[d+1] * (ranges[d+1]+1)</code>
+                        </div>
+                    </div>
+                    <div class="code-caption">高位改善 1 单位，压过全部低位变化；<br>编码后调用 minimum_assignment。</div>
+                </div>
+                <div class="panel matching">
+                    <div class="mini">同等级示意 · 预计完成代价</div>
+                    <div class="match-heading">
+                        <h2>两台车，两项任务</h2><span id="matchMode" class="pill">整体匹配</span>
+                    </div>
+                    <table class="matrix">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>任务 A</th>
+                                <th>任务 B</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>R1</th>
+                                <td id="m00">2</td>
+                                <td id="m01">3</td>
+                            </tr>
+                            <tr>
+                                <th>R2</th>
+                                <td id="m10">3</td>
+                                <td id="m11">8</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="cost-result"><span id="matchText">R1 → B，R2 → A</span><strong id="matchCost">6</strong>
+                    </div>
+                    <p class="fine">逐个就近 10 → 整体匹配 6</p>
+                </div>
+            </div>
+            <div class="bottom">最优性范围：本轮给定约束与代价矩阵；不代表任务流与路径联合全局最优。</div>
+        </section>
+        <section class="slide" id="slide4" aria-label="多台机器人怎样协调路线">
+            <div class="eyebrow">04 / SPACE × TIME</div>
+            <h1>共享通道，靠时间协调通行</h1>
+            <p class="subtitle">SIPP 在可用的安全时间区间搜索；等待也是路线的一部分。</p>
+            <div class="two path-lower">
+                <div class="panel map-panel">
+                    <div class="map-heading">
+                        <div><span class="mini">交叉口预约示意</span>
+                            <h2>错开同一格的到达时刻</h2>
+                        </div><span class="tick-badge">t = <b id="tick">0</b></span>
+                    </div>
+                    <svg id="crossMap" viewBox="0 0 690 305" role="img" aria-label="两台机器人通过交叉口，蓝车等待一步避开同时占用。">
+                        <defs>
+                            <pattern id="grid" width="65" height="50" patternUnits="userSpaceOnUse">
+                                <path d="M65 0H0V50" fill="none" stroke="#263c4e" />
+                            </pattern>
+                        </defs>
+                        <rect x="112.5" y="20" width="455" height="250" rx="12" fill="#112536" />
+                        <path d="M145 145H535M340 45V245" fill="none" stroke="#243b4b" stroke-width="42"
+                            stroke-linecap="round" />
+                        <rect x="112.5" y="20" width="455" height="250" fill="url(#grid)" opacity=".65" />
+                        <path d="M210 145H535" fill="none" stroke="#c5ed6b" stroke-width="3" stroke-dasharray="8 7"
+                            opacity=".55" />
+                        <path d="M340 45V245" fill="none" stroke="#67c5ff" stroke-width="3" stroke-dasharray="8 7"
+                            opacity=".55" />
+                        <rect id="reservationCell" x="308" y="120" width="64" height="50" rx="7" fill="#c5ed6b"
+                            opacity=".08" />
+                        <g id="robotA">
+                            <rect x="-19" y="-18" width="38" height="36" rx="11" fill="#c5ed6b" /><text y="7"
+                                text-anchor="middle" fill="#142024" font-size="20" font-weight="800">A</text>
+                        </g>
+                        <g id="robotB">
+                            <rect x="-19" y="-18" width="38" height="36" rx="11" fill="#67c5ff" /><text y="7"
+                                text-anchor="middle" fill="#142024" font-size="20" font-weight="800">B</text>
+                        </g><text x="585" y="150" fill="#c5ed6b" font-size="22">A →</text><text x="358" y="283"
+                            fill="#67c5ff" font-size="22">B ↓</text><text x="115" y="298" fill="#91a7b7"
+                            font-size="14">示意轨迹，非实测回放</text>
+                    </svg>
+                    <div class="map-state" id="mapState">A 与 B 接近交叉口</div>
+                    <div class="timeline-row"><span>路口占用</span>
+                        <div class="time-cells"><i>t0</i><i>t1</i><i class="reserved">t2 · A</i><i
+                                class="reserved blue">t3 · B</i><i>t4</i><i>t5</i></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="code-panel">
+                        <div class="codehead"><i></i>planning/reservations.py<small>当前源码节选</small></div>
+                        <div class="codebody">
+                            <div class="line"><span>47</span><code>self.block(path[begin],begin,t-1)</code></div>
+                            <div class="gap">···</div>
+                            <div class="line"><span>51</span><code>self.block_edge(path[t],path[t-1],t,t)</code></div>
+                            <div class="gap">···</div>
+                            <div class="line"><span>53</span><code><b>if</b> persistent:</code></div>
+                            <div class="line">
+                                <span>54</span><code>    self.block(path[-1],<b>len</b>(path)-1,INF)</code></div>
+                        </div>
+                        <div class="code-caption">① 格子占用　② 禁止对向换位　③ 停车持续占用</div>
+                    </div>
+                    <div class="safe-interval"><span class="mini">路口安全区间（对 B）</span>
+                        <div class="interval-bar"><span>[0, 1]</span><span class="blocked">t = 2 占用</span><span>[3,
+                                …]</span></div>
+                        <p class="fine">装卸停留必须完整落在可用区间内。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">共享预约 → SIPP 依次规划 → 调整受阻顺序 → 必要时局部 CBS 修复（同一规划预算内）</div>
+        </section>
+        <section class="slide" id="slide5" aria-label="路线算好后，再检查一遍">
+            <div class="eyebrow">05 / VALIDATE BEFORE COMMIT</div>
+            <h1>规划成功，还要通过执行检查</h1>
+            <p class="subtitle">独立进程计算，主控制器核对版本；提交前复核整组路线。</p>
+            <div class="validation-pipeline">
+                <div class="validation-step"><span>01</span>
+                    <h2>冻结状态快照</h2>
+                    <p>任务 / 机器人 / 地图<br>附带状态版本</p>
+                </div><span class="arrow">→</span>
+                <div class="validation-step"><span>02</span>
+                    <h2>独立规划进程</h2>
+                    <p>任务匹配与时空搜索<br>返回候选方案</p>
+                </div><span class="arrow">→</span>
+                <div class="validation-step"><span>03</span>
+                    <h2>版本与路线复核</h2>
+                    <p>过期结果丢弃<br>完整候选独立检查</p>
+                </div><span class="arrow">→</span>
+                <div class="validation-step"><span>04</span>
+                    <h2>提交并执行</h2>
+                    <p>保持业务状态一致<br>推进仿真时间</p>
+                </div>
+            </div>
+            <div class="check-list"><span>✓ 障碍与合法移动</span><span>✓ 同格与对向换位</span><span>✓ 作业顺序与连续装卸</span><span>✓
+                    载货归属与任务状态</span></div>
+            <div class="recovery">
+                <div class="recovery-label"><span class="mini">预算内没有新方案</span>
+                    <h2>复核后决定下一步</h2>
+                </div>
+                <div class="recovery-option"><span class="teal">条件满足</span><strong>已有完整安全路线复核通过</strong>
+                    <p>在恢复条件允许时，限步继续</p>
+                </div>
+                <div class="recovery-option stop"><span class="orange">条件不满足</span><strong>暂停并保留任务</strong>
+                    <p>等待调整参数或重试</p>
+                </div>
+            </div>
+            <div class="bottom">暂停表示本次预算内未形成可执行方案，不是数学无解证明。</div>
+        </section>
+        <section class="slide" id="slide6" aria-label="算法测试结果"><div class="eyebrow">06 / ALGORITHM TESTING</div><h1>在随机生成的地图上，验证调度表现</h1><p class="subtitle">7 类布局 × 2 组随机种子 = 14 张测试地图 · 固定种子，方便复现</p>
+<div class="random-test-layout">
+ <article class="panel random-map-panel"><div class="random-map-heading"><h2>实际测试地图</h2><span class="pill">不同种子，不同布局</span></div><div class="tested-map-pair"><figure><div class="tested-map-svg"><svg viewBox="-1 -1 98 66" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="随机组合，布局种子20261018的实际测试地图"><title>随机组合 · 20261018</title><rect x="-1" y="-1" width="98" height="66" fill="#edf1f4"/><rect x="2" y="2" width="65" height="1" fill="#273e50"/><rect x="2" y="3" width="1" height="1" fill="#273e50"/><rect x="3" y="3" width="63" height="1" fill="#ffffff"/><rect x="66" y="3" width="1" height="1" fill="#273e50"/><rect x="2" y="4" width="1" height="1" fill="#273e50"/><rect x="3" y="4" width="63" height="1" fill="#ffffff"/><rect x="66" y="4" width="1" height="1" fill="#273e50"/><rect x="2" y="5" width="1" height="1" fill="#273e50"/><rect x="3" y="5" width="63" height="1" fill="#ffffff"/><rect x="66" y="5" width="1" height="1" fill="#273e50"/><rect x="2" y="6" width="1" height="1" fill="#273e50"/><rect x="3" y="6" width="63" height="1" fill="#ffffff"/><rect x="66" y="6" width="1" height="1" fill="#273e50"/><rect x="2" y="7" width="1" height="1" fill="#273e50"/><rect x="3" y="7" width="2" height="1" fill="#ffffff"/><rect x="5" y="7" width="3" height="1" fill="#b9c6cf"/><rect x="8" y="7" width="4" height="1" fill="#ffffff"/><rect x="12" y="7" width="4" height="1" fill="#b9c6cf"/><rect x="16" y="7" width="10" height="1" fill="#ffffff"/><rect x="26" y="7" width="3" height="1" fill="#b9c6cf"/><rect x="29" y="7" width="4" height="1" fill="#ffffff"/><rect x="33" y="7" width="3" height="1" fill="#b9c6cf"/><rect x="36" y="7" width="30" height="1" fill="#ffffff"/><rect x="66" y="7" width="1" height="1" fill="#273e50"/><rect x="2" y="8" width="1" height="1" fill="#273e50"/><rect x="3" y="8" width="2" height="1" fill="#ffffff"/><rect x="5" y="8" width="3" height="1" fill="#b9c6cf"/><rect x="8" y="8" width="4" height="1" fill="#ffffff"/><rect x="12" y="8" width="4" height="1" fill="#b9c6cf"/><rect x="16" y="8" width="10" height="1" fill="#ffffff"/><rect x="26" y="8" width="3" height="1" fill="#b9c6cf"/><rect x="29" y="8" width="4" height="1" fill="#ffffff"/><rect x="33" y="8" width="3" height="1" fill="#b9c6cf"/><rect x="36" y="8" width="30" height="1" fill="#ffffff"/><rect x="66" y="8" width="1" height="1" fill="#273e50"/><rect x="2" y="9" width="1" height="1" fill="#273e50"/><rect x="3" y="9" width="9" height="1" fill="#ffffff"/><rect x="12" y="9" width="4" height="1" fill="#b9c6cf"/><rect x="16" y="9" width="50" height="1" fill="#ffffff"/><rect x="66" y="9" width="1" height="1" fill="#273e50"/><rect x="2" y="10" width="1" height="1" fill="#273e50"/><rect x="3" y="10" width="23" height="1" fill="#ffffff"/><rect x="26" y="10" width="1" height="1" fill="#c58042"/><rect x="27" y="10" width="39" height="1" fill="#ffffff"/><rect x="66" y="10" width="1" height="1" fill="#273e50"/><rect x="2" y="11" width="1" height="1" fill="#273e50"/><rect x="3" y="11" width="63" height="1" fill="#ffffff"/><rect x="66" y="11" width="1" height="1" fill="#273e50"/><rect x="2" y="12" width="1" height="1" fill="#273e50"/><rect x="3" y="12" width="63" height="1" fill="#ffffff"/><rect x="66" y="12" width="1" height="1" fill="#273e50"/><rect x="2" y="13" width="1" height="1" fill="#273e50"/><rect x="3" y="13" width="2" height="1" fill="#ffffff"/><rect x="5" y="13" width="3" height="1" fill="#b9c6cf"/><rect x="8" y="13" width="18" height="1" fill="#ffffff"/><rect x="26" y="13" width="3" height="1" fill="#b9c6cf"/><rect x="29" y="13" width="4" height="1" fill="#ffffff"/><rect x="33" y="13" width="4" height="1" fill="#b9c6cf"/><rect x="37" y="13" width="3" height="1" fill="#ffffff"/><rect x="40" y="13" width="4" height="1" fill="#b9c6cf"/><rect x="44" y="13" width="15" height="1" fill="#ffffff"/><rect x="59" y="13" width="1" height="1" fill="#c58042"/><rect x="60" y="13" width="1" height="1" fill="#ffffff"/><rect x="61" y="13" width="4" height="1" fill="#b9c6cf"/><rect x="65" y="13" width="1" height="1" fill="#ffffff"/><rect x="66" y="13" width="1" height="1" fill="#273e50"/><rect x="2" y="14" width="1" height="1" fill="#273e50"/><rect x="3" y="14" width="2" height="1" fill="#ffffff"/><rect x="5" y="14" width="3" height="1" fill="#b9c6cf"/><rect x="8" y="14" width="18" height="1" fill="#ffffff"/><rect x="26" y="14" width="3" height="1" fill="#b9c6cf"/><rect x="29" y="14" width="4" height="1" fill="#ffffff"/><rect x="33" y="14" width="4" height="1" fill="#b9c6cf"/><rect x="37" y="14" width="3" height="1" fill="#ffffff"/><rect x="40" y="14" width="4" height="1" fill="#b9c6cf"/><rect x="44" y="14" width="17" height="1" fill="#ffffff"/><rect x="61" y="14" width="4" height="1" fill="#b9c6cf"/><rect x="65" y="14" width="1" height="1" fill="#ffffff"/><rect x="66" y="14" width="1" height="1" fill="#273e50"/><rect x="2" y="15" width="1" height="1" fill="#273e50"/><rect x="3" y="15" width="23" height="1" fill="#ffffff"/><rect x="26" y="15" width="3" height="1" fill="#b9c6cf"/><rect x="29" y="15" width="1" height="1" fill="#ffffff"/><rect x="30" y="15" width="1" height="1" fill="#c58042"/><rect x="31" y="15" width="5" height="1" fill="#ffffff"/><rect x="36" y="15" width="1" height="1" fill="#c58042"/><rect x="37" y="15" width="24" height="1" fill="#ffffff"/><rect x="61" y="15" width="4" height="1" fill="#b9c6cf"/><rect x="65" y="15" width="1" height="1" fill="#ffffff"/><rect x="66" y="15" width="1" height="1" fill="#273e50"/><rect x="2" y="16" width="1" height="1" fill="#273e50"/><rect x="3" y="16" width="31" height="1" fill="#ffffff"/><rect x="34" y="16" width="1" height="1" fill="#c58042"/><rect x="35" y="16" width="31" height="1" fill="#ffffff"/><rect x="66" y="16" width="1" height="1" fill="#273e50"/><rect x="2" y="17" width="1" height="1" fill="#273e50"/><rect x="3" y="17" width="63" height="1" fill="#ffffff"/><rect x="66" y="17" width="1" height="1" fill="#273e50"/><rect x="2" y="18" width="1" height="1" fill="#273e50"/><rect x="3" y="18" width="39" height="1" fill="#ffffff"/><rect x="42" y="18" width="1" height="1" fill="#c58042"/><rect x="43" y="18" width="23" height="1" fill="#ffffff"/><rect x="66" y="18" width="1" height="1" fill="#273e50"/><rect x="2" y="19" width="1" height="1" fill="#273e50"/><rect x="3" y="19" width="9" height="1" fill="#ffffff"/><rect x="12" y="19" width="3" height="1" fill="#b9c6cf"/><rect x="15" y="19" width="4" height="1" fill="#ffffff"/><rect x="19" y="19" width="3" height="1" fill="#b9c6cf"/><rect x="22" y="19" width="18" height="1" fill="#ffffff"/><rect x="40" y="19" width="4" height="1" fill="#b9c6cf"/><rect x="44" y="19" width="10" height="1" fill="#ffffff"/><rect x="54" y="19" width="4" height="1" fill="#b9c6cf"/><rect x="58" y="19" width="3" height="1" fill="#ffffff"/><rect x="61" y="19" width="4" height="1" fill="#b9c6cf"/><rect x="65" y="19" width="1" height="1" fill="#ffffff"/><rect x="66" y="19" width="1" height="1" fill="#273e50"/><rect x="2" y="20" width="1" height="1" fill="#273e50"/><rect x="3" y="20" width="9" height="1" fill="#ffffff"/><rect x="12" y="20" width="3" height="1" fill="#b9c6cf"/><rect x="15" y="20" width="4" height="1" fill="#ffffff"/><rect x="19" y="20" width="3" height="1" fill="#b9c6cf"/><rect x="22" y="20" width="18" height="1" fill="#ffffff"/><rect x="40" y="20" width="4" height="1" fill="#b9c6cf"/><rect x="44" y="20" width="10" height="1" fill="#ffffff"/><rect x="54" y="20" width="4" height="1" fill="#b9c6cf"/><rect x="58" y="20" width="3" height="1" fill="#ffffff"/><rect x="61" y="20" width="4" height="1" fill="#b9c6cf"/><rect x="65" y="20" width="1" height="1" fill="#ffffff"/><rect x="66" y="20" width="1" height="1" fill="#273e50"/><rect x="2" y="21" width="1" height="1" fill="#273e50"/><rect x="3" y="21" width="16" height="1" fill="#ffffff"/><rect x="19" y="21" width="3" height="1" fill="#b9c6cf"/><rect x="22" y="21" width="18" height="1" fill="#ffffff"/><rect x="40" y="21" width="4" height="1" fill="#b9c6cf"/><rect x="44" y="21" width="6" height="1" fill="#ffffff"/><rect x="50" y="21" width="1" height="1" fill="#c58042"/><rect x="51" y="21" width="3" height="1" fill="#ffffff"/><rect x="54" y="21" width="4" height="1" fill="#b9c6cf"/><rect x="58" y="21" width="8" height="1" fill="#ffffff"/><rect x="66" y="21" width="1" height="1" fill="#273e50"/><rect x="2" y="22" width="1" height="1" fill="#273e50"/><rect x="3" y="22" width="63" height="1" fill="#ffffff"/><rect x="66" y="22" width="1" height="1" fill="#273e50"/><rect x="2" y="23" width="23" height="1" fill="#273e50"/><rect x="25" y="23" width="41" height="1" fill="#ffffff"/><rect x="66" y="23" width="1" height="1" fill="#273e50"/><rect x="25" y="24" width="1" height="1" fill="#273e50"/><rect x="26" y="24" width="40" height="1" fill="#ffffff"/><rect x="66" y="24" width="1" height="1" fill="#273e50"/><rect x="25" y="25" width="1" height="1" fill="#273e50"/><rect x="26" y="25" width="7" height="1" fill="#ffffff"/><rect x="33" y="25" width="3" height="1" fill="#b9c6cf"/><rect x="36" y="25" width="4" height="1" fill="#ffffff"/><rect x="40" y="25" width="3" height="1" fill="#b9c6cf"/><rect x="43" y="25" width="18" height="1" fill="#ffffff"/><rect x="61" y="25" width="3" height="1" fill="#b9c6cf"/><rect x="64" y="25" width="2" height="1" fill="#ffffff"/><rect x="66" y="25" width="1" height="1" fill="#273e50"/><rect x="25" y="26" width="1" height="1" fill="#273e50"/><rect x="26" y="26" width="7" height="1" fill="#ffffff"/><rect x="33" y="26" width="3" height="1" fill="#b9c6cf"/><rect x="36" y="26" width="4" height="1" fill="#ffffff"/><rect x="40" y="26" width="3" height="1" fill="#b9c6cf"/><rect x="43" y="26" width="18" height="1" fill="#ffffff"/><rect x="61" y="26" width="3" height="1" fill="#b9c6cf"/><rect x="64" y="26" width="2" height="1" fill="#ffffff"/><rect x="66" y="26" width="1" height="1" fill="#273e50"/><rect x="25" y="27" width="1" height="1" fill="#273e50"/><rect x="26" y="27" width="35" height="1" fill="#ffffff"/><rect x="61" y="27" width="3" height="1" fill="#b9c6cf"/><rect x="64" y="27" width="2" height="1" fill="#ffffff"/><rect x="66" y="27" width="1" height="1" fill="#273e50"/><rect x="25" y="28" width="1" height="1" fill="#273e50"/><rect x="26" y="28" width="40" height="1" fill="#ffffff"/><rect x="66" y="28" width="1" height="1" fill="#273e50"/><rect x="25" y="29" width="1" height="1" fill="#273e50"/><rect x="26" y="29" width="40" height="1" fill="#ffffff"/><rect x="66" y="29" width="1" height="1" fill="#273e50"/><rect x="25" y="30" width="1" height="1" fill="#273e50"/><rect x="26" y="30" width="40" height="1" fill="#ffffff"/><rect x="66" y="30" width="1" height="1" fill="#273e50"/><rect x="25" y="31" width="1" height="1" fill="#273e50"/><rect x="26" y="31" width="40" height="1" fill="#ffffff"/><rect x="66" y="31" width="1" height="1" fill="#273e50"/><rect x="25" y="32" width="1" height="1" fill="#273e50"/><rect x="26" y="32" width="40" height="1" fill="#ffffff"/><rect x="66" y="32" width="1" height="1" fill="#273e50"/><rect x="25" y="33" width="1" height="1" fill="#273e50"/><rect x="26" y="33" width="40" height="1" fill="#ffffff"/><rect x="66" y="33" width="1" height="1" fill="#273e50"/><rect x="25" y="34" width="1" height="1" fill="#273e50"/><rect x="26" y="34" width="40" height="1" fill="#ffffff"/><rect x="66" y="34" width="1" height="1" fill="#273e50"/><rect x="25" y="35" width="1" height="1" fill="#273e50"/><rect x="26" y="35" width="40" height="1" fill="#ffffff"/><rect x="66" y="35" width="1" height="1" fill="#273e50"/><rect x="25" y="36" width="1" height="1" fill="#273e50"/><rect x="26" y="36" width="40" height="1" fill="#ffffff"/><rect x="66" y="36" width="1" height="1" fill="#273e50"/><rect x="23" y="37" width="2" height="1" fill="#273e50"/><rect x="25" y="37" width="8" height="1" fill="#ffffff"/><rect x="33" y="37" width="3" height="1" fill="#b9c6cf"/><rect x="36" y="37" width="18" height="1" fill="#ffffff"/><rect x="54" y="37" width="3" height="1" fill="#b9c6cf"/><rect x="57" y="37" width="10" height="1" fill="#ffffff"/><rect x="67" y="37" width="27" height="1" fill="#273e50"/><rect x="23" y="38" width="1" height="1" fill="#273e50"/><rect x="24" y="38" width="9" height="1" fill="#ffffff"/><rect x="33" y="38" width="3" height="1" fill="#b9c6cf"/><rect x="36" y="38" width="18" height="1" fill="#ffffff"/><rect x="54" y="38" width="3" height="1" fill="#b9c6cf"/><rect x="57" y="38" width="36" height="1" fill="#ffffff"/><rect x="93" y="38" width="1" height="1" fill="#273e50"/><rect x="23" y="39" width="1" height="1" fill="#273e50"/><rect x="24" y="39" width="9" height="1" fill="#ffffff"/><rect x="33" y="39" width="3" height="1" fill="#b9c6cf"/><rect x="36" y="39" width="57" height="1" fill="#ffffff"/><rect x="93" y="39" width="1" height="1" fill="#273e50"/><rect x="23" y="40" width="1" height="1" fill="#273e50"/><rect x="24" y="40" width="31" height="1" fill="#ffffff"/><rect x="55" y="40" width="1" height="1" fill="#c58042"/><rect x="56" y="40" width="28" height="1" fill="#ffffff"/><rect x="84" y="40" width="1" height="1" fill="#c58042"/><rect x="85" y="40" width="8" height="1" fill="#ffffff"/><rect x="93" y="40" width="1" height="1" fill="#273e50"/><rect x="23" y="41" width="1" height="1" fill="#273e50"/><rect x="24" y="41" width="69" height="1" fill="#ffffff"/><rect x="93" y="41" width="1" height="1" fill="#273e50"/><rect x="23" y="42" width="1" height="1" fill="#273e50"/><rect x="24" y="42" width="69" height="1" fill="#ffffff"/><rect x="93" y="42" width="1" height="1" fill="#273e50"/><rect x="23" y="43" width="1" height="1" fill="#273e50"/><rect x="24" y="43" width="9" height="1" fill="#ffffff"/><rect x="33" y="43" width="4" height="1" fill="#b9c6cf"/><rect x="37" y="43" width="9" height="1" fill="#ffffff"/><rect x="46" y="43" width="1" height="1" fill="#c58042"/><rect x="47" y="43" width="7" height="1" fill="#ffffff"/><rect x="54" y="43" width="3" height="1" fill="#b9c6cf"/><rect x="57" y="43" width="18" height="1" fill="#ffffff"/><rect x="75" y="43" width="3" height="1" fill="#b9c6cf"/><rect x="78" y="43" width="15" height="1" fill="#ffffff"/><rect x="93" y="43" width="1" height="1" fill="#273e50"/><rect x="23" y="44" width="1" height="1" fill="#273e50"/><rect x="24" y="44" width="9" height="1" fill="#ffffff"/><rect x="33" y="44" width="4" height="1" fill="#b9c6cf"/><rect x="37" y="44" width="17" height="1" fill="#ffffff"/><rect x="54" y="44" width="3" height="1" fill="#b9c6cf"/><rect x="57" y="44" width="18" height="1" fill="#ffffff"/><rect x="75" y="44" width="3" height="1" fill="#b9c6cf"/><rect x="78" y="44" width="15" height="1" fill="#ffffff"/><rect x="93" y="44" width="1" height="1" fill="#273e50"/><rect x="23" y="45" width="1" height="1" fill="#273e50"/><rect x="24" y="45" width="11" height="1" fill="#ffffff"/><rect x="35" y="45" width="1" height="1" fill="#c58042"/><rect x="36" y="45" width="18" height="1" fill="#ffffff"/><rect x="54" y="45" width="3" height="1" fill="#b9c6cf"/><rect x="57" y="45" width="19" height="1" fill="#ffffff"/><rect x="76" y="45" width="1" height="1" fill="#c58042"/><rect x="77" y="45" width="16" height="1" fill="#ffffff"/><rect x="93" y="45" width="1" height="1" fill="#273e50"/><rect x="23" y="46" width="1" height="1" fill="#273e50"/><rect x="24" y="46" width="52" height="1" fill="#ffffff"/><rect x="76" y="46" width="1" height="1" fill="#c58042"/><rect x="77" y="46" width="12" height="1" fill="#ffffff"/><rect x="89" y="46" width="1" height="1" fill="#c58042"/><rect x="90" y="46" width="3" height="1" fill="#ffffff"/><rect x="93" y="46" width="1" height="1" fill="#273e50"/><rect x="23" y="47" width="1" height="1" fill="#273e50"/><rect x="24" y="47" width="12" height="1" fill="#ffffff"/><rect x="36" y="47" width="1" height="1" fill="#c58042"/><rect x="37" y="47" width="56" height="1" fill="#ffffff"/><rect x="93" y="47" width="1" height="1" fill="#273e50"/><rect x="23" y="48" width="1" height="1" fill="#273e50"/><rect x="24" y="48" width="69" height="1" fill="#ffffff"/><rect x="93" y="48" width="1" height="1" fill="#273e50"/><rect x="23" y="49" width="1" height="1" fill="#273e50"/><rect x="24" y="49" width="16" height="1" fill="#ffffff"/><rect x="40" y="49" width="3" height="1" fill="#b9c6cf"/><rect x="43" y="49" width="11" height="1" fill="#ffffff"/><rect x="54" y="49" width="4" height="1" fill="#b9c6cf"/><rect x="58" y="49" width="3" height="1" fill="#ffffff"/><rect x="61" y="49" width="4" height="1" fill="#b9c6cf"/><rect x="65" y="49" width="10" height="1" fill="#ffffff"/><rect x="75" y="49" width="4" height="1" fill="#b9c6cf"/><rect x="79" y="49" width="3" height="1" fill="#ffffff"/><rect x="82" y="49" width="3" height="1" fill="#b9c6cf"/><rect x="85" y="49" width="8" height="1" fill="#ffffff"/><rect x="93" y="49" width="1" height="1" fill="#273e50"/><rect x="23" y="50" width="1" height="1" fill="#273e50"/><rect x="24" y="50" width="16" height="1" fill="#ffffff"/><rect x="40" y="50" width="3" height="1" fill="#b9c6cf"/><rect x="43" y="50" width="11" height="1" fill="#ffffff"/><rect x="54" y="50" width="4" height="1" fill="#b9c6cf"/><rect x="58" y="50" width="3" height="1" fill="#ffffff"/><rect x="61" y="50" width="4" height="1" fill="#b9c6cf"/><rect x="65" y="50" width="10" height="1" fill="#ffffff"/><rect x="75" y="50" width="4" height="1" fill="#b9c6cf"/><rect x="79" y="50" width="3" height="1" fill="#ffffff"/><rect x="82" y="50" width="3" height="1" fill="#b9c6cf"/><rect x="85" y="50" width="8" height="1" fill="#ffffff"/><rect x="93" y="50" width="1" height="1" fill="#273e50"/><rect x="23" y="51" width="1" height="1" fill="#273e50"/><rect x="24" y="51" width="69" height="1" fill="#ffffff"/><rect x="93" y="51" width="1" height="1" fill="#273e50"/><rect x="23" y="52" width="1" height="1" fill="#273e50"/><rect x="24" y="52" width="69" height="1" fill="#ffffff"/><rect x="93" y="52" width="1" height="1" fill="#273e50"/><rect x="23" y="53" width="1" height="1" fill="#273e50"/><rect x="24" y="53" width="69" height="1" fill="#ffffff"/><rect x="93" y="53" width="1" height="1" fill="#273e50"/><rect x="23" y="54" width="1" height="1" fill="#273e50"/><rect x="24" y="54" width="14" height="1" fill="#ffffff"/><rect x="38" y="54" width="1" height="1" fill="#c58042"/><rect x="39" y="54" width="54" height="1" fill="#ffffff"/><rect x="93" y="54" width="1" height="1" fill="#273e50"/><rect x="23" y="55" width="1" height="1" fill="#273e50"/><rect x="24" y="55" width="27" height="1" fill="#ffffff"/><rect x="51" y="55" width="1" height="1" fill="#c58042"/><rect x="52" y="55" width="9" height="1" fill="#ffffff"/><rect x="61" y="55" width="3" height="1" fill="#b9c6cf"/><rect x="64" y="55" width="3" height="1" fill="#ffffff"/><rect x="67" y="55" width="1" height="1" fill="#c58042"/><rect x="68" y="55" width="7" height="1" fill="#ffffff"/><rect x="75" y="55" width="4" height="1" fill="#b9c6cf"/><rect x="79" y="55" width="14" height="1" fill="#ffffff"/><rect x="93" y="55" width="1" height="1" fill="#273e50"/><rect x="23" y="56" width="1" height="1" fill="#273e50"/><rect x="24" y="56" width="36" height="1" fill="#ffffff"/><rect x="60" y="56" width="1" height="1" fill="#c58042"/><rect x="61" y="56" width="3" height="1" fill="#b9c6cf"/><rect x="64" y="56" width="11" height="1" fill="#ffffff"/><rect x="75" y="56" width="4" height="1" fill="#b9c6cf"/><rect x="79" y="56" width="14" height="1" fill="#ffffff"/><rect x="93" y="56" width="1" height="1" fill="#273e50"/><rect x="23" y="57" width="1" height="1" fill="#273e50"/><rect x="24" y="57" width="65" height="1" fill="#ffffff"/><rect x="89" y="57" width="1" height="1" fill="#c58042"/><rect x="90" y="57" width="3" height="1" fill="#ffffff"/><rect x="93" y="57" width="1" height="1" fill="#273e50"/><rect x="23" y="58" width="1" height="1" fill="#273e50"/><rect x="24" y="58" width="69" height="1" fill="#ffffff"/><rect x="93" y="58" width="1" height="1" fill="#273e50"/><rect x="23" y="59" width="1" height="1" fill="#273e50"/><rect x="24" y="59" width="69" height="1" fill="#ffffff"/><rect x="93" y="59" width="1" height="1" fill="#273e50"/><rect x="23" y="60" width="1" height="1" fill="#273e50"/><rect x="24" y="60" width="69" height="1" fill="#ffffff"/><rect x="93" y="60" width="1" height="1" fill="#273e50"/><rect x="23" y="61" width="71" height="1" fill="#273e50"/><rect x="24.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="25.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="26.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="27.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="28.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="29.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="30.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="31.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="32.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="33.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="34.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="35.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="36.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="37.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="38.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="39.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="40.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="41.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="42.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="43.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="44.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="45.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="46.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="47.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="48.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="49.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="50.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="51.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="52.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="53.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="54.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="55.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="5.14" y="21.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="6.14" y="21.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="90.14" y="39.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="90.14" y="40.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="25.14" y="52.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="26.14" y="52.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="64.14" y="7.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="64.14" y="8.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><circle cx="5.5" cy="6.5" r=".36" fill="#1863b4"/><circle cx="12.5" cy="6.5" r=".36" fill="#1863b4"/><circle cx="26.5" cy="6.5" r=".36" fill="#1863b4"/><circle cx="33.5" cy="6.5" r=".36" fill="#1863b4"/><circle cx="5.5" cy="12.5" r=".36" fill="#1863b4"/><circle cx="26.5" cy="12.5" r=".36" fill="#1863b4"/><circle cx="33.5" cy="12.5" r=".36" fill="#1863b4"/><circle cx="40.5" cy="12.5" r=".36" fill="#1863b4"/><circle cx="61.5" cy="12.5" r=".36" fill="#1863b4"/><circle cx="12.5" cy="18.5" r=".36" fill="#1863b4"/><circle cx="19.5" cy="18.5" r=".36" fill="#1863b4"/><circle cx="40.5" cy="18.5" r=".36" fill="#1863b4"/><circle cx="54.5" cy="18.5" r=".36" fill="#1863b4"/><circle cx="61.5" cy="18.5" r=".36" fill="#1863b4"/><circle cx="33.5" cy="24.5" r=".36" fill="#1863b4"/><circle cx="40.5" cy="24.5" r=".36" fill="#1863b4"/><circle cx="61.5" cy="24.5" r=".36" fill="#1863b4"/><circle cx="33.5" cy="36.5" r=".36" fill="#1863b4"/><circle cx="54.5" cy="36.5" r=".36" fill="#1863b4"/><circle cx="33.5" cy="42.5" r=".36" fill="#1863b4"/><circle cx="54.5" cy="42.5" r=".36" fill="#1863b4"/><circle cx="75.5" cy="42.5" r=".36" fill="#1863b4"/><circle cx="40.5" cy="48.5" r=".36" fill="#1863b4"/><circle cx="54.5" cy="48.5" r=".36" fill="#1863b4"/><circle cx="61.5" cy="48.5" r=".36" fill="#1863b4"/><circle cx="75.5" cy="48.5" r=".36" fill="#1863b4"/><circle cx="82.5" cy="48.5" r=".36" fill="#1863b4"/><circle cx="61.5" cy="54.5" r=".36" fill="#1863b4"/><circle cx="75.5" cy="54.5" r=".36" fill="#1863b4"/><rect x="25.13" y="55.13" width=".74" height=".74" fill="#a35d16"/><rect x="28.13" y="55.13" width=".74" height=".74" fill="#a35d16"/><rect x="41.13" y="55.13" width=".74" height=".74" fill="#a35d16"/><rect x="55.13" y="55.13" width=".74" height=".74" fill="#a35d16"/><rect x="69.13" y="58.13" width=".74" height=".74" fill="#a35d16"/><rect x="82.13" y="58.13" width=".74" height=".74" fill="#a35d16"/><circle cx="24.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="25.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="26.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="27.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="28.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="29.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="30.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="31.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="32.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="33.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="34.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="35.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="36.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="37.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="38.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="39.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/></svg></div><figcaption>随机组合布局 <span>种子 20261018</span></figcaption></figure><figure><div class="tested-map-svg"><svg viewBox="-1 -1 98 66" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="随机组合，布局种子20261019的实际测试地图"><title>随机组合 · 20261019</title><rect x="-1" y="-1" width="98" height="66" fill="#edf1f4"/><rect x="2" y="2" width="65" height="1" fill="#273e50"/><rect x="2" y="3" width="1" height="1" fill="#273e50"/><rect x="3" y="3" width="63" height="1" fill="#ffffff"/><rect x="66" y="3" width="1" height="1" fill="#273e50"/><rect x="2" y="4" width="1" height="1" fill="#273e50"/><rect x="3" y="4" width="63" height="1" fill="#ffffff"/><rect x="66" y="4" width="1" height="1" fill="#273e50"/><rect x="2" y="5" width="1" height="1" fill="#273e50"/><rect x="3" y="5" width="63" height="1" fill="#ffffff"/><rect x="66" y="5" width="1" height="1" fill="#273e50"/><rect x="2" y="6" width="1" height="1" fill="#273e50"/><rect x="3" y="6" width="14" height="1" fill="#ffffff"/><rect x="17" y="6" width="1" height="1" fill="#c58042"/><rect x="18" y="6" width="48" height="1" fill="#ffffff"/><rect x="66" y="6" width="1" height="1" fill="#273e50"/><rect x="2" y="7" width="1" height="1" fill="#273e50"/><rect x="3" y="7" width="2" height="1" fill="#ffffff"/><rect x="5" y="7" width="4" height="1" fill="#b9c6cf"/><rect x="9" y="7" width="10" height="1" fill="#ffffff"/><rect x="19" y="7" width="4" height="1" fill="#b9c6cf"/><rect x="23" y="7" width="3" height="1" fill="#ffffff"/><rect x="26" y="7" width="4" height="1" fill="#b9c6cf"/><rect x="30" y="7" width="10" height="1" fill="#ffffff"/><rect x="40" y="7" width="4" height="1" fill="#b9c6cf"/><rect x="44" y="7" width="10" height="1" fill="#ffffff"/><rect x="54" y="7" width="4" height="1" fill="#b9c6cf"/><rect x="58" y="7" width="2" height="1" fill="#ffffff"/><rect x="60" y="7" width="1" height="1" fill="#c58042"/><rect x="61" y="7" width="5" height="1" fill="#ffffff"/><rect x="66" y="7" width="1" height="1" fill="#273e50"/><rect x="2" y="8" width="1" height="1" fill="#273e50"/><rect x="3" y="8" width="2" height="1" fill="#ffffff"/><rect x="5" y="8" width="4" height="1" fill="#b9c6cf"/><rect x="9" y="8" width="10" height="1" fill="#ffffff"/><rect x="19" y="8" width="4" height="1" fill="#b9c6cf"/><rect x="23" y="8" width="3" height="1" fill="#ffffff"/><rect x="26" y="8" width="4" height="1" fill="#b9c6cf"/><rect x="30" y="8" width="10" height="1" fill="#ffffff"/><rect x="40" y="8" width="4" height="1" fill="#b9c6cf"/><rect x="44" y="8" width="10" height="1" fill="#ffffff"/><rect x="54" y="8" width="4" height="1" fill="#b9c6cf"/><rect x="58" y="8" width="8" height="1" fill="#ffffff"/><rect x="66" y="8" width="1" height="1" fill="#273e50"/><rect x="2" y="9" width="1" height="1" fill="#273e50"/><rect x="3" y="9" width="2" height="1" fill="#ffffff"/><rect x="5" y="9" width="4" height="1" fill="#b9c6cf"/><rect x="9" y="9" width="17" height="1" fill="#ffffff"/><rect x="26" y="9" width="4" height="1" fill="#b9c6cf"/><rect x="30" y="9" width="3" height="1" fill="#ffffff"/><rect x="33" y="9" width="1" height="1" fill="#c58042"/><rect x="34" y="9" width="32" height="1" fill="#ffffff"/><rect x="66" y="9" width="1" height="1" fill="#273e50"/><rect x="2" y="10" width="1" height="1" fill="#273e50"/><rect x="3" y="10" width="63" height="1" fill="#ffffff"/><rect x="66" y="10" width="1" height="1" fill="#273e50"/><rect x="2" y="11" width="1" height="1" fill="#273e50"/><rect x="3" y="11" width="5" height="1" fill="#ffffff"/><rect x="8" y="11" width="1" height="1" fill="#c58042"/><rect x="9" y="11" width="57" height="1" fill="#ffffff"/><rect x="66" y="11" width="1" height="1" fill="#273e50"/><rect x="2" y="12" width="1" height="1" fill="#273e50"/><rect x="3" y="12" width="55" height="1" fill="#ffffff"/><rect x="58" y="12" width="1" height="1" fill="#c58042"/><rect x="59" y="12" width="7" height="1" fill="#ffffff"/><rect x="66" y="12" width="1" height="1" fill="#273e50"/><rect x="2" y="13" width="1" height="1" fill="#273e50"/><rect x="3" y="13" width="2" height="1" fill="#ffffff"/><rect x="5" y="13" width="4" height="1" fill="#b9c6cf"/><rect x="9" y="13" width="6" height="1" fill="#ffffff"/><rect x="15" y="13" width="1" height="1" fill="#c58042"/><rect x="16" y="13" width="10" height="1" fill="#ffffff"/><rect x="26" y="13" width="4" height="1" fill="#b9c6cf"/><rect x="30" y="13" width="24" height="1" fill="#ffffff"/><rect x="54" y="13" width="3" height="1" fill="#b9c6cf"/><rect x="57" y="13" width="4" height="1" fill="#ffffff"/><rect x="61" y="13" width="4" height="1" fill="#b9c6cf"/><rect x="65" y="13" width="1" height="1" fill="#ffffff"/><rect x="66" y="13" width="1" height="1" fill="#273e50"/><rect x="2" y="14" width="1" height="1" fill="#273e50"/><rect x="3" y="14" width="2" height="1" fill="#ffffff"/><rect x="5" y="14" width="4" height="1" fill="#b9c6cf"/><rect x="9" y="14" width="5" height="1" fill="#ffffff"/><rect x="14" y="14" width="1" height="1" fill="#c58042"/><rect x="15" y="14" width="4" height="1" fill="#ffffff"/><rect x="19" y="14" width="1" height="1" fill="#c58042"/><rect x="20" y="14" width="6" height="1" fill="#ffffff"/><rect x="26" y="14" width="4" height="1" fill="#b9c6cf"/><rect x="30" y="14" width="24" height="1" fill="#ffffff"/><rect x="54" y="14" width="3" height="1" fill="#b9c6cf"/><rect x="57" y="14" width="4" height="1" fill="#ffffff"/><rect x="61" y="14" width="4" height="1" fill="#b9c6cf"/><rect x="65" y="14" width="1" height="1" fill="#ffffff"/><rect x="66" y="14" width="1" height="1" fill="#273e50"/><rect x="2" y="15" width="1" height="1" fill="#273e50"/><rect x="3" y="15" width="23" height="1" fill="#ffffff"/><rect x="26" y="15" width="4" height="1" fill="#b9c6cf"/><rect x="30" y="15" width="36" height="1" fill="#ffffff"/><rect x="66" y="15" width="1" height="1" fill="#273e50"/><rect x="2" y="16" width="1" height="1" fill="#273e50"/><rect x="3" y="16" width="63" height="1" fill="#ffffff"/><rect x="66" y="16" width="1" height="1" fill="#273e50"/><rect x="2" y="17" width="1" height="1" fill="#273e50"/><rect x="3" y="17" width="56" height="1" fill="#ffffff"/><rect x="59" y="17" width="1" height="1" fill="#c58042"/><rect x="60" y="17" width="6" height="1" fill="#ffffff"/><rect x="66" y="17" width="1" height="1" fill="#273e50"/><rect x="2" y="18" width="1" height="1" fill="#273e50"/><rect x="3" y="18" width="63" height="1" fill="#ffffff"/><rect x="66" y="18" width="1" height="1" fill="#273e50"/><rect x="2" y="19" width="1" height="1" fill="#273e50"/><rect x="3" y="19" width="9" height="1" fill="#ffffff"/><rect x="12" y="19" width="4" height="1" fill="#b9c6cf"/><rect x="16" y="19" width="3" height="1" fill="#ffffff"/><rect x="19" y="19" width="3" height="1" fill="#b9c6cf"/><rect x="22" y="19" width="11" height="1" fill="#ffffff"/><rect x="33" y="19" width="4" height="1" fill="#b9c6cf"/><rect x="37" y="19" width="3" height="1" fill="#ffffff"/><rect x="40" y="19" width="4" height="1" fill="#b9c6cf"/><rect x="44" y="19" width="10" height="1" fill="#ffffff"/><rect x="54" y="19" width="3" height="1" fill="#b9c6cf"/><rect x="57" y="19" width="9" height="1" fill="#ffffff"/><rect x="66" y="19" width="1" height="1" fill="#273e50"/><rect x="2" y="20" width="1" height="1" fill="#273e50"/><rect x="3" y="20" width="9" height="1" fill="#ffffff"/><rect x="12" y="20" width="4" height="1" fill="#b9c6cf"/><rect x="16" y="20" width="3" height="1" fill="#ffffff"/><rect x="19" y="20" width="3" height="1" fill="#b9c6cf"/><rect x="22" y="20" width="11" height="1" fill="#ffffff"/><rect x="33" y="20" width="4" height="1" fill="#b9c6cf"/><rect x="37" y="20" width="3" height="1" fill="#ffffff"/><rect x="40" y="20" width="4" height="1" fill="#b9c6cf"/><rect x="44" y="20" width="10" height="1" fill="#ffffff"/><rect x="54" y="20" width="3" height="1" fill="#b9c6cf"/><rect x="57" y="20" width="1" height="1" fill="#ffffff"/><rect x="58" y="20" width="1" height="1" fill="#c58042"/><rect x="59" y="20" width="7" height="1" fill="#ffffff"/><rect x="66" y="20" width="1" height="1" fill="#273e50"/><rect x="2" y="21" width="1" height="1" fill="#273e50"/><rect x="3" y="21" width="16" height="1" fill="#ffffff"/><rect x="19" y="21" width="3" height="1" fill="#b9c6cf"/><rect x="22" y="21" width="32" height="1" fill="#ffffff"/><rect x="54" y="21" width="3" height="1" fill="#b9c6cf"/><rect x="57" y="21" width="9" height="1" fill="#ffffff"/><rect x="66" y="21" width="1" height="1" fill="#273e50"/><rect x="2" y="22" width="1" height="1" fill="#273e50"/><rect x="3" y="22" width="59" height="1" fill="#ffffff"/><rect x="62" y="22" width="1" height="1" fill="#c58042"/><rect x="63" y="22" width="3" height="1" fill="#ffffff"/><rect x="66" y="22" width="1" height="1" fill="#273e50"/><rect x="2" y="23" width="29" height="1" fill="#273e50"/><rect x="31" y="23" width="35" height="1" fill="#ffffff"/><rect x="66" y="23" width="1" height="1" fill="#273e50"/><rect x="31" y="24" width="1" height="1" fill="#273e50"/><rect x="32" y="24" width="34" height="1" fill="#ffffff"/><rect x="66" y="24" width="1" height="1" fill="#273e50"/><rect x="31" y="25" width="1" height="1" fill="#273e50"/><rect x="32" y="25" width="8" height="1" fill="#ffffff"/><rect x="40" y="25" width="3" height="1" fill="#b9c6cf"/><rect x="43" y="25" width="11" height="1" fill="#ffffff"/><rect x="54" y="25" width="3" height="1" fill="#b9c6cf"/><rect x="57" y="25" width="4" height="1" fill="#ffffff"/><rect x="61" y="25" width="4" height="1" fill="#b9c6cf"/><rect x="65" y="25" width="1" height="1" fill="#ffffff"/><rect x="66" y="25" width="1" height="1" fill="#273e50"/><rect x="31" y="26" width="1" height="1" fill="#273e50"/><rect x="32" y="26" width="8" height="1" fill="#ffffff"/><rect x="40" y="26" width="3" height="1" fill="#b9c6cf"/><rect x="43" y="26" width="7" height="1" fill="#ffffff"/><rect x="50" y="26" width="1" height="1" fill="#c58042"/><rect x="51" y="26" width="3" height="1" fill="#ffffff"/><rect x="54" y="26" width="3" height="1" fill="#b9c6cf"/><rect x="57" y="26" width="4" height="1" fill="#ffffff"/><rect x="61" y="26" width="4" height="1" fill="#b9c6cf"/><rect x="65" y="26" width="1" height="1" fill="#ffffff"/><rect x="66" y="26" width="1" height="1" fill="#273e50"/><rect x="31" y="27" width="1" height="1" fill="#273e50"/><rect x="32" y="27" width="22" height="1" fill="#ffffff"/><rect x="54" y="27" width="3" height="1" fill="#b9c6cf"/><rect x="57" y="27" width="9" height="1" fill="#ffffff"/><rect x="66" y="27" width="1" height="1" fill="#273e50"/><rect x="31" y="28" width="1" height="1" fill="#273e50"/><rect x="32" y="28" width="34" height="1" fill="#ffffff"/><rect x="66" y="28" width="1" height="1" fill="#273e50"/><rect x="31" y="29" width="1" height="1" fill="#273e50"/><rect x="32" y="29" width="34" height="1" fill="#ffffff"/><rect x="66" y="29" width="1" height="1" fill="#273e50"/><rect x="31" y="30" width="1" height="1" fill="#273e50"/><rect x="32" y="30" width="8" height="1" fill="#ffffff"/><rect x="40" y="30" width="1" height="1" fill="#c58042"/><rect x="41" y="30" width="25" height="1" fill="#ffffff"/><rect x="66" y="30" width="1" height="1" fill="#273e50"/><rect x="31" y="31" width="1" height="1" fill="#273e50"/><rect x="32" y="31" width="34" height="1" fill="#ffffff"/><rect x="66" y="31" width="1" height="1" fill="#273e50"/><rect x="31" y="32" width="1" height="1" fill="#273e50"/><rect x="32" y="32" width="34" height="1" fill="#ffffff"/><rect x="66" y="32" width="1" height="1" fill="#273e50"/><rect x="31" y="33" width="1" height="1" fill="#273e50"/><rect x="32" y="33" width="34" height="1" fill="#ffffff"/><rect x="66" y="33" width="1" height="1" fill="#273e50"/><rect x="31" y="34" width="1" height="1" fill="#273e50"/><rect x="32" y="34" width="34" height="1" fill="#ffffff"/><rect x="66" y="34" width="1" height="1" fill="#273e50"/><rect x="23" y="35" width="8" height="1" fill="#273e50"/><rect x="31" y="35" width="21" height="1" fill="#ffffff"/><rect x="52" y="35" width="1" height="1" fill="#c58042"/><rect x="53" y="35" width="14" height="1" fill="#ffffff"/><rect x="67" y="35" width="27" height="1" fill="#273e50"/><rect x="23" y="36" width="1" height="1" fill="#273e50"/><rect x="24" y="36" width="69" height="1" fill="#ffffff"/><rect x="93" y="36" width="1" height="1" fill="#273e50"/><rect x="23" y="37" width="1" height="1" fill="#273e50"/><rect x="24" y="37" width="2" height="1" fill="#ffffff"/><rect x="26" y="37" width="3" height="1" fill="#b9c6cf"/><rect x="29" y="37" width="4" height="1" fill="#ffffff"/><rect x="33" y="37" width="4" height="1" fill="#b9c6cf"/><rect x="37" y="37" width="17" height="1" fill="#ffffff"/><rect x="54" y="37" width="3" height="1" fill="#b9c6cf"/><rect x="57" y="37" width="4" height="1" fill="#ffffff"/><rect x="61" y="37" width="3" height="1" fill="#b9c6cf"/><rect x="64" y="37" width="4" height="1" fill="#ffffff"/><rect x="68" y="37" width="4" height="1" fill="#b9c6cf"/><rect x="72" y="37" width="3" height="1" fill="#ffffff"/><rect x="75" y="37" width="3" height="1" fill="#b9c6cf"/><rect x="78" y="37" width="15" height="1" fill="#ffffff"/><rect x="93" y="37" width="1" height="1" fill="#273e50"/><rect x="23" y="38" width="1" height="1" fill="#273e50"/><rect x="24" y="38" width="2" height="1" fill="#ffffff"/><rect x="26" y="38" width="3" height="1" fill="#b9c6cf"/><rect x="29" y="38" width="4" height="1" fill="#ffffff"/><rect x="33" y="38" width="4" height="1" fill="#b9c6cf"/><rect x="37" y="38" width="17" height="1" fill="#ffffff"/><rect x="54" y="38" width="3" height="1" fill="#b9c6cf"/><rect x="57" y="38" width="1" height="1" fill="#c58042"/><rect x="58" y="38" width="3" height="1" fill="#ffffff"/><rect x="61" y="38" width="3" height="1" fill="#b9c6cf"/><rect x="64" y="38" width="4" height="1" fill="#ffffff"/><rect x="68" y="38" width="4" height="1" fill="#b9c6cf"/><rect x="72" y="38" width="3" height="1" fill="#ffffff"/><rect x="75" y="38" width="3" height="1" fill="#b9c6cf"/><rect x="78" y="38" width="15" height="1" fill="#ffffff"/><rect x="93" y="38" width="1" height="1" fill="#273e50"/><rect x="23" y="39" width="1" height="1" fill="#273e50"/><rect x="24" y="39" width="2" height="1" fill="#ffffff"/><rect x="26" y="39" width="3" height="1" fill="#b9c6cf"/><rect x="29" y="39" width="4" height="1" fill="#ffffff"/><rect x="33" y="39" width="4" height="1" fill="#b9c6cf"/><rect x="37" y="39" width="56" height="1" fill="#ffffff"/><rect x="93" y="39" width="1" height="1" fill="#273e50"/><rect x="23" y="40" width="1" height="1" fill="#273e50"/><rect x="24" y="40" width="69" height="1" fill="#ffffff"/><rect x="93" y="40" width="1" height="1" fill="#273e50"/><rect x="23" y="41" width="1" height="1" fill="#273e50"/><rect x="24" y="41" width="69" height="1" fill="#ffffff"/><rect x="93" y="41" width="1" height="1" fill="#273e50"/><rect x="23" y="42" width="1" height="1" fill="#273e50"/><rect x="24" y="42" width="69" height="1" fill="#ffffff"/><rect x="93" y="42" width="1" height="1" fill="#273e50"/><rect x="23" y="43" width="1" height="1" fill="#273e50"/><rect x="24" y="43" width="2" height="1" fill="#ffffff"/><rect x="26" y="43" width="3" height="1" fill="#b9c6cf"/><rect x="29" y="43" width="4" height="1" fill="#ffffff"/><rect x="33" y="43" width="3" height="1" fill="#b9c6cf"/><rect x="36" y="43" width="4" height="1" fill="#ffffff"/><rect x="40" y="43" width="3" height="1" fill="#b9c6cf"/><rect x="43" y="43" width="18" height="1" fill="#ffffff"/><rect x="61" y="43" width="4" height="1" fill="#b9c6cf"/><rect x="65" y="43" width="17" height="1" fill="#ffffff"/><rect x="82" y="43" width="4" height="1" fill="#b9c6cf"/><rect x="86" y="43" width="7" height="1" fill="#ffffff"/><rect x="93" y="43" width="1" height="1" fill="#273e50"/><rect x="23" y="44" width="1" height="1" fill="#273e50"/><rect x="24" y="44" width="2" height="1" fill="#ffffff"/><rect x="26" y="44" width="3" height="1" fill="#b9c6cf"/><rect x="29" y="44" width="4" height="1" fill="#ffffff"/><rect x="33" y="44" width="3" height="1" fill="#b9c6cf"/><rect x="36" y="44" width="4" height="1" fill="#ffffff"/><rect x="40" y="44" width="3" height="1" fill="#b9c6cf"/><rect x="43" y="44" width="18" height="1" fill="#ffffff"/><rect x="61" y="44" width="4" height="1" fill="#b9c6cf"/><rect x="65" y="44" width="10" height="1" fill="#ffffff"/><rect x="75" y="44" width="1" height="1" fill="#c58042"/><rect x="76" y="44" width="6" height="1" fill="#ffffff"/><rect x="82" y="44" width="4" height="1" fill="#b9c6cf"/><rect x="86" y="44" width="7" height="1" fill="#ffffff"/><rect x="93" y="44" width="1" height="1" fill="#273e50"/><rect x="23" y="45" width="1" height="1" fill="#273e50"/><rect x="24" y="45" width="2" height="1" fill="#ffffff"/><rect x="26" y="45" width="3" height="1" fill="#b9c6cf"/><rect x="29" y="45" width="11" height="1" fill="#ffffff"/><rect x="40" y="45" width="3" height="1" fill="#b9c6cf"/><rect x="43" y="45" width="18" height="1" fill="#ffffff"/><rect x="61" y="45" width="4" height="1" fill="#b9c6cf"/><rect x="65" y="45" width="17" height="1" fill="#ffffff"/><rect x="82" y="45" width="4" height="1" fill="#b9c6cf"/><rect x="86" y="45" width="7" height="1" fill="#ffffff"/><rect x="93" y="45" width="1" height="1" fill="#273e50"/><rect x="23" y="46" width="1" height="1" fill="#273e50"/><rect x="24" y="46" width="42" height="1" fill="#ffffff"/><rect x="66" y="46" width="1" height="1" fill="#c58042"/><rect x="67" y="46" width="26" height="1" fill="#ffffff"/><rect x="93" y="46" width="1" height="1" fill="#273e50"/><rect x="23" y="47" width="1" height="1" fill="#273e50"/><rect x="24" y="47" width="69" height="1" fill="#ffffff"/><rect x="93" y="47" width="1" height="1" fill="#273e50"/><rect x="23" y="48" width="1" height="1" fill="#273e50"/><rect x="24" y="48" width="69" height="1" fill="#ffffff"/><rect x="93" y="48" width="1" height="1" fill="#273e50"/><rect x="23" y="49" width="1" height="1" fill="#273e50"/><rect x="24" y="49" width="9" height="1" fill="#ffffff"/><rect x="33" y="49" width="4" height="1" fill="#b9c6cf"/><rect x="37" y="49" width="3" height="1" fill="#ffffff"/><rect x="40" y="49" width="3" height="1" fill="#b9c6cf"/><rect x="43" y="49" width="11" height="1" fill="#ffffff"/><rect x="54" y="49" width="4" height="1" fill="#b9c6cf"/><rect x="58" y="49" width="3" height="1" fill="#ffffff"/><rect x="61" y="49" width="4" height="1" fill="#b9c6cf"/><rect x="65" y="49" width="3" height="1" fill="#ffffff"/><rect x="68" y="49" width="4" height="1" fill="#b9c6cf"/><rect x="72" y="49" width="3" height="1" fill="#ffffff"/><rect x="75" y="49" width="3" height="1" fill="#b9c6cf"/><rect x="78" y="49" width="15" height="1" fill="#ffffff"/><rect x="93" y="49" width="1" height="1" fill="#273e50"/><rect x="23" y="50" width="1" height="1" fill="#273e50"/><rect x="24" y="50" width="9" height="1" fill="#ffffff"/><rect x="33" y="50" width="4" height="1" fill="#b9c6cf"/><rect x="37" y="50" width="3" height="1" fill="#ffffff"/><rect x="40" y="50" width="3" height="1" fill="#b9c6cf"/><rect x="43" y="50" width="11" height="1" fill="#ffffff"/><rect x="54" y="50" width="4" height="1" fill="#b9c6cf"/><rect x="58" y="50" width="3" height="1" fill="#ffffff"/><rect x="61" y="50" width="4" height="1" fill="#b9c6cf"/><rect x="65" y="50" width="3" height="1" fill="#ffffff"/><rect x="68" y="50" width="4" height="1" fill="#b9c6cf"/><rect x="72" y="50" width="3" height="1" fill="#ffffff"/><rect x="75" y="50" width="3" height="1" fill="#b9c6cf"/><rect x="78" y="50" width="15" height="1" fill="#ffffff"/><rect x="93" y="50" width="1" height="1" fill="#273e50"/><rect x="23" y="51" width="1" height="1" fill="#273e50"/><rect x="24" y="51" width="16" height="1" fill="#ffffff"/><rect x="40" y="51" width="3" height="1" fill="#b9c6cf"/><rect x="43" y="51" width="11" height="1" fill="#ffffff"/><rect x="54" y="51" width="4" height="1" fill="#b9c6cf"/><rect x="58" y="51" width="10" height="1" fill="#ffffff"/><rect x="68" y="51" width="4" height="1" fill="#b9c6cf"/><rect x="72" y="51" width="1" height="1" fill="#ffffff"/><rect x="73" y="51" width="1" height="1" fill="#c58042"/><rect x="74" y="51" width="19" height="1" fill="#ffffff"/><rect x="93" y="51" width="1" height="1" fill="#273e50"/><rect x="23" y="52" width="1" height="1" fill="#273e50"/><rect x="24" y="52" width="29" height="1" fill="#ffffff"/><rect x="53" y="52" width="1" height="1" fill="#c58042"/><rect x="54" y="52" width="28" height="1" fill="#ffffff"/><rect x="82" y="52" width="1" height="1" fill="#c58042"/><rect x="83" y="52" width="10" height="1" fill="#ffffff"/><rect x="93" y="52" width="1" height="1" fill="#273e50"/><rect x="23" y="53" width="1" height="1" fill="#273e50"/><rect x="24" y="53" width="69" height="1" fill="#ffffff"/><rect x="93" y="53" width="1" height="1" fill="#273e50"/><rect x="23" y="54" width="1" height="1" fill="#273e50"/><rect x="24" y="54" width="69" height="1" fill="#ffffff"/><rect x="93" y="54" width="1" height="1" fill="#273e50"/><rect x="23" y="55" width="1" height="1" fill="#273e50"/><rect x="24" y="55" width="37" height="1" fill="#ffffff"/><rect x="61" y="55" width="4" height="1" fill="#b9c6cf"/><rect x="65" y="55" width="10" height="1" fill="#ffffff"/><rect x="75" y="55" width="4" height="1" fill="#b9c6cf"/><rect x="79" y="55" width="14" height="1" fill="#ffffff"/><rect x="93" y="55" width="1" height="1" fill="#273e50"/><rect x="23" y="56" width="1" height="1" fill="#273e50"/><rect x="24" y="56" width="37" height="1" fill="#ffffff"/><rect x="61" y="56" width="4" height="1" fill="#b9c6cf"/><rect x="65" y="56" width="10" height="1" fill="#ffffff"/><rect x="75" y="56" width="4" height="1" fill="#b9c6cf"/><rect x="79" y="56" width="14" height="1" fill="#ffffff"/><rect x="93" y="56" width="1" height="1" fill="#273e50"/><rect x="23" y="57" width="1" height="1" fill="#273e50"/><rect x="24" y="57" width="51" height="1" fill="#ffffff"/><rect x="75" y="57" width="4" height="1" fill="#b9c6cf"/><rect x="79" y="57" width="14" height="1" fill="#ffffff"/><rect x="93" y="57" width="1" height="1" fill="#273e50"/><rect x="23" y="58" width="1" height="1" fill="#273e50"/><rect x="24" y="58" width="69" height="1" fill="#ffffff"/><rect x="93" y="58" width="1" height="1" fill="#273e50"/><rect x="23" y="59" width="1" height="1" fill="#273e50"/><rect x="24" y="59" width="69" height="1" fill="#ffffff"/><rect x="93" y="59" width="1" height="1" fill="#273e50"/><rect x="23" y="60" width="1" height="1" fill="#273e50"/><rect x="24" y="60" width="69" height="1" fill="#ffffff"/><rect x="93" y="60" width="1" height="1" fill="#273e50"/><rect x="23" y="61" width="71" height="1" fill="#273e50"/><rect x="24.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="25.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="26.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="27.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="28.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="29.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="30.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="31.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="32.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="33.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="34.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="35.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="36.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="37.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="38.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="39.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="40.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="41.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="42.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="43.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="44.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="45.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="46.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="47.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="48.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="49.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="50.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="51.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="52.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="53.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="54.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="55.14" y="58.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="5.14" y="21.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="6.14" y="21.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="90.14" y="37.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="90.14" y="38.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="25.14" y="52.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="26.14" y="52.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="64.14" y="7.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><rect x="64.14" y="8.14" width=".72" height=".72" rx=".16" fill="#e5ddf5" stroke="#8973b5" stroke-width=".12"/><circle cx="5.5" cy="6.5" r=".36" fill="#1863b4"/><circle cx="19.5" cy="6.5" r=".36" fill="#1863b4"/><circle cx="26.5" cy="6.5" r=".36" fill="#1863b4"/><circle cx="40.5" cy="6.5" r=".36" fill="#1863b4"/><circle cx="54.5" cy="6.5" r=".36" fill="#1863b4"/><circle cx="5.5" cy="12.5" r=".36" fill="#1863b4"/><circle cx="26.5" cy="12.5" r=".36" fill="#1863b4"/><circle cx="54.5" cy="12.5" r=".36" fill="#1863b4"/><circle cx="61.5" cy="12.5" r=".36" fill="#1863b4"/><circle cx="12.5" cy="18.5" r=".36" fill="#1863b4"/><circle cx="19.5" cy="18.5" r=".36" fill="#1863b4"/><circle cx="33.5" cy="18.5" r=".36" fill="#1863b4"/><circle cx="40.5" cy="18.5" r=".36" fill="#1863b4"/><circle cx="54.5" cy="18.5" r=".36" fill="#1863b4"/><circle cx="40.5" cy="24.5" r=".36" fill="#1863b4"/><circle cx="54.5" cy="24.5" r=".36" fill="#1863b4"/><circle cx="61.5" cy="24.5" r=".36" fill="#1863b4"/><circle cx="26.5" cy="36.5" r=".36" fill="#1863b4"/><circle cx="33.5" cy="36.5" r=".36" fill="#1863b4"/><circle cx="54.5" cy="36.5" r=".36" fill="#1863b4"/><circle cx="61.5" cy="36.5" r=".36" fill="#1863b4"/><circle cx="68.5" cy="36.5" r=".36" fill="#1863b4"/><circle cx="75.5" cy="36.5" r=".36" fill="#1863b4"/><circle cx="26.5" cy="42.5" r=".36" fill="#1863b4"/><circle cx="33.5" cy="42.5" r=".36" fill="#1863b4"/><circle cx="40.5" cy="42.5" r=".36" fill="#1863b4"/><circle cx="61.5" cy="42.5" r=".36" fill="#1863b4"/><circle cx="82.5" cy="42.5" r=".36" fill="#1863b4"/><circle cx="33.5" cy="48.5" r=".36" fill="#1863b4"/><circle cx="40.5" cy="48.5" r=".36" fill="#1863b4"/><circle cx="54.5" cy="48.5" r=".36" fill="#1863b4"/><circle cx="61.5" cy="48.5" r=".36" fill="#1863b4"/><circle cx="68.5" cy="48.5" r=".36" fill="#1863b4"/><circle cx="75.5" cy="48.5" r=".36" fill="#1863b4"/><circle cx="61.5" cy="54.5" r=".36" fill="#1863b4"/><circle cx="75.5" cy="54.5" r=".36" fill="#1863b4"/><rect x="25.13" y="55.13" width=".74" height=".74" fill="#a35d16"/><rect x="28.13" y="55.13" width=".74" height=".74" fill="#a35d16"/><rect x="41.13" y="55.13" width=".74" height=".74" fill="#a35d16"/><rect x="55.13" y="55.13" width=".74" height=".74" fill="#a35d16"/><rect x="69.13" y="58.13" width=".74" height=".74" fill="#a35d16"/><rect x="82.13" y="58.13" width=".74" height=".74" fill="#a35d16"/><circle cx="24.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="25.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="26.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="27.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="28.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="29.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="30.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="31.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="32.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="33.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="34.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="35.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="36.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="37.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="38.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/><circle cx="39.5" cy="58.5" r=".39" fill="#097f72" stroke="white" stroke-width=".12"/></svg></div><figcaption>随机组合布局 <span>种子 20261019</span></figcaption></figure></div><p class="map-shape-list">覆盖规整、L 形、T 形、U 形、庭院、组合房间、随机组合布局</p></article>
+ <div class="six-results"><div class="six-stat-grid"><article class="stat-card"><div class="mini">任务分配 / 路径规划 / 执行检查</div><strong>1,715<span> 项</span></strong><h2>核心检查全部通过</h2></article><article class="stat-card"><div class="mini">14 张随机生成地图 · 4 / 16 台</div><strong>28<span> / 28</span></strong><h2>主场景全部完成</h2></article></div><article class="panel six-scale"><div class="mini">32 台规模测试 · 每例 64 项任务 · 单次规划预算 3 秒</div><div class="test-row"><h2>8 组测试，完成 5 组</h2><strong>5 / 8</strong></div><div class="segments"><i></i><i></i><i></i><i></i><i></i><i class="incomplete"></i><i class="incomplete"></i><i class="incomplete"></i></div><p class="fine">其余 3 组在预算内安全暂停；保留初次测试结果。</p></article></div>
+</div>
+<div class="audit-band"><div><strong>50</strong><span>份轨迹</span></div><div><strong>16,634</strong><span>实际执行时间步</span></div><p>轨迹检查未发现碰撞、穿过障碍、装卸异常或执行步数超限。<br><span>运行是否安全、任务是否完成，分别检查。</span></p></div>
+<div class="bottom">图示来自已有报告中的真实测试地图；随机生成布局，固定种子复现测试。</div></section>
+        <section class="slide" id="slide7" aria-label="Agent 测试与 D07 修复">
+            <div class="eyebrow">07 / AGENT TESTING</div>
+            <h1>Agent 测试：常用操作与问题修复</h1>
+            <p class="subtitle">既检查任务有没有真正执行，也核对助手的回答与实际状态是否一致。</p>
+            <div class="agent-overview">
+                <article class="panel everyday">
+                    <div class="mini">常用业务操作 · A、B 两组</div>
+                    <div class="everyday-score"><strong>60 <span>/ 60 段</span></strong><span class="pill">全部通过</span>
+                    </div>
+                    <p>下单、地点识别、查询、提级、装货前取消</p>
+                </article>
+                <article class="panel matrix-summary">
+                    <div class="summary-heading">
+                        <h2>原主矩阵</h2><span>已执行 <b>157 / 180</b> 段</span>
+                    </div>
+                    <div class="agent-counts">
+                        <div><strong>146</strong><span>通过</span></div>
+                        <div class="count-fail"><strong>10</strong><span>失败</span></div>
+                        <div><strong>1</strong><span>未完结</span></div>
+                        <div><strong>23</strong><span>未运行</span></div>
+                    </div>
+                  
+                </article>
+            </div>
+            <div class="agent-lessons">
+                <article class="panel incident">
+                    <div class="lesson-label orange">测试发现的问题 · D07</div>
+                    <h2>没说清是哪一单，却取消了任务</h2>
+                    <p>清空对话、没有关联任务时，用户说：</p>
+                    <blockquote>“刚才那个，取消掉。”</blockquote>
+                    <p>模型查询后，把唯一的 T001 直接取消了。<br><strong>查到任务，不等于用户选中了它。</strong></p>
+                </article>
+                <article class="panel resolution">
+                    <div class="lesson-label teal">怎么解决</div>
+                    <h2>取消前，先由程序核对目标</h2>
+                    <p>只允许取消本轮明确给出编号，或界面关联的任务。<br>查询结果、旧对话不能扩大范围；有未指定的目标，整批不执行。</p>
+                    <div class="retest-strip"><span>修复后三轮真实模型复测</span><strong>三类检查各 3 / 3 通过</strong></div>
+                    <p class="fine">模糊指令先追问；明确编号、界面关联均正常取消。<br>另用离线模拟的错误调用，验证程序会在执行前拦截。</p>
+                </article>
+            </div>
+            <div class="agent-batch-note">D07 真实模型复测中主动澄清，无任务写入；原主矩阵尚有未完成项，专项通过不等于全量验收通过。</div>
+        </section>
+        <footer class="footer">
+            <nav class="dots" aria-label="选择讲解页"><button aria-label="第 1 页：从需求到机器人执行" title="从需求到机器人执行"></button><button
+                    aria-label="第 2 页：Agent 怎样操作系统" title="Agent 怎样操作系统"></button><button aria-label="第 3 页：任务怎么分给机器人"
+                    title="任务怎么分给机器人"></button><button aria-label="第 4 页：多台机器人怎样协调路线"
+                    title="多台机器人怎样协调路线"></button><button aria-label="第 5 页：路线算好后，再检查一遍"
+                    title="路线算好后，再检查一遍"></button><button aria-label="第 6 页：算法测试结果" title="算法测试结果"></button><button
+                    aria-label="第 7 页：Agent 测试与 D07 修复" title="Agent 测试与 D07 修复"></button></nav><span class="page"><b
+                    id="pageNumber">01</b> / 07</span>
+        </footer>
+    </main>
+    <nav id="toolbar" aria-label="播放控制"><button id="prevBtn">上一页</button><button id="nextBtn">下一页</button><span
+            id="clock">00:00</span><button id="timerBtn">开始计时</button><button id="autoBtn">自动播放</button><button
+            id="pauseBtn">暂停动画</button><button id="notesBtn">讲稿</button><button id="fullscreenBtn">全屏</button><button
+            id="recordBtn">录制模式</button><button id="helpBtn">帮助</button></nav>
+    <aside id="notes" aria-label="当前页讲稿">
+        <header><span id="notesMeta"></span><button id="closeNotes" aria-label="关闭讲稿">×</button></header>
+        <h3 id="notesTitle"></h3>
+        <p class="cue" id="notesCue"></p>
+        <p id="notesText"></p>
+    </aside>
+    <div id="help">
+        <div class="help-card">
+            <h2>录制前快速设置</h2>
+            <p>浏览器缩放 100%；推荐 1920 × 1080 录制。</p>
+            <p>按 <b>F</b> 全屏，底部控制栏自动隐藏。<br>按 <b>→ / 空格</b> 翻页，<b>←</b> 回退；<b>Home</b> 回首页。</p>
+            <p><b>N</b> 显示讲稿；<b>T</b> 计时；<b>A</b> 按 4 分钟预算自动翻页；<b>P</b> 暂停动画。<br>退出全屏后恢复控制栏；<b>H</b> 打开本说明。</p>
+            <p>默认手动翻页；自动播放为可选功能。示意动画不代表实测轨迹。</p>
+            <p>核对入口：<a href="../AWCS_测试报告.html" target="_blank" rel="noopener">综合测试报告</a> · <a
+                    href="../test_res/测试结论.md" target="_blank" rel="noopener">统一测试结论</a><br>配套讲稿：<a
+                    href="05_关键技术与测试_配套讲稿.md" target="_blank" rel="noopener">Markdown 文件</a></p><button
+                id="closeHelp">开始讲解</button>
+        </div>
+    </div>
+    <script>
+        'use strict';
+        const notes=[["从需求到机器人执行", 18, "接在功能演示后，顺着三张卡片介绍下面要讲的内容。", "刚才我们展示了 AWCS 的主要功能。接下来，介绍一下这些功能是怎么实现的，以及测试结果怎么样。整个系统主要做三件事：让 Agent 理解用户的需求，把任务分给合适的机器人，再协调它们的路线，完成搬运。"], ["Agent 怎样操作系统", 31, "顺着上方流程说明 Agent 如何操作系统，再指向下方取消任务的检查规则。", "首先是 AI 业务助手。Agent 把用户的需求转化为工具调用，比如创建任务、查询进度或取消任务。程序检查地点和任务状态，执行后反馈结果，助手再据此回答。导入文档时，先生成任务草稿，用户核对并确认后才创建。取消任务前，还要检查用户指定了哪一单：没有明确编号，也没有关联任务，就先问清楚。批量取消中，只要有一项没指定清楚，整批都不会执行。"], ["任务怎么分给机器人", 39, "先说明分配顺序，再用右侧的 10 和 6 解释整体匹配的作用。", "第二是任务分配。系统先检查哪些机器人能接哪些任务，比如有没有人工指定、机器人是否正在载货。接着按五级到一级的顺序，优先安排高等级任务，再考虑机器人偏好、预计完成时间和任务先后。代码会根据当前任务计算权重，保证紧急任务不会因为路程远，就被普通任务挤掉。然后用匈牙利算法，把机器人和待分配任务放在一起，做一次整体匹配。右边这个例子里，两项任务紧急程度相同。如果逐个就近分配，总代价是十；一起考虑，就能降到六。这种整体匹配可以避免只顾眼前最近的一单。"], ["多台机器人怎样协调路线", 41, "配合路口动画说明为什么要等待，再指向预约代码和下方规划流程。", "第三是多机器人路径协调。每台车各走最短路，还是可能在路口撞到一起，所以要安排谁先走、谁等一下。我们采用时空预约表，记录每个路径点什么时候被占用，防止两台车同时进入，或迎面交换位置。动画中，蓝车等一步，两台车就能错开。SIPP 会在格子可以通行的时间段里搜索路线；另外，装卸需要停留，这段时间内，位置也要纳入考虑。右边三处代码分别处理格子占用、迎面换位和终点停车。如果有车被前面的路线挡住，系统会尝试调整规划顺序，必要时用局部 CBS 协调几台相关机器人的路线。"], ["路线算好后，再检查一遍", 27, "沿上方流程讲解，最后说明下方继续运行和暂停两种情况。", "路线算好后，还要检查一遍。规划在独立进程里运行，主程序先确认计算期间的状态有没有变化，已经过期的结果就不再采用。接着检查所有路线，排除碰撞、穿过障碍等问题。如果规定时间内没算出新方案，而原有路线仍然安全、也满足继续运行的条件，就沿原路线再走一段；否则先暂停，保留任务，等待调整或重试。"], ["在随机地图上测试算法", 38, "先介绍左侧两张真实测试地图和随机种子，再看右侧通过情况，最后带过下方轨迹检查。", "再来看算法测试。我们用地图生成器，按七类布局、两组随机种子，生成了十四张不同地图，覆盖不同的货架、通道和障碍分布。地图随机生成，种子固定下来，也方便重复测试。每张图分别用四台和十六台机器人运行，二十八个主场景全部完成。一千七百一十五项核心检查也全部通过。三十二台的八组测试完成了五组，另外三组在规定时间内没算出新方案，系统安全暂停。五十份运行轨迹的复查中，没有发现检查范围内的碰撞、穿过障碍或装卸异常。"], ["Agent 测试与 D07 修复", 46, "先介绍上方测试结果，再用下方两张卡片说明 D07 和修复办法。", "最后看 Agent 测试。下单、查询、提级和装货前取消等常用操作，六十段测试全部通过。整体测试已运行一百五十七段，其中一百四十六段通过，其他结果列在这里。测试也发现了 D07：清空对话后，用户只说“刚才那个，取消掉”，模型却把查到的唯一任务 T001 直接取消了。我们在执行前加了一道检查：用户明确给出任务编号，或在界面关联了任务，程序才允许取消；查询结果不能代替用户选择。修复后的三轮复测里，模糊指令都会先追问；明确编号和界面关联的任务，都能正常取消。另外还模拟了错误调用，确认程序会拦住未指定目标的取消操作。以上就是我们的项目介绍，谢谢。"]];
+        const slides = [...document.querySelectorAll('.slide')], dots = [...document.querySelectorAll('.dots button')];
+        const $ = id => document.getElementById(id);
+        let current = 0, auto = false, paused = false, timerRunning = false, elapsed = 0, last = performance.now(), pageElapsed = 0, frame = 0;
+        function resize() { document.documentElement.style.setProperty('--scale', Math.min(innerWidth / 1600, innerHeight / 900)); }
+        function syncFullscreen() { const browserFullscreen = Math.abs(innerHeight - screen.height) <= 2 && Math.abs(innerWidth - screen.width) <= 2; document.body.classList.toggle('fullscreen-view', Boolean(document.fullscreenElement) || browserFullscreen); }
+        addEventListener('resize', () => { resize(); syncFullscreen(); }); document.addEventListener('fullscreenchange', syncFullscreen); resize(); syncFullscreen();
+        function show(index, updateHash = true) { current = Math.max(0, Math.min(slides.length - 1, index)); slides.forEach((s, i) => { s.classList.toggle('active', i === current); s.setAttribute('aria-hidden', String(i !== current)); }); dots.forEach((d, i) => d.setAttribute('aria-current', String(i === current))); $('pageNumber').textContent = String(current + 1).padStart(2, '0'); $('notesMeta').textContent = `第 ${current + 1} / 7 页 · 建议 ${notes[current][1]} 秒`; $('notesTitle').textContent = notes[current][0]; $('notesCue').textContent = notes[current][2]; $('notesText').textContent = notes[current][3]; $('prevBtn').disabled = current === 0; $('nextBtn').disabled = current === 6; pageElapsed = 0; frame = 0; drawPath(); drawMatching(); if (updateHash) history.replaceState(null, '', '#' + (current + 1)); }
+        function next() { if (current < 6) show(current + 1); else { auto = false; timerRunning = false; syncControls(); } }
+        function syncControls() { $('timerBtn').textContent = timerRunning ? '暂停计时' : '开始计时'; $('timerBtn').classList.toggle('on', timerRunning); $('autoBtn').classList.toggle('on', auto); $('autoBtn').textContent = auto ? '停止自动' : '自动播放'; }
+        function toggleTimer() { timerRunning = !timerRunning; if (!timerRunning) auto = false; syncControls(); }
+        function toggleAuto() { auto = !auto; if (auto) { if (current === 6) { show(0); elapsed = 0; } pageElapsed = 0; timerRunning = true; } syncControls(); }
+        function togglePause() { paused = !paused; document.body.classList.toggle('paused', paused); $('pauseBtn').textContent = paused ? '继续动画' : '暂停动画'; $('pauseBtn').classList.toggle('on', paused); }
+        function toggleNotes() { document.body.classList.remove('recording'); $('notes').classList.toggle('open'); }
+        function toggleRecord() { const entering = !document.body.classList.contains('recording'); document.body.classList.toggle('recording', entering); if (entering) { $('notes').classList.remove('open'); $('help').classList.remove('open'); } }
+        async function toggleFullscreen() { try { if (!document.fullscreenElement) await document.documentElement.requestFullscreen(); else await document.exitFullscreen(); } catch { document.body.classList.remove('recording'); $('help').classList.add('open'); } }
+        function drawMatching() { const global = Math.floor(frame / 4500) % 2 === 1;['m00', 'm01', 'm10', 'm11'].forEach(id => $(id).className = ''); (global ? ['m01', 'm10'] : ['m00', 'm11']).forEach(id => $(id).className = global ? 'selected' : 'greedy'); $('matchMode').textContent = global ? '整体匹配' : '逐个就近'; $('matchText').textContent = global ? 'R1 → B，R2 → A' : 'R1 → A，R2 → B'; $('matchCost').textContent = global ? '6' : '10'; $('matchCost').style.color = global ? 'var(--lime)' : 'var(--orange)'; }
+        function drawPath() { const tick = Math.floor(frame / 1500) % 7, ax = [1, 2, 3, 4, 5, 6, 6][tick], by = [0, 1, 1, 2, 3, 4, 4][tick]; $('robotA').setAttribute('transform', `translate(${145 + 65 * ax},145)`); $('robotB').setAttribute('transform', `translate(340,${45 + 50 * by})`); $('tick').textContent = tick; $('reservationCell').setAttribute('opacity', tick === 2 ? '.4' : '.08'); $('mapState').textContent = ['A 与 B 接近交叉口', '下一步若同时进路口，将发生同格冲突', 't = 2：A 占用路口，B 等待一步', 't = 3：A 已离开，B 进入路口', '两台机器人错时通过', '两条路线均完成', '示意结束，自动重播'][tick]; }
+        $('prevBtn').onclick = () => show(current - 1); $('nextBtn').onclick = next; $('timerBtn').onclick = toggleTimer; $('autoBtn').onclick = toggleAuto; $('pauseBtn').onclick = togglePause; $('notesBtn').onclick = toggleNotes; $('closeNotes').onclick = () => $('notes').classList.remove('open'); $('fullscreenBtn').onclick = toggleFullscreen; $('recordBtn').onclick = toggleRecord; $('helpBtn').onclick = () => $('help').classList.toggle('open'); $('closeHelp').onclick = () => $('help').classList.remove('open'); dots.forEach((d, i) => d.onclick = () => show(i));
+        addEventListener('keydown', e => { if (e.ctrlKey || e.metaKey || e.altKey) return; const k = e.key.toLowerCase(); if (['arrowright', 'arrowleft', ' ', 'pagedown', 'pageup', 'home', 'end', 'f', 'r', 'n', 't', 'a', 'p', 'h'].includes(k)) e.preventDefault(); if (k === 'arrowright' || k === ' ' || k === 'pagedown') next(); else if (k === 'arrowleft' || k === 'pageup') show(current - 1); else if (k === 'home') { show(0); elapsed = 0; } else if (k === 'end') show(6); else if (k === 'f') toggleFullscreen(); else if (k === 'r') toggleRecord(); else if (k === 'n') toggleNotes(); else if (k === 't') toggleTimer(); else if (k === 'a') toggleAuto(); else if (k === 'p') togglePause(); else if (k === 'h') $('help').classList.toggle('open'); else if (k === 'escape') { $('notes').classList.remove('open'); $('help').classList.remove('open'); document.body.classList.remove('recording'); } });
+        addEventListener('hashchange', () => { const n = Number(location.hash.slice(1)); if (Number.isInteger(n) && n >= 1 && n <= 7) show(n - 1, false); });
+        function update(now) { const dt = Math.min(now - last, 200); last = now; if (!paused) { frame += dt; if (current === 2) drawMatching(); if (current === 3) drawPath(); } if (timerRunning) { elapsed += dt; if (auto) { pageElapsed += dt; if (pageElapsed >= notes[current][1] * 1000) next(); } } const total = Math.floor(elapsed / 1000); $('clock').textContent = String(Math.floor(total / 60)).padStart(2, '0') + ':' + String(total % 60).padStart(2, '0'); requestAnimationFrame(update); }
+        const initial = Number(location.hash.slice(1)); show(Number.isInteger(initial) && initial >= 1 && initial <= 7 ? initial - 1 : 0, false); requestAnimationFrame(update);
+    </script>
+</body>
+
+</html>

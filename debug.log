@@ -1,0 +1,297 @@
+[1021/185204.738:WARNING:net\dns\dns_config_service_win.cc:606] Failed to read DnsConfig.
+[1021/185205.794:ERROR:ui\gl\angle_platform_impl.cc:47] vulkan_icd.cpp:158 (angle::vk::ScopedVkLoaderEnvironment::ScopedVkLoaderEnvironment): Error setting CWD for Vulkan layers init.
+[1021/185206.423:WARNING:ui\gl\angle_platform_impl.cc:52] vulkan_icd.cpp:388 (angle::vk::ChoosePhysicalDevice): Preferred device ICD not found. Using default physicalDevice instead.
+[1021/185206.459:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.459:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.459:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.460:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.460:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.459:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.461:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.461:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.461:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.461:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.461:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.461:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.461:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.461:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.461:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.461:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.461:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.461:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.461:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.461:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.461:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.461:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.461:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.461:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.461:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.461:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.461:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.462:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.462:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.462:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.462:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185206.462:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.186:WARNING:net\dns\dns_config_service_win.cc:606] Failed to read DnsConfig.
+[1021/185251.187:ERROR:ui\gl\angle_platform_impl.cc:47] vulkan_icd.cpp:158 (angle::vk::ScopedVkLoaderEnvironment::ScopedVkLoaderEnvironment): Error setting CWD for Vulkan layers init.
+[1021/185251.299:WARNING:ui\gl\angle_platform_impl.cc:52] vulkan_icd.cpp:388 (angle::vk::ChoosePhysicalDevice): Preferred device ICD not found. Using default physicalDevice instead.
+[1021/185251.497:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.499:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.499:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.497:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.499:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.499:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.499:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.499:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.499:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.499:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.499:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.499:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.497:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.499:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.497:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.499:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.499:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.499:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.499:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.499:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.499:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.499:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.499:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.499:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.499:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.499:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.499:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.499:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.500:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185251.500:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185325.950:ERROR:ui\gl\angle_platform_impl.cc:47] vulkan_icd.cpp:158 (angle::vk::ScopedVkLoaderEnvironment::ScopedVkLoaderEnvironment): Error setting CWD for Vulkan layers init.
+[1021/185325.959:WARNING:net\dns\dns_config_service_win.cc:606] Failed to read DnsConfig.
+[1021/185326.083:WARNING:ui\gl\angle_platform_impl.cc:52] vulkan_icd.cpp:388 (angle::vk::ChoosePhysicalDevice): Preferred device ICD not found. Using default physicalDevice instead.
+[1021/185326.278:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185326.278:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185326.278:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185326.278:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185326.280:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185326.280:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185326.280:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185326.280:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185326.280:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.002:WARNING:net\dns\dns_config_service_win.cc:606] Failed to read DnsConfig.
+[1021/185359.020:ERROR:ui\gl\angle_platform_impl.cc:47] vulkan_icd.cpp:158 (angle::vk::ScopedVkLoaderEnvironment::ScopedVkLoaderEnvironment): Error setting CWD for Vulkan layers init.
+[1021/185359.118:WARNING:ui\gl\angle_platform_impl.cc:52] vulkan_icd.cpp:388 (angle::vk::ChoosePhysicalDevice): Preferred device ICD not found. Using default physicalDevice instead.
+[1021/185359.340:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.340:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.340:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.340:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.341:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.341:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.341:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.341:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.341:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.341:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.341:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.341:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.341:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.341:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.341:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.341:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.341:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.341:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.341:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.342:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.342:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.342:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.342:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.342:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.342:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.342:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.342:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.342:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185359.342:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.082:ERROR:ui\gl\angle_platform_impl.cc:47] vulkan_icd.cpp:158 (angle::vk::ScopedVkLoaderEnvironment::ScopedVkLoaderEnvironment): Error setting CWD for Vulkan layers init.
+[1021/185439.095:WARNING:net\dns\dns_config_service_win.cc:606] Failed to read DnsConfig.
+[1021/185439.197:WARNING:ui\gl\angle_platform_impl.cc:52] vulkan_icd.cpp:388 (angle::vk::ChoosePhysicalDevice): Preferred device ICD not found. Using default physicalDevice instead.
+[1021/185439.405:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.406:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.406:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.406:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.406:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.406:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.406:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.406:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.406:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.406:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.406:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.406:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.406:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.406:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.406:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.405:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.406:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.406:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.406:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.406:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.406:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.406:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.406:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.406:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.405:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.405:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.407:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.407:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.407:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.407:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.407:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185439.407:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185505.156:ERROR:ui\gl\angle_platform_impl.cc:47] vulkan_icd.cpp:158 (angle::vk::ScopedVkLoaderEnvironment::ScopedVkLoaderEnvironment): Error setting CWD for Vulkan layers init.
+[1021/185505.164:WARNING:net\dns\dns_config_service_win.cc:606] Failed to read DnsConfig.
+[1021/185505.275:WARNING:ui\gl\angle_platform_impl.cc:52] vulkan_icd.cpp:388 (angle::vk::ChoosePhysicalDevice): Preferred device ICD not found. Using default physicalDevice instead.
+[1021/185505.480:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185505.481:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185505.481:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185505.481:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185505.481:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185505.481:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185505.481:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185505.481:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185505.480:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185505.480:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185505.482:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185505.482:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185505.482:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185505.482:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185505.482:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185505.480:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185505.483:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185505.482:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185505.483:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185505.483:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185505.483:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185505.483:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185505.483:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185556.666:ERROR:ui\gl\angle_platform_impl.cc:47] vulkan_icd.cpp:158 (angle::vk::ScopedVkLoaderEnvironment::ScopedVkLoaderEnvironment): Error setting CWD for Vulkan layers init.
+[1021/185556.674:WARNING:net\dns\dns_config_service_win.cc:606] Failed to read DnsConfig.
+[1021/185556.786:WARNING:ui\gl\angle_platform_impl.cc:52] vulkan_icd.cpp:388 (angle::vk::ChoosePhysicalDevice): Preferred device ICD not found. Using default physicalDevice instead.
+[1021/185557.003:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.003:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.003:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.003:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185557.005:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185601.677:WARNING:net\dns\dns_config_service_win.cc:606] Failed to read DnsConfig.
+[1021/185725.524:WARNING:net\dns\dns_config_service_win.cc:606] Failed to read DnsConfig.
+[1021/185725.533:ERROR:ui\gl\angle_platform_impl.cc:47] vulkan_icd.cpp:158 (angle::vk::ScopedVkLoaderEnvironment::ScopedVkLoaderEnvironment): Error setting CWD for Vulkan layers init.
+[1021/185725.647:WARNING:ui\gl\angle_platform_impl.cc:52] vulkan_icd.cpp:388 (angle::vk::ChoosePhysicalDevice): Preferred device ICD not found. Using default physicalDevice instead.
+[1021/185725.829:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185725.829:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185725.829:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185725.829:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185725.832:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1021/185730.532:WARNING:net\dns\dns_config_service_win.cc:606] Failed to read DnsConfig.
+[1022/143417.270:ERROR:ui\gl\angle_platform_impl.cc:47] vulkan_icd.cpp:158 (angle::vk::ScopedVkLoaderEnvironment::ScopedVkLoaderEnvironment): Error setting CWD for Vulkan layers init.
+[1022/143418.749:WARNING:ui\gl\angle_platform_impl.cc:52] vulkan_icd.cpp:388 (angle::vk::ChoosePhysicalDevice): Preferred device ICD not found. Using default physicalDevice instead.
+[1022/143523.454:ERROR:ui\gl\angle_platform_impl.cc:47] vulkan_icd.cpp:158 (angle::vk::ScopedVkLoaderEnvironment::ScopedVkLoaderEnvironment): Error setting CWD for Vulkan layers init.
+[1022/143523.457:WARNING:net\dns\dns_config_service_win.cc:606] Failed to read DnsConfig.
+[1022/143600.062:ERROR:ui\gl\angle_platform_impl.cc:47] vulkan_icd.cpp:158 (angle::vk::ScopedVkLoaderEnvironment::ScopedVkLoaderEnvironment): Error setting CWD for Vulkan layers init.
+[1022/143600.063:WARNING:net\dns\dns_config_service_win.cc:606] Failed to read DnsConfig.
+[1022/143600.181:WARNING:ui\gl\angle_platform_impl.cc:52] vulkan_icd.cpp:388 (angle::vk::ChoosePhysicalDevice): Preferred device ICD not found. Using default physicalDevice instead.
+[1022/143618.868:WARNING:net\dns\dns_config_service_win.cc:606] Failed to read DnsConfig.
+[1022/143618.883:ERROR:ui\gl\angle_platform_impl.cc:47] vulkan_icd.cpp:158 (angle::vk::ScopedVkLoaderEnvironment::ScopedVkLoaderEnvironment): Error setting CWD for Vulkan layers init.
+[1022/143618.994:WARNING:ui\gl\angle_platform_impl.cc:52] vulkan_icd.cpp:388 (angle::vk::ChoosePhysicalDevice): Preferred device ICD not found. Using default physicalDevice instead.
+[1022/143638.424:ERROR:ui\gl\angle_platform_impl.cc:47] vulkan_icd.cpp:158 (angle::vk::ScopedVkLoaderEnvironment::ScopedVkLoaderEnvironment): Error setting CWD for Vulkan layers init.
+[1022/143638.430:WARNING:net\dns\dns_config_service_win.cc:606] Failed to read DnsConfig.
+[1022/143638.543:WARNING:ui\gl\angle_platform_impl.cc:52] vulkan_icd.cpp:388 (angle::vk::ChoosePhysicalDevice): Preferred device ICD not found. Using default physicalDevice instead.
+[1022/143658.862:ERROR:ui\gl\angle_platform_impl.cc:47] vulkan_icd.cpp:158 (angle::vk::ScopedVkLoaderEnvironment::ScopedVkLoaderEnvironment): Error setting CWD for Vulkan layers init.
+[1022/143658.862:WARNING:net\dns\dns_config_service_win.cc:606] Failed to read DnsConfig.
+[1022/143658.979:WARNING:ui\gl\angle_platform_impl.cc:52] vulkan_icd.cpp:388 (angle::vk::ChoosePhysicalDevice): Preferred device ICD not found. Using default physicalDevice instead.
+[1022/162921.734:ERROR:ui\gl\angle_platform_impl.cc:47] vulkan_icd.cpp:158 (angle::vk::ScopedVkLoaderEnvironment::ScopedVkLoaderEnvironment): Error setting CWD for Vulkan layers init.
+[1022/162921.869:WARNING:ui\gl\angle_platform_impl.cc:52] vulkan_icd.cpp:388 (angle::vk::ChoosePhysicalDevice): Preferred device ICD not found. Using default physicalDevice instead.
+[1022/162922.093:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/162922.093:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/162922.093:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/162922.093:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/162922.093:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/162922.093:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/162922.094:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/162922.094:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/162922.094:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/162922.094:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/162922.094:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/162922.094:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/162922.094:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/162922.094:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/162922.094:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/162922.094:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/162922.094:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/162922.094:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/162922.094:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/162922.094:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/162922.094:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/162922.094:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/162922.094:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/162922.094:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/162922.094:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/162922.093:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/162922.093:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.044:ERROR:ui\gl\angle_platform_impl.cc:47] vulkan_icd.cpp:158 (angle::vk::ScopedVkLoaderEnvironment::ScopedVkLoaderEnvironment): Error setting CWD for Vulkan layers init.
+[1022/163002.151:WARNING:ui\gl\angle_platform_impl.cc:52] vulkan_icd.cpp:388 (angle::vk::ChoosePhysicalDevice): Preferred device ICD not found. Using default physicalDevice instead.
+[1022/163002.358:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.359:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.359:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.358:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.359:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.359:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.359:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.359:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.359:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.359:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.359:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.359:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.359:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.359:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.358:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.360:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.358:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.360:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.360:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.360:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.360:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.360:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.360:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.360:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.360:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.360:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.360:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.360:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.360:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.360:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.360:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.
+[1022/163002.360:ERROR:cc\raster\one_copy_raster_buffer_provider.cc:282] Creation of StagingBuffer's SharedImage failed.

@@ -1,0 +1,1 @@
+{"case_id": "DYNAMIC-rooms", "status": "PASS", "completed": 60, "total": 60, "tick": 604, "elapsed": 4.607270099999823, "error": null, "terminal": "all_tasks_completed"}

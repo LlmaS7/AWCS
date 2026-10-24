@@ -1,0 +1,340 @@
+[
+  {
+    "id": 113,
+    "kind": "start",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "job": "message",
+    "generation": 0,
+    "text": "刚才那个，取消掉。",
+    "task_id": null
+  },
+  {
+    "id": 114,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "目前"
+  },
+  {
+    "id": 115,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "没有"
+  },
+  {
+    "id": 116,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "可"
+  },
+  {
+    "id": 117,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "用的"
+  },
+  {
+    "id": 118,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "取消"
+  },
+  {
+    "id": 119,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "对象"
+  },
+  {
+    "id": 120,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "："
+  },
+  {
+    "id": 121,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "你"
+  },
+  {
+    "id": 122,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "这条"
+  },
+  {
+    "id": 123,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "消息"
+  },
+  {
+    "id": 124,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "里"
+  },
+  {
+    "id": 125,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "没有"
+  },
+  {
+    "id": 126,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "写"
+  },
+  {
+    "id": 127,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "任务"
+  },
+  {
+    "id": 128,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "编号"
+  },
+  {
+    "id": 129,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "，"
+  },
+  {
+    "id": 130,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "本轮"
+  },
+  {
+    "id": 131,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "也没有"
+  },
+  {
+    "id": 132,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "关联"
+  },
+  {
+    "id": 133,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "具体"
+  },
+  {
+    "id": 134,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "任务"
+  },
+  {
+    "id": 135,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "，"
+  },
+  {
+    "id": 136,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "因此"
+  },
+  {
+    "id": 137,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "我不能"
+  },
+  {
+    "id": 138,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "凭"
+  },
+  {
+    "id": 139,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "“"
+  },
+  {
+    "id": 140,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "刚才"
+  },
+  {
+    "id": 141,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "那个"
+  },
+  {
+    "id": 142,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "”"
+  },
+  {
+    "id": 143,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "推断"
+  },
+  {
+    "id": 144,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "。\n\n"
+  },
+  {
+    "id": 145,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "请"
+  },
+  {
+    "id": 146,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "回复"
+  },
+  {
+    "id": 147,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "带"
+  },
+  {
+    "id": 148,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "明确"
+  },
+  {
+    "id": 149,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "编号"
+  },
+  {
+    "id": 150,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "的"
+  },
+  {
+    "id": 151,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "指令"
+  },
+  {
+    "id": 152,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "，"
+  },
+  {
+    "id": 153,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "例如"
+  },
+  {
+    "id": 154,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "“"
+  },
+  {
+    "id": 155,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "取消"
+  },
+  {
+    "id": 156,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": " T"
+  },
+  {
+    "id": 157,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "001"
+  },
+  {
+    "id": 158,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "”；"
+  },
+  {
+    "id": 159,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "或"
+  },
+  {
+    "id": 160,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "先"
+  },
+  {
+    "id": 161,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "关联"
+  },
+  {
+    "id": 162,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "目标任务"
+  },
+  {
+    "id": 163,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "再"
+  },
+  {
+    "id": 164,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "重"
+  },
+  {
+    "id": 165,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "发"
+  },
+  {
+    "id": 166,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "一次"
+  },
+  {
+    "id": 167,
+    "kind": "text",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca",
+    "text": "。"
+  },
+  {
+    "id": 168,
+    "kind": "done",
+    "request_id": "ec522f7c9b1f467cb44e05ab06eaf1ca"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "base_url": "https://api.deepseek.com",
+  "model": "scripted",
+  "effort": "off",
+  "timeout": 180,
+  "remember": false
+}

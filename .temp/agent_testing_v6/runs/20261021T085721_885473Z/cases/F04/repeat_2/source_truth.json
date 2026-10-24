@@ -1,0 +1,77 @@
+{
+  "document": {
+    "filename": "F04.md",
+    "size": 283,
+    "sha256": "27b1d84221407d6c99fb0720afef513360c713175b6d686d087e40bf8e33d32c",
+    "format": "md",
+    "encoding": "utf-8-sig",
+    "blocks": [
+      {
+        "id": "b1",
+        "text": "| 搬运要求 |",
+        "locator": {
+          "type": "text_line",
+          "line": 1
+        }
+      },
+      {
+        "id": "b2",
+        "text": "| --- |",
+        "locator": {
+          "type": "text_line",
+          "line": 2
+        }
+      },
+      {
+        "id": "b3",
+        "text": "| 需求甲：四号货架送二号配送点。 |",
+        "locator": {
+          "type": "text_line",
+          "line": 3
+        }
+      },
+      {
+        "id": "b4",
+        "text": "| 历史甲：已完成四号货架到一号配送点的搬运。 |",
+        "locator": {
+          "type": "text_line",
+          "line": 4
+        }
+      },
+      {
+        "id": "b5",
+        "text": "| 示例甲：例如登记货架2到一号配送点，不是真实订单。 |",
+        "locator": {
+          "type": "text_line",
+          "line": 5
+        }
+      },
+      {
+        "id": "b6",
+        "text": "| 否定甲：不要搬运登记货架2到二号配送点。 |",
+        "locator": {
+          "type": "text_line",
+          "line": 6
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "truth": [
+    {
+      "marker": "需求甲",
+      "text": "需求甲：四号货架送二号配送点。",
+      "pickup_id": "P05",
+      "delivery_id": "D2",
+      "priority": 2,
+      "count": 1,
+      "quantity_kind": "unspecified",
+      "constraints": []
+    }
+  ],
+  "excluded": [
+    "历史甲：已完成四号货架到一号配送点的搬运。",
+    "示例甲：例如登记货架2到一号配送点，不是真实订单。",
+    "否定甲：不要搬运登记货架2到二号配送点。"
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "Historical data and chapter counts retained",
+      "pass": true,
+      "value": {
+        "chapters": 12,
+        "maps": 14,
+        "algorithmRows": 50,
+        "agentRows": 60,
+        "reviews": 157,
+        "counts": {
+          "PASS": 146,
+          "FAIL": 10,
+          "INCONCLUSIVE": 1,
+          "NOT_RUN": 23
+        },
+        "retest": {
+          "batch": "20261022_151119_5ce97b",
+          "mode": "LIVE_MODEL",
+          "status": "PASS_BUSINESS_CHECKS",
+          "calls": 22,
+          "preconditionTurns": 3,
+          "targetChecks": 9,
+          "ambiguousNoWrite": "3/3",
+          "explicitCancel": "3/3",
+          "associatedCancel": "3/3",
+          "liveGuardRejections": 0,
+          "offlineForcedGuardRejections": 3,
+          "sourceHashesMatchedAtReview": true,
+          "summary": "test_res/evidence/d07_live_20261022/summary.json",
+          "report": "test_res/evidence/d07_live_20261022/report.html",
+          "offlineSummary": "test_res/evidence/d07_offline_20261022/summary.json",
+          "responseReview": "AI reviewed final replies, tool receipts, before/after states and context clears"
+        },
+        "copy": "在所测版本、地图、任务和预算下，AWCS 通过了任务分配、路径规划及执行保护的核心检查，4/16 台机器人的 28 个主场景全部完成。32 台规模场景完成 5/8，有限动态任务流完成 1/3，其余用例在预算内安全停止。Agent 已验证常规自然语言业务操作；针对原测试发现的 D07 模糊指代取消问题，增加了执行前对象来源校验，并通过三轮真实模型定向复测。部分状态表述、文档约束归类、更大规模及持续任务场景仍需完善，尚不能宣称新版本整体通过验收。"
+      }
+    },
+    {
+      "name": "D07 supplement and copyable conclusion updated",
+      "pass": true,
+      "value": {
+        "batch": "20261022_151119_5ce97b",
+        "mode": "LIVE_MODEL",
+        "status": "PASS_BUSINESS_CHECKS",
+        "calls": 22,
+        "preconditionTurns": 3,
+        "targetChecks": 9,
+        "ambiguousNoWrite": "3/3",
+        "explicitCancel": "3/3",
+        "associatedCancel": "3/3",
+        "liveGuardRejections": 0,
+        "offlineForcedGuardRejections": 3,
+        "sourceHashesMatchedAtReview": true,
+        "summary": "test_res/evidence/d07_live_20261022/summary.json",
+        "report": "test_res/evidence/d07_live_20261022/report.html",
+        "offlineSummary": "test_res/evidence/d07_offline_20261022/summary.json",
+        "responseReview": "AI reviewed final replies, tool receipts, before/after states and context clears"
+      }
+    },
+    {
+      "name": "Every HTML source link and anchor resolves",
+      "pass": true,
+      "value": []
+    },
+    {
+      "name": "Historical matrix still interactive",
+      "pass": true
+    },
+    {
+      "name": "Historical critical modal still opens",
+      "pass": true
+    },
+    {
+      "name": "Export keeps original score and adds retest separately",
+      "pass": true
+    },
+    {
+      "name": "No overflow 1440 overview",
+      "pass": true,
+      "value": {
+        "width": 1440,
+        "scroll": 1440
+      }
+    },
+    {
+      "name": "No overflow 1440 d07-retest",
+      "pass": true,
+      "value": {
+        "width": 1440,
+        "scroll": 1440
+      }
+    },
+    {
+      "name": "No overflow 1440 sources",
+      "pass": true,
+      "value": {
+        "width": 1440,
+        "scroll": 1440
+      }
+    },
+    {
+      "name": "No overflow 1440 conclusion",
+      "pass": true,
+      "value": {
+        "width": 1440,
+        "scroll": 1440
+      }
+    },
+    {
+      "name": "No overflow 768 overview",
+      "pass": true,
+      "value": {
+        "width": 768,
+        "scroll": 768
+      }
+    },
+    {
+      "name": "No overflow 768 d07-retest",
+      "pass": true,
+      "value": {
+        "width": 768,
+        "scroll": 768
+      }
+    },
+    {
+      "name": "No overflow 768 sources",
+      "pass": true,
+      "value": {
+        "width": 768,
+        "scroll": 768
+      }
+    },
+    {
+      "name": "No overflow 768 conclusion",
+      "pass": true,
+      "value": {
+        "width": 768,
+        "scroll": 768
+      }
+    },
+    {
+      "name": "No overflow 390 overview",
+      "pass": true,
+      "value": {
+        "width": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "No overflow 390 d07-retest",
+      "pass": true,
+      "value": {
+        "width": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "No overflow 390 sources",
+      "pass": true,
+      "value": {
+        "width": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "No overflow 390 conclusion",
+      "pass": true,
+      "value": {
+        "width": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "No JavaScript errors or external requests",
+      "pass": true,
+      "value": {
+        "errors": [],
+        "external": []
+      }
+    }
+  ]
+}

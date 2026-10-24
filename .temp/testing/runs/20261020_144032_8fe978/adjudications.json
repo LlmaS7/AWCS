@@ -1,0 +1,87 @@
+{
+  "WORKER-PROCESS": {
+    "classification": "HARNESS_ERROR",
+    "resolved_by": "WORKER-PROCESS-UTF8",
+    "reason": "Test harness used platform-default GBK to read a UTF-8 JSON map. Fixed encoding in worker fixture only; original error occurred before production worker initialization. Original result retained."
+  },
+  "G-independent-courtyard_20261018": {
+    "classification": "HARNESS_ERROR",
+    "resolved_by": "G-independent-courtyard_20261018-UTF8",
+    "reason": "Supplemental fixture decoded a UTF-8 map with Windows default GBK, before any static assertions ran. Explicit UTF-8 fixed; same static assertions rerun and original record retained."
+  },
+  "G-independent-courtyard_20261019": {
+    "classification": "HARNESS_ERROR",
+    "resolved_by": "G-independent-courtyard_20261019-UTF8",
+    "reason": "Supplemental fixture decoded a UTF-8 map with Windows default GBK, before any static assertions ran. Explicit UTF-8 fixed; same static assertions rerun and original record retained."
+  },
+  "G-independent-l_20261018": {
+    "classification": "HARNESS_ERROR",
+    "resolved_by": "G-independent-l_20261018-UTF8",
+    "reason": "Supplemental fixture decoded a UTF-8 map with Windows default GBK, before any static assertions ran. Explicit UTF-8 fixed; same static assertions rerun and original record retained."
+  },
+  "G-independent-l_20261019": {
+    "classification": "HARNESS_ERROR",
+    "resolved_by": "G-independent-l_20261019-UTF8",
+    "reason": "Supplemental fixture decoded a UTF-8 map with Windows default GBK, before any static assertions ran. Explicit UTF-8 fixed; same static assertions rerun and original record retained."
+  },
+  "G-independent-random_20261018": {
+    "classification": "HARNESS_ERROR",
+    "resolved_by": "G-independent-random_20261018-UTF8",
+    "reason": "Supplemental fixture decoded a UTF-8 map with Windows default GBK, before any static assertions ran. Explicit UTF-8 fixed; same static assertions rerun and original record retained."
+  },
+  "G-independent-random_20261019": {
+    "classification": "HARNESS_ERROR",
+    "resolved_by": "G-independent-random_20261019-UTF8",
+    "reason": "Supplemental fixture decoded a UTF-8 map with Windows default GBK, before any static assertions ran. Explicit UTF-8 fixed; same static assertions rerun and original record retained."
+  },
+  "G-independent-rectangle_20261018": {
+    "classification": "HARNESS_ERROR",
+    "resolved_by": "G-independent-rectangle_20261018-UTF8",
+    "reason": "Supplemental fixture decoded a UTF-8 map with Windows default GBK, before any static assertions ran. Explicit UTF-8 fixed; same static assertions rerun and original record retained."
+  },
+  "G-independent-rectangle_20261019": {
+    "classification": "HARNESS_ERROR",
+    "resolved_by": "G-independent-rectangle_20261019-UTF8",
+    "reason": "Supplemental fixture decoded a UTF-8 map with Windows default GBK, before any static assertions ran. Explicit UTF-8 fixed; same static assertions rerun and original record retained."
+  },
+  "G-independent-rectangle_64": {
+    "classification": "HARNESS_ERROR",
+    "resolved_by": "G-independent-rectangle_64-UTF8",
+    "reason": "Supplemental fixture decoded a UTF-8 map with Windows default GBK, before any static assertions ran. Explicit UTF-8 fixed; same static assertions rerun and original record retained."
+  },
+  "G-independent-rooms_20261018": {
+    "classification": "HARNESS_ERROR",
+    "resolved_by": "G-independent-rooms_20261018-UTF8",
+    "reason": "Supplemental fixture decoded a UTF-8 map with Windows default GBK, before any static assertions ran. Explicit UTF-8 fixed; same static assertions rerun and original record retained."
+  },
+  "G-independent-rooms_20261019": {
+    "classification": "HARNESS_ERROR",
+    "resolved_by": "G-independent-rooms_20261019-UTF8",
+    "reason": "Supplemental fixture decoded a UTF-8 map with Windows default GBK, before any static assertions ran. Explicit UTF-8 fixed; same static assertions rerun and original record retained."
+  },
+  "G-independent-rooms_64": {
+    "classification": "HARNESS_ERROR",
+    "resolved_by": "G-independent-rooms_64-UTF8",
+    "reason": "Supplemental fixture decoded a UTF-8 map with Windows default GBK, before any static assertions ran. Explicit UTF-8 fixed; same static assertions rerun and original record retained."
+  },
+  "G-independent-t_20261018": {
+    "classification": "HARNESS_ERROR",
+    "resolved_by": "G-independent-t_20261018-UTF8",
+    "reason": "Supplemental fixture decoded a UTF-8 map with Windows default GBK, before any static assertions ran. Explicit UTF-8 fixed; same static assertions rerun and original record retained."
+  },
+  "G-independent-t_20261019": {
+    "classification": "HARNESS_ERROR",
+    "resolved_by": "G-independent-t_20261019-UTF8",
+    "reason": "Supplemental fixture decoded a UTF-8 map with Windows default GBK, before any static assertions ran. Explicit UTF-8 fixed; same static assertions rerun and original record retained."
+  },
+  "G-independent-u_20261018": {
+    "classification": "HARNESS_ERROR",
+    "resolved_by": "G-independent-u_20261018-UTF8",
+    "reason": "Supplemental fixture decoded a UTF-8 map with Windows default GBK, before any static assertions ran. Explicit UTF-8 fixed; same static assertions rerun and original record retained."
+  },
+  "G-independent-u_20261019": {
+    "classification": "HARNESS_ERROR",
+    "resolved_by": "G-independent-u_20261019-UTF8",
+    "reason": "Supplemental fixture decoded a UTF-8 map with Windows default GBK, before any static assertions ran. Explicit UTF-8 fixed; same static assertions rerun and original record retained."
+  }
+}

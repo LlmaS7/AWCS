@@ -1,0 +1,8 @@
+{
+  "command": ".venv/Scripts/python.exe -B -m unittest discover -s tests -v",
+  "tests_run": 22,
+  "passed": 22,
+  "failed": 0,
+  "elapsed_seconds": 0.212,
+  "note": "Summary of the completed unittest invocation; stdout was displayed in the task tool log."
+}

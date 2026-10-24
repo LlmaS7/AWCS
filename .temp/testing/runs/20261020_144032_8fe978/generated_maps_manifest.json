@@ -1,0 +1,212 @@
+[
+  {
+    "shape": "rectangle",
+    "seed": 20261018,
+    "map_file": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\datasets\\maps\\rectangle_20261018.json",
+    "parameters": {
+      "width": 96,
+      "height": 64,
+      "robots": 32,
+      "seed": 20261018,
+      "shape": "rectangle",
+      "aisle": 3,
+      "density": 65,
+      "obstacles": 20
+    }
+  },
+  {
+    "shape": "rectangle",
+    "seed": 20261019,
+    "map_file": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\datasets\\maps\\rectangle_20261019.json",
+    "parameters": {
+      "width": 96,
+      "height": 64,
+      "robots": 32,
+      "seed": 20261019,
+      "shape": "rectangle",
+      "aisle": 3,
+      "density": 65,
+      "obstacles": 20
+    }
+  },
+  {
+    "shape": "l",
+    "seed": 20261018,
+    "map_file": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\datasets\\maps\\l_20261018.json",
+    "parameters": {
+      "width": 96,
+      "height": 64,
+      "robots": 32,
+      "seed": 20261018,
+      "shape": "l",
+      "aisle": 3,
+      "density": 65,
+      "obstacles": 20
+    }
+  },
+  {
+    "shape": "l",
+    "seed": 20261019,
+    "map_file": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\datasets\\maps\\l_20261019.json",
+    "parameters": {
+      "width": 96,
+      "height": 64,
+      "robots": 32,
+      "seed": 20261019,
+      "shape": "l",
+      "aisle": 3,
+      "density": 65,
+      "obstacles": 20
+    }
+  },
+  {
+    "shape": "t",
+    "seed": 20261018,
+    "map_file": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\datasets\\maps\\t_20261018.json",
+    "parameters": {
+      "width": 96,
+      "height": 64,
+      "robots": 32,
+      "seed": 20261018,
+      "shape": "t",
+      "aisle": 3,
+      "density": 65,
+      "obstacles": 20
+    }
+  },
+  {
+    "shape": "t",
+    "seed": 20261019,
+    "map_file": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\datasets\\maps\\t_20261019.json",
+    "parameters": {
+      "width": 96,
+      "height": 64,
+      "robots": 32,
+      "seed": 20261019,
+      "shape": "t",
+      "aisle": 3,
+      "density": 65,
+      "obstacles": 20
+    }
+  },
+  {
+    "shape": "u",
+    "seed": 20261018,
+    "map_file": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\datasets\\maps\\u_20261018.json",
+    "parameters": {
+      "width": 96,
+      "height": 64,
+      "robots": 32,
+      "seed": 20261018,
+      "shape": "u",
+      "aisle": 3,
+      "density": 65,
+      "obstacles": 20
+    }
+  },
+  {
+    "shape": "u",
+    "seed": 20261019,
+    "map_file": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\datasets\\maps\\u_20261019.json",
+    "parameters": {
+      "width": 96,
+      "height": 64,
+      "robots": 32,
+      "seed": 20261019,
+      "shape": "u",
+      "aisle": 3,
+      "density": 65,
+      "obstacles": 20
+    }
+  },
+  {
+    "shape": "courtyard",
+    "seed": 20261018,
+    "map_file": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\datasets\\maps\\courtyard_20261018.json",
+    "parameters": {
+      "width": 96,
+      "height": 64,
+      "robots": 32,
+      "seed": 20261018,
+      "shape": "courtyard",
+      "aisle": 3,
+      "density": 65,
+      "obstacles": 20
+    }
+  },
+  {
+    "shape": "courtyard",
+    "seed": 20261019,
+    "map_file": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\datasets\\maps\\courtyard_20261019.json",
+    "parameters": {
+      "width": 96,
+      "height": 64,
+      "robots": 32,
+      "seed": 20261019,
+      "shape": "courtyard",
+      "aisle": 3,
+      "density": 65,
+      "obstacles": 20
+    }
+  },
+  {
+    "shape": "rooms",
+    "seed": 20261018,
+    "map_file": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\datasets\\maps\\rooms_20261018.json",
+    "parameters": {
+      "width": 96,
+      "height": 64,
+      "robots": 32,
+      "seed": 20261018,
+      "shape": "rooms",
+      "aisle": 3,
+      "density": 65,
+      "obstacles": 20
+    }
+  },
+  {
+    "shape": "rooms",
+    "seed": 20261019,
+    "map_file": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\datasets\\maps\\rooms_20261019.json",
+    "parameters": {
+      "width": 96,
+      "height": 64,
+      "robots": 32,
+      "seed": 20261019,
+      "shape": "rooms",
+      "aisle": 3,
+      "density": 65,
+      "obstacles": 20
+    }
+  },
+  {
+    "shape": "random",
+    "seed": 20261018,
+    "map_file": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\datasets\\maps\\random_20261018.json",
+    "parameters": {
+      "width": 96,
+      "height": 64,
+      "robots": 32,
+      "seed": 20261018,
+      "shape": "random",
+      "aisle": 3,
+      "density": 65,
+      "obstacles": 20
+    }
+  },
+  {
+    "shape": "random",
+    "seed": 20261019,
+    "map_file": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\datasets\\maps\\random_20261019.json",
+    "parameters": {
+      "width": 96,
+      "height": 64,
+      "robots": 32,
+      "seed": 20261019,
+      "shape": "random",
+      "aisle": 3,
+      "density": 65,
+      "obstacles": 20
+    }
+  }
+]

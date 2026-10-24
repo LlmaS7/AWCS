@@ -1,0 +1,15 @@
+{
+  "case_id": "B02",
+  "map": "M03",
+  "text": "R3现在做什么，是否载货？",
+  "kind": "chat",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true
+}

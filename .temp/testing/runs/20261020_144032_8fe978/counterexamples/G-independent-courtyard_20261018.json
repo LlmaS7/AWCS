@@ -1,0 +1,8 @@
+{
+  "case_id": "G-independent-courtyard_20261018",
+  "stage": "P4-static-audit",
+  "inputs": null,
+  "status": "FAIL",
+  "error": "UnicodeDecodeError: 'gbk' codec can't decode byte 0xad in position 61: illegal multibyte sequence",
+  "traceback": "Traceback (most recent call last):\n  File \"E:\\_PROJECTS\\AWCS\\.temp\\testing\\supplement.py\", line 24, in case\n    details=fn() or {}\n            ~~^^\n  File \"E:\\_PROJECTS\\AWCS\\.temp\\testing\\supplement.py\", line 57, in static\n    d=json.loads(path.read_text());starts=list(map(tuple,d['points']['starts']));parking=set(map(tuple,d['points']['parking']))\n                 ~~~~~~~~~~~~~~^^\n  File \"E:\\Python\\Lib\\pathlib\\__init__.py\", line 788, in read_text\n    return f.read()\n           ~~~~~~^^\nUnicodeDecodeError: 'gbk' codec can't decode byte 0xad in position 61: illegal multibyte sequence\n"
+}

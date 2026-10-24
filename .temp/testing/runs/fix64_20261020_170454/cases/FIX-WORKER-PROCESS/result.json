@@ -1,0 +1,21 @@
+{
+  "case_id": "FIX-WORKER-PROCESS",
+  "stage": "P5-process",
+  "status": "PASS",
+  "assignment_correct": null,
+  "path_safe": true,
+  "tasks_completed": false,
+  "plan_checks": 1,
+  "path_points_checked": 120,
+  "actual_steps_checked": 0,
+  "planning_times": [],
+  "inputs": {
+    "case_id": "FIX-WORKER-PROCESS",
+    "stage": "P5-process",
+    "kind": "worker",
+    "map_file": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\datasets\\maps\\rectangle_20261018.json",
+    "timeout": 30,
+    "source_case": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\WORKER-PROCESS"
+  },
+  "elapsed": 0.2621964999998454
+}

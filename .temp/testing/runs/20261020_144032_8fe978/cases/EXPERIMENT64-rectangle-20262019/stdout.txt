@@ -1,0 +1,1 @@
+{"case_id": "EXPERIMENT64-rectangle-20262019", "status": "INCONCLUSIVE", "completed": 109, "total": 128, "tick": 337, "elapsed": 178.78619380000055, "error": null, "terminal": "no_safe_plan_within_budget"}

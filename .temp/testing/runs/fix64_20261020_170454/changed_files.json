@@ -1,0 +1,6 @@
+[
+  "controller.py",
+  "coordination/recovery.py",
+  "simulation.py",
+  "tests/test_plan_recovery.py"
+]

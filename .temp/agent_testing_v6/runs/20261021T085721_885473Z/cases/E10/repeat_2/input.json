@@ -1,0 +1,15 @@
+{
+  "case_id": "E10",
+  "map": "M02",
+  "text": "不要执行，只告诉我如何指定机器人。",
+  "kind": "chat",
+  "repeats": 3,
+  "required": [
+    "protocol",
+    "business",
+    "process",
+    "response_semantics"
+  ],
+  "reviewer": "execution AI after evidence, not tested model",
+  "no_retry": true
+}

@@ -1,0 +1,1 @@
+{"case_id": "WORKER-PROCESS", "status": "FAIL", "completed": null, "total": null, "tick": null, "elapsed": 0.018964900000355556, "error": "UnicodeDecodeError: 'gbk' codec can't decode byte 0xb0 in position 86: illegal multibyte sequence", "terminal": null}

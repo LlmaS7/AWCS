@@ -1,0 +1,398 @@
+[
+  {
+    "case_id": "FIX-EXPERIMENT64-experimental_128x96-20262018",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-experimental_128x96-20262018",
+    "identical_grid": true,
+    "original_input_sha256": "d0b2b13869d685b8a0a4be7e2f8bbf3e800b65b8c4b6e931d7269a5f61cb0af7"
+  },
+  {
+    "case_id": "FIX-EXPERIMENT64-experimental_128x96-20262019",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-experimental_128x96-20262019",
+    "identical_grid": true,
+    "original_input_sha256": "7a307c31e327b18c9bc9c3a49b47567654d39e2096cf7c653ee4d861ce2e806a"
+  },
+  {
+    "case_id": "FIX-EXPERIMENT64-rectangle-20262018",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rectangle-20262018",
+    "identical_grid": true,
+    "original_input_sha256": "6a6dfc7311479451b33a5b504ec3a170bf11f99d44df6ca6108c8f76657c4099"
+  },
+  {
+    "case_id": "FIX-EXPERIMENT64-rectangle-20262019",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rectangle-20262019",
+    "identical_grid": true,
+    "original_input_sha256": "2d7fe20638201d139d9b0d0b7ff0d1fac42f1978fd2b4ff6308bd893317cee41"
+  },
+  {
+    "case_id": "FIX-EXPERIMENT64-rooms-20262018",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rooms-20262018",
+    "identical_grid": true,
+    "original_input_sha256": "b22a4752d9bf5995722099f72d1df7e8947c49e76d0107f4422bd8a83af754cf"
+  },
+  {
+    "case_id": "FIX-EXPERIMENT64-rooms-20262019",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rooms-20262019",
+    "identical_grid": true,
+    "original_input_sha256": "b44b478250789562f297ce1af0b4f4e43378dc4d55abb75269e46c9781317d3f"
+  },
+  {
+    "case_id": "FIX-ACTOR64-rectangle-20262018",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rectangle-20262018",
+    "identical_grid": true,
+    "original_input_sha256": "6a6dfc7311479451b33a5b504ec3a170bf11f99d44df6ca6108c8f76657c4099"
+  },
+  {
+    "case_id": "FIX10-EXPERIMENT64-experimental_128x96-20262018",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-experimental_128x96-20262018",
+    "identical_grid": true,
+    "original_input_sha256": "d0b2b13869d685b8a0a4be7e2f8bbf3e800b65b8c4b6e931d7269a5f61cb0af7"
+  },
+  {
+    "case_id": "FIX10-EXPERIMENT64-experimental_128x96-20262019",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-experimental_128x96-20262019",
+    "identical_grid": true,
+    "original_input_sha256": "7a307c31e327b18c9bc9c3a49b47567654d39e2096cf7c653ee4d861ce2e806a"
+  },
+  {
+    "case_id": "FIX10-EXPERIMENT64-rectangle-20262018",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rectangle-20262018",
+    "identical_grid": true,
+    "original_input_sha256": "6a6dfc7311479451b33a5b504ec3a170bf11f99d44df6ca6108c8f76657c4099"
+  },
+  {
+    "case_id": "FIX10-EXPERIMENT64-rectangle-20262019",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rectangle-20262019",
+    "identical_grid": true,
+    "original_input_sha256": "2d7fe20638201d139d9b0d0b7ff0d1fac42f1978fd2b4ff6308bd893317cee41"
+  },
+  {
+    "case_id": "FIX10-EXPERIMENT64-rooms-20262018",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rooms-20262018",
+    "identical_grid": true,
+    "original_input_sha256": "b22a4752d9bf5995722099f72d1df7e8947c49e76d0107f4422bd8a83af754cf"
+  },
+  {
+    "case_id": "FIX10-EXPERIMENT64-rooms-20262019",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rooms-20262019",
+    "identical_grid": true,
+    "original_input_sha256": "b44b478250789562f297ce1af0b4f4e43378dc4d55abb75269e46c9781317d3f"
+  },
+  {
+    "case_id": "FIX-COUPLING-candidate-0",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\COUPLING-candidate-0",
+    "identical_grid": true,
+    "original_input_sha256": "ad4252aeef8071697a8ec872cdbff9aed53baba3f423598deb5e00a77354bf8c"
+  },
+  {
+    "case_id": "FIX-COUPLING-candidate-1",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\COUPLING-candidate-1",
+    "identical_grid": true,
+    "original_input_sha256": "b7915afb0c952769472bd832158ac9f6e2fc97e8082ae1f55c28998be01aebfc"
+  },
+  {
+    "case_id": "FIX-COUPLING-candidate-2",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\COUPLING-candidate-2",
+    "identical_grid": true,
+    "original_input_sha256": "ab1f85cc6f9429ce78d29313a33bb9e8c5b576c5897f7650982b06d2098a5437"
+  },
+  {
+    "case_id": "FIX-COUPLING-estimated-0",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\COUPLING-estimated-0",
+    "identical_grid": true,
+    "original_input_sha256": "c0a962de7bb658dc9d51fabde22b178b5b1ad70717206ad2f951d942c2166e74"
+  },
+  {
+    "case_id": "FIX-COUPLING-estimated-1",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\COUPLING-estimated-1",
+    "identical_grid": true,
+    "original_input_sha256": "282ed3c04f88df4f3bba6acd5f227a2dce3fa8a563b50ee8c601aec1f6231bef"
+  },
+  {
+    "case_id": "FIX-COUPLING-estimated-2",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\COUPLING-estimated-2",
+    "identical_grid": true,
+    "original_input_sha256": "99a61ce57df76a595d61c193f5154cefccb9edecb6983529c162f9a5f493801c"
+  },
+  {
+    "case_id": "FIX-COUPLING-off-0",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\COUPLING-off-0",
+    "identical_grid": true,
+    "original_input_sha256": "a5d537824d8efff2a4ca0d3111818d950caa3887dae8750576531b8b70c2a814"
+  },
+  {
+    "case_id": "FIX-COUPLING-off-1",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\COUPLING-off-1",
+    "identical_grid": true,
+    "original_input_sha256": "6e60503616f43efa4e886ab90b8c783d16f4bcdbc7470f269c9ef7b4d8962354"
+  },
+  {
+    "case_id": "FIX-COUPLING-off-2",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\COUPLING-off-2",
+    "identical_grid": true,
+    "original_input_sha256": "5298389330385ef951fc09b677be4c75aed18fa56b2f81faeb93fd7e3a13dc72"
+  },
+  {
+    "case_id": "FIX-DYNAMIC-courtyard",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\DYNAMIC-courtyard",
+    "identical_grid": true,
+    "original_input_sha256": "8f9b7ede300dd86e3d96bb9368b934eac4500988738392f34e50de976c12144a"
+  },
+  {
+    "case_id": "FIX-DYNAMIC-rectangle",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\DYNAMIC-rectangle",
+    "identical_grid": true,
+    "original_input_sha256": "9ac2fa6c9b121d27267e0db79c622b5e035a1773d01ea9c6bdfca55b4b84bfd2"
+  },
+  {
+    "case_id": "FIX-DYNAMIC-rooms",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\DYNAMIC-rooms",
+    "identical_grid": true,
+    "original_input_sha256": "9243ed2e6baa09e17dbb9adee8b23091ac71415a01fbfec7a104e8a29c1d492c"
+  },
+  {
+    "case_id": "FIX-GEN-courtyard-20261018-16",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-courtyard-20261018-16",
+    "identical_grid": true,
+    "original_input_sha256": "c5c2286622e9b4673a58224135e12546be62946a36cf25f5a7ccd2118fbe15bb"
+  },
+  {
+    "case_id": "FIX-GEN-courtyard-20261018-4",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-courtyard-20261018-4",
+    "identical_grid": true,
+    "original_input_sha256": "619ca0efbbe7ad5822a1db151cab44a4ef6f01c3d1a4be723c2f580d08c8581c"
+  },
+  {
+    "case_id": "FIX-GEN-courtyard-20261019-16",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-courtyard-20261019-16",
+    "identical_grid": true,
+    "original_input_sha256": "247ebfa86f39fbd345c48b16bac06a760a46e3fae273e0a23b8acd5fdd285e78"
+  },
+  {
+    "case_id": "FIX-GEN-courtyard-20261019-4",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-courtyard-20261019-4",
+    "identical_grid": true,
+    "original_input_sha256": "4112e025a87234ee6e5c4f5887948f7f29d3a3f395340272df9b9c643030d0c7"
+  },
+  {
+    "case_id": "FIX-GEN-l-20261018-16",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-l-20261018-16",
+    "identical_grid": true,
+    "original_input_sha256": "17d697683cb500fc28a8612561209455b6c9f1edf368e1318cab336346a626a7"
+  },
+  {
+    "case_id": "FIX-GEN-l-20261018-4",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-l-20261018-4",
+    "identical_grid": true,
+    "original_input_sha256": "c7701af782a22af719415da9635842102ac89a9dd6be5afddb9bdac77487e63a"
+  },
+  {
+    "case_id": "FIX-GEN-l-20261019-16",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-l-20261019-16",
+    "identical_grid": true,
+    "original_input_sha256": "b688d82c3e627695138b0d60ae8b4dd9c85064eaf467fc2d0e3120a0e0791d5f"
+  },
+  {
+    "case_id": "FIX-GEN-l-20261019-4",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-l-20261019-4",
+    "identical_grid": true,
+    "original_input_sha256": "410efc529fafd133f78e1aab374c9ef16252d4b4ffceacd854d49fb4984613bc"
+  },
+  {
+    "case_id": "FIX-GEN-random-20261018-16",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-random-20261018-16",
+    "identical_grid": true,
+    "original_input_sha256": "3eb0434eb34da87ea305268cf8791fe54d35ef014b06cdd85e0512aec42393a7"
+  },
+  {
+    "case_id": "FIX-GEN-random-20261018-4",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-random-20261018-4",
+    "identical_grid": true,
+    "original_input_sha256": "2162514d869764bac58acc70e25d096e7ee7c863a3647e4194220a7de80e73b9"
+  },
+  {
+    "case_id": "FIX-GEN-random-20261019-16",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-random-20261019-16",
+    "identical_grid": true,
+    "original_input_sha256": "3717458db88ce5ec6fe5715f8d5f8dbd0f6c63f00d57038e123a72638b3b0365"
+  },
+  {
+    "case_id": "FIX-GEN-random-20261019-4",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-random-20261019-4",
+    "identical_grid": true,
+    "original_input_sha256": "8e4dc6bf895261d8942905fd0a434a1d3be03f57c4cf3d498442d293fc32082a"
+  },
+  {
+    "case_id": "FIX-GEN-rectangle-20261018-16",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-rectangle-20261018-16",
+    "identical_grid": true,
+    "original_input_sha256": "3ae41594aa57ff575f0cf068082de3a3ef50c0579fd2236a40e0004f94bff7e7"
+  },
+  {
+    "case_id": "FIX-GEN-rectangle-20261018-4",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-rectangle-20261018-4",
+    "identical_grid": true,
+    "original_input_sha256": "cf66bb1a9dc98dd38a5af2d1b8cf664ab0dc19e941ea37c571b5e8eaa1e2ad59"
+  },
+  {
+    "case_id": "FIX-GEN-rectangle-20261019-16",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-rectangle-20261019-16",
+    "identical_grid": true,
+    "original_input_sha256": "53d6ecdad2765f539d80d180a3cd4f2f05162145878932dd5b53ff66ee726a75"
+  },
+  {
+    "case_id": "FIX-GEN-rectangle-20261019-4",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-rectangle-20261019-4",
+    "identical_grid": true,
+    "original_input_sha256": "b8ad1c1ec2431c1e3b73d87b3f0a2556e530ed552e22dc27de7ff2b522395352"
+  },
+  {
+    "case_id": "FIX-GEN-rooms-20261018-16",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-rooms-20261018-16",
+    "identical_grid": true,
+    "original_input_sha256": "9a0bd1ff59371a2a57ee3217efc489f0eb07ef9e5d2c7d9a46761ec258fc3f6d"
+  },
+  {
+    "case_id": "FIX-GEN-rooms-20261018-4",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-rooms-20261018-4",
+    "identical_grid": true,
+    "original_input_sha256": "f4b601abd735b205a838a6e9a2df9c11a23abf85779ac6e078812618e80748ef"
+  },
+  {
+    "case_id": "FIX-GEN-rooms-20261019-16",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-rooms-20261019-16",
+    "identical_grid": true,
+    "original_input_sha256": "743fd8dc575b5275ed4375229c9bc69da65259bd067d72f643bf73013d4f3923"
+  },
+  {
+    "case_id": "FIX-GEN-rooms-20261019-4",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-rooms-20261019-4",
+    "identical_grid": true,
+    "original_input_sha256": "17f8f62ef2bcb6332604aa94737a6adb4e31f447ae42830b4d14ba8c48ae00cc"
+  },
+  {
+    "case_id": "FIX-GEN-t-20261018-16",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-t-20261018-16",
+    "identical_grid": true,
+    "original_input_sha256": "c24c037fa3b4cd0d30db67dd6896bc6ed1d4be59cbf716bac639378c5798f1bd"
+  },
+  {
+    "case_id": "FIX-GEN-t-20261018-4",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-t-20261018-4",
+    "identical_grid": true,
+    "original_input_sha256": "59a82d8d617e4df5e8bc3c3963147777e291c5cff9d630b17d84016641a23816"
+  },
+  {
+    "case_id": "FIX-GEN-t-20261019-16",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-t-20261019-16",
+    "identical_grid": true,
+    "original_input_sha256": "335566603bd14b25d55c2748207b307e33e9085989f6052aa598e7e585d80bc2"
+  },
+  {
+    "case_id": "FIX-GEN-t-20261019-4",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-t-20261019-4",
+    "identical_grid": true,
+    "original_input_sha256": "c8544c6838fba181a8c3aca415cded01607436984250987fc36a83db56a82837"
+  },
+  {
+    "case_id": "FIX-GEN-u-20261018-16",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-u-20261018-16",
+    "identical_grid": true,
+    "original_input_sha256": "65c332717318b1899b6a61e689a818b1e133de08046ccc6740ad5dc7c360c79c"
+  },
+  {
+    "case_id": "FIX-GEN-u-20261018-4",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-u-20261018-4",
+    "identical_grid": true,
+    "original_input_sha256": "7a383f05c92618aaece388464662dc40c611019c9cbe808e328062f91940b4c9"
+  },
+  {
+    "case_id": "FIX-GEN-u-20261019-16",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-u-20261019-16",
+    "identical_grid": true,
+    "original_input_sha256": "b6447bc6008e2992e9c2e3c7241540a21fb0db64f59aaaa505c2b1e3e8da96ec"
+  },
+  {
+    "case_id": "FIX-GEN-u-20261019-4",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\GEN-u-20261019-4",
+    "identical_grid": true,
+    "original_input_sha256": "7b5137a42cd93c727c0f6821efa0ec9abe12fb4ce0f4d973989f47942d892d55"
+  },
+  {
+    "case_id": "FIX-MODE-legacy_full",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\MODE-legacy_full",
+    "identical_grid": true,
+    "original_input_sha256": "852d35cb5b8cd1194bd4bbabd25c7f9b858beba3bd317b8d5eeabc3a48eff5bb"
+  },
+  {
+    "case_id": "FIX-MODE-rolling",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\MODE-rolling",
+    "identical_grid": true,
+    "original_input_sha256": "50f2f3dc7c463e00b9a926dbebaaad32c7969b6b41f718a45b85b5e1ee90a932"
+  },
+  {
+    "case_id": "FIX-SCALE32-fleet_64x64-20262018",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\SCALE32-fleet_64x64-20262018",
+    "identical_grid": true,
+    "original_input_sha256": "673f060b71de7cd4d9ba524e27571831d9f16b52507a51068d64763eeb5b3561"
+  },
+  {
+    "case_id": "FIX-SCALE32-fleet_64x64-20262019",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\SCALE32-fleet_64x64-20262019",
+    "identical_grid": true,
+    "original_input_sha256": "6f0254aff016f2a1c615a7b419b1fa2de220cdd4736d4b08ddfc9431090a4572"
+  },
+  {
+    "case_id": "FIX-SCALE32-irregular_96x64-20262018",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\SCALE32-irregular_96x64-20262018",
+    "identical_grid": true,
+    "original_input_sha256": "af3fce5e3987164c0210114eb0dbb7346cc52f032541f3a00978ac82908dc972"
+  },
+  {
+    "case_id": "FIX-SCALE32-irregular_96x64-20262019",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\SCALE32-irregular_96x64-20262019",
+    "identical_grid": true,
+    "original_input_sha256": "ece68e27ae4297392ee0c1b8467ce61e4610834dbba13f8908422704d868fa4a"
+  },
+  {
+    "case_id": "FIX-SCALE32-rectangle-20262018",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\SCALE32-rectangle-20262018",
+    "identical_grid": true,
+    "original_input_sha256": "db259334eb8427142e6b7b0954e068621533f623e638614edc73e08e4ef523df"
+  },
+  {
+    "case_id": "FIX-SCALE32-rectangle-20262019",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\SCALE32-rectangle-20262019",
+    "identical_grid": true,
+    "original_input_sha256": "73df72892f41fd66b6310a00eb859c60225e2316e106873d23ce3c9f474726c9"
+  },
+  {
+    "case_id": "FIX-SCALE32-rooms-20262018",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\SCALE32-rooms-20262018",
+    "identical_grid": true,
+    "original_input_sha256": "08999f3858ff6c4cfd713d47c40511b989d3a939ba5ac8fbcf7c40669cfa42ab"
+  },
+  {
+    "case_id": "FIX-SCALE32-rooms-20262019",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\SCALE32-rooms-20262019",
+    "identical_grid": true,
+    "original_input_sha256": "9cef2f92936cfa2d3c475eb7af104fa1544192ad02306ca1baf06dcd5b94bbd7"
+  },
+  {
+    "case_id": "FIX-ACTOR64-rectangle-20262019",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rectangle-20262019",
+    "identical_grid": true,
+    "original_input_sha256": "2d7fe20638201d139d9b0d0b7ff0d1fac42f1978fd2b4ff6308bd893317cee41"
+  },
+  {
+    "case_id": "FIX-ACTOR64-rooms-20262018",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rooms-20262018",
+    "identical_grid": true,
+    "original_input_sha256": "b22a4752d9bf5995722099f72d1df7e8947c49e76d0107f4422bd8a83af754cf"
+  },
+  {
+    "case_id": "FIX-ACTOR64-rooms-20262019",
+    "source": "E:\\_PROJECTS\\AWCS\\.temp\\testing\\runs\\20261020_144032_8fe978\\cases\\EXPERIMENT64-rooms-20262019",
+    "identical_grid": true,
+    "original_input_sha256": "b44b478250789562f297ce1af0b4f4e43378dc4d55abb75269e46c9781317d3f"
+  }
+]

@@ -1,0 +1,1 @@
+{"browser": {"browserName": "chromium", "launchOptions": {"executablePath": "C:/Users/25489/AppData/Local/ms-playwright/chromium-1208/chrome-win64/chrome.exe", "headless": true}, "contextOptions": {"viewport": {"width": 1440, "height": 1000}}}, "outputDir": "E:\\_PROJECTS\\AWCS\\output\\playwright\\awcs-report"}

@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "kind": "start",
+    "request_id": "ff528ad28367428b8ea659176bfb023d",
+    "job": "import_extract",
+    "generation": 0,
+    "text": "",
+    "task_id": null,
+    "filename": "F09.md"
+  },
+  {
+    "id": 2,
+    "kind": "import_progress",
+    "request_id": "ff528ad28367428b8ea659176bfb023d",
+    "stage": "正在分析文件；确认前不会创建任务"
+  },
+  {
+    "id": 3,
+    "kind": "import_ready",
+    "request_id": "ff528ad28367428b8ea659176bfb023d",
+    "draft_id": "a9dfea43f1ea430ea7d8136f5e39dc5f",
+    "generation": 0,
+    "count": 1
+  },
+  {
+    "id": 4,
+    "kind": "done",
+    "request_id": "ff528ad28367428b8ea659176bfb023d"
+  }
+]

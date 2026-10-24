@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "kind": "start",
+    "request_id": "8e57133ca94c4290908fdb0531bde9ec",
+    "job": "message",
+    "generation": 0,
+    "text": "查询这个任务的状态。",
+    "task_id": "T001"
+  },
+  {
+    "id": 2,
+    "kind": "progress",
+    "request_id": "8e57133ca94c4290908fdb0531bde9ec",
+    "tool": "get_status"
+  },
+  {
+    "id": 3,
+    "kind": "text",
+    "request_id": "8e57133ca94c4290908fdb0531bde9ec",
+    "text": "请核对业务回执。"
+  },
+  {
+    "id": 4,
+    "kind": "done",
+    "request_id": "8e57133ca94c4290908fdb0531bde9ec"
+  }
+]
